@@ -58,17 +58,28 @@
             opacity: 0.9;
         }
 
+        .controls-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
         #startBtn {
-            margin-top: 15px;
-            padding: 15px 40px;
-            font-size: clamp(1rem, 4vw, 1.3rem);
+            padding: 15px 20px;
+            font-size: clamp(0.9rem, 3.5vw, 1.1rem);
             background: linear-gradient(145deg, #8B4513, #A0522D);
             color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 15px;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             transition: transform 0.2s, box-shadow 0.2s;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            line-height: 1.3;
         }
 
         #startBtn:active {
@@ -141,20 +152,21 @@
 
     <div id="controls">
         <p>Swipe of gebruik de knoppen om te bewegen</p>
-        <div class="dpad">
-            <div class="dpad-btn empty"></div>
-            <button class="dpad-btn" id="upBtn">⬆️</button>
-            <div class="dpad-btn empty"></div>
-            <button class="dpad-btn" id="leftBtn">⬅️</button>
-            <div class="dpad-btn empty"></div>
-            <button class="dpad-btn" id="rightBtn">➡️</button>
-            <div class="dpad-btn empty"></div>
-            <button class="dpad-btn" id="downBtn">⬇️</button>
-            <div class="dpad-btn empty"></div>
+        <div class="controls-row">
+            <div class="dpad">
+                <div class="dpad-btn empty"></div>
+                <button class="dpad-btn" id="upBtn">⬆️</button>
+                <div class="dpad-btn empty"></div>
+                <button class="dpad-btn" id="leftBtn">⬅️</button>
+                <div class="dpad-btn empty"></div>
+                <button class="dpad-btn" id="rightBtn">➡️</button>
+                <div class="dpad-btn empty"></div>
+                <button class="dpad-btn" id="downBtn">⬇️</button>
+                <div class="dpad-btn empty"></div>
+            </div>
+            <button id="startBtn">🐕<br>Start<br>🍎</button>
         </div>
     </div>
-
-    <button id="startBtn">🐕 Start Spel 🍎</button>
 
     <div id="gameOver">
         <h2>Game Over! 🐕</h2>
