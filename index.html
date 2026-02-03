@@ -269,7 +269,7 @@
     <div id="highscores">
         <h3>🏆 Highscores</h3>
         <ol id="highscoreList"></ol>
-        <button id="shareBtn">📤 Deel scorebord</button>
+        <button id="shareBtn">📤 Deel spel</button>
         <div id="shareStatus"></div>
     </div>
 
@@ -314,64 +314,25 @@
         let gameLoop;
         let speed = 150;
 
-        // Gedeelde Highscore functies via jsonblob.com
+        // Highscore functies (lokaal opgeslagen)
         const MAX_HIGHSCORES = 5;
-        const JSONBLOB_API = 'https://jsonblob.com/api/jsonBlob';
-        let blobId = null;
         let cachedScores = [];
-
-        // Haal blob ID uit URL of localStorage
-        function initBlobId() {
-            const urlParams = new URLSearchParams(window.location.search);
-            blobId = urlParams.get('scores') || localStorage.getItem('teckelBlobId');
-            updateShareStatus();
-        }
 
         function updateShareStatus() {
             const status = document.getElementById('shareStatus');
-            if (blobId) {
-                status.textContent = '🌐 Gedeeld scorebord actief';
-            } else {
-                status.textContent = '📱 Lokale scores';
-            }
+            status.textContent = '📱 Lokale scores';
         }
 
-        // Haal scores op (online of lokaal)
+        // Haal scores op uit localStorage
         async function getHighscores() {
-            if (blobId) {
-                try {
-                    const response = await fetch(`${JSONBLOB_API}/${blobId}`);
-                    if (response.ok) {
-                        const data = await response.json();
-                        cachedScores = data.scores || [];
-                        return cachedScores;
-                    }
-                } catch (e) {
-                    console.log('Online scores niet beschikbaar, gebruik lokaal');
-                }
-            }
-            // Fallback naar localStorage
             const stored = localStorage.getItem('teckelHighscores');
             cachedScores = stored ? JSON.parse(stored) : [];
             return cachedScores;
         }
 
-        // Sla scores op (online of lokaal)
+        // Sla scores op in localStorage
         async function saveHighscores(scores) {
-            // Altijd lokaal opslaan als backup
             localStorage.setItem('teckelHighscores', JSON.stringify(scores));
-
-            if (blobId) {
-                try {
-                    await fetch(`${JSONBLOB_API}/${blobId}`, {
-                        method: 'PUT',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ scores })
-                    });
-                } catch (e) {
-                    console.log('Kon niet online opslaan');
-                }
-            }
         }
 
         function isHighscore(newScore) {
@@ -405,65 +366,23 @@
             }
         }
 
-        // Maak een gedeeld scorebord aan
-        async function createSharedScoreboard() {
+        // Deel het spel met vrienden
+        function shareGame() {
+            const shareUrl = `${window.location.origin}${window.location.pathname}`;
             const status = document.getElementById('shareStatus');
-            status.textContent = '⏳ Aanmaken...';
-
-            try {
-                // Haal huidige lokale scores op
-                const localScores = localStorage.getItem('teckelHighscores');
-                const scores = localScores ? JSON.parse(localScores) : [];
-
-                // Maak nieuwe blob aan
-                const response = await fetch(JSONBLOB_API, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ scores })
-                });
-
-                if (response.ok) {
-                    // Haal blob ID uit response URL
-                    const location = response.headers.get('Location') || response.headers.get('X-Blob-Id');
-                    blobId = location ? location.split('/').pop() : null;
-
-                    if (!blobId) {
-                        // Probeer uit response body
-                        const url = response.url;
-                        blobId = url.split('/').pop();
-                    }
-
-                    if (blobId && blobId !== 'jsonBlob') {
-                        localStorage.setItem('teckelBlobId', blobId);
-                        shareLink();
-                    } else {
-                        throw new Error('Geen blob ID ontvangen');
-                    }
-                }
-            } catch (e) {
-                console.error(e);
-                status.textContent = '❌ Fout bij aanmaken';
-                setTimeout(updateShareStatus, 2000);
-            }
-        }
-
-        // Deel de link
-        function shareLink() {
-            if (!blobId) {
-                createSharedScoreboard();
-                return;
-            }
-
-            const shareUrl = `${window.location.origin}${window.location.pathname}?scores=${blobId}`;
-            const status = document.getElementById('shareStatus');
+            const topScore = cachedScores.length > 0 ? cachedScores[0].score : 0;
+            const shareText = topScore > 0
+                ? `Kan jij mijn ${topScore} appels verslaan? 🐕🍎`
+                : 'Speel Teckel vs Appels! 🐕🍎';
 
             if (navigator.share) {
                 navigator.share({
                     title: '🐕 Teckel vs Appels',
-                    text: 'Speel mee en probeer mijn highscore te verslaan!',
+                    text: shareText,
                     url: shareUrl
                 }).then(() => {
                     status.textContent = '✅ Gedeeld!';
+                    setTimeout(updateShareStatus, 2000);
                 }).catch(() => {
                     copyToClipboard(shareUrl, status);
                 });
@@ -477,7 +396,7 @@
                 status.textContent = '✅ Link gekopieerd!';
                 setTimeout(updateShareStatus, 3000);
             }).catch(() => {
-                status.textContent = '📋 ' + text.split('?')[1];
+                status.textContent = '📋 Kopieer: ' + text;
             });
         }
 
@@ -860,11 +779,11 @@
         });
 
         // Share button handler
-        addStartHandler(document.getElementById('shareBtn'), shareLink);
+        addStartHandler(document.getElementById('shareBtn'), shareGame);
 
         // Initial setup
         async function init() {
-            initBlobId();
+            updateShareStatus();
             const scores = await getHighscores();
             displayHighscores(scores);
             initGame();
