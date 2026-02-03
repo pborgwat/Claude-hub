@@ -314,6 +314,122 @@
         let gameLoop;
         let speed = 150;
 
+        // Audio context voor chiptune muziek en geluidseffecten
+        let audioCtx = null;
+        let musicPlaying = false;
+        let musicInterval = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        // Chiptune noot spelen
+        function playNote(freq, duration, startTime, type = 'square', volume = 0.08) {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = type;
+            osc.frequency.value = freq;
+
+            gain.gain.setValueAtTime(volume, startTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(startTime);
+            osc.stop(startTime + duration);
+        }
+
+        // Rustige chiptune melodie (loopend)
+        const melody = [
+            // Rustig, vrolijk deuntje in C majeur
+            { note: 262, dur: 0.3 },  // C4
+            { note: 294, dur: 0.3 },  // D4
+            { note: 330, dur: 0.3 },  // E4
+            { note: 294, dur: 0.3 },  // D4
+            { note: 262, dur: 0.6 },  // C4
+            { note: 0, dur: 0.3 },    // rust
+            { note: 330, dur: 0.3 },  // E4
+            { note: 392, dur: 0.3 },  // G4
+            { note: 330, dur: 0.3 },  // E4
+            { note: 294, dur: 0.6 },  // D4
+            { note: 0, dur: 0.3 },    // rust
+            { note: 262, dur: 0.3 },  // C4
+            { note: 196, dur: 0.3 },  // G3
+            { note: 220, dur: 0.3 },  // A3
+            { note: 247, dur: 0.3 },  // B3
+            { note: 262, dur: 0.9 },  // C4
+            { note: 0, dur: 0.3 },    // rust
+        ];
+
+        function startMusic() {
+            if (musicPlaying) return;
+            initAudio();
+            musicPlaying = true;
+
+            let noteIndex = 0;
+            function playNextNote() {
+                if (!musicPlaying) return;
+
+                const { note, dur } = melody[noteIndex];
+                if (note > 0) {
+                    playNote(note, dur * 0.9, audioCtx.currentTime, 'square', 0.05);
+                    // Zachte bas erbij
+                    playNote(note / 2, dur * 0.9, audioCtx.currentTime, 'triangle', 0.03);
+                }
+
+                noteIndex = (noteIndex + 1) % melody.length;
+                musicInterval = setTimeout(playNextNote, dur * 1000);
+            }
+            playNextNote();
+        }
+
+        function stopMusic() {
+            musicPlaying = false;
+            if (musicInterval) {
+                clearTimeout(musicInterval);
+                musicInterval = null;
+            }
+        }
+
+        // Keffend hondje geluid!
+        function playBark() {
+            if (!audioCtx) return;
+
+            const now = audioCtx.currentTime;
+
+            // Eerste kef
+            playBarkSound(now);
+            // Tweede kef (snelle dubbele kef)
+            playBarkSound(now + 0.1);
+        }
+
+        function playBarkSound(startTime) {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            // Hoge frequentie voor klein hondje kef
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(600, startTime);
+            osc.frequency.exponentialRampToValueAtTime(400, startTime + 0.05);
+            osc.frequency.exponentialRampToValueAtTime(300, startTime + 0.08);
+
+            gain.gain.setValueAtTime(0.15, startTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.08);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(startTime);
+            osc.stop(startTime + 0.1);
+        }
+
         // Highscore functies (lokaal opgeslagen)
         const MAX_HIGHSCORES = 5;
         let cachedScores = [];
@@ -612,6 +728,7 @@
                 score++;
                 updateScore();
                 placeApple();
+                playBark(); // Kef!
                 // Sneller worden
                 if (speed > 80) {
                     speed -= 3;
@@ -640,6 +757,9 @@
             document.getElementById('startBtn').style.display = 'none';
             document.getElementById('gameOver').style.display = 'none';
 
+            // Start de muziek
+            startMusic();
+
             function loop() {
                 if (!gameRunning) return;
                 gameStep();
@@ -651,6 +771,7 @@
         async function gameOver() {
             gameRunning = false;
             clearTimeout(gameLoop);
+            stopMusic();
             document.getElementById('finalScore').textContent = `Je teckel at ${score} appel${score !== 1 ? 's' : ''}!`;
 
             // Haal verse scores op voor check
