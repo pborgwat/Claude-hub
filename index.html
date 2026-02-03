@@ -143,6 +143,80 @@
             background: transparent;
             cursor: default;
         }
+
+        #highscores {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: white;
+            font-size: 0.85rem;
+            max-width: 150px;
+        }
+
+        #highscores h3 {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        #highscores ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        #highscores li {
+            margin: 3px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #nameInput {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.9);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            z-index: 110;
+        }
+
+        #nameInput h2 {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        #nameInput p {
+            margin-bottom: 15px;
+        }
+
+        #nameInput input {
+            padding: 10px 15px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            width: 180px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #nameInput button {
+            padding: 12px 30px;
+            font-size: 1rem;
+            background: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -168,12 +242,25 @@
         </div>
     </div>
 
+    <div id="highscores">
+        <h3>🏆 Highscores</h3>
+        <ol id="highscoreList"></ol>
+    </div>
+
     <div id="gameOver">
         <h2>Game Over! 🐕</h2>
         <p id="finalScore">Je teckel at 0 appels!</p>
         <button id="restartBtn" style="margin-top:15px; padding:12px 30px; font-size:1.1rem; background:#8B4513; color:white; border:none; border-radius:20px; cursor:pointer;">
             Opnieuw Spelen
         </button>
+    </div>
+
+    <div id="nameInput">
+        <h2>🎉 Nieuwe Highscore!</h2>
+        <p id="newScoreText">Je scoorde 0 punten!</p>
+        <input type="text" id="playerName" placeholder="Je naam" maxlength="12">
+        <br>
+        <button id="saveScoreBtn">Opslaan</button>
     </div>
 
     <script>
@@ -200,6 +287,48 @@
         let gameRunning = false;
         let gameLoop;
         let speed = 150;
+
+        // Highscore functies
+        const MAX_HIGHSCORES = 5;
+
+        function getHighscores() {
+            const stored = localStorage.getItem('teckelHighscores');
+            return stored ? JSON.parse(stored) : [];
+        }
+
+        function saveHighscores(scores) {
+            localStorage.setItem('teckelHighscores', JSON.stringify(scores));
+        }
+
+        function isHighscore(newScore) {
+            if (newScore === 0) return false;
+            const scores = getHighscores();
+            if (scores.length < MAX_HIGHSCORES) return true;
+            return newScore > scores[scores.length - 1].score;
+        }
+
+        function addHighscore(name, newScore) {
+            const scores = getHighscores();
+            scores.push({ name: name || 'Anoniem', score: newScore });
+            scores.sort((a, b) => b.score - a.score);
+            if (scores.length > MAX_HIGHSCORES) {
+                scores.length = MAX_HIGHSCORES;
+            }
+            saveHighscores(scores);
+            displayHighscores();
+        }
+
+        function displayHighscores() {
+            const scores = getHighscores();
+            const list = document.getElementById('highscoreList');
+            if (scores.length === 0) {
+                list.innerHTML = '<li style="list-style:none;margin-left:-20px;opacity:0.7">Nog geen scores</li>';
+            } else {
+                list.innerHTML = scores.map(s =>
+                    `<li>${s.name}: ${s.score}</li>`
+                ).join('');
+            }
+        }
 
         // Teckel kleuren
         const colors = {
@@ -453,7 +582,15 @@
             gameRunning = false;
             clearTimeout(gameLoop);
             document.getElementById('finalScore').textContent = `Je teckel at ${score} appel${score !== 1 ? 's' : ''}!`;
-            document.getElementById('gameOver').style.display = 'block';
+
+            if (isHighscore(score)) {
+                // Nieuwe highscore! Vraag om naam
+                document.getElementById('newScoreText').textContent = `Je scoorde ${score} appel${score !== 1 ? 's' : ''}!`;
+                document.getElementById('playerName').value = '';
+                document.getElementById('nameInput').style.display = 'block';
+            } else {
+                document.getElementById('gameOver').style.display = 'block';
+            }
         }
 
         function updateScore() {
@@ -551,7 +688,25 @@
             startGame();
         });
 
+        // Save highscore handler
+        function saveScore() {
+            const name = document.getElementById('playerName').value.trim();
+            addHighscore(name, score);
+            document.getElementById('nameInput').style.display = 'none';
+            document.getElementById('gameOver').style.display = 'block';
+        }
+
+        addStartHandler(document.getElementById('saveScoreBtn'), saveScore);
+
+        // Allow Enter key to save score
+        document.getElementById('playerName').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                saveScore();
+            }
+        });
+
         // Initial draw
+        displayHighscores();
         initGame();
         draw();
     </script>
