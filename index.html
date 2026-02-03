@@ -153,7 +153,7 @@
             border-radius: 10px;
             color: white;
             font-size: 0.85rem;
-            max-width: 150px;
+            max-width: 160px;
         }
 
         #highscores h3 {
@@ -172,6 +172,30 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        #shareBtn {
+            margin-top: 10px;
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #shareBtn:active {
+            background: #45a049;
+        }
+
+        #shareStatus {
+            font-size: 0.7rem;
+            margin-top: 5px;
+            opacity: 0.8;
+            text-align: center;
         }
 
         #nameInput {
@@ -245,6 +269,8 @@
     <div id="highscores">
         <h3>🏆 Highscores</h3>
         <ol id="highscoreList"></ol>
+        <button id="shareBtn">📤 Deel scorebord</button>
+        <div id="shareStatus"></div>
     </div>
 
     <div id="gameOver">
@@ -288,38 +314,87 @@
         let gameLoop;
         let speed = 150;
 
-        // Highscore functies
+        // Gedeelde Highscore functies via jsonblob.com
         const MAX_HIGHSCORES = 5;
+        const JSONBLOB_API = 'https://jsonblob.com/api/jsonBlob';
+        let blobId = null;
+        let cachedScores = [];
 
-        function getHighscores() {
-            const stored = localStorage.getItem('teckelHighscores');
-            return stored ? JSON.parse(stored) : [];
+        // Haal blob ID uit URL of localStorage
+        function initBlobId() {
+            const urlParams = new URLSearchParams(window.location.search);
+            blobId = urlParams.get('scores') || localStorage.getItem('teckelBlobId');
+            updateShareStatus();
         }
 
-        function saveHighscores(scores) {
+        function updateShareStatus() {
+            const status = document.getElementById('shareStatus');
+            if (blobId) {
+                status.textContent = '🌐 Gedeeld scorebord actief';
+            } else {
+                status.textContent = '📱 Lokale scores';
+            }
+        }
+
+        // Haal scores op (online of lokaal)
+        async function getHighscores() {
+            if (blobId) {
+                try {
+                    const response = await fetch(`${JSONBLOB_API}/${blobId}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        cachedScores = data.scores || [];
+                        return cachedScores;
+                    }
+                } catch (e) {
+                    console.log('Online scores niet beschikbaar, gebruik lokaal');
+                }
+            }
+            // Fallback naar localStorage
+            const stored = localStorage.getItem('teckelHighscores');
+            cachedScores = stored ? JSON.parse(stored) : [];
+            return cachedScores;
+        }
+
+        // Sla scores op (online of lokaal)
+        async function saveHighscores(scores) {
+            // Altijd lokaal opslaan als backup
             localStorage.setItem('teckelHighscores', JSON.stringify(scores));
+
+            if (blobId) {
+                try {
+                    await fetch(`${JSONBLOB_API}/${blobId}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ scores })
+                    });
+                } catch (e) {
+                    console.log('Kon niet online opslaan');
+                }
+            }
         }
 
         function isHighscore(newScore) {
             if (newScore === 0) return false;
-            const scores = getHighscores();
-            if (scores.length < MAX_HIGHSCORES) return true;
-            return newScore > scores[scores.length - 1].score;
+            if (cachedScores.length < MAX_HIGHSCORES) return true;
+            return newScore > cachedScores[cachedScores.length - 1].score;
         }
 
-        function addHighscore(name, newScore) {
-            const scores = getHighscores();
+        async function addHighscore(name, newScore) {
+            // Haal verse scores op voor we toevoegen
+            const scores = await getHighscores();
             scores.push({ name: name || 'Anoniem', score: newScore });
             scores.sort((a, b) => b.score - a.score);
             if (scores.length > MAX_HIGHSCORES) {
                 scores.length = MAX_HIGHSCORES;
             }
-            saveHighscores(scores);
-            displayHighscores();
+            cachedScores = scores;
+            await saveHighscores(scores);
+            displayHighscores(scores);
         }
 
-        function displayHighscores() {
-            const scores = getHighscores();
+        function displayHighscores(scores) {
+            scores = scores || cachedScores;
             const list = document.getElementById('highscoreList');
             if (scores.length === 0) {
                 list.innerHTML = '<li style="list-style:none;margin-left:-20px;opacity:0.7">Nog geen scores</li>';
@@ -328,6 +403,82 @@
                     `<li>${s.name}: ${s.score}</li>`
                 ).join('');
             }
+        }
+
+        // Maak een gedeeld scorebord aan
+        async function createSharedScoreboard() {
+            const status = document.getElementById('shareStatus');
+            status.textContent = '⏳ Aanmaken...';
+
+            try {
+                // Haal huidige lokale scores op
+                const localScores = localStorage.getItem('teckelHighscores');
+                const scores = localScores ? JSON.parse(localScores) : [];
+
+                // Maak nieuwe blob aan
+                const response = await fetch(JSONBLOB_API, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ scores })
+                });
+
+                if (response.ok) {
+                    // Haal blob ID uit response URL
+                    const location = response.headers.get('Location') || response.headers.get('X-Blob-Id');
+                    blobId = location ? location.split('/').pop() : null;
+
+                    if (!blobId) {
+                        // Probeer uit response body
+                        const url = response.url;
+                        blobId = url.split('/').pop();
+                    }
+
+                    if (blobId && blobId !== 'jsonBlob') {
+                        localStorage.setItem('teckelBlobId', blobId);
+                        shareLink();
+                    } else {
+                        throw new Error('Geen blob ID ontvangen');
+                    }
+                }
+            } catch (e) {
+                console.error(e);
+                status.textContent = '❌ Fout bij aanmaken';
+                setTimeout(updateShareStatus, 2000);
+            }
+        }
+
+        // Deel de link
+        function shareLink() {
+            if (!blobId) {
+                createSharedScoreboard();
+                return;
+            }
+
+            const shareUrl = `${window.location.origin}${window.location.pathname}?scores=${blobId}`;
+            const status = document.getElementById('shareStatus');
+
+            if (navigator.share) {
+                navigator.share({
+                    title: '🐕 Teckel vs Appels',
+                    text: 'Speel mee en probeer mijn highscore te verslaan!',
+                    url: shareUrl
+                }).then(() => {
+                    status.textContent = '✅ Gedeeld!';
+                }).catch(() => {
+                    copyToClipboard(shareUrl, status);
+                });
+            } else {
+                copyToClipboard(shareUrl, status);
+            }
+        }
+
+        function copyToClipboard(text, status) {
+            navigator.clipboard.writeText(text).then(() => {
+                status.textContent = '✅ Link gekopieerd!';
+                setTimeout(updateShareStatus, 3000);
+            }).catch(() => {
+                status.textContent = '📋 ' + text.split('?')[1];
+            });
         }
 
         // Teckel kleuren
@@ -578,10 +729,13 @@
             loop();
         }
 
-        function gameOver() {
+        async function gameOver() {
             gameRunning = false;
             clearTimeout(gameLoop);
             document.getElementById('finalScore').textContent = `Je teckel at ${score} appel${score !== 1 ? 's' : ''}!`;
+
+            // Haal verse scores op voor check
+            await getHighscores();
 
             if (isHighscore(score)) {
                 // Nieuwe highscore! Vraag om naam
@@ -689,9 +843,9 @@
         });
 
         // Save highscore handler
-        function saveScore() {
+        async function saveScore() {
             const name = document.getElementById('playerName').value.trim();
-            addHighscore(name, score);
+            await addHighscore(name, score);
             document.getElementById('nameInput').style.display = 'none';
             document.getElementById('gameOver').style.display = 'block';
         }
@@ -705,10 +859,19 @@
             }
         });
 
-        // Initial draw
-        displayHighscores();
-        initGame();
-        draw();
+        // Share button handler
+        addStartHandler(document.getElementById('shareBtn'), shareLink);
+
+        // Initial setup
+        async function init() {
+            initBlobId();
+            const scores = await getHighscores();
+            displayHighscores(scores);
+            initGame();
+            draw();
+        }
+
+        init();
     </script>
 </body>
 </html>
