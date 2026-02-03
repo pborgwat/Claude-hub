@@ -118,6 +118,10 @@
             font-size: 24px;
             cursor: pointer;
             transition: background 0.1s;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
         }
 
         .dpad-btn:active {
@@ -505,28 +509,32 @@
             }
         }, { passive: false });
 
-        // D-pad button controls
-        document.getElementById('upBtn').addEventListener('click', () => {
-            if (direction.y !== 1) nextDirection = { x: 0, y: -1 };
-        });
-        document.getElementById('downBtn').addEventListener('click', () => {
-            if (direction.y !== -1) nextDirection = { x: 0, y: 1 };
-        });
-        document.getElementById('leftBtn').addEventListener('click', () => {
-            if (direction.x !== 1) nextDirection = { x: -1, y: 0 };
-        });
-        document.getElementById('rightBtn').addEventListener('click', () => {
-            if (direction.x !== -1) nextDirection = { x: 1, y: 0 };
-        });
+        // D-pad button controls - use touchstart for iOS Safari
+        function addButtonControl(btnId, dirCheck, newDir) {
+            const btn = document.getElementById(btnId);
+            const handler = (e) => {
+                e.preventDefault();
+                if (dirCheck()) {
+                    nextDirection = newDir;
+                }
+            };
+            btn.addEventListener('touchstart', handler, { passive: false });
+            btn.addEventListener('click', handler);
+        }
 
-        // Touch events for d-pad (prevent scrolling)
-        document.querySelectorAll('.dpad-btn').forEach(btn => {
-            btn.addEventListener('touchstart', (e) => e.preventDefault(), { passive: false });
-        });
+        addButtonControl('upBtn', () => direction.y !== 1, { x: 0, y: -1 });
+        addButtonControl('downBtn', () => direction.y !== -1, { x: 0, y: 1 });
+        addButtonControl('leftBtn', () => direction.x !== 1, { x: -1, y: 0 });
+        addButtonControl('rightBtn', () => direction.x !== -1, { x: 1, y: 0 });
 
-        // Start buttons
-        document.getElementById('startBtn').addEventListener('click', startGame);
-        document.getElementById('restartBtn').addEventListener('click', () => {
+        // Start buttons - use touchstart for iOS Safari
+        function addStartHandler(btn, handler) {
+            btn.addEventListener('touchstart', (e) => { e.preventDefault(); handler(); }, { passive: false });
+            btn.addEventListener('click', handler);
+        }
+
+        addStartHandler(document.getElementById('startBtn'), startGame);
+        addStartHandler(document.getElementById('restartBtn'), () => {
             document.getElementById('gameOver').style.display = 'none';
             startGame();
         });
