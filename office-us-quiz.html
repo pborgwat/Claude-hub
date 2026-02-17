@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>The Office US - Expert Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a2e;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #e0e0e0;
+        }
+
+        .start-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .start-screen h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .start-screen .subtitle {
+            font-size: clamp(1rem, 3vw, 1.4rem);
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: clamp(4rem, 12vw, 8rem);
+            margin-bottom: 20px;
+        }
+
+        .start-btn {
+            padding: 18px 50px;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            background: linear-gradient(145deg, #4a90d9, #357abd);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(74, 144, 217, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(74, 144, 217, 0.5);
+        }
+
+        .start-btn:active {
+            transform: scale(0.97);
+        }
+
+        .difficulty-info {
+            margin-top: 25px;
+            padding: 15px 25px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            color: #999;
+            max-width: 400px;
+        }
+
+        .quiz-container {
+            display: none;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header .question-count {
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        .header .score-display {
+            font-size: 1rem;
+            color: #4a90d9;
+            font-weight: 600;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4a90d9, #63b3ed);
+            border-radius: 4px;
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+
+        .question-card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: clamp(20px, 4vw, 35px);
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .category-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(74, 144, 217, 0.2);
+            color: #63b3ed;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .question-text {
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            line-height: 1.5;
+            color: #fff;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            color: #e0e0e0;
+            font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .option-btn:hover:not(.disabled) {
+            background: rgba(74, 144, 217, 0.15);
+            border-color: rgba(74, 144, 217, 0.4);
+        }
+
+        .option-btn.correct {
+            background: rgba(72, 187, 120, 0.2);
+            border-color: #48bb78;
+            color: #48bb78;
+        }
+
+        .option-btn.wrong {
+            background: rgba(245, 101, 101, 0.2);
+            border-color: #f56565;
+            color: #f56565;
+        }
+
+        .option-btn.disabled {
+            cursor: default;
+            opacity: 0.6;
+        }
+
+        .option-btn.disabled.correct {
+            opacity: 1;
+        }
+
+        .explanation {
+            display: none;
+            margin-top: 20px;
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 10px;
+            border-left: 3px solid #4a90d9;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #bbb;
+        }
+
+        .next-btn {
+            display: none;
+            margin: 25px auto 0;
+            padding: 14px 40px;
+            background: linear-gradient(145deg, #4a90d9, #357abd);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.05rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .next-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .next-btn:active {
+            transform: scale(0.97);
+        }
+
+        .result-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .result-screen h2 {
+            font-size: clamp(2rem, 6vw, 3rem);
+            margin-bottom: 15px;
+        }
+
+        .result-score {
+            font-size: clamp(3rem, 10vw, 5rem);
+            font-weight: 800;
+            margin: 20px 0;
+        }
+
+        .result-label {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .result-message {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: #ccc;
+            margin: 20px 0 30px;
+            max-width: 500px;
+            line-height: 1.5;
+        }
+
+        .result-stats {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 20px 0 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.06);
+            padding: 15px 25px;
+            border-radius: 12px;
+            min-width: 120px;
+        }
+
+        .stat-box .stat-num {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .stat-box .stat-label {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        .stat-correct .stat-num { color: #48bb78; }
+        .stat-wrong .stat-num { color: #f56565; }
+        .stat-pct .stat-num { color: #4a90d9; }
+
+        .restart-btn {
+            padding: 16px 45px;
+            font-size: 1.1rem;
+            background: linear-gradient(145deg, #4a90d9, #357abd);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .quiz-container { padding: 15px; }
+            .question-card { padding: 18px; }
+            .option-btn { padding: 14px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="start-screen" id="startScreen">
+    <div class="logo">🏢</div>
+    <h1>The Office US</h1>
+    <p class="subtitle">Expert Kennisquiz - 100 Vragen</p>
+    <button class="start-btn" id="startBtn">Start de Quiz</button>
+    <div class="difficulty-info">
+        100 expert-level vragen over alle 9 seizoenen van The Office. Alleen echte Dunder Mifflin kenners halen een hoge score!
+    </div>
+</div>
+
+<div class="quiz-container" id="quizContainer">
+    <div class="header">
+        <span class="question-count" id="questionCount">Vraag 1 / 100</span>
+        <span class="score-display" id="scoreDisplay">Score: 0</span>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="question-card">
+        <div class="category-tag" id="categoryTag">Categorie</div>
+        <div class="question-text" id="questionText">Vraag tekst</div>
+        <div class="options" id="optionsContainer"></div>
+        <div class="explanation" id="explanation"></div>
+    </div>
+    <button class="next-btn" id="nextBtn">Volgende vraag</button>
+</div>
+
+<div class="result-screen" id="resultScreen">
+    <h2>Quiz Voltooid!</h2>
+    <div class="result-label">Je score</div>
+    <div class="result-score" id="resultScore">0/100</div>
+    <div class="result-stats">
+        <div class="stat-box stat-correct">
+            <div class="stat-num" id="statCorrect">0</div>
+            <div class="stat-label">Goed</div>
+        </div>
+        <div class="stat-box stat-wrong">
+            <div class="stat-num" id="statWrong">0</div>
+            <div class="stat-label">Fout</div>
+        </div>
+        <div class="stat-box stat-pct">
+            <div class="stat-num" id="statPct">0%</div>
+            <div class="stat-label">Percentage</div>
+        </div>
+    </div>
+    <div class="result-message" id="resultMessage"></div>
+    <button class="restart-btn" id="restartBtn">Opnieuw Spelen</button>
+</div>
+
+<script>
+const questions = [
+    // === PERSONAGES & RELATIES ===
+    {
+        category: "Personages",
+        question: "Wat is de volledige naam van Michael Scott's alter ego die hij gebruikt als hij improv doet?",
+        options: ["Michael Scarn", "Prison Mike", "Date Mike", "Agent Michael Scarn"],
+        correct: 0,
+        explanation: "Michael Scarn is het hoofdpersonage in Michael's zelfgemaakte film 'Threat Level Midnight'."
+    },
+    {
+        category: "Personages",
+        question: "Wat is Dwight's middelste naam?",
+        options: ["Kurt", "Falk", "Heinrich", "Danger"],
+        correct: 0,
+        explanation: "Dwight Kurt Schrute III is zijn volledige naam."
+    },
+    {
+        category: "Relaties",
+        question: "Hoeveel keer is Michael Scott verloofd geweest gedurende de serie?",
+        options: ["1 keer", "2 keer", "3 keer", "4 keer"],
+        correct: 1,
+        explanation: "Michael was verloofd met Carol Stills (kort) en later met Holly Flax."
+    },
+    {
+        category: "Personages",
+        question: "Welke universiteit heeft Andy Bernard bezocht?",
+        options: ["Yale", "Cornell", "Dartmouth", "Harvard"],
+        correct: 1,
+        explanation: "Andy is een trotse Cornell-alumnus en laat dit regelmatig weten aan iedereen."
+    },
+    {
+        category: "Personages",
+        question: "Wat is de naam van Dwight's bietenboerderij?",
+        options: ["Schrute Farms", "Schrute Beet Farm", "Schrute Acres", "Dwight's Beet Garden"],
+        correct: 0,
+        explanation: "Schrute Farms is de boerderij die al generaties in de Schrute-familie is."
+    },
+    {
+        category: "Relaties",
+        question: "Met wie had Dwight een affaire voordat hij met Angela samen was?",
+        options: ["Meredith", "Isabel Poreba", "Esther Bruegger", "Niemand, Angela was zijn eerste"],
+        correct: 3,
+        explanation: "Angela was Dwight's eerste echte relatie in de serie. Isabel en Esther kwamen later."
+    },
+    {
+        category: "Personages",
+        question: "Hoe heet Kevin Malone's tributeband?",
+        options: ["Scrantonicity", "Kevin and the Zits", "The Accountants", "Dunder Mifflin Band"],
+        correct: 0,
+        explanation: "Scrantonicity is Kevin's Police-tributeband, later hernoemd naar Scrantonicity II."
+    },
+    {
+        category: "Personages",
+        question: "Wat is Stanley Hudson's favoriete activiteit op kantoor?",
+        options: ["Kruiswoordpuzzels", "Sudoku", "Slapen", "Online winkelen"],
+        correct: 0,
+        explanation: "Stanley staat bekend om het maken van kruiswoordpuzzels tijdens vergaderingen."
+    },
+    {
+        category: "Relaties",
+        question: "Wie was Pam's eerste verloofde voordat ze met Jim trouwde?",
+        options: ["Danny Cordray", "Roy Anderson", "Brian de cameraman", "Alex"],
+        correct: 1,
+        explanation: "Roy Anderson was Pam's verloofde die al in het eerste seizoen werd ge\u00EFntroduceerd."
+    },
+    {
+        category: "Personages",
+        question: "Wat is Creed Bratton's echte functie bij Dunder Mifflin?",
+        options: ["Accountant", "Quality Assurance", "Sales", "Human Resources"],
+        correct: 1,
+        explanation: "Creed is de Quality Assurance manager, hoewel hij zelden daadwerkelijk werk doet."
+    },
+    // === PLOT & VERHAALLIJNEN ===
+    {
+        category: "Plot",
+        question: "In welk seizoen trouwen Jim en Pam?",
+        options: ["Seizoen 4", "Seizoen 5", "Seizoen 6", "Seizoen 7"],
+        correct: 2,
+        explanation: "Jim en Pam trouwen in seizoen 6, in Niagara Falls."
+    },
+    {
+        category: "Plot",
+        question: "Welk bedrijf neemt Dunder Mifflin over?",
+        options: ["Staples", "Sabre", "Michael Scott Paper Company", "Athlead"],
+        correct: 1,
+        explanation: "Sabre, het printerbedrijf van Jo Bennett, neemt Dunder Mifflin over in seizoen 6."
+    },
+    {
+        category: "Plot",
+        question: "Wat is de naam van de film die Michael Scott maakt?",
+        options: ["Die Hard 2: The Office", "Threat Level Midnight", "Prison Break: Scranton", "The Scarn Identity"],
+        correct: 1,
+        explanation: "Threat Level Midnight is Michael's spionagefilm waar hij jaren aan heeft gewerkt."
+    },
+    {
+        category: "Plot",
+        question: "Naar welke stad verhuist Michael Scott als hij Dunder Mifflin verlaat?",
+        options: ["New York", "Boulder, Colorado", "Denver, Colorado", "Philadelphia"],
+        correct: 1,
+        explanation: "Michael verhuist naar Boulder, Colorado om bij Holly Flax te zijn."
+    },
+    {
+        category: "Plot",
+        question: "Wie wint de eerste Dundie Award voor 'Hottest in the Office'?",
+        options: ["Pam Beesly", "Ryan Howard", "Kelly Kapoor", "Angela Martin"],
+        correct: 1,
+        explanation: "Ryan Howard wint de 'Hottest in the Office' Dundie Award, tot Michael's vreugde."
+    },
+    {
+        category: "Plot",
+        question: "Wat is de naam van het bedrijf dat Ryan Howard start?",
+        options: ["WUPHF.com", "Dunder Mifflin Infinity", "Ryan's Tech Solutions", "Sabre"],
+        correct: 0,
+        explanation: "WUPHF.com is Ryan's startup die berichten stuurt via alle platforms tegelijk."
+    },
+    {
+        category: "Plot",
+        question: "Wie wordt uiteindelijk de nieuwe manager na Michael Scott's vertrek (permanent)?",
+        options: ["Dwight Schrute", "Andy Bernard", "Robert California", "Nellie Bertram"],
+        correct: 1,
+        explanation: "Andy Bernard wordt de vaste manager na een reeks tijdelijke managers waaronder Deangelo Vickers en Robert California als CEO."
+    },
+    {
+        category: "Plot",
+        question: "Hoe heet het baby'tje van Jim en Pam (eerstgeborene)?",
+        options: ["Cece", "Peepee", "Philip", "Astrid"],
+        correct: 0,
+        explanation: "Cecelia Marie 'Cece' Halpert is hun eerste kind, geboren in seizoen 6."
+    },
+    {
+        category: "Plot",
+        question: "In welke aflevering kust Jim Pam voor het eerst?",
+        options: ["Christmas Party", "Casino Night", "The Dundies", "Beach Games"],
+        correct: 1,
+        explanation: "Jim kust Pam voor het eerst in 'Casino Night', de finale van seizoen 2."
+    },
+    {
+        category: "Plot",
+        question: "Wie is de Scranton Strangler?",
+        options: ["Toby Flenderson (fan theory)", "George Howard Skub", "Creed Bratton", "Gabe Lewis"],
+        correct: 1,
+        explanation: "George Howard Skub werd veroordeeld als de Scranton Strangler, al zijn er fan theories over Toby."
+    },
+    // === DETAILS & TRIVIA ===
+    {
+        category: "Trivia",
+        question: "Welk nummer heeft Michael Scott's parkeerplaats?",
+        options: ["1", "Geen nummer", "Niet gespecificeerd, maar het dichtst bij de deur", "Hij heeft geen vaste parkeerplaats"],
+        correct: 2,
+        explanation: "Michael parkeert altijd op de plek het dichtst bij de deur, met zijn eigen bordje."
+    },
+    {
+        category: "Trivia",
+        question: "Wat staat er op de mok van Michael Scott?",
+        options: ["World's Best Boss", "I Love Scranton", "Dunder Mifflin", "#1 Boss"],
+        correct: 0,
+        explanation: "Michael's iconische 'World's Best Boss' mok die hij zelf heeft gekocht."
+    },
+    {
+        category: "Trivia",
+        question: "In welke stad is Dunder Mifflin's hoofdkantoor gevestigd?",
+        options: ["Scranton", "New York City", "Stamford", "Nashua"],
+        correct: 1,
+        explanation: "Het hoofdkantoor (corporate) is in New York City. Het Scranton-filiaal is waar de serie zich afspeelt."
+    },
+    {
+        category: "Trivia",
+        question: "Welke acteur speelt de rol van Michael Scott?",
+        options: ["Steve Carell", "Ricky Gervais", "Will Ferrell", "Jim Carrey"],
+        correct: 0,
+        explanation: "Steve Carell speelt Michael Scott gedurende seizoen 1 tot en met 7."
+    },
+    {
+        category: "Trivia",
+        question: "Hoeveel seizoenen heeft The Office US in totaal?",
+        options: ["7", "8", "9", "10"],
+        correct: 2,
+        explanation: "The Office US liep van 2005 tot 2013 en had 9 seizoenen."
+    },
+    {
+        category: "Trivia",
+        question: "Welk spel speelt Jim tegen Dwight door zijn spullen in gelei te stoppen?",
+        options: ["Een van Jim's eerste pranks", "Een prank uit seizoen 3", "De allereerste prank uit de pilot", "Dit gebeurt in de eerste aflevering van de serie"],
+        correct: 0,
+        explanation: "Het inpakken van Dwight's nietmachine in Jell-O is een van de eerste en meest iconische pranks."
+    },
+    {
+        category: "Trivia",
+        question: "Wat is het adres van het Dunder Mifflin Scranton-filiaal?",
+        options: ["1725 Slough Avenue", "1725 Scranton Avenue", "Slough Avenue 1725, Suite 200", "1725 Slough Avenue, Suite 200"],
+        correct: 3,
+        explanation: "Het exacte adres is 1725 Slough Avenue, Suite 200, Scranton, PA (een knipoog naar de Britse versie in Slough)."
+    },
+    {
+        category: "Trivia",
+        question: "Op welke verdieping bevindt zich het Dunder Mifflin kantoor?",
+        options: ["Begane grond", "Eerste verdieping", "Tweede verdieping", "Derde verdieping"],
+        correct: 2,
+        explanation: "Het kantoor bevindt zich op de tweede verdieping van het Scranton Business Park."
+    },
+    {
+        category: "Trivia",
+        question: "Wat is Dunder Mifflin's slogan?",
+        options: ["Paper for the People", "Get Your Paper Here", "Limitless Paper in a Paperless World", "The Paper People"],
+        correct: 2,
+        explanation: "'Limitless Paper in a Paperless World' is de onoffici\u00EBle maar meest gebruikte slogan."
+    },
+    {
+        category: "Trivia",
+        question: "Wie is de oprichter van Dunder Mifflin?",
+        options: ["Robert Dunder", "Robert Dunder en Robert Mifflin", "Michael Dunder en James Mifflin", "Robert Dunder en Robert California"],
+        correct: 1,
+        explanation: "Robert Dunder en Robert Mifflin hebben het bedrijf samen opgericht."
+    },
+    // === SEIZOEN-SPECIFIEK ===
+    {
+        category: "Seizoenen",
+        question: "Wie speelt Deangelo Vickers?",
+        options: ["Will Ferrell", "Jim Carrey", "Ray Romano", "James Spader"],
+        correct: 0,
+        explanation: "Will Ferrell speelt Deangelo Vickers, de kortstondige manager na Michael's vertrek."
+    },
+    {
+        category: "Seizoenen",
+        question: "Wie speelt Robert California?",
+        options: ["Will Ferrell", "James Spader", "Idris Elba", "Kathy Bates"],
+        correct: 1,
+        explanation: "James Spader speelt de mysterieuze Robert California die zichzelf promoveert tot CEO."
+    },
+    {
+        category: "Seizoenen",
+        question: "In welk seizoen wordt het Stamford-filiaal samengevoegd met Scranton?",
+        options: ["Seizoen 2", "Seizoen 3", "Seizoen 4", "Seizoen 5"],
+        correct: 1,
+        explanation: "In seizoen 3 wordt het Stamford-filiaal gesloten en komen de werknemers naar Scranton."
+    },
+    {
+        category: "Seizoenen",
+        question: "Wie is de manager van het Stamford-filiaal?",
+        options: ["Josh Porter", "Karen Filippelli", "Andy Bernard", "Jim Halpert"],
+        correct: 0,
+        explanation: "Josh Porter is de manager van Stamford, voordat hij vertrekt naar Staples."
+    },
+    {
+        category: "Seizoenen",
+        question: "In welk seizoen start Michael de Michael Scott Paper Company?",
+        options: ["Seizoen 4", "Seizoen 5", "Seizoen 6", "Seizoen 3"],
+        correct: 1,
+        explanation: "In seizoen 5 begint Michael zijn eigen papierbedrijf met Pam en Ryan."
+    },
+    {
+        category: "Seizoenen",
+        question: "Wie is de CFO die uiteindelijk wordt ontslagen wegens een schandaal?",
+        options: ["David Wallace", "Charles Miner", "Alan Brand", "Christian"],
+        correct: 2,
+        explanation: "Alan Brand is de CEO/CFO die betrokken is bij het boekhoudschandaal."
+    },
+    {
+        category: "Seizoenen",
+        question: "Welke actrice speelt Jan Levinson?",
+        options: ["Melora Hardin", "Rashida Jones", "Amy Adams", "Catherine Tate"],
+        correct: 0,
+        explanation: "Melora Hardin speelt Jan Levinson(-Gould), Michael's turbulente ex."
+    },
+    {
+        category: "Seizoenen",
+        question: "Hoe heet Jan's baby?",
+        options: ["Melissa", "Astrid", "Jan Jr.", "Cece"],
+        correct: 1,
+        explanation: "Jan noemt haar dochter Astrid, tot Michael's verbazing."
+    },
+    {
+        category: "Seizoenen",
+        question: "Wie speelt Charles Miner?",
+        options: ["Idris Elba", "Craig Robinson", "David Denman", "James Spader"],
+        correct: 0,
+        explanation: "Idris Elba speelt Charles Miner, de strenge VP die Michael's vertrek uitlokt."
+    },
+    {
+        category: "Seizoenen",
+        question: "In de finale, wie wordt de manager van het Scranton-filiaal?",
+        options: ["Andy Bernard", "Dwight Schrute", "Jim Halpert", "Darryl Philbin"],
+        correct: 1,
+        explanation: "Dwight Schrute wordt eindelijk de manager in de seriesfinale."
+    },
+    // === QUOTES & SC\u00C8NES ===
+    {
+        category: "Quotes",
+        question: "Wie zegt: 'That's what she said'?",
+        options: ["Dwight Schrute", "Michael Scott", "Kevin Malone", "Todd Packer"],
+        correct: 1,
+        explanation: "Michael Scott's meest iconische catchphrase door de hele serie heen."
+    },
+    {
+        category: "Quotes",
+        question: "Maak de quote af: 'Bears. Beets. ___.'",
+        options: ["Battlestar Galactica", "Battlegrounds", "Batman", "Business"],
+        correct: 0,
+        explanation: "Jim's imitatie van Dwight: 'Bears. Beets. Battlestar Galactica.'"
+    },
+    {
+        category: "Quotes",
+        question: "Wie zegt: 'I am Beyonc\u00E9, always'?",
+        options: ["Kelly Kapoor", "Michael Scott", "Ryan Howard", "Jan Levinson"],
+        correct: 1,
+        explanation: "Michael Scott claimt in een aflevering dat hij altijd Beyonc\u00E9 is."
+    },
+    {
+        category: "Quotes",
+        question: "Wie zegt: 'I'm not superstitious, but I am a little stitious'?",
+        options: ["Kevin Malone", "Michael Scott", "Andy Bernard", "Dwight Schrute"],
+        correct: 1,
+        explanation: "Een van Michael's vele iconische verdraaiingen van de Engelse taal."
+    },
+    {
+        category: "Quotes",
+        question: "Welk personage zegt: 'Why are you the way that you are?'?",
+        options: ["Michael Scott tegen Toby", "Dwight tegen Jim", "Angela tegen Kevin", "Stanley tegen Michael"],
+        correct: 0,
+        explanation: "Michael's beroemde uitspraak tegen Toby, die hij openlijk verafschuwt."
+    },
+    {
+        category: "Quotes",
+        question: "Maak de Dwight-quote af: 'Identity theft is not a joke, ___!'",
+        options: ["Michael", "Jim", "Pam", "Andy"],
+        correct: 1,
+        explanation: "'Identity theft is not a joke, Jim! Millions of families suffer every year!'"
+    },
+    {
+        category: "Sc\u00E8nes",
+        question: "Wat doet Michael op de 'fun run' aflevering?",
+        options: ["Hij rijdt Meredith aan met zijn auto", "Hij wint de race", "Hij valt in een vijver", "Hij breekt zijn been"],
+        correct: 0,
+        explanation: "Michael rijdt Meredith aan op de parkeerplaats, waarna hij een fun run organiseert voor haar genezing."
+    },
+    {
+        category: "Sc\u00E8nes",
+        question: "Wat gooit Dwight van het dak tijdens de brandoefening?",
+        options: ["Een watermelon", "Een pop", "De kat van Angela", "Papier"],
+        correct: 2,
+        explanation: "Dwight gooit Angela's kat Bandit van het dak (de kat wordt veilig opgevangen)."
+    },
+    {
+        category: "Sc\u00E8nes",
+        question: "Waar trapt Michael in waardoor hij zijn voet brandt?",
+        options: ["Een barbecue", "Een George Foreman grill", "Een kampvuur", "Een strijkijzer"],
+        correct: 1,
+        explanation: "Michael brandt zijn voet op zijn George Foreman grill die naast zijn bed staat."
+    },
+    {
+        category: "Sc\u00E8nes",
+        question: "Wat zit er in de blik dat Kevin laat vallen in het kantoor?",
+        options: ["Soep", "Chili", "Bonen", "Spaghetti"],
+        correct: 1,
+        explanation: "Kevin morst zijn beroemde chili over de vloer in een van de meest iconische sc\u00E8nes."
+    },
+    // === DUNDER MIFFLIN KANTOOR ===
+    {
+        category: "Kantoor",
+        question: "Hoe heet de beveiligingsmedewerker van het kantoorgebouw?",
+        options: ["Hank", "Billy", "Frank", "Nate"],
+        correct: 0,
+        explanation: "Hank Tate is de beveiligingsmedewerker van het Scranton Business Park."
+    },
+    {
+        category: "Kantoor",
+        question: "Wat is de naam van het magazijn-hoofd?",
+        options: ["Darryl Philbin", "Roy Anderson", "Lonnie", "Madge"],
+        correct: 0,
+        explanation: "Darryl Philbin is het hoofd van het magazijn voordat hij naar kantoor promoveert."
+    },
+    {
+        category: "Kantoor",
+        question: "Hoe heet de bar waar de kantoormedewerkers vaak naartoe gaan?",
+        options: ["Chili's", "Poor Richard's", "Alfredo's Pizza", "The Bog"],
+        correct: 1,
+        explanation: "Poor Richard's is de stamkroeg waar het kantoorpersoneel regelmatig komt."
+    },
+    {
+        category: "Kantoor",
+        question: "Welke twee pizzazaken worden vergeleken in de pizza-aflevering?",
+        options: ["Alfredo's Pizza Caf\u00E9 en Pizza by Alfredo", "Domino's en Pizza Hut", "Sbarro en Luigi's", "Papa John's en Pizza by Alfredo"],
+        correct: 0,
+        explanation: "Michael bestelt per ongeluk bij Pizza by Alfredo in plaats van Alfredo's Pizza Caf\u00E9."
+    },
+    {
+        category: "Kantoor",
+        question: "Wat is de naam van het bedrijf dat de ruimte onder Dunder Mifflin huurt?",
+        options: ["Vance Refrigeration", "Michael Scott Paper Company", "Sabre", "Prince Paper"],
+        correct: 0,
+        explanation: "Bob Vance van Vance Refrigeration heeft zijn bedrijf in hetzelfde gebouw."
+    },
+    {
+        category: "Kantoor",
+        question: "Wie is de vaste pizzabezorger?",
+        options: ["Pizza delivery kid", "Nate", "Luke Cooper", "De tiener die Michael gijzelt"],
+        correct: 3,
+        explanation: "Michael 'gijzelt' de tiener-pizzabezorger wanneer hij slechte pizza krijgt."
+    },
+    {
+        category: "Kantoor",
+        question: "Wat hangt er aan de muur achter Michael's bureau?",
+        options: ["Een foto van zijn hond", "Een 'Wayne Gretzky' quote poster", "De Dundie Awards", "Een schilderij van hemzelf"],
+        correct: 1,
+        explanation: "'You miss 100% of the shots you don't take - Wayne Gretzky - Michael Scott'"
+    },
+    {
+        category: "Kantoor",
+        question: "Hoeveel computers heeft Dwight op zijn bureau?",
+        options: ["1", "2", "3", "Verschilt per seizoen"],
+        correct: 1,
+        explanation: "Dwight heeft meestal twee monitors/computers op zijn bureau staan."
+    },
+    {
+        category: "Kantoor",
+        question: "Welk bedrijf is de grootste concurrent van Dunder Mifflin?",
+        options: ["Staples", "Office Depot", "Prince Paper", "Hammer Mill"],
+        correct: 0,
+        explanation: "Staples wordt regelmatig genoemd als de grootste concurrent."
+    },
+    {
+        category: "Kantoor",
+        question: "Wat verkoopt Bob Vance's bedrijf?",
+        options: ["Papier", "Koelkasten", "Kantoormeubels", "Printers"],
+        correct: 1,
+        explanation: "Bob Vance, Vance Refrigeration - hij stelt zichzelf altijd zo voor."
+    },
+    // === NEVENPERSONAGES ===
+    {
+        category: "Nevenpersonages",
+        question: "Hoe heet Michael's voormalige baas en vriend van corporate?",
+        options: ["Jan Levinson", "David Wallace", "Ryan Howard", "Charles Miner"],
+        correct: 1,
+        explanation: "David Wallace is de CFO die een goede relatie heeft met Michael ondanks alle chaos."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie speelt Karen Filippelli?",
+        options: ["Rashida Jones", "Amy Adams", "Ellie Kemper", "Mindy Kaling"],
+        correct: 0,
+        explanation: "Rashida Jones speelt Karen Filippelli, Jim's vriendin in seizoen 3."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie speelt Katy, de handtasverkoopster?",
+        options: ["Amy Adams", "Rashida Jones", "Katie Holmes", "Anna Camp"],
+        correct: 0,
+        explanation: "Amy Adams speelt Katy, Jim's kortstondige vriendin van seizoen 1-2."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie is Todd Packer?",
+        options: ["Michael's vriend en reizende verkoper", "De postbode", "Een klant", "De schoonmaker"],
+        correct: 0,
+        explanation: "Todd Packer is Michael's vulgaire vriend en travelling salesman van Dunder Mifflin."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Hoe heet de CEO van Sabre?",
+        options: ["Robert California", "Jo Bennett", "Gabe Lewis", "David Wallace"],
+        correct: 1,
+        explanation: "Jo Bennett, gespeeld door Kathy Bates, is de oprichtster en CEO van Sabre."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie is Mose?",
+        options: ["Dwight's broer", "Dwight's neef", "Dwight's oom", "Dwight's buurman"],
+        correct: 1,
+        explanation: "Mose Schrute is Dwight's neef die op Schrute Farms woont, gespeeld door Michael Schur."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Welke acteur speelt Mose Schrute?",
+        options: ["B.J. Novak", "Paul Lieberstein", "Michael Schur", "Greg Daniels"],
+        correct: 2,
+        explanation: "Michael Schur (co-creator van Parks and Recreation) speelt Mose."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie is Phyllis' echtgenoot?",
+        options: ["Bob Vance", "Stanley", "Darryl", "Hank"],
+        correct: 0,
+        explanation: "Phyllis is getrouwd met Bob Vance van Vance Refrigeration."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Hoe heet Holly Flax' actrice?",
+        options: ["Amy Ryan", "Melora Hardin", "Rashida Jones", "Catherine Tate"],
+        correct: 0,
+        explanation: "Amy Ryan speelt Holly Flax, Michael's grote liefde."
+    },
+    {
+        category: "Nevenpersonages",
+        question: "Wie speelt Erin Hannon?",
+        options: ["Ellie Kemper", "Amy Adams", "Dakota Johnson", "Lindsey Broad"],
+        correct: 0,
+        explanation: "Ellie Kemper (later bekend van Unbreakable Kimmy Schmidt) speelt de vrolijke receptionist Erin."
+    },
+    // === RUNNING GAGS & THEMA'S ===
+    {
+        category: "Running Gags",
+        question: "Hoeveel katten heeft Angela in de serie?",
+        options: ["3", "7", "Meer dan 10", "5"],
+        correct: 2,
+        explanation: "Angela heeft door de serie heen meer dan 10 katten, waaronder Sprinkles, Bandit en Garbage."
+    },
+    {
+        category: "Running Gags",
+        question: "Hoe heet Angela's favoriete kat die sterft?",
+        options: ["Mr. Whiskers", "Sprinkles", "Bandit", "Garbage"],
+        correct: 1,
+        explanation: "Sprinkles sterft nadat Dwight haar 'uit haar lijden verlost' door haar in de vriezer te stoppen."
+    },
+    {
+        category: "Running Gags",
+        question: "Welke sport doet Michael om 'cool' te lijken?",
+        options: ["Basketball", "Hockey", "Improv comedy", "Alle bovenstaande"],
+        correct: 2,
+        explanation: "Michael doet improv comedy en is lid van een improv-groep, hoewel hij ook basketball probeert."
+    },
+    {
+        category: "Running Gags",
+        question: "Wat is Jim's 'kijk naar de camera'-blik bekend als?",
+        options: ["The Jim Face", "The Halpert", "Jim's Look", "The Stare"],
+        correct: 0,
+        explanation: "De 'Jim Face' is zijn iconische blik naar de camera wanneer er iets absurds gebeurt."
+    },
+    {
+        category: "Running Gags",
+        question: "Welke prank speelt Jim waarbij Dwight denkt dat het vrijdag is op een donderdag?",
+        options: ["De Pavlov-prank", "De tijdreis-prank", "De Future Dwight-prank", "Dit gebeurt niet"],
+        correct: 2,
+        explanation: "Jim stuurt een fax naar Dwight van 'Future Dwight' als onderdeel van zijn pranks."
+    },
+    {
+        category: "Running Gags",
+        question: "Wat is de naam van het spel dat het kantoor speelt in 'The Injury'?",
+        options: ["Er wordt geen spel gespeeld", "Murder mystery", "Desert Island", "Who would you do?"],
+        correct: 0,
+        explanation: "In 'The Injury' speelt Michael geen spel - hij brandt zijn voet op de George Foreman grill."
+    },
+    {
+        category: "Running Gags",
+        question: "Hoe noemt Dwight zichzelf als hij tijdelijk manager is?",
+        options: ["Acting Manager", "Assistant Regional Manager", "Supreme Leader", "Recyclops"],
+        correct: 0,
+        explanation: "Dwight maakt een onderscheid tussen 'Assistant TO the Regional Manager' en zijn titel als Acting Manager."
+    },
+    {
+        category: "Running Gags",
+        question: "Welke titel claimt Dwight altijd te hebben?",
+        options: ["Assistant Regional Manager", "Assistant to the Regional Manager", "Co-Manager", "Vice President"],
+        correct: 0,
+        explanation: "Dwight zegt steeds 'Assistant Regional Manager' terwijl zijn echte titel 'Assistant TO the Regional Manager' is."
+    },
+    {
+        category: "Running Gags",
+        question: "Welk personage wordt altijd vergeten bij kantooractiviteiten?",
+        options: ["Meredith", "Creed", "Toby", "Devon"],
+        correct: 2,
+        explanation: "Toby wordt consequent buitengesloten door Michael en vaak vergeten bij activiteiten."
+    },
+    {
+        category: "Running Gags",
+        question: "Wat is Michael's favoriete restaurant?",
+        options: ["Hooters", "Chili's", "Benihana", "Sbarro"],
+        correct: 1,
+        explanation: "Michael beschouwt Chili's als 'the new golf course' voor zakelijke bijeenkomsten."
+    },
+    // === EXPERT DETAIL VRAGEN ===
+    {
+        category: "Expert",
+        question: "Wat is het telefoonnummer van Dunder Mifflin Scranton (zoals vermeld in de serie)?",
+        options: ["555-0100", "555-PAPER", "1-800-984-3672", "570-555-0189"],
+        correct: 2,
+        explanation: "1-800-984-3672 (1-800-984-DMPC) is het nummer dat in de commercials wordt gebruikt."
+    },
+    {
+        category: "Expert",
+        question: "Welke dag van de week is 'Pretzel Day'?",
+        options: ["Maandag", "Woensdag", "Donderdag", "Het wordt niet specifiek benoemd"],
+        correct: 3,
+        explanation: "De exacte dag wordt niet specifiek benoemd, maar Stanley's enthousiasme ervoor is legendarisch."
+    },
+    {
+        category: "Expert",
+        question: "Hoe heet David Wallace's uitvinding?",
+        options: ["The Paper Buddy", "Suck It", "The Shredder", "Paper Pal"],
+        correct: 1,
+        explanation: "'Suck It' is David Wallace's speelgoedstofzuiger-uitvinding die hij maakt na zijn ontslag."
+    },
+    {
+        category: "Expert",
+        question: "Welk liedje zingt Andy Bernard als serenade voor Angela?",
+        options: ["Take Me Home, Country Roads", "Rainbow Connection", "I Will Remember You", "ABBA's Take a Chance on Me"],
+        correct: 3,
+        explanation: "Andy zingt ABBA's 'Take a Chance on Me' als serenade voor Angela."
+    },
+    {
+        category: "Expert",
+        question: "Wat is de naam van Dwight's bed and breakfast op Schrute Farms?",
+        options: ["Schrute Farms B&B", "Agritourism", "Het Beet Lodge", "Er is geen officiële naam"],
+        correct: 3,
+        explanation: "Dwight biedt een 'agritourism' ervaring maar de B&B heeft geen offici\u00EBle naam."
+    },
+    {
+        category: "Expert",
+        question: "Wie wint de 'coal walk' in Beach Games?",
+        options: ["Dwight", "Jim", "Pam", "Andy"],
+        correct: 2,
+        explanation: "Pam loopt over de hete kolen en houdt daarna een emotionele speech."
+    },
+    {
+        category: "Expert",
+        question: "Wat is de naam van Kelly Kapoor's Bollywood-dans?",
+        options: ["Diwali Dance", "Kelly's Moves", "The Kapoor Special", "Er wordt geen naam gegeven"],
+        correct: 3,
+        explanation: "Kelly danst in de Diwali-aflevering maar haar dans krijgt geen specifieke naam."
+    },
+    {
+        category: "Expert",
+        question: "Welk personage faked een ziekte om naar het strand te gaan?",
+        options: ["Jim", "Ryan", "Stanley", "Kevin"],
+        correct: 0,
+        explanation: "Jim gebruikt een ziekmeldingsstrategie om vrij te krijgen in een vroeg seizoen."
+    },
+    {
+        category: "Expert",
+        question: "Hoe heet het liedje van de intro/theme song?",
+        options: ["The Office Theme", "Handbags and Gladrags", "Nine to Five", "Scranton Anthem"],
+        correct: 0,
+        explanation: "Het themanummer heet simpelweg 'The Office Theme', gecomponeerd door Jay Ferguson."
+    },
+    {
+        category: "Expert",
+        question: "In welk seizoen verschijnt Nellie Bertram voor het eerst?",
+        options: ["Seizoen 6", "Seizoen 7", "Seizoen 8", "Seizoen 9"],
+        correct: 1,
+        explanation: "Nellie Bertram (Catherine Tate) verschijnt eerst in seizoen 7 als sollicitant voor de managerspositie."
+    },
+    // === MEER EXPERT VRAGEN ===
+    {
+        category: "Expert",
+        question: "Wat is het wachtwoord dat Michael gebruikt voor zijn computer?",
+        options: ["password", "1234", "LittleKidLover", "ThatWhatSheSaid"],
+        correct: 2,
+        explanation: "Michael's wachtwoord is 'LittleKidLover' zodat mensen weten wat zijn prioriteiten zijn."
+    },
+    {
+        category: "Expert",
+        question: "Welke auto rijdt Michael Scott?",
+        options: ["Toyota Corolla", "Chrysler Sebring Convertible", "Ford Taurus", "Pontiac Firebird"],
+        correct: 1,
+        explanation: "Michael rijdt een Chrysler Sebring convertible, zijn droomauto."
+    },
+    {
+        category: "Expert",
+        question: "In 'Dinner Party', wat doet Jan obsessief?",
+        options: ["Koken", "Kaarsen maken", "Schilderen", "Yoga"],
+        correct: 1,
+        explanation: "Jan heeft een kaarsenbedrijf genaamd 'Serenity by Jan'."
+    },
+    {
+        category: "Expert",
+        question: "Wat is de naam van Jan's kaarsenbedrijf?",
+        options: ["Jan's Candles", "Serenity by Jan", "Levinson Lights", "Wax Poetic"],
+        correct: 1,
+        explanation: "Serenity by Jan is haar kaarsenbedrijf dat ze vanuit haar garage runt."
+    },
+    {
+        category: "Expert",
+        question: "Welk liedje speelt Jan steeds af in 'Dinner Party'?",
+        options: ["Goodbye Stranger", "That One Night by Hunter", "Tiny Dancer", "Roxanne"],
+        correct: 1,
+        explanation: "Jan speelt obsessief 'That One Night' van haar assistent Hunter's demo-CD."
+    },
+    {
+        category: "Expert",
+        question: "Wat is de naam van Michael's improv-personage naast Michael Scarn?",
+        options: ["Prison Mike", "Ping", "Caleb Crawdad", "Alle bovenstaande"],
+        correct: 3,
+        explanation: "Michael heeft meerdere personages: Prison Mike, Ping (controversieel), en anderen."
+    },
+    {
+        category: "Expert",
+        question: "Welk bordspel wordt gespeeld in 'Murder'?",
+        options: ["Cluedo", "Belles, Bourbon and Bullets", "Murder She Wrote the Game", "Monopoly"],
+        correct: 1,
+        explanation: "'Belles, Bourbon and Bullets' is het moordmysterie-spel dat Michael laat spelen."
+    },
+    {
+        category: "Expert",
+        question: "Wie vernielt Michael's flatscreen-TV in 'Dinner Party'?",
+        options: ["Michael zelf", "Jan", "Jim", "Dwight"],
+        correct: 1,
+        explanation: "Jan gooit een Dundie Award naar Michael's geliefde plasma-TV."
+    },
+    {
+        category: "Expert",
+        question: "Hoeveel Dundie Awards heeft Michael in zijn kantoor?",
+        options: ["3", "5", "Meer dan 15", "7"],
+        correct: 2,
+        explanation: "Michael heeft door de jaren heen meer dan 15 Dundie Awards verzameld."
+    },
+    {
+        category: "Expert",
+        question: "Wat koopt Dwight als investering in het Scranton Business Park?",
+        options: ["Een verdieping", "Het hele gebouw", "De parkeerplaats", "Het magazijn"],
+        correct: 1,
+        explanation: "Dwight koopt het hele gebouw waar Dunder Mifflin in zit."
+    },
+    // === ACHTER DE SCHERMEN & PRODUCTIE ===
+    {
+        category: "Productie",
+        question: "Wie is de bedenker/showrunner van The Office US?",
+        options: ["Greg Daniels", "Michael Schur", "Ricky Gervais", "B.J. Novak"],
+        correct: 0,
+        explanation: "Greg Daniels adapteerde The Office voor de Amerikaanse markt."
+    },
+    {
+        category: "Productie",
+        question: "Welke schrijver van de serie speelt ook Ryan Howard?",
+        options: ["Paul Lieberstein", "B.J. Novak", "Mindy Kaling", "Michael Schur"],
+        correct: 1,
+        explanation: "B.J. Novak is zowel schrijver/producer als de acteur die Ryan Howard speelt."
+    },
+    {
+        category: "Productie",
+        question: "Welke schrijfster speelt Kelly Kapoor?",
+        options: ["Mindy Kaling", "Amy Ryan", "Ellie Kemper", "Jenna Fischer"],
+        correct: 0,
+        explanation: "Mindy Kaling schreef vele afleveringen en speelde Kelly Kapoor."
+    },
+    {
+        category: "Productie",
+        question: "Wie speelt Toby Flenderson en is ook showrunner?",
+        options: ["Greg Daniels", "Paul Lieberstein", "B.J. Novak", "Michael Schur"],
+        correct: 1,
+        explanation: "Paul Lieberstein speelt Toby en was ook showrunner in latere seizoenen."
+    },
+    {
+        category: "Productie",
+        question: "In welk jaar ging The Office US in premi\u00E8re?",
+        options: ["2003", "2004", "2005", "2006"],
+        correct: 2,
+        explanation: "The Office US ging in premi\u00E8re op 24 maart 2005 op NBC."
+    },
+    {
+        category: "Productie",
+        question: "Op welke zender werd The Office US uitgezonden?",
+        options: ["ABC", "CBS", "NBC", "FOX"],
+        correct: 2,
+        explanation: "The Office werd uitgezonden op NBC van 2005 tot 2013."
+    },
+    {
+        category: "Productie",
+        question: "Hoeveel afleveringen heeft The Office US in totaal?",
+        options: ["186", "192", "201", "188"],
+        correct: 2,
+        explanation: "The Office US heeft in totaal 201 afleveringen verdeeld over 9 seizoenen."
+    },
+    {
+        category: "Productie",
+        question: "Welke acteur was bijna gecast als Michael Scott?",
+        options: ["Bob Odenkirk", "Paul Giamatti", "Hank Azaria", "Alle bovenstaande"],
+        correct: 3,
+        explanation: "Meerdere acteurs, waaronder Bob Odenkirk, Paul Giamatti en Hank Azaria, werden overwogen."
+    },
+    {
+        category: "Productie",
+        question: "John Krasinski deed ook auditie voor welke rol naast Jim?",
+        options: ["Dwight", "Ryan", "Michael", "Hij deed alleen auditie voor Jim"],
+        correct: 3,
+        explanation: "John Krasinski deed alleen auditie voor de rol van Jim Halpert."
+    },
+    {
+        category: "Productie",
+        question: "Wie regisseerde de meeste afleveringen van The Office?",
+        options: ["Greg Daniels", "Paul Feig", "Randall Einhorn", "Ken Kwapis"],
+        correct: 2,
+        explanation: "Randall Einhorn regisseerde het grootste aantal afleveringen als vaste regisseur."
+    },
+    // === SPECIFIEKE AFLEVERINGEN ===
+    {
+        category: "Afleveringen",
+        question: "Welke aflevering wordt algemeen beschouwd als de beste van de serie?",
+        options: ["Stress Relief", "Casino Night", "Goodbye, Michael", "Dinner Party"],
+        correct: 3,
+        explanation: "'Dinner Party' wordt door veel fans en critici als een van de beste afleveringen beschouwd."
+    },
+    {
+        category: "Afleveringen",
+        question: "Wat gebeurt er tijdens de Super Bowl-aflevering 'Stress Relief'?",
+        options: ["Michael doet een roast", "Dwight start een nep-brand", "Stanley krijgt een hartaanval", "Alle bovenstaande"],
+        correct: 3,
+        explanation: "In deze dubbele aflevering gebeurt dit allemaal: nep-brand, hartaanval, en een roast."
+    },
+    {
+        category: "Afleveringen",
+        question: "Welke film kijkt het kantoor illegaal in 'Stress Relief'?",
+        options: ["Die Hard", "Mrs. Doubtfire", "Entourage", "Jack Black's film (niet echt)"],
+        correct: 3,
+        explanation: "Er wordt een nepfilm getoond met Jack Black in een B-plot over een bizarre liefdesrelatie."
+    },
+    {
+        category: "Afleveringen",
+        question: "In 'Scott's Tots', wat had Michael beloofd?",
+        options: ["Een pizza party", "College-beurzen voor een hele klas", "Een uitje naar Disney", "Laptops voor iedereen"],
+        correct: 1,
+        explanation: "Michael had jaren geleden beloofd de collegegelden te betalen van een hele klas kinderen."
+    },
+    {
+        category: "Afleveringen",
+        question: "Wat geeft Michael de kinderen in plaats van college-beurzen in 'Scott's Tots'?",
+        options: ["Niets", "Laptop-batterijen", "Papier", "Dundie Awards"],
+        correct: 1,
+        explanation: "Michael geeft de teleurgestelde studenten laptop-batterijen in plaats van beurzen."
+    },
+    // === LIEFDESRELATIES ===
+    {
+        category: "Relaties",
+        question: "Met wie trouwt Angela uiteindelijk in de seriesfinale?",
+        options: ["Andy Bernard", "The Senator", "Dwight Schrute", "Niemand"],
+        correct: 2,
+        explanation: "Angela en Dwight trouwen in de seriesfinale."
+    },
+    {
+        category: "Relaties",
+        question: "Met wie heeft Angela een affaire terwijl ze met Andy verloofd is?",
+        options: ["Jim", "Dwight", "Ryan", "Toby"],
+        correct: 1,
+        explanation: "Angela heeft een affaire met Dwight terwijl ze verloofd is met Andy."
+    },
+    {
+        category: "Relaties",
+        question: "Wie is 'The Senator' waarmee Angela trouwt?",
+        options: ["Robert Lipton", "State Senator Lipton", "Beide antwoorden zijn correct", "Senator Boxer"],
+        correct: 2,
+        explanation: "Robert Lipton is de State Senator (geen echte Senator) waarmee Angela trouwt."
+    },
+    {
+        category: "Relaties",
+        question: "Met wie heeft Ryan een on-off relatie door de serie?",
+        options: ["Pam", "Kelly Kapoor", "Erin", "Karen"],
+        correct: 1,
+        explanation: "Ryan en Kelly hebben een turbulente on-off relatie door de hele serie heen."
+    },
+    {
+        category: "Relaties",
+        question: "Wie is Erin's uiteindelijke partner aan het einde van de serie?",
+        options: ["Andy Bernard", "Pete Miller", "Gabe Lewis", "Clark Green"],
+        correct: 1,
+        explanation: "Erin eindigt met Pete Miller ('Plop') in de latere seizoenen."
+    },
+    // === MEER TRIVIA ===
+    {
+        category: "Trivia",
+        question: "Wat is Recyclops?",
+        options: ["Dwight's milieu-superheld alter ego", "Een kantoor-mascotte", "Een computerprogramma", "Kevin's bijnaam"],
+        correct: 0,
+        explanation: "Recyclops is Dwight's jaarlijkse Earth Day-personage dat steeds agressiever wordt."
+    },
+    {
+        category: "Trivia",
+        question: "Wat doet Creed Bratton in de seizoensfinale?",
+        options: ["Hij speelt gitaar en zingt", "Hij rent weg", "Hij wordt gearresteerd", "Hij huilt"],
+        correct: 2,
+        explanation: "Creed wordt gearresteerd door de politie in de seriesfinale."
+    },
+    {
+        category: "Trivia",
+        question: "Wat is Jim's bijnaam voor Dwight's 'perfecte misdaad'-verhaal?",
+        options: ["De perfecte misdaad", "Jim noemt het niets speciaals", "Dwight-crime", "Beet Heist"],
+        correct: 1,
+        explanation: "Jim reageert met zijn typische blik maar geeft het geen specifieke bijnaam."
+    },
+    {
+        category: "Trivia",
+        question: "Welk land 'bezoekt' Michael in zijn gedachten als hij een carpoolgroep organiseert?",
+        options: ["Jamaica", "Sandals Jamaica", "Geen specifiek land", "Ierland"],
+        correct: 0,
+        explanation: "Michael droomt van een vakantie naar Jamaica (Sandals resort) door de serie heen."
+    },
+    {
+        category: "Expert",
+        question: "Wat is het lot van de Michael Scott Paper Company?",
+        options: ["Het gaat failliet", "Het wordt verkocht aan Dunder Mifflin", "Het wordt overgenomen door Sabre", "Michael sluit het vrijwillig"],
+        correct: 1,
+        explanation: "Dunder Mifflin koopt de Michael Scott Paper Company op en neemt Michael, Pam en Ryan weer aan."
+    },
+    {
+        category: "Expert",
+        question: "Wie vervangt Pam als receptionist?",
+        options: ["Erin Hannon", "Ronnie", "Kelly", "Karen"],
+        correct: 0,
+        explanation: "Erin Hannon (echte naam Kelly Erin Hannon) vervangt Pam als receptionist."
+    },
+    {
+        category: "Expert",
+        question: "Wat is Erin's echte voornaam?",
+        options: ["Erin", "Kelly", "Mary", "Elizabeth"],
+        correct: 1,
+        explanation: "Erin's echte naam is Kelly Erin Hannon. Ze gebruikt Erin om verwarring met Kelly Kapoor te voorkomen."
+    },
+    {
+        category: "Expert",
+        question: "Welk personage heeft een schildpadden-tatoeage?",
+        options: ["Andy Bernard", "Meredith Palmer", "Kevin Malone", "Creed Bratton"],
+        correct: 0,
+        explanation: "Andy Bernard heeft de 'Nard Dog' tatoeage en andere tattoo-verhalen."
+    },
+    {
+        category: "Expert",
+        question: "Hoe noemt Andy Bernard zichzelf?",
+        options: ["The Bernard", "Nard Dog", "A-Train", "Big Andy"],
+        correct: 1,
+        explanation: "Andy noemt zichzelf 'The Nard Dog' of 'Nard Dog'."
+    },
+    {
+        category: "Expert",
+        question: "Wat is de naam van het sportteam waar Jim en Darryl bij betrokken raken?",
+        options: ["Athlead", "Athleap", "Beide - het wordt hernoemd", "Dunder Mifflin Sports"],
+        correct: 2,
+        explanation: "Het bedrijf begint als Athlead en wordt later hernoemd naar Athleap."
+    },
+    {
+        category: "Expert",
+        question: "Waar is het Athlead/Athleap kantoor gevestigd?",
+        options: ["New York", "Austin, Texas", "Philadelphia", "Los Angeles"],
+        correct: 2,
+        explanation: "Het Athlead/Athleap kantoor is gevestigd in Philadelphia."
+    },
+    {
+        category: "Expert",
+        question: "Wie wint de Dundie voor 'Bushiest Beaver'?",
+        options: ["Phyllis", "Pam", "Angela", "Meredith"],
+        correct: 1,
+        explanation: "Pam wint de 'Bushiest Beaver' Dundie en raakt dronken tijdens de ceremonie."
+    },
+    {
+        category: "Expert",
+        question: "In welke aflevering zegt Michael voor het laatst 'That's what she said'?",
+        options: ["Goodbye, Michael", "The Last Day", "Finale", "Search Committee"],
+        correct: 0,
+        explanation: "Michael's laatste 'That's what she said' is in 'Goodbye, Michael' (seizoen 7)."
+    },
+    {
+        category: "Expert",
+        question: "Wie van de schrijvers regisseerde de aflevering 'Threat Level Midnight'?",
+        options: ["B.J. Novak", "Mindy Kaling", "Tucker Cawley", "Paul Lieberstein"],
+        correct: 0,
+        explanation: "B.J. Novak regisseerde de aflevering waarin Michael's film eindelijk wordt vertoond."
+    }
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+let shuffledQuestions = [];
+
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+function startQuiz() {
+    document.getElementById('startScreen').style.display = 'none';
+    document.getElementById('quizContainer').style.display = 'block';
+    document.getElementById('resultScreen').style.display = 'none';
+    shuffledQuestions = shuffleArray(questions);
+    currentQuestion = 0;
+    score = 0;
+    showQuestion();
+}
+
+function showQuestion() {
+    answered = false;
+    const q = shuffledQuestions[currentQuestion];
+
+    document.getElementById('questionCount').textContent = `Vraag ${currentQuestion + 1} / ${shuffledQuestions.length}`;
+    document.getElementById('scoreDisplay').textContent = `Score: ${score}`;
+    document.getElementById('progressBar').style.width = `${((currentQuestion) / shuffledQuestions.length) * 100}%`;
+    document.getElementById('categoryTag').textContent = q.category;
+    document.getElementById('questionText').textContent = q.question;
+    document.getElementById('explanation').style.display = 'none';
+    document.getElementById('nextBtn').style.display = 'none';
+
+    const container = document.getElementById('optionsContainer');
+    container.innerHTML = '';
+
+    const labels = ['A', 'B', 'C', 'D'];
+    q.options.forEach((option, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.textContent = `${labels[index]}. ${option}`;
+        btn.addEventListener('click', () => selectAnswer(index, btn));
+        container.appendChild(btn);
+    });
+}
+
+function selectAnswer(index, btn) {
+    if (answered) return;
+    answered = true;
+
+    const q = shuffledQuestions[currentQuestion];
+    const buttons = document.querySelectorAll('.option-btn');
+
+    buttons.forEach((b, i) => {
+        b.classList.add('disabled');
+        if (i === q.correct) {
+            b.classList.add('correct');
+        }
+    });
+
+    if (index === q.correct) {
+        score++;
+        btn.classList.add('correct');
+    } else {
+        btn.classList.add('wrong');
+    }
+
+    document.getElementById('scoreDisplay').textContent = `Score: ${score}`;
+
+    const explanation = document.getElementById('explanation');
+    explanation.textContent = q.explanation;
+    explanation.style.display = 'block';
+
+    const nextBtn = document.getElementById('nextBtn');
+    nextBtn.style.display = 'block';
+    nextBtn.textContent = currentQuestion < shuffledQuestions.length - 1 ? 'Volgende vraag' : 'Bekijk resultaat';
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < shuffledQuestions.length) {
+        showQuestion();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        showResults();
+    }
+}
+
+function showResults() {
+    document.getElementById('quizContainer').style.display = 'none';
+    const resultScreen = document.getElementById('resultScreen');
+    resultScreen.style.display = 'flex';
+
+    const total = shuffledQuestions.length;
+    const pct = Math.round((score / total) * 100);
+    const wrong = total - score;
+
+    document.getElementById('resultScore').textContent = `${score} / ${total}`;
+    document.getElementById('statCorrect').textContent = score;
+    document.getElementById('statWrong').textContent = wrong;
+    document.getElementById('statPct').textContent = `${pct}%`;
+
+    let message = '';
+    if (pct >= 95) {
+        message = 'Ongelooflijk! Je bent een absolute Office-expert! Michael Scott zou trots op je zijn!';
+    } else if (pct >= 80) {
+        message = 'Uitstekend! Je kent The Office als je broekzak. Dwight zou je accepteren als Assistant to the Assistant Regional Manager!';
+    } else if (pct >= 65) {
+        message = 'Goed gedaan! Je bent duidelijk een fan, maar er zijn nog wat details die je kunt leren. Tijd voor een rewatch!';
+    } else if (pct >= 50) {
+        message = 'Niet slecht! Je kent de basis, maar een echte Dunder Mifflin-kenner heeft meer parate kennis nodig.';
+    } else if (pct >= 30) {
+        message = 'Je hebt The Office gekeken, maar misschien niet alle seizoenen? Tijd voor een marathon!';
+    } else {
+        message = 'Hmm, heb je The Office wel gezien? Geen zorgen - nu heb je een excuus om alle 9 seizoenen te bingen!';
+    }
+    document.getElementById('resultMessage').textContent = message;
+
+    document.getElementById('resultScore').style.color =
+        pct >= 80 ? '#48bb78' : pct >= 50 ? '#4a90d9' : '#f56565';
+}
+
+document.getElementById('startBtn').addEventListener('click', startQuiz);
+document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+document.getElementById('restartBtn').addEventListener('click', startQuiz);
+</script>
+
+</body>
+</html>
