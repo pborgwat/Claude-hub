@@ -387,9 +387,10 @@
     <button class="chip" onclick="pickWho('Pepijn')">✏️ Pepijn</button>
   </div>
 
-  <label>Gedeelde kas (Supabase)</label>
-  <input type="text" id="cfgUrl" placeholder="https://xxxx.supabase.co" autocapitalize="off" autocorrect="off" spellcheck="false">
-  <input type="text" id="cfgKey" placeholder="anon key (eyJ…)" autocapitalize="off" autocorrect="off" spellcheck="false" style="margin-top:8px">
+  <label>Adres van de gedeelde kas</label>
+  <input type="text" id="cfgUrl" placeholder="https://script.google.com/macros/s/…/exec" autocapitalize="off" autocorrect="off" spellcheck="false">
+  <input type="text" id="cfgKey" placeholder="sleutel, alleen nodig bij Supabase" autocapitalize="off" autocorrect="off" spellcheck="false" style="margin-top:8px">
+  <p class="hint" id="cfgHint" style="margin:8px 0 0">Plak de Apps Script-link van je Google Sheet. Het tweede veld laat je dan leeg.</p>
   <div class="sheet-actions">
     <button class="btn btn-ghost" onclick="clearCloud()">Los koppelen</button>
     <button class="btn btn-ink" onclick="saveCloud()">Verbinden</button>
@@ -518,7 +519,15 @@ function mergeIn(incoming) {
   items = [...byId.values()].sort((a, b) => (a.at < b.at ? -1 : 1));
 }
 
-async function cloudFetch(path, opts = {}) {
+/* De gedeelde kas kan in een Google Sheet staan (via Apps Script) of in
+   Supabase. Welke van de twee leidt de app af uit het adres, zodat er maar
+   één veld ingevuld hoeft te worden. */
+function backend() {
+  if (!cfg || !cfg.url) return null;
+  return /script\.google\.com/.test(cfg.url) ? 'sheet' : 'supabase';
+}
+
+async function supaFetch(path, opts = {}) {
   const res = await fetch(cfg.url.replace(/\/$/, '') + '/rest/v1/' + path, {
     ...opts,
     headers: {
@@ -532,17 +541,56 @@ async function cloudFetch(path, opts = {}) {
   return res;
 }
 
+/* Alles naar Apps Script gaat als GET met parameters. Dat is bewust: een GET
+   zonder eigen headers is een "simple request", dus geen CORS-preflight, en
+   Apps Script stuurt door naar googleusercontent.com waarbij een GET netjes
+   een GET blijft. */
+async function sheetFetch(params) {
+  const q = Object.entries(params).map(([k, v]) => k + '=' + encodeURIComponent(v)).join('&');
+  const res = await fetch(cfg.url.replace(/\/$/, '') + '?' + q, { redirect: 'follow' });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const data = await res.json();
+  if (data && data.error) throw new Error(String(data.error).slice(0, 140));
+  return data;
+}
+
+function normalise(r) {
+  return {
+    id: String(r.id), kind: r.kind, amount: Number(r.amount || 0), text: r.text || '',
+    author: r.author, at: r.at, period: r.period || String(r.at || '').slice(0, 7),
+    deleted: r.deleted === true || r.deleted === 'true', _synced: true
+  };
+}
+
+async function remoteList() {
+  if (backend() === 'sheet') return (await sheetFetch({ action: 'list' })).items || [];
+  return await (await supaFetch(TABLE + '?select=*&order=at.asc')).json();
+}
+
+async function remoteAdd(item) {
+  if (backend() === 'sheet') return sheetFetch({ action: 'add', item: JSON.stringify(wire(item)) });
+  return supaFetch(TABLE, {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal,resolution=merge-duplicates' },
+    body: JSON.stringify([wire(item)])
+  });
+}
+
+async function remoteDelete(id) {
+  if (backend() === 'sheet') return sheetFetch({ action: 'del', id });
+  return supaFetch(TABLE + '?id=eq.' + encodeURIComponent(id), {
+    method: 'PATCH', headers: { Prefer: 'return=minimal' }, body: JSON.stringify({ deleted: true })
+  });
+}
+
 async function syncNow(loud) {
   if (!cfg) { setStatus('', 'Alleen op deze telefoon'); return; }
   setStatus('busy', 'Bijwerken…');
   try {
-    const res = await cloudFetch(TABLE + '?select=*&order=at.asc');
-    const rows = await res.json();
-    mergeIn(rows.map(r => ({
-      id: r.id, kind: r.kind, amount: Number(r.amount || 0), text: r.text || '',
-      author: r.author, at: r.at, period: r.period || (r.at || '').slice(0, 7), deleted: !!r.deleted,
-      _synced: true
-    })));
+    // Eerst de eigen achterstand wegwerken, anders blijft een boeking die
+    // offline is gemaakt voor altijd op deze telefoon staan.
+    await pushPending();
+    mergeIn((await remoteList()).map(normalise));
     writeLocal();
     render();
     setStatus('ok', 'Samen bijgehouden · ' + new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }));
@@ -561,11 +609,7 @@ async function pushItem(item) {
   render();
   if (!cfg) return;
   try {
-    await cloudFetch(TABLE, {
-      method: 'POST',
-      headers: { Prefer: 'return=minimal' },
-      body: JSON.stringify([wire(item)])
-    });
+    await remoteAdd(item);
     item._synced = true;
     writeLocal();
     setStatus('ok', 'Samen bijgehouden');
@@ -575,13 +619,13 @@ async function pushItem(item) {
 }
 
 async function pushPending() {
-  // Alles wat nog niet in de wolk staat opnieuw aanbieden (id is primary key,
-  // dubbele rijen worden daardoor genegeerd).
+  // Alles wat nog niet verstuurd is opnieuw aanbieden. Beide backends slaan op
+  // id op, dus een tweede poging maakt geen dubbele regel.
   if (!cfg) return;
   const todo = items.filter(i => !i._synced);
   for (const it of todo) {
     try {
-      await cloudFetch(TABLE, { method: 'POST', headers: { Prefer: 'return=minimal,resolution=merge-duplicates' }, body: JSON.stringify([wire(it)]) });
+      await remoteAdd(it);
       it._synced = true;
     } catch { /* volgende ronde */ }
   }
@@ -596,9 +640,7 @@ async function markDeleted(id) {
   render();
   if (!cfg) return;
   try {
-    await cloudFetch(TABLE + '?id=eq.' + encodeURIComponent(id), {
-      method: 'PATCH', headers: { Prefer: 'return=minimal' }, body: JSON.stringify({ deleted: true })
-    });
+    await remoteDelete(id);
   } catch { setStatus('err', 'Verwijderen nog niet doorgegeven'); }
 }
 
@@ -816,8 +858,10 @@ function fillMonths() {
 function saveCloud() {
   const url = document.getElementById('cfgUrl').value.trim();
   const key = document.getElementById('cfgKey').value.trim();
-  if (!url || !key) return toast('Vul allebei de velden in');
-  cfg = { url, key };
+  if (!/^https:\/\//.test(url)) return toast('Vul een adres in dat met https:// begint');
+  const isSheet = /script\.google\.com/.test(url);
+  if (!isSheet && !key) return toast('Bij Supabase hoort ook de anon key');
+  cfg = isSheet ? { url } : { url, key };
   localStorage.setItem(LS_CFG, JSON.stringify(cfg));
   toast('Verbonden, even bijwerken…');
   pushPending().then(() => syncNow(true));
@@ -896,8 +940,8 @@ function init() {
   readShareLink();
 
   if (cfg) {
-    document.getElementById('cfgUrl').value = cfg.url;
-    document.getElementById('cfgKey').value = cfg.key;
+    document.getElementById('cfgUrl').value = cfg.url || '';
+    document.getElementById('cfgKey').value = cfg.key || '';
   }
 
   document.getElementById('debitChips').innerHTML = DEBIT_SUGGESTIONS

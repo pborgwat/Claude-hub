@@ -24,17 +24,38 @@ Live: https://pborgwat.github.io/Claude-hub/floorijn.html
 ## Samen dezelfde stand zien
 
 Zonder deze stap houdt de app de kas alleen op één telefoon bij. GitHub Pages levert
-alleen bestanden, dus de gedeelde stand moet in een database staan. Dit is eenmalig
-werk, daarna hoef je er nooit meer naar te kijken.
+alleen bestanden, dus de gedeelde stand moet ergens anders staan. Dit is eenmalig werk,
+daarna hoef je er nooit meer naar te kijken.
 
-Een echt account-vrije dienst was het uitgangspunt, maar die bleken zonder uitzondering
-onbruikbaar: jsonblob gooit data na 24 uur weg, kvdb.io en keyvalue.xyz zijn offline,
-extendsclass en jsonstorage vragen inmiddels een sleutel, en Pantry was uit de lucht.
-Voor een salarisadministratie wil je geen opslag die na een dag leeg is, dus staat de
-kas nu in je eigen gratis Supabase-project.
+Een dienst zonder account was het uitgangspunt, maar die bleken zonder uitzondering
+onbruikbaar: jsonblob gooit data na 24 uur weg en verlengt dat niet bij gebruik,
+kvdb.io en keyvalue.xyz zijn offline, extendsclass en jsonstorage vragen inmiddels een
+sleutel, en Pantry was uit de lucht. Voor een salarisadministratie wil je geen opslag
+die na een dag leeg is.
+
+De app werkt met twee soorten kas en ziet zelf welke je invult. **Google Sheets is de
+eenvoudigste**, want je hebt Google al en er komt geen sleutel bij kijken.
+
+### Optie A, Google Sheet (aanbevolen)
+
+1. Maak een lege spreadsheet op [sheets.new](https://sheets.new) en noem hem Floorijn.
+2. **Extensies → Apps Script**. Verwijder wat er staat en plak de inhoud van
+   `floorijn-appsscript.gs` erin. Opslaan.
+3. **Implementeren → Nieuwe implementatie → Web-app**:
+   - Uitvoeren als: **ikzelf**
+   - Wie heeft toegang: **iedereen**
+   - Implementeren, en de eerste keer de toegang goedkeuren. Google waarschuwt dat het
+     script niet gecontroleerd is, dat is jouw eigen script.
+4. Kopieer de **web-app URL**, die eindigt op `/exec`.
+5. Open Floorijn → tandwiel → plak de URL in het eerste veld, het tweede veld leeg
+   laten → **Verbinden**.
+
+Het tabblad `floorijn` met de kolommen maakt het script zelf aan bij de eerste boeking.
+
+### Optie B, Supabase
 
 1. Maak een gratis project op [supabase.com](https://supabase.com).
-2. Open in dat project de **SQL Editor** en voer dit uit:
+2. Open de **SQL Editor** en voer dit uit:
 
    ```sql
    create table if not exists floorijn_items (
@@ -56,13 +77,16 @@ kas nu in je eigen gratis Supabase-project.
    grant select, insert, update on floorijn_items to anon;
    ```
 
-3. Ga naar **Project Settings → API** en kopieer de **Project URL** en de **anon public key**.
-4. Open Floorijn → tandwiel → vul beide velden in → **Verbinden**.
-5. Tik op **Kopieer instel-link** en stuur die naar Floor. Zij opent de link één keer op
-   haar telefoon en is dan meteen gekoppeld, zonder iets in te vullen.
+3. Ga naar **Project Settings → API**, kopieer de **Project URL** en de **anon public key**,
+   en vul beide velden in bij de instellingen.
 
-Vanaf dat moment verversen jullie telefoons elke 15 seconden, en ook zodra je de app
-weer opent. Onder de bedragen staat of hij verbonden is.
+### De tweede telefoon
+
+Tik op **Kopieer instel-link** en stuur die naar Floor. Zij opent de link één keer op haar
+telefoon en is dan gekoppeld, zonder iets in te vullen.
+
+Vanaf dat moment verversen jullie telefoons elke 15 seconden, en ook zodra je de app weer
+opent of op het rondje linksboven tikt. Onder de bedragen staat of hij verbonden is.
 
 ## Goed om te weten
 
@@ -75,16 +99,35 @@ weer opent. Onder de bedragen staat of hij verbonden is.
   de ander.
 - **Back-up.** Onder instellingen kun je alles als JSON-bestand opslaan en terugzetten.
   Handig voor je eigen administratie, of als je ooit van database wisselt.
-- **Wie de instel-link heeft, kan bij de kas.** De anon key zit in die link, en de
-  regel hierboven geeft iedereen met die sleutel lees- en schrijfrechten op deze ene tabel.
-  Dat past bij wat het is, een tegoedmeter tussen twee mensen, maar deel de link dus niet
-  breder en zet hem niet in een openbaar bericht.
+- **Wie de instel-link heeft, kan bij de kas.** Bij een web-app met toegang "iedereen"
+  kan iedereen die de `/exec`-link kent lezen en schrijven, en bij Supabase geldt hetzelfde
+  voor wie de anon key heeft. Dat past bij wat het is, een tegoedmeter tussen twee mensen,
+  maar deel de link dus niet breder en zet hem niet in een openbaar bericht. Raakt hij toch
+  op straat, dan maak je bij Google een nieuwe implementatie aan, waarmee de oude link
+  ongeldig wordt.
 
 ## Techniek
 
 Vanilla HTML, CSS en JavaScript in één bestand, geen build en geen dependencies.
-Data staat in `localStorage` en optioneel in Supabase via de REST-api (`fetch`, geen SDK).
-Getest met Playwright op iPhone-formaat: 32 checks op saldo-berekening, bedragparsing
-met Nederlandse komma's en duizendscheidingstekens, historie, praatje, rolverschil tussen
-Floor en Pepijn, bewaren na herladen, verwijderen, en of omschrijvingen veilig als tekst
-worden weergegeven.
+Data staat in `localStorage`, en optioneel in een Google Sheet of in Supabase.
+
+De Sheet wordt aangesproken met losse GET-aanroepen (`?action=list|add|del`). Dat is
+bewust: een GET zonder eigen headers is voor de browser een simple request, dus zonder
+CORS-preflight, en bij de doorverwijzing die Apps Script maakt naar
+`googleusercontent.com` blijft een GET een GET. Een POST zou daar op stuk lopen.
+Supabase gaat via de gewone REST-api met `fetch`, zonder SDK.
+
+Elke boeking is een eigen regel met een eigen id, en samenvoegen gebeurt op dat id.
+Daardoor kan gelijktijdige invoer op twee telefoons elkaar niet overschrijven.
+Verwijderen zet een vlag in plaats van de regel weg te gooien, anders zou hij terugkomen
+zodra de andere telefoon zijn eigen kopie weer aanbiedt.
+
+Getest met Playwright op iPhone-formaat:
+
+- 32 checks op de app zelf: saldoberekening, bedragparsing met Nederlandse komma's en
+  duizendscheidingstekens, de 1,5×-berekening, historie per maand, praatje, rolverschil
+  tussen Floor en Pepijn, bewaren na herladen, verwijderen, weigeren van lege bedragen,
+  geen horizontaal scrollen, en omschrijvingen die veilig als tekst worden weergegeven.
+- 42 checks op de synchronisatie, met twee telefoons tegen een nagebouwde backend, voor
+  beide soorten kas: boeking van de een bij de ander, berichten heen en weer, verwijderen
+  dat niet terugkomt, offline boeken dat later wordt nagestuurd, en geen dubbele regels.
