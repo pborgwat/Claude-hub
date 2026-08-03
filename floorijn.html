@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Floorijn">
+  <!-- Neutrale naam, zodat er op het beginscherm en in het tabblad niets te
+       zien is voordat het wachtwoord is ingevuld. Na openen wordt de titel
+       alsnog op Floorijn gezet. -->
+  <meta name="apple-mobile-web-app-title" content="Kas">
   <meta name="theme-color" content="#f4ecd8">
-  <title>Floorijn</title>
+  <title>Kas</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23c9a227'/><text x='50' y='72' font-size='60' text-anchor='middle' font-family='Georgia,serif' fill='%231d3d2f'>ƒ</text></svg>">
   <style>
     :root {
@@ -218,18 +221,40 @@
     .chip.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
     /* ---------- who / status ---------- */
+    /* ---------- slot ---------- */
     #gate { position: fixed; inset: 0; z-index: 90; background: var(--paper); display: grid; place-items: center; padding: 28px; }
-    #gate .inner { max-width: 340px; text-align: center; }
-    #gate .seal { width: 74px; height: 74px; font-size: 40px; margin: 0 auto 18px; }
-    #gate h1 { font-family: Georgia, serif; font-size: 30px; margin-bottom: 6px; }
-    #gate p { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin-bottom: 26px; }
-    #gate .who { display: flex; flex-direction: column; gap: 11px; }
-    #gate .who button {
-      padding: 17px; border-radius: 15px; border: 1.5px solid var(--line);
-      background: rgba(255,255,255,.7); font-family: Georgia, serif; font-size: 18px; color: var(--ink); cursor: pointer;
-      display: flex; align-items: center; justify-content: center; gap: 10px;
+    #gate .inner { max-width: 330px; width: 100%; text-align: center; }
+    #gate .lock {
+      width: 66px; height: 66px; border-radius: 50%; margin: 0 auto 20px;
+      background: rgba(29,61,47,.08); border: 1.5px solid var(--line);
+      display: grid; place-items: center; font-size: 30px;
     }
+    #gate p.ask { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 18px; }
+    #gate .who { display: flex; gap: 10px; margin-bottom: 14px; }
+    #gate .who button {
+      flex: 1; padding: 15px 8px; border-radius: 15px; border: 1.5px solid var(--line);
+      background: rgba(255,255,255,.6); font-family: inherit; font-size: 15px; font-weight: 600;
+      color: var(--ink2); cursor: pointer;
+    }
+    #gate .who button.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
     #gate .who button:active { transform: scale(.97); }
+    #gate input {
+      width: 100%; font-family: inherit; font-size: 16px; padding: 14px 15px; text-align: center;
+      border-radius: 14px; border: 1.5px solid var(--line); background: rgba(255,255,255,.75);
+      color: var(--ink); -webkit-appearance: none; letter-spacing: 2px;
+    }
+    #gate input:focus { outline: none; border-color: var(--ink2); }
+    #gate .btn { width: 100%; margin-top: 12px; }
+    #gate .err { min-height: 20px; margin-top: 12px; font-size: 13px; color: var(--red); font-weight: 600; }
+    #gate.wrong .inner { animation: shake .38s; }
+    @keyframes shake {
+      20% { transform: translateX(-9px); } 40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); } 80% { transform: translateX(4px); }
+    }
+    /* Zolang het slot dicht zit is alles behalve het slot weg. Niet alleen de
+       app, ook de panelen, want die staan los in de body en hun tekst zou
+       anders nog te vinden zijn zonder wachtwoord. */
+    body.locked > *:not(#gate) { display: none !important; }
 
     .status {
       display: flex; align-items: center; justify-content: center; gap: 7px;
@@ -258,18 +283,20 @@
     }
   </style>
 </head>
-<body>
+<body class="locked">
 
-<!-- ============ wie ben je ============ -->
+<!-- ============ slot ============ -->
 <div id="gate">
   <div class="inner">
-    <div class="seal">ƒ</div>
-    <h1>Floorijn</h1>
-    <p>De eigen munt van Paviljoen Loef.<br>Wie ben jij?</p>
+    <div class="lock">🔒</div>
+    <p class="ask">Wie ben jij?</p>
     <div class="who">
-      <button onclick="pickWho('Floor')">🌷 Ik ben Floor</button>
-      <button onclick="pickWho('Pepijn')">✏️ Ik ben Pepijn</button>
+      <button id="gateFloor" onclick="selectGateWho('Floor')">🌷 Floor</button>
+      <button id="gatePepijn" onclick="selectGateWho('Pepijn')">✏️ Pepijn</button>
     </div>
+    <input type="password" id="gatePass" placeholder="Wachtwoord" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="current-password">
+    <button class="btn btn-ink" onclick="tryUnlock()">Openen</button>
+    <div class="err" id="gateErr"></div>
   </div>
 </div>
 
@@ -644,12 +671,65 @@ async function markDeleted(id) {
   } catch { setStatus('err', 'Verwijderen nog niet doorgegeven'); }
 }
 
+/* ---------------- slot ---------------- */
+
+/* Het wachtwoord staat als SHA-256 in de code, niet leesbaar. Dat houdt een
+   nieuwsgierige blik op de broncode tegen, maar het is geen echt slot: dit is
+   een statische pagina, dus wie wil kan er omheen. Het beschermt tegen iemand
+   die de telefoon oppakt, niet tegen iemand die de URL heeft en gaat zoeken. */
+const PASS_HASH = 'c952b859a10151c87c238985056863bb8f2d78e4cf30562e91e06425456d0931';
+let gateWho = null;
+
+function selectGateWho(name) {
+  gateWho = name;
+  document.getElementById('gateFloor').classList.toggle('on', name === 'Floor');
+  document.getElementById('gatePepijn').classList.toggle('on', name === 'Pepijn');
+  document.getElementById('gateErr').textContent = '';
+  document.getElementById('gatePass').focus();
+}
+
+async function sha256(text) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function gateFail(msg) {
+  const g = document.getElementById('gate');
+  document.getElementById('gateErr').textContent = msg;
+  g.classList.add('wrong');
+  setTimeout(() => g.classList.remove('wrong'), 420);
+}
+
+async function tryUnlock() {
+  if (!gateWho) return gateFail('Kies eerst wie je bent');
+  const input = document.getElementById('gatePass');
+  let hash;
+  try {
+    hash = await sha256(input.value);
+  } catch (e) {
+    return gateFail('Kan het wachtwoord hier niet controleren');
+  }
+  if (hash !== PASS_HASH) {
+    input.value = '';
+    return gateFail('Klopt niet');
+  }
+  input.value = '';
+  unlock();
+}
+
+function unlock() {
+  document.getElementById('gate').style.display = 'none';
+  document.body.classList.remove('locked');
+  document.title = 'Floorijn';
+  pickWho(gateWho);
+  if (cfg) { syncNow(false); startPolling(); }
+}
+
 /* ---------------- wie ben je ---------------- */
 
 function pickWho(name) {
   who = name;
   localStorage.setItem(LS_WHO, name);
-  document.getElementById('gate').style.display = 'none';
   document.getElementById('whoLabel').textContent = name === 'Floor' ? 'Ingelogd als Floor 🌷' : 'Ingelogd als Pepijn ✏️';
   document.querySelectorAll('#whoChips .chip').forEach(c => c.classList.toggle('on', c.textContent.includes(name)));
   document.getElementById('btnFee').style.display = name === 'Pepijn' ? '' : 'none';
@@ -919,7 +999,8 @@ function readShareLink() {
   if (!m) return;
   try {
     const c = JSON.parse(atob(m[1]));
-    if (c.url && c.key) {
+    // Bij een Google Sheet hoort geen sleutel, dus die mag ontbreken.
+    if (c.url && (c.key || /script\.google\.com/.test(c.url))) {
       cfg = c;
       localStorage.setItem(LS_CFG, JSON.stringify(cfg));
       toast('Gekoppeld aan de gedeelde kas');
@@ -947,18 +1028,25 @@ function init() {
   document.getElementById('debitChips').innerHTML = DEBIT_SUGGESTIONS
     .map(s => '<button class="chip" onclick="document.getElementById(\'debitText\').value=\'' + s + '\'">' + s + '</button>').join('');
 
+  // Wie je vorige keer was staat al klaar, het wachtwoord blijft nodig.
   const saved = localStorage.getItem(LS_WHO);
-  if (saved) pickWho(saved); else render();
+  if (saved) selectGateWho(saved);
+  render();
+
+  document.getElementById('gatePass').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); tryUnlock(); }
+  });
 
   document.getElementById('msgInput').addEventListener('keydown', e => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
   });
 
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) syncNow(false); });
-  window.addEventListener('online', () => { pushPending().then(() => syncNow(false)); });
+  // Niets ophalen zolang het slot dicht zit.
+  const open = () => !document.body.classList.contains('locked');
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && open()) syncNow(false); });
+  window.addEventListener('online', () => { if (open()) pushPending().then(() => syncNow(false)); });
 
-  if (cfg) { pushPending().then(() => syncNow(false)); startPolling(); }
-  else setStatus('', 'Alleen op deze telefoon');
+  if (!cfg) setStatus('', 'Alleen op deze telefoon');
 }
 
 init();
