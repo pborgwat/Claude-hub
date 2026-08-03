@@ -14,12 +14,32 @@ Live: https://pborgwat.github.io/Claude-hub/floorijn.html
 - **Historie** per maand, met wie het geboekt heeft en wanneer. Tik een regel aan om te verwijderen.
 - **Praatje**: berichtjes heen en weer. Geen notificaties, precies zoals afgesproken.
 
+## Het slot
+
+Bij openen zie je alleen een hangslot, de keuze tussen Floor en Pepijn, en een
+wachtwoordveld. Het wachtwoord is **Houdoe01**, staat vast en is niet te wijzigen in de
+app. Pas na het openen verschijnt de naam Floorijn, en ook de titel van het tabblad
+verandert dan. Op het beginscherm van je telefoon staat de app als **Kas**, zodat er ook
+daar niets te zien is.
+
+Het wachtwoord wordt bij elke keer openen gevraagd. Wie je bent onthoudt hij wel, dat
+staat al voor je klaar.
+
+Wat dit slot wel en niet doet, zodat je er niet meer van verwacht dan het waard is: het
+houdt iemand tegen die je telefoon oppakt, en het houdt de naam en de bedragen uit het
+zicht. Het houdt niemand tegen die de openbare URL heeft en in de broncode gaat kijken,
+want dit is een statische pagina zonder server die iets kan weigeren. Het wachtwoord staat
+er als SHA-256-hash in en dus niet leesbaar, maar de controle gebeurt in de pagina zelf en
+daar kun je omheen. Wil je echte afscherming, dan is er een inlog met een server voor
+nodig, en dat is een ander soort project.
+
 ## Op de telefoon zetten
 
 1. Open de link hierboven in Safari.
 2. Deelknop → **Zet op beginscherm**.
 3. Openen vanaf het beginscherm, dan staat hij schermvullend zonder adresbalk.
-4. Bij de eerste keer kies je wie je bent. Dat kan later om in de instellingen.
+4. Kies wie je bent, vul het wachtwoord in. Van persoon wisselen kan later in de
+   instellingen, zonder het wachtwoord opnieuw.
 
 ## Samen dezelfde stand zien
 
@@ -124,10 +144,13 @@ zodra de andere telefoon zijn eigen kopie weer aanbiedt.
 
 Getest met Playwright op iPhone-formaat:
 
-- 32 checks op de app zelf: saldoberekening, bedragparsing met Nederlandse komma's en
-  duizendscheidingstekens, de 1,5×-berekening, historie per maand, praatje, rolverschil
-  tussen Floor en Pepijn, bewaren na herladen, verwijderen, weigeren van lege bedragen,
-  geen horizontaal scrollen, en omschrijvingen die veilig als tekst worden weergegeven.
+- 41 checks op de app zelf: het slot (verkeerd wachtwoord, zonder persoon, en of de naam
+  Floorijn en Paviljoen Loef echt nergens in de pagina staan zolang het dicht is),
+  saldoberekening, bedragparsing met Nederlandse komma's en duizendscheidingstekens, de
+  1,5×-berekening, historie per maand, praatje, rolverschil tussen Floor en Pepijn,
+  bewaren na herladen, verwijderen, weigeren van lege bedragen, de instel-link zonder
+  sleutel, geen horizontaal scrollen, en omschrijvingen die veilig als tekst worden
+  weergegeven.
 - 42 checks op de synchronisatie, met twee telefoons tegen een nagebouwde backend, voor
   beide soorten kas: boeking van de een bij de ander, berichten heen en weer, verwijderen
   dat niet terugkomt, offline boeken dat later wordt nagestuurd, en geen dubbele regels.
