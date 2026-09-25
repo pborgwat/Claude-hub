@@ -1,0 +1,36 @@
+name: Uitagenda Haarlem bijwerken
+
+on:
+  schedule:
+    # Elke 3 uur tussen ca. 06:00 en 24:00 Nederlandse tijd (tijden in UTC)
+    - cron: '17 4-22/3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uitagenda
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Programma ophalen
+        run: node scripts/uitagenda-scrape.mjs
+      - name: Wijzigingen opslaan
+        run: |
+          if git diff --quiet -- uitagenda/events.json; then
+            echo "Niets veranderd"
+            exit 0
+          fi
+          git config user.name "uitagenda-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add uitagenda/events.json
+          git commit -m "Uitagenda bijwerken"
+          git push

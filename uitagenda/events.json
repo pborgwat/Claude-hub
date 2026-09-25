@@ -1,0 +1,1278 @@
+{
+ "generated": "2026-09-25T16:26:14.457Z",
+ "days": [
+  "2026-09-25",
+  "2026-09-26",
+  "2026-09-27"
+ ],
+ "status": {
+  "Filmkoepel": {
+   "ok": true,
+   "count": 87
+  },
+  "Schuur": {
+   "ok": true,
+   "count": 30
+  },
+  "Phil": {
+   "ok": true,
+   "count": 5
+  },
+  "Patronaat": {
+   "ok": true,
+   "count": 6
+  }
+ },
+ "events": [
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 4",
+   "date": "2026-09-25",
+   "time": "11:00",
+   "url": "https://filmkoepel.nl/tickets/201829",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Christophers",
+   "info": "Steven Soderbergh · Zaal 3",
+   "date": "2026-09-25",
+   "time": "11:10",
+   "url": "https://filmkoepel.nl/tickets/201758",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Les enfants vont bien",
+   "info": "Nathan Ambrosioni · Zaal 5",
+   "date": "2026-09-25",
+   "time": "11:15",
+   "url": "https://filmkoepel.nl/tickets/201850",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Rivals of Amziah King",
+   "info": "Andrew Patterson · Zaal 6",
+   "date": "2026-09-25",
+   "time": "11:15",
+   "url": "https://filmkoepel.nl/tickets/201916",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Akira",
+   "info": "Katsuhiro Otomo · Zaal 2",
+   "date": "2026-09-25",
+   "time": "11:20",
+   "url": "https://filmkoepel.nl/tickets/201899",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-25",
+   "time": "12:00",
+   "url": "https://filmkoepel.nl/tickets/201968",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Plague",
+   "info": "Charlie Polinger · Zaal 3",
+   "date": "2026-09-25",
+   "time": "13:20",
+   "url": "https://filmkoepel.nl/tickets/201787",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 4",
+   "date": "2026-09-25",
+   "time": "13:30",
+   "url": "https://filmkoepel.nl/tickets/202010",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 5",
+   "date": "2026-09-25",
+   "time": "13:45",
+   "url": "https://filmkoepel.nl/tickets/202017",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 2",
+   "date": "2026-09-25",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201745",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Human Nature",
+   "info": "Bart Schrijver · Zaal 6",
+   "date": "2026-09-25",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201871",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-25",
+   "time": "15:15",
+   "url": "https://filmkoepel.nl/tickets/201962",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Histoires Parallèles",
+   "info": "Asghar Farhadi · Zaal 3",
+   "date": "2026-09-25",
+   "time": "15:30",
+   "url": "https://filmkoepel.nl/tickets/201780",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 4",
+   "date": "2026-09-25",
+   "time": "15:40",
+   "url": "https://filmkoepel.nl/tickets/201976",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 5",
+   "date": "2026-09-25",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201836",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 2",
+   "date": "2026-09-25",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201751",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Incomer",
+   "info": "Louis Paxton · Zaal 6",
+   "date": "2026-09-25",
+   "time": "16:30",
+   "url": "https://filmkoepel.nl/tickets/201904",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 5",
+   "date": "2026-09-25",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201843",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 1",
+   "date": "2026-09-25",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201950",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Leviticus",
+   "info": "Adrian Chiarella · Zaal 3",
+   "date": "2026-09-25",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201765",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Downtown",
+   "info": "Michiel van Erp · Zaal 6",
+   "date": "2026-09-25",
+   "time": "18:45",
+   "url": "https://filmkoepel.nl/tickets/201894",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Breve Storia D’Amore",
+   "info": "Ludovica Rampoldi · Zaal 4",
+   "date": "2026-09-25",
+   "time": "18:50",
+   "url": "https://filmkoepel.nl/tickets/201982",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Downtown",
+   "info": "film · Michiel van Erp",
+   "date": "2026-09-25",
+   "time": "19:00",
+   "url": "https://www.schuur.nl/film/downtown"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 2",
+   "date": "2026-09-25",
+   "time": "19:00",
+   "url": "https://filmkoepel.nl/tickets/201729",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "No Good Men",
+   "info": "film · Shahrbanoo Sadat",
+   "date": "2026-09-25",
+   "time": "19:10",
+   "url": "https://www.schuur.nl/film/no-good-men"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Punkrock Ruined My Life Fest 2026",
+   "info": "loud · Stage 2 · Met Locura, Colère, Ultragoblin, Slijk Der Aarde, Loogie & Steekpartij",
+   "date": "2026-09-25",
+   "time": "19:45",
+   "url": "https://patronaat.nl/event/punckrock-ruined-my-life-fest-2026-25-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "80s Verantwoord",
+   "info": "nachtleven, pop · Stage 1 · De grootste credible hits en vergeten parels uit het beste decennium!",
+   "date": "2026-09-25",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/80s-verantwoord-25-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Geschiedenis van een ongeluk",
+   "info": "muziektheater · Orkater/De Nieuwkomers: PATROON",
+   "date": "2026-09-25",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/geschiedenis-ongeluk"
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Judith van Wanroij & Karin Strobos",
+   "info": "vocaal · De tweede editie van Diva’s Jukebox",
+   "date": "2026-09-25",
+   "time": "20:00",
+   "url": "https://philhaarlem.nl/agenda/judith-van-wanroij-karin-strobos",
+   "soldOut": false
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "The Chris Rea Experience",
+   "info": "pop · Een uniek muzikaal eerbetoon door oud-bandleden",
+   "date": "2026-09-25",
+   "time": "20:00",
+   "url": "https://philhaarlem.nl/agenda/the-chris-rea-experience",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "Christopher Nolan · Zaal 3",
+   "date": "2026-09-25",
+   "time": "20:30",
+   "url": "https://filmkoepel.nl/tickets/201794",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 5",
+   "date": "2026-09-25",
+   "time": "20:45",
+   "url": "https://filmkoepel.nl/tickets/201864",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Akira",
+   "info": "anime · Katsuhiro Otomo",
+   "date": "2026-09-25",
+   "time": "21:00",
+   "url": "https://www.schuur.nl/film/akira"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-25",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201942",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 6",
+   "date": "2026-09-25",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201989",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Invite",
+   "info": "Olivia Wilde · Zaal 4",
+   "date": "2026-09-25",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201996",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 2",
+   "date": "2026-09-25",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/201722",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Mother",
+   "info": "film · Teona Strugar Mitevska",
+   "date": "2026-09-25",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "FUCK THE CISTEM",
+   "info": "club3, nachtleven, queer, young creatives · Stage 3 · Waterschade live on stage!",
+   "date": "2026-09-25",
+   "time": "23:00",
+   "url": "https://patronaat.nl/event/fuck-the-cistem-25-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Below the Clouds",
+   "info": "documentaire · Gianfranco Rosi",
+   "date": "2026-09-26",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/below-the-clouds"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 4",
+   "date": "2026-09-26",
+   "time": "11:00",
+   "url": "https://filmkoepel.nl/tickets/201830",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Plague",
+   "info": "Charlie Polinger · Zaal 3",
+   "date": "2026-09-26",
+   "time": "11:00",
+   "url": "https://filmkoepel.nl/tickets/201789",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "De Manager",
+   "info": "documentaire · Maartje Bakers",
+   "date": "2026-09-26",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/de-manager"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Les enfants vont bien",
+   "info": "Nathan Ambrosioni · Zaal 5",
+   "date": "2026-09-26",
+   "time": "11:15",
+   "url": "https://filmkoepel.nl/tickets/201851",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Below The Clouds",
+   "info": "Gianfranco Rosi · Zaal 2",
+   "date": "2026-09-26",
+   "time": "11:30",
+   "url": "https://filmkoepel.nl/tickets/201740",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Human Nature",
+   "info": "Bart Schrijver · Zaal 6",
+   "date": "2026-09-26",
+   "time": "11:30",
+   "url": "https://filmkoepel.nl/tickets/201897",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-26",
+   "time": "12:00",
+   "url": "https://filmkoepel.nl/tickets/201969",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Les parapluies de Cherbourg",
+   "info": "klassieker · Jacques Demy",
+   "date": "2026-09-26",
+   "time": "12:50",
+   "url": "https://www.schuur.nl/film/les-parapluies-de-cherbourg"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Toy Story 5 (NL)",
+   "info": "McKenna Harris, Andrew Stanton · Zaal 3",
+   "date": "2026-09-26",
+   "time": "13:15",
+   "url": "https://filmkoepel.nl/tickets/201880",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "film · Olivier Nakache",
+   "date": "2026-09-26",
+   "time": "13:30",
+   "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 4",
+   "date": "2026-09-26",
+   "time": "13:30",
+   "url": "https://filmkoepel.nl/tickets/202011",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 5",
+   "date": "2026-09-26",
+   "time": "13:45",
+   "url": "https://filmkoepel.nl/tickets/202018",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 2",
+   "date": "2026-09-26",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201746",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "Joel Crawford, Januel Mercado · Zaal 6",
+   "date": "2026-09-26",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201896",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "No Good Men",
+   "info": "film · Shahrbanoo Sadat",
+   "date": "2026-09-26",
+   "time": "14:45",
+   "url": "https://www.schuur.nl/film/no-good-men"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-26",
+   "time": "15:15",
+   "url": "https://filmkoepel.nl/tickets/201963",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Histoires Parallèles",
+   "info": "Asghar Farhadi · Zaal 3",
+   "date": "2026-09-26",
+   "time": "15:30",
+   "url": "https://filmkoepel.nl/tickets/201781",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 4",
+   "date": "2026-09-26",
+   "time": "15:40",
+   "url": "https://filmkoepel.nl/tickets/201977",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Histoires Parallèles",
+   "info": "film · Asghar Farhadi",
+   "date": "2026-09-26",
+   "time": "16:00",
+   "url": "https://www.schuur.nl/film/histoires-parallèles"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 5",
+   "date": "2026-09-26",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201837",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 2",
+   "date": "2026-09-26",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201752",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Incomer",
+   "info": "Louis Paxton · Zaal 6",
+   "date": "2026-09-26",
+   "time": "16:30",
+   "url": "https://filmkoepel.nl/tickets/201905",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Mother",
+   "info": "film · Teona Strugar Mitevska",
+   "date": "2026-09-26",
+   "time": "17:00",
+   "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 5",
+   "date": "2026-09-26",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201844",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 1",
+   "date": "2026-09-26",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201951",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Leviticus",
+   "info": "Adrian Chiarella · Zaal 3",
+   "date": "2026-09-26",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201766",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "film · Olivier Nakache",
+   "date": "2026-09-26",
+   "time": "18:45",
+   "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Plague",
+   "info": "Charlie Polinger · Zaal 6",
+   "date": "2026-09-26",
+   "time": "18:45",
+   "url": "https://filmkoepel.nl/tickets/201887",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Breve Storia D’Amore",
+   "info": "Ludovica Rampoldi · Zaal 4",
+   "date": "2026-09-26",
+   "time": "18:50",
+   "url": "https://filmkoepel.nl/tickets/201983",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 2",
+   "date": "2026-09-26",
+   "time": "19:00",
+   "url": "https://filmkoepel.nl/tickets/201730",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "No Good Men",
+   "info": "film · Shahrbanoo Sadat",
+   "date": "2026-09-26",
+   "time": "19:10",
+   "url": "https://www.schuur.nl/film/no-good-men"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Geschiedenis van een ongeluk",
+   "info": "muziektheater · Orkater/De Nieuwkomers: PATROON",
+   "date": "2026-09-26",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/geschiedenis-ongeluk"
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Tineke Postma Group",
+   "info": "soul/jazz · Releasetour VOYA",
+   "date": "2026-09-26",
+   "time": "20:00",
+   "url": "https://philhaarlem.nl/agenda/tineke-postma-group",
+   "soldOut": false
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Tubular Bells",
+   "info": "orkest · The Best Of Mike Oldfield’s Tubular Bells I, II & lll",
+   "date": "2026-09-26",
+   "time": "20:00",
+   "url": "https://philhaarlem.nl/agenda/tubular-bells",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Hiphop Dubbel A",
+   "info": "hiphop, young creatives · Stage 3 · Met Jósh, Mitchell, Noov, Jilles, KTM en Dj kn9ne",
+   "date": "2026-09-26",
+   "time": "20:30",
+   "url": "https://patronaat.nl/event/hiphop-dubbel-a-26-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Saman Amini’s Integratieplan #2: Alles is Perspectief",
+   "info": "theater · Black Sheep Can Fly / Saman Amini",
+   "date": "2026-09-26",
+   "time": "20:30",
+   "url": "https://www.schuur.nl/theater/integratieplan-2"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "Christopher Nolan · Zaal 3",
+   "date": "2026-09-26",
+   "time": "20:30",
+   "url": "https://filmkoepel.nl/tickets/201797",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 5",
+   "date": "2026-09-26",
+   "time": "20:45",
+   "url": "https://filmkoepel.nl/tickets/201865",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Akira",
+   "info": "anime · Katsuhiro Otomo",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://www.schuur.nl/film/akira"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201943",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 6",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201990",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Invite",
+   "info": "Olivia Wilde · Zaal 4",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201997",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 2",
+   "date": "2026-09-26",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/201723",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Mother",
+   "info": "film · Teona Strugar Mitevska",
+   "date": "2026-09-26",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Nooduitgang",
+   "info": "nachtleven · Stage 1 · Our 9th indoor season starts here",
+   "date": "2026-09-26",
+   "time": "23:00",
+   "url": "https://patronaat.nl/event/nooduitgang-26-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Taartrovers Cinemini",
+   "info": "film",
+   "date": "2026-09-27",
+   "time": "10:30",
+   "url": "https://www.schuur.nl/film/cinemini"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 4",
+   "date": "2026-09-27",
+   "time": "11:00",
+   "url": "https://filmkoepel.nl/tickets/201831",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Sovereign Son",
+   "info": "documentaire · Cindy Jansen",
+   "date": "2026-09-27",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/sovereign-son"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Plague",
+   "info": "Charlie Polinger · Zaal 3",
+   "date": "2026-09-27",
+   "time": "11:00",
+   "url": "https://filmkoepel.nl/tickets/201788",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Les enfants vont bien",
+   "info": "Nathan Ambrosioni · Zaal 5",
+   "date": "2026-09-27",
+   "time": "11:15",
+   "url": "https://filmkoepel.nl/tickets/201852",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Rivals of Amziah King",
+   "info": "Andrew Patterson · Zaal 6",
+   "date": "2026-09-27",
+   "time": "11:15",
+   "url": "https://filmkoepel.nl/tickets/201917",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Below The Clouds",
+   "info": "Gianfranco Rosi · Zaal 2",
+   "date": "2026-09-27",
+   "time": "11:30",
+   "url": "https://filmkoepel.nl/tickets/201741",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-27",
+   "time": "12:00",
+   "url": "https://filmkoepel.nl/tickets/201970",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "film · Olivier Nakache",
+   "date": "2026-09-27",
+   "time": "12:10",
+   "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "No Good Men",
+   "info": "film · Shahrbanoo Sadat",
+   "date": "2026-09-27",
+   "time": "13:00",
+   "url": "https://www.schuur.nl/film/no-good-men"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Minoes",
+   "info": "Vincent Bal · Zaal 3",
+   "date": "2026-09-27",
+   "time": "13:20",
+   "url": "https://filmkoepel.nl/tickets/201881",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 4",
+   "date": "2026-09-27",
+   "time": "13:30",
+   "url": "https://filmkoepel.nl/tickets/202012",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 5",
+   "date": "2026-09-27",
+   "time": "13:45",
+   "url": "https://filmkoepel.nl/tickets/202019",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 2",
+   "date": "2026-09-27",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201747",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Human Nature",
+   "info": "Bart Schrijver · Zaal 6",
+   "date": "2026-09-27",
+   "time": "14:00",
+   "url": "https://filmkoepel.nl/tickets/201921",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Rally – van Parijs naar de Piramides",
+   "info": "familiefilm · Rasmus A. Sivertsen",
+   "date": "2026-09-27",
+   "time": "14:30",
+   "url": "https://www.schuur.nl/film/rally-van-parijs-naar-de-piramides"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "ABBA Dance",
+   "info": "klassiekers / tributes, pop · Stage 2 · Laat ABBA opleven als nergens anders!",
+   "date": "2026-09-27",
+   "time": "15:00",
+   "url": "https://patronaat.nl/event/abba-dance-27-09-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Het MAX Orkest",
+   "info": "orkest · Grande Finale",
+   "date": "2026-09-27",
+   "time": "15:00",
+   "url": "https://philhaarlem.nl/agenda/omroep-max",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Mother",
+   "info": "film · Teona Strugar Mitevska",
+   "date": "2026-09-27",
+   "time": "15:05",
+   "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-27",
+   "time": "15:15",
+   "url": "https://filmkoepel.nl/tickets/201964",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Histoires Parallèles",
+   "info": "Asghar Farhadi · Zaal 3",
+   "date": "2026-09-27",
+   "time": "15:30",
+   "url": "https://filmkoepel.nl/tickets/201782",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Résistance",
+   "info": "Antonin Baudry · Zaal 4",
+   "date": "2026-09-27",
+   "time": "15:40",
+   "url": "https://filmkoepel.nl/tickets/201978",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 5",
+   "date": "2026-09-27",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201838",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Histoires Parallèles",
+   "info": "film · Asghar Farhadi",
+   "date": "2026-09-27",
+   "time": "16:15",
+   "url": "https://www.schuur.nl/film/histoires-parallèles"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 2",
+   "date": "2026-09-27",
+   "time": "16:15",
+   "url": "https://filmkoepel.nl/tickets/201753",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Incomer",
+   "info": "Louis Paxton · Zaal 6",
+   "date": "2026-09-27",
+   "time": "16:30",
+   "url": "https://filmkoepel.nl/tickets/201906",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "De Manager",
+   "info": "documentaire · Maartje Bakers",
+   "date": "2026-09-27",
+   "time": "17:10",
+   "url": "https://www.schuur.nl/film/de-manager"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 5",
+   "date": "2026-09-27",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201845",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 1",
+   "date": "2026-09-27",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201952",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Leviticus",
+   "info": "Adrian Chiarella · Zaal 3",
+   "date": "2026-09-27",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/201767",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "film · Olivier Nakache",
+   "date": "2026-09-27",
+   "time": "18:45",
+   "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Cycle of Love",
+   "info": "Orlando von Einsiedel · Zaal 6",
+   "date": "2026-09-27",
+   "time": "18:45",
+   "url": "https://filmkoepel.nl/tickets/201895",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Breve Storia D’Amore",
+   "info": "Ludovica Rampoldi · Zaal 4",
+   "date": "2026-09-27",
+   "time": "18:50",
+   "url": "https://filmkoepel.nl/tickets/201984",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "No Good Men - English subs",
+   "info": "film · Shahrbanoo Sadat",
+   "date": "2026-09-27",
+   "time": "19:00",
+   "url": "https://www.schuur.nl/film/no-good-men-en"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "Anthony Maras · Zaal 2",
+   "date": "2026-09-27",
+   "time": "19:00",
+   "url": "https://filmkoepel.nl/tickets/201731",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "Christopher Nolan · Zaal 3",
+   "date": "2026-09-27",
+   "time": "20:30",
+   "url": "https://filmkoepel.nl/tickets/201795",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Palestine 36",
+   "info": "Annemarie Jacir · Zaal 5",
+   "date": "2026-09-27",
+   "time": "20:45",
+   "url": "https://filmkoepel.nl/tickets/201866",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "De Gaulle: Liberté",
+   "info": "Antonin Baudry · Zaal 1",
+   "date": "2026-09-27",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201944",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Juste une illusion",
+   "info": "Olivier Nakache, Eric Toledano · Zaal 6",
+   "date": "2026-09-27",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201991",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Mother",
+   "info": "film · Teona Strugar Mitevska",
+   "date": "2026-09-27",
+   "time": "21:00",
+   "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Invite",
+   "info": "Olivia Wilde · Zaal 4",
+   "date": "2026-09-27",
+   "time": "21:00",
+   "url": "https://filmkoepel.nl/tickets/201998",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Akira",
+   "info": "anime · Katsuhiro Otomo",
+   "date": "2026-09-27",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/akira"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "David Ayer · Zaal 2",
+   "date": "2026-09-27",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/201724",
+   "soldOut": false
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uit in Haarlem</title>
+<meta name="description" content="Vandaag, vanavond en morgen: film en podium in Haarlem.">
+<meta name="theme-color" content="#1f1b2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Uit Haarlem">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #f6f1e7;
+    --card: #fffaf1;
+    --ink: #1f1b2e;
+    --muted: #6d6778;
+    --line: #e4dccd;
+    --accent: #e8553d;
+    --sun: #f2b84b;
+    --head: #1f1b2e;
+    --head-ink: #fff8ec;
+    --chip: #efe6d6;
+    --v-filmkoepel: #3d7a6b;
+    --v-schuur: #b04a2f;
+    --v-phil: #6b3d6e;
+    --v-patronaat: #2f5d9a;
+    --v-schouwburg: #8a6a1f;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15121f;
+      --card: #1f1b2e;
+      --ink: #f3ede2;
+      --muted: #a39cae;
+      --line: #322c44;
+      --chip: #2b253d;
+      --head: #0e0c16;
+      --v-filmkoepel: #6fbfa9;
+      --v-schuur: #f08a68;
+      --v-phil: #c795ca;
+      --v-patronaat: #86aee6;
+      --v-schouwburg: #dbb45a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.4 var(--font);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--head); color: var(--head-ink);
+    padding: calc(env(safe-area-inset-top) + 12px) 16px 10px;
+  }
+  h1 { margin: 0 0 10px; font: 700 22px/1.1 Georgia, "Times New Roman", serif; letter-spacing: .2px; }
+  h1 span { color: var(--sun); }
+  .days { display: flex; gap: 6px; }
+  .days button {
+    flex: 1; border: 0; border-radius: 10px; padding: 8px 4px;
+    background: rgba(255,255,255,.08); color: var(--head-ink);
+    font: 600 15px/1.1 var(--font); cursor: pointer;
+  }
+  .days button small { display: block; font-weight: 400; opacity: .7; font-size: 12px; margin-top: 2px; }
+  .days button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .opts { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 13px; opacity: .85; }
+  .opts label { display: flex; align-items: center; gap: 6px; }
+  main { max-width: 640px; margin: 0 auto; padding: 4px 16px 32px; }
+  h2 {
+    font: 700 13px/1 var(--font); text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--muted); margin: 22px 0 8px;
+  }
+  h3.slot { font: 600 12px/1 var(--font); color: var(--muted); margin: 14px 0 6px; }
+  .list { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .row {
+    display: grid; grid-template-columns: 52px 1fr; gap: 10px;
+    padding: 11px 12px; border-top: 1px solid var(--line);
+    color: inherit; text-decoration: none;
+  }
+  .row:first-child { border-top: 0; }
+  .row:active { background: var(--chip); }
+  .time { font: 700 16px/1.25 var(--font); font-variant-numeric: tabular-nums; }
+  .title { font-weight: 600; line-height: 1.25; }
+  .info { color: var(--muted); font-size: 13px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .venue { font: 700 11px/1 var(--font); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 3px; }
+  .v-Filmkoepel { color: var(--v-filmkoepel); }
+  .v-Schuur { color: var(--v-schuur); }
+  .v-Phil { color: var(--v-phil); }
+  .v-Patronaat { color: var(--v-patronaat); }
+  .v-Stadsschouwburg { color: var(--v-schouwburg); }
+  .sold { color: var(--accent); font-weight: 600; }
+  .film { padding: 11px 12px; border-top: 1px solid var(--line); }
+  .film:first-child { border-top: 0; }
+  .film .title a { color: inherit; text-decoration: none; }
+  .times { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+  .times a {
+    font: 600 14px/1 var(--font); font-variant-numeric: tabular-nums;
+    padding: 7px 9px; border-radius: 8px; background: var(--chip);
+    color: inherit; text-decoration: none;
+  }
+  .times a.past { opacity: .4; }
+  .times a.sold { text-decoration: line-through; }
+  .venuehead { display: flex; justify-content: space-between; align-items: baseline; margin: 16px 2px 6px; }
+  .venuehead b { font-size: 15px; }
+  .venuehead a { font-size: 13px; color: var(--muted); }
+  .link-card {
+    display: block; padding: 12px; margin-top: 8px;
+    background: var(--card); border: 1px dashed var(--line); border-radius: 14px;
+    color: inherit; text-decoration: none; font-size: 14px;
+  }
+  .link-card .muted { color: var(--muted); font-size: 13px; }
+  .empty { padding: 14px 12px; color: var(--muted); font-size: 14px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 28px; line-height: 1.6; }
+  footer .warn { color: var(--accent); }
+  .loading { padding: 40px 0; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Uit in <span>Haarlem</span></h1>
+  <div class="days" id="days"></div>
+  <div class="opts">
+    <label><input type="checkbox" id="fromNow" checked> alleen wat nog komt</label>
+    <span id="count"></span>
+  </div>
+</header>
+<main id="app"><div class="loading">Agenda laden...</div></main>
+
+<script>
+const VENUE_SITES = {
+  Filmkoepel: 'https://filmkoepel.nl/agenda/',
+  Schuur: 'https://www.schuur.nl/agenda',
+  Phil: 'https://philhaarlem.nl/agenda',
+  Patronaat: 'https://patronaat.nl/programma/',
+  Stadsschouwburg: 'https://stadsschouwburghaarlem.nl/agenda',
+};
+const DAYNAMES = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+const DAYFULL = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
+const MONTHNAMES = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+
+const pad = (n) => String(n).padStart(2, '0');
+const isoDate = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const esc = (s = '') => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+let data = null;
+let dayIndex = 0;
+let fromNow = true;
+
+function days() {
+  const base = new Date();
+  return [0, 1, 2].map((i) => {
+    const d = new Date(base.getFullYear(), base.getMonth(), base.getDate() + i);
+    const label = i === 0 ? 'Vandaag' : i === 1 ? 'Morgen' : DAYFULL[d.getDay()];
+    return { iso: isoDate(d), label, sub: `${DAYNAMES[d.getDay()]} ${d.getDate()} ${MONTHNAMES[d.getMonth()]}` };
+  });
+}
+
+// Is een voorstelling al (ruim) begonnen? Films 10 min speling, podium 30 min.
+function isPast(ev) {
+  if (!ev.time || ev.date !== isoDate(new Date())) return false;
+  const [h, m] = ev.time.split(':').map(Number);
+  const start = new Date(); start.setHours(h, m, 0, 0);
+  // Tijden na middernacht (bijv. clubnacht 00:30) horen bij de avond ervoor
+  if (h < 5) start.setDate(start.getDate() + 1);
+  const grace = (ev.kind === 'film' ? 10 : 30) * 60000;
+  return Date.now() > start.getTime() + grace;
+}
+
+function slotOf(time) {
+  if (!time) return 'Hele dag';
+  const h = Number(time.slice(0, 2));
+  if (h < 5) return 'Nacht';
+  if (h < 12) return 'Ochtend';
+  if (h < 18) return 'Middag';
+  return 'Vanavond';
+}
+
+function renderDays() {
+  const el = document.getElementById('days');
+  el.innerHTML = days().map((d, i) =>
+    `<button aria-pressed="${i === dayIndex}" data-i="${i}">${d.label}<small>${d.sub}</small></button>`).join('');
+  el.querySelectorAll('button').forEach((b) => b.onclick = () => { dayIndex = Number(b.dataset.i); render(); });
+  document.getElementById('fromNow').parentElement.style.visibility = dayIndex === 0 ? 'visible' : 'hidden';
+}
+
+function podiumRow(ev) {
+  return `<a class="row" href="${esc(ev.url)}" target="_blank" rel="noopener">
+    <div class="time">${ev.time || '—'}</div>
+    <div>
+      <div class="venue v-${ev.venue}">${ev.venue}${ev.soldOut ? ' · <span class="sold">uitverkocht</span>' : ''}</div>
+      <div class="title">${esc(ev.title)}</div>
+      ${ev.info ? `<div class="info">${esc(ev.info)}</div>` : ''}
+    </div>
+  </a>`;
+}
+
+function renderPodium(list) {
+  let html = '<h2>Podium: theater, concerten, clubs</h2>';
+  if (!list.length) {
+    html += '<div class="list"><div class="empty">Niets meer gevonden bij Phil, Patronaat of Schuur.</div></div>';
+  } else {
+    let last = '';
+    for (const ev of list) {
+      const slot = slotOf(ev.time);
+      if (slot !== last) {
+        if (last) html += '</div>';
+        html += `<h3 class="slot">${slot}</h3><div class="list">`;
+        last = slot;
+      }
+      html += podiumRow(ev);
+    }
+    html += '</div>';
+  }
+  html += `<a class="link-card" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener">
+    <div class="venue v-Stadsschouwburg">Stadsschouwburg</div>
+    Bekijk de agenda op de site van de Stadsschouwburg &rarr;
+    <div class="muted">Hun site laat geen automatisch ophalen toe, daarom hier een directe link.</div>
+  </a>`;
+  return html;
+}
+
+function renderFilms(list) {
+  let html = '<h2>Film</h2>';
+  for (const venue of ['Filmkoepel', 'Schuur']) {
+    const mine = list.filter((e) => e.venue === venue);
+    html += `<div class="venuehead"><b class="v-${venue}">${venue}</b><a href="${VENUE_SITES[venue]}" target="_blank" rel="noopener">hele agenda</a></div>`;
+    if (!mine.length) { html += '<div class="list"><div class="empty">Geen voorstellingen meer.</div></div>'; continue; }
+    // Groepeer per film, gesorteerd op eerste aanvang
+    const films = new Map();
+    for (const ev of mine) {
+      if (!films.has(ev.title)) films.set(ev.title, { title: ev.title, info: ev.info, url: ev.url, shows: [] });
+      films.get(ev.title).shows.push(ev);
+    }
+    html += '<div class="list">';
+    for (const f of films.values()) {
+      const info = venue === 'Filmkoepel' ? (f.info || '').split(' · ')[0] : f.info;
+      html += `<div class="film">
+        <div class="title"><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a></div>
+        ${info ? `<div class="info">${esc(info)}</div>` : ''}
+        <div class="times">${f.shows.map((s) =>
+          `<a href="${esc(s.url)}" target="_blank" rel="noopener" class="${isPast(s) ? 'past' : ''} ${s.soldOut ? 'sold' : ''}" title="${esc(s.info || '')}">${s.time}</a>`).join('')}</div>
+      </div>`;
+    }
+    html += '</div>';
+  }
+  return html;
+}
+
+function render() {
+  renderDays();
+  if (!data) return;
+  const day = days()[dayIndex];
+  let events = data.events.filter((e) => e.date === day.iso);
+  const onlyUpcoming = dayIndex === 0 && fromNow;
+  const podium = events.filter((e) => e.kind !== 'film' && !(onlyUpcoming && isPast(e)));
+  // Films: toon een film zolang er nog een voorstelling komt; verlopen tijden grijs
+  let films = events.filter((e) => e.kind === 'film');
+  if (onlyUpcoming) {
+    const upcoming = new Set(films.filter((e) => !isPast(e)).map((e) => e.venue + e.title));
+    films = films.filter((e) => upcoming.has(e.venue + e.title));
+  }
+  const filmCount = films.filter((e) => !(onlyUpcoming && isPast(e))).length;
+  document.getElementById('count').textContent = `${podium.length} podium · ${filmCount} films`;
+
+  let html = renderPodium(podium) + renderFilms(films);
+  const updated = new Date(data.generated);
+  const failed = Object.entries(data.status || {}).filter(([, s]) => !s.ok).map(([n]) => n);
+  const covered = (data.days || []).includes(day.iso);
+  html += `<footer>
+    Bijgewerkt ${updated.toLocaleString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
+    ${failed.length ? `<br><span class="warn">Laatste update mislukt voor: ${failed.join(', ')} (oude gegevens getoond)</span>` : ''}
+    ${!covered ? `<br><span class="warn">Voor deze dag zijn nog geen gegevens opgehaald.</span>` : ''}
+    <br>Tijden onder voorbehoud, check altijd de site van de zaal.
+  </footer>`;
+  document.getElementById('app').innerHTML = html;
+}
+
+document.getElementById('fromNow').onchange = (e) => { fromNow = e.target.checked; render(); };
+
+async function load() {
+  try {
+    const res = await fetch('events.json?t=' + Date.now(), { cache: 'no-store' });
+    data = await res.json();
+  } catch (e) {
+    if (!data) document.getElementById('app').innerHTML = '<div class="loading">Kon de agenda niet laden. Heb je internet?</div>';
+    return;
+  }
+  render();
+}
+
+renderDays();
+load();
+// Bij terugkeren naar de app: opnieuw laden en "wat nog komt" bijwerken
+document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
+setInterval(render, 5 * 60000);
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>
