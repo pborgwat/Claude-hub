@@ -1,9 +1,9 @@
-// Haalt het programma van vandaag t/m overmorgen op bij Haarlemse zalen
+// Haalt het programma van vandaag en de 6 dagen daarna op bij Haarlemse zalen
 // en schrijft het naar uitagenda/events.json. Draait in GitHub Actions (Node 20+).
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
 const OUT = new URL('../uitagenda/events.json', import.meta.url);
-const DAYS = 3;
+const DAYS = 7;
 const UA = 'Mozilla/5.0 (compatible; uitagenda-haarlem/1.0; persoonlijk gebruik)';
 const MONTHS = { jan: 1, feb: 2, mrt: 3, maa: 3, apr: 4, mei: 5, jun: 6, jul: 7, aug: 8, sep: 9, okt: 10, nov: 11, dec: 12 };
 
@@ -63,14 +63,33 @@ async function filmkoepel() {
 }
 
 // ---------- Schuur: agendapagina, per dag een blok met tijd/titel/categorie ----------
+// De pagina toont 5 dagen; de rest laadt de site zelf bij scrollen via een 'offset'.
 async function schuur() {
-  const html = await get('https://www.schuur.nl/agenda');
+  const first = await get('https://www.schuur.nl/agenda');
+  const out = parseSchuur(first);
+  const cfgAttr = first.match(/data-hx-vals="(\{&quot;sprig:config&quot;:&quot;[^"]*programma[^"]*)"/)?.[1];
+  if (cfgAttr) {
+    const cfg = JSON.parse(cfgAttr.replace(/&quot;/g, '"').replace(/&amp;/g, '&'))['sprig:config'];
+    for (let offset = 5; offset <= 20; offset += 5) {
+      const lastDate = out.filter((e) => e.lastSeen).at(-1)?.lastSeen;
+      if (lastDate && lastDate >= dayList.at(-1)) break;
+      const q = new URLSearchParams({ 'sprig:config': cfg, offset: String(offset) });
+      const more = parseSchuur(await get(`https://www.schuur.nl/index.php/actions/sprig-core/components/render?${q}`));
+      if (!more.length) break;
+      out.push(...more);
+    }
+  }
+  return out.filter((e) => e.title).map(({ lastSeen, ...e }) => e);
+}
+
+function parseSchuur(html) {
   const out = [];
   const parts = html.split(/<span>(?=(?:Ma|Di|Wo|Do|Vr|Za|Zo) \d{1,2} [a-z]{3}<\/span>)/);
   for (const part of parts.slice(1)) {
     const head = part.match(/^(?:Ma|Di|Wo|Do|Vr|Za|Zo) (\d{1,2}) ([a-z]{3})<\/span>/);
     if (!head) continue;
     const date = dayMonthToDate(Number(head[1]), head[2]);
+    out.push({ lastSeen: date }); // markeert tot waar de pagina reikt
     if (!inWindow(date)) continue;
     const items = part.split('<div class="flex lg:hidden mb-2').slice(1);
     for (const it of items) {
@@ -167,7 +186,60 @@ async function patronaat() {
   return out;
 }
 
-const sources = { Filmkoepel: filmkoepel, Schuur: schuur, Phil: phil, Patronaat: patronaat };
+// ---------- Theater De Liefde: eigen site blokkeert automatisch ophalen, agenda via Podiuminfo ----------
+async function deLiefde() {
+  const html = await get('https://www.podiuminfo.nl/podium/5370/concerten/Theater-de-Liefde/Haarlem/');
+  const out = [];
+  for (const raw of html.match(/<script[^>]*ld\+json[^>]*>[\s\S]*?<\/script>/g) || []) {
+    let ev;
+    try { ev = JSON.parse(raw.replace(/^<script[^>]*>|<\/script>$/g, '')); } catch { continue; }
+    if (!/Event$/.test(ev['@type'] || '') || !ev.startDate) continue;
+    const date = ev.startDate.slice(0, 10);
+    if (!inWindow(date)) continue;
+    out.push({
+      venue: 'De Liefde',
+      kind: 'podium',
+      title: decode(ev.name).replace(/\s*@ Theater de Liefde$/i, ''),
+      info: ev['@type'] === 'ComedyEvent' ? 'cabaret' : ev['@type'] === 'MusicEvent' ? 'muziek' : '',
+      date,
+      time: ev.startDate.slice(11, 16) || null,
+      url: 'https://theaterdeliefde.nl/agenda/',
+      soldOut: /SoldOut/i.test(JSON.stringify(ev.offers || '')),
+    });
+  }
+  return out;
+}
+
+// ---------- Pathé Haarlem: eigen site blokkeert automatisch ophalen, tijden via Filmladder ----------
+async function pathe() {
+  const html = await get('https://www.filmladder.nl/haarlem/bioscopen');
+  const start = html.indexOf('id="pathe-haarlem-haarlem"');
+  if (start < 0) throw new Error('Pathé Haarlem niet gevonden op Filmladder');
+  const end = html.indexOf('<div class="cinema">', start);
+  const block = html.slice(start, end > 0 ? end : undefined);
+  const out = [];
+  for (const hall of block.split('<div class="hall ').slice(1)) {
+    const h4 = hall.match(/<h4>\s*<a[^>]*title="([^"]*)"[^>]*>([\s\S]*?)<\/a>/);
+    if (!h4) continue;
+    const extra = decode(h4[2].replace(/<sup[^>]*>([\s\S]*?)<\/sup>/, ' $1 ')).replace(decode(h4[1]), '').replace(/&vellip;|⋮/g, '·').replace(/\s+/g, ' ').trim();
+    for (const m of hall.matchAll(/itemprop="startDate" content="([^"]+)"><a[^>]*href="([^"]+)"/g)) {
+      const date = m[1].slice(0, 10);
+      if (!inWindow(date)) continue;
+      out.push({
+        venue: 'Pathé',
+        kind: 'film',
+        title: decode(h4[1]),
+        info: extra,
+        date,
+        time: m[1].slice(11, 16),
+        url: m[2],
+      });
+    }
+  }
+  return out;
+}
+
+const sources = { Filmkoepel: filmkoepel, Schuur: schuur, Phil: phil, Patronaat: patronaat, 'De Liefde': deLiefde, 'Pathé': pathe };
 const previous = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : { events: [] };
 const events = [];
 const status = {};
