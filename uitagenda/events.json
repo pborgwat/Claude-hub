@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T14:28:55.937Z",
+ "generated": "2026-09-26T19:12:37.123Z",
  "days": [
   "2026-09-26",
   "2026-09-27",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 58
+   "count": 52
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 213
+   "count": 209
   }
  },
  "events": [
@@ -376,15 +376,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228552511"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Histoires Parallèles",
-   "info": "film · Asghar Farhadi",
-   "date": "2026-09-26",
-   "time": "16:00",
-   "url": "https://www.schuur.nl/film/histoires-parallèles"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -431,33 +422,6 @@
    "date": "2026-09-26",
    "time": "16:40",
    "url": "https://www.filmladder.nl/kaartjes/1228552622"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-26",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228552482"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-26",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-26",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228552671"
   },
   {
    "venue": "Pathé",
@@ -526,24 +490,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228552627"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-26",
-   "time": "18:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228552581"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-09-26",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Plague",
@@ -583,15 +529,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-26",
-   "time": "19:10",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Practical Magic 2",
@@ -608,15 +545,6 @@
    "date": "2026-09-26",
    "time": "19:50",
    "url": "https://www.filmladder.nl/kaartjes/1228552512"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Geschiedenis van een ongeluk",
-   "info": "muziektheater · Orkater/De Nieuwkomers: PATROON",
-   "date": "2026-09-26",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/geschiedenis-ongeluk"
   },
   {
    "venue": "Phil",
@@ -637,15 +565,6 @@
    "time": "20:00",
    "url": "https://philhaarlem.nl/agenda/tubular-bells",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The End of Oak Street",
-   "info": "",
-   "date": "2026-09-26",
-   "time": "20:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228552473"
   },
   {
    "venue": "Pathé",
@@ -684,15 +603,6 @@
    "time": "20:30",
    "url": "https://theaterdeliefde.nl/agenda/",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Saman Amini’s Integratieplan #2: Alles is Perspectief",
-   "info": "theater · Black Sheep Can Fly / Saman Amini",
-   "date": "2026-09-26",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/integratieplan-2"
   },
   {
    "venue": "Filmkoepel",
