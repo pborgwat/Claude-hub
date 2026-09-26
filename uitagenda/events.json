@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T12:22:29.354Z",
+ "generated": "2026-09-26T14:28:55.937Z",
  "days": [
   "2026-09-26",
   "2026-09-27",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 59
+   "count": 58
   },
   "Phil": {
    "ok": true,
@@ -27,12 +27,13 @@
    "count": 10
   },
   "De Liefde": {
-   "ok": true,
-   "count": 5
+   "ok": false,
+   "error": "https://www.podiuminfo.nl/podium/5370/concerten/Theater-de-Liefde/Haarlem/ -> HTTP 403",
+   "kept": 5
   },
   "Pathé": {
    "ok": true,
-   "count": 214
+   "count": 213
   }
  },
  "events": [
@@ -318,15 +319,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228552527"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-26",
-   "time": "14:45",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Minions & Monsters (NL)",
@@ -373,15 +365,6 @@
    "time": "15:40",
    "url": "https://filmkoepel.nl/tickets/201977",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-26",
-   "time": "15:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228552670"
   },
   {
    "venue": "Pathé",
