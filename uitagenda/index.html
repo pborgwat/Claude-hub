@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Uit in Haarlem</title>
-<meta name="description" content="Vandaag, vanavond en morgen: film en podium in Haarlem.">
+<meta name="description" content="Vandaag, vanavond en de komende week: film en podium in Haarlem.">
 <meta name="theme-color" content="#1f1b2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -30,6 +30,8 @@
     --v-phil: #6b3d6e;
     --v-patronaat: #2f5d9a;
     --v-schouwburg: #8a6a1f;
+    --v-liefde: #a8326b;
+    --v-pathe: #5c5a14;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
@@ -46,6 +48,8 @@
       --v-phil: #c795ca;
       --v-patronaat: #86aee6;
       --v-schouwburg: #dbb45a;
+      --v-liefde: #ec8bb8;
+      --v-pathe: #cfcb6a;
     }
   }
   * { box-sizing: border-box; }
@@ -60,20 +64,26 @@
   header {
     position: sticky; top: 0; z-index: 5;
     background: var(--head); color: var(--head-ink);
-    padding: calc(env(safe-area-inset-top) + 12px) 16px 10px;
+    padding: calc(env(safe-area-inset-top) + 12px) 0 10px;
   }
-  h1 { margin: 0 0 10px; font: 700 22px/1.1 Georgia, "Times New Roman", serif; letter-spacing: .2px; }
+  h1 { margin: 0 16px 10px; font: 700 22px/1.1 Georgia, "Times New Roman", serif; letter-spacing: .2px; }
   h1 span { color: var(--sun); }
-  .days { display: flex; gap: 6px; }
+  .days {
+    display: flex; gap: 6px; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding: 0 16px;
+    padding: 0 16px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .days::-webkit-scrollbar { display: none; }
   .days button {
-    flex: 1; border: 0; border-radius: 10px; padding: 8px 4px;
+    flex: 0 0 auto; min-width: 88px; scroll-snap-align: start;
+    border: 0; border-radius: 10px; padding: 8px 10px;
     background: rgba(255,255,255,.08); color: var(--head-ink);
     font: 600 15px/1.1 var(--font); cursor: pointer;
   }
   .days button small { display: block; font-weight: 400; opacity: .7; font-size: 12px; margin-top: 2px; }
   .days button[aria-pressed="true"] { background: var(--accent); color: #fff; }
-  .opts { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 13px; opacity: .85; }
+  .opts { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; margin: 8px 16px 0; font-size: 13px; opacity: .85; }
   .opts label { display: flex; align-items: center; gap: 6px; }
+  .opts #count { margin-left: auto; }
   main { max-width: 640px; margin: 0 auto; padding: 4px 16px 32px; }
   h2 {
     font: 700 13px/1 var(--font); text-transform: uppercase; letter-spacing: 1.2px;
@@ -81,13 +91,20 @@
   }
   h3.slot { font: 600 12px/1 var(--font); color: var(--muted); margin: 14px 0 6px; }
   .list { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-  .row {
-    display: grid; grid-template-columns: 52px 1fr; gap: 10px;
-    padding: 11px 12px; border-top: 1px solid var(--line);
-    color: inherit; text-decoration: none;
-  }
+  .row { display: flex; align-items: stretch; border-top: 1px solid var(--line); }
   .row:first-child { border-top: 0; }
-  .row:active { background: var(--chip); }
+  .row > a {
+    flex: 1; min-width: 0; display: grid; grid-template-columns: 52px 1fr; gap: 10px;
+    padding: 11px 0 11px 12px; color: inherit; text-decoration: none;
+  }
+  .row > a:active { background: var(--chip); }
+  .row.past { opacity: .45; }
+  .share {
+    flex: 0 0 48px; border: 0; background: none; color: var(--muted);
+    display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
+  }
+  .share:active { color: var(--accent); }
+  .share svg { width: 21px; height: 21px; }
   .time { font: 700 16px/1.25 var(--font); font-variant-numeric: tabular-nums; }
   .title { font-weight: 600; line-height: 1.25; }
   .info { color: var(--muted); font-size: 13px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
@@ -97,21 +114,9 @@
   .v-Phil { color: var(--v-phil); }
   .v-Patronaat { color: var(--v-patronaat); }
   .v-Stadsschouwburg { color: var(--v-schouwburg); }
+  .v-DeLiefde { color: var(--v-liefde); }
+  .v-Pathe { color: var(--v-pathe); }
   .sold { color: var(--accent); font-weight: 600; }
-  .film { padding: 11px 12px; border-top: 1px solid var(--line); }
-  .film:first-child { border-top: 0; }
-  .film .title a { color: inherit; text-decoration: none; }
-  .times { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
-  .times a {
-    font: 600 14px/1 var(--font); font-variant-numeric: tabular-nums;
-    padding: 7px 9px; border-radius: 8px; background: var(--chip);
-    color: inherit; text-decoration: none;
-  }
-  .times a.past { opacity: .4; }
-  .times a.sold { text-decoration: line-through; }
-  .venuehead { display: flex; justify-content: space-between; align-items: baseline; margin: 16px 2px 6px; }
-  .venuehead b { font-size: 15px; }
-  .venuehead a { font-size: 13px; color: var(--muted); }
   .link-card {
     display: block; padding: 12px; margin-top: 8px;
     background: var(--card); border: 1px dashed var(--line); border-radius: 14px;
@@ -119,9 +124,16 @@
   }
   .link-card .muted { color: var(--muted); font-size: 13px; }
   .empty { padding: 14px 12px; color: var(--muted); font-size: 14px; }
-  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 28px; line-height: 1.6; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 28px; line-height: 1.7; }
+  footer a { color: inherit; }
   footer .warn { color: var(--accent); }
   .loading { padding: 40px 0; text-align: center; color: var(--muted); }
+  .toast {
+    position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 20px); transform: translateX(-50%);
+    background: var(--ink); color: var(--bg); padding: 9px 14px; border-radius: 10px; font-size: 14px;
+    opacity: 0; transition: opacity .2s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; }
 </style>
 </head>
 <body>
@@ -129,35 +141,49 @@
   <h1>Uit in <span>Haarlem</span></h1>
   <div class="days" id="days"></div>
   <div class="opts">
-    <label><input type="checkbox" id="fromNow" checked> alleen wat nog komt</label>
+    <label id="fromNowLabel"><input type="checkbox" id="fromNow" checked> alleen wat nog komt</label>
+    <label><input type="checkbox" id="showPathe"> Pathé tonen</label>
     <span id="count"></span>
   </div>
 </header>
 <main id="app"><div class="loading">Agenda laden...</div></main>
+<div class="toast" id="toast"></div>
 
 <script>
 const VENUE_SITES = {
   Filmkoepel: 'https://filmkoepel.nl/agenda/',
   Schuur: 'https://www.schuur.nl/agenda',
+  'Pathé': 'https://www.pathe.nl/nl/bioscopen/pathe-haarlem',
   Phil: 'https://philhaarlem.nl/agenda',
   Patronaat: 'https://patronaat.nl/programma/',
+  'De Liefde': 'https://theaterdeliefde.nl/agenda/',
   Stadsschouwburg: 'https://stadsschouwburghaarlem.nl/agenda',
 };
+const NUM_DAYS = 7;
 const DAYNAMES = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
 const DAYFULL = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
 const MONTHNAMES = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+const SHARE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>';
 
 const pad = (n) => String(n).padStart(2, '0');
 const isoDate = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-const esc = (s = '') => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const venueClass = (v) => 'v-' + v.normalize('NFD').replace(/[^A-Za-z]/g, '');
+
+const store = {
+  get(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch { return def; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
 
 let data = null;
 let dayIndex = 0;
 let fromNow = true;
+let showPathe = store.get('uitagenda.pathe', false);
+let rendered = []; // events op het scherm, voor de deelknoppen
 
 function days() {
   const base = new Date();
-  return [0, 1, 2].map((i) => {
+  return Array.from({ length: NUM_DAYS }, (_, i) => {
     const d = new Date(base.getFullYear(), base.getMonth(), base.getDate() + i);
     const label = i === 0 ? 'Vandaag' : i === 1 ? 'Morgen' : DAYFULL[d.getDay()];
     return { iso: isoDate(d), label, sub: `${DAYNAMES[d.getDay()]} ${d.getDate()} ${MONTHNAMES[d.getMonth()]}` };
@@ -188,90 +214,61 @@ function renderDays() {
   const el = document.getElementById('days');
   el.innerHTML = days().map((d, i) =>
     `<button aria-pressed="${i === dayIndex}" data-i="${i}">${d.label}<small>${d.sub}</small></button>`).join('');
-  el.querySelectorAll('button').forEach((b) => b.onclick = () => { dayIndex = Number(b.dataset.i); render(); });
-  document.getElementById('fromNow').parentElement.style.visibility = dayIndex === 0 ? 'visible' : 'hidden';
+  el.querySelectorAll('button').forEach((b) => b.onclick = () => { dayIndex = Number(b.dataset.i); render(); window.scrollTo(0, 0); });
+  document.getElementById('fromNowLabel').style.display = dayIndex === 0 ? '' : 'none';
 }
 
-function podiumRow(ev) {
-  return `<a class="row" href="${esc(ev.url)}" target="_blank" rel="noopener">
-    <div class="time">${ev.time || '—'}</div>
-    <div>
-      <div class="venue v-${ev.venue}">${ev.venue}${ev.soldOut ? ' · <span class="sold">uitverkocht</span>' : ''}</div>
-      <div class="title">${esc(ev.title)}</div>
-      ${ev.info ? `<div class="info">${esc(ev.info)}</div>` : ''}
-    </div>
-  </a>`;
+function row(ev, past) {
+  const i = rendered.push(ev) - 1;
+  return `<div class="row${past ? ' past' : ''}">
+    <a href="${esc(ev.url)}" target="_blank" rel="noopener">
+      <div class="time">${ev.time || '—'}</div>
+      <div>
+        <div class="venue ${venueClass(ev.venue)}">${esc(ev.venue)}${ev.soldOut ? ' · <span class="sold">uitverkocht</span>' : ''}</div>
+        <div class="title">${esc(ev.title)}</div>
+        ${ev.info ? `<div class="info">${esc(ev.info)}</div>` : ''}
+      </div>
+    </a>
+    <button class="share" data-share="${i}" aria-label="Deel ${esc(ev.title)}">${SHARE_ICON}</button>
+  </div>`;
 }
 
-function renderPodium(list) {
-  let html = '<h2>Podium: theater, concerten, clubs</h2>';
-  if (!list.length) {
-    html += '<div class="list"><div class="empty">Niets meer gevonden bij Phil, Patronaat of Schuur.</div></div>';
-  } else {
-    let last = '';
-    for (const ev of list) {
-      const slot = slotOf(ev.time);
-      if (slot !== last) {
-        if (last) html += '</div>';
-        html += `<h3 class="slot">${slot}</h3><div class="list">`;
-        last = slot;
-      }
-      html += podiumRow(ev);
+function section(title, list, emptyText, pastFn = () => false) {
+  let html = `<h2>${title}</h2>`;
+  if (!list.length) return html + `<div class="list"><div class="empty">${emptyText}</div></div>`;
+  let last = '';
+  for (const ev of list) {
+    const slot = slotOf(ev.time);
+    if (slot !== last) {
+      if (last) html += '</div>';
+      html += `<h3 class="slot">${slot}</h3><div class="list">`;
+      last = slot;
     }
-    html += '</div>';
+    html += row(ev, pastFn(ev));
   }
-  html += `<a class="link-card" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener">
-    <div class="venue v-Stadsschouwburg">Stadsschouwburg</div>
-    Bekijk de agenda op de site van de Stadsschouwburg &rarr;
-    <div class="muted">Hun site laat geen automatisch ophalen toe, daarom hier een directe link.</div>
-  </a>`;
-  return html;
-}
-
-function renderFilms(list) {
-  let html = '<h2>Film</h2>';
-  for (const venue of ['Filmkoepel', 'Schuur']) {
-    const mine = list.filter((e) => e.venue === venue);
-    html += `<div class="venuehead"><b class="v-${venue}">${venue}</b><a href="${VENUE_SITES[venue]}" target="_blank" rel="noopener">hele agenda</a></div>`;
-    if (!mine.length) { html += '<div class="list"><div class="empty">Geen voorstellingen meer.</div></div>'; continue; }
-    // Groepeer per film, gesorteerd op eerste aanvang
-    const films = new Map();
-    for (const ev of mine) {
-      if (!films.has(ev.title)) films.set(ev.title, { title: ev.title, info: ev.info, url: ev.url, shows: [] });
-      films.get(ev.title).shows.push(ev);
-    }
-    html += '<div class="list">';
-    for (const f of films.values()) {
-      const info = venue === 'Filmkoepel' ? (f.info || '').split(' · ')[0] : f.info;
-      html += `<div class="film">
-        <div class="title"><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a></div>
-        ${info ? `<div class="info">${esc(info)}</div>` : ''}
-        <div class="times">${f.shows.map((s) =>
-          `<a href="${esc(s.url)}" target="_blank" rel="noopener" class="${isPast(s) ? 'past' : ''} ${s.soldOut ? 'sold' : ''}" title="${esc(s.info || '')}">${s.time}</a>`).join('')}</div>
-      </div>`;
-    }
-    html += '</div>';
-  }
-  return html;
+  return html + '</div>';
 }
 
 function render() {
   renderDays();
   if (!data) return;
+  rendered = [];
   const day = days()[dayIndex];
-  let events = data.events.filter((e) => e.date === day.iso);
   const onlyUpcoming = dayIndex === 0 && fromNow;
-  const podium = events.filter((e) => e.kind !== 'film' && !(onlyUpcoming && isPast(e)));
-  // Films: toon een film zolang er nog een voorstelling komt; verlopen tijden grijs
-  let films = events.filter((e) => e.kind === 'film');
-  if (onlyUpcoming) {
-    const upcoming = new Set(films.filter((e) => !isPast(e)).map((e) => e.venue + e.title));
-    films = films.filter((e) => upcoming.has(e.venue + e.title));
-  }
-  const filmCount = films.filter((e) => !(onlyUpcoming && isPast(e))).length;
-  document.getElementById('count').textContent = `${podium.length} podium · ${filmCount} films`;
+  const events = data.events.filter((e) => e.date === day.iso && !(onlyUpcoming && isPast(e)));
+  const podium = events.filter((e) => e.kind !== 'film');
+  const films = events.filter((e) => e.kind === 'film' && (showPathe || e.venue !== 'Pathé'));
+  document.getElementById('count').textContent = `${podium.length} podium · ${films.length} film`;
 
-  let html = renderPodium(podium) + renderFilms(films);
+  const cinemas = showPathe ? 'Filmkoepel, Schuur of Pathé' : 'Filmkoepel of Schuur';
+  let html = section('Podium: theater, concerten, clubs', podium, 'Niets gevonden bij Phil, Patronaat, De Liefde of Schuur.', isPast);
+  html += `<a class="link-card" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener">
+    <div class="venue v-Stadsschouwburg">Stadsschouwburg</div>
+    Bekijk de agenda op de site van de Stadsschouwburg &rarr;
+    <div class="muted">Hun site laat geen automatisch ophalen toe, daarom hier een directe link.</div>
+  </a>`;
+  html += section('Film', films, `Geen voorstellingen gevonden bij ${cinemas}. Het nieuwe filmprogramma verschijnt meestal pas op maandag of dinsdag.`, isPast);
+
   const updated = new Date(data.generated);
   const failed = Object.entries(data.status || {}).filter(([, s]) => !s.ok).map(([n]) => n);
   const covered = (data.days || []).includes(day.iso);
@@ -280,11 +277,39 @@ function render() {
     ${failed.length ? `<br><span class="warn">Laatste update mislukt voor: ${failed.join(', ')} (oude gegevens getoond)</span>` : ''}
     ${!covered ? `<br><span class="warn">Voor deze dag zijn nog geen gegevens opgehaald.</span>` : ''}
     <br>Tijden onder voorbehoud, check altijd de site van de zaal.
+    <br>De Liefde via Podiuminfo, Pathé via Filmladder.
+    <br>${Object.entries(VENUE_SITES).map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(' · ')}
   </footer>`;
   document.getElementById('app').innerHTML = html;
 }
 
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+async function share(ev) {
+  const [y, m, d] = ev.date.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  const when = `${DAYNAMES[dt.getDay()]} ${d} ${MONTHNAMES[m - 1]}${ev.time ? ' ' + ev.time : ''}`;
+  const text = `${ev.title} - ${ev.venue}, ${when}`;
+  if (navigator.share) {
+    try { await navigator.share({ title: ev.title, text, url: ev.url }); } catch {}
+    return;
+  }
+  try { await navigator.clipboard.writeText(`${text}\n${ev.url}`); toast('Link gekopieerd'); }
+  catch { prompt('Kopieer de link:', ev.url); }
+}
+
+document.getElementById('app').addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-share]');
+  if (btn) share(rendered[Number(btn.dataset.share)]);
+});
 document.getElementById('fromNow').onchange = (e) => { fromNow = e.target.checked; render(); };
+const patheBox = document.getElementById('showPathe');
+patheBox.checked = showPathe;
+patheBox.onchange = (e) => { showPathe = e.target.checked; store.set('uitagenda.pathe', showPathe); render(); };
 
 async function load() {
   try {

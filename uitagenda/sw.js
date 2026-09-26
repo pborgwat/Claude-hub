@@ -1,5 +1,5 @@
 // Eenvoudige service worker: agenda altijd vers ophalen, bij geen netwerk de laatste versie tonen.
-const CACHE = 'uitagenda-v1';
+const CACHE = 'uitagenda-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
