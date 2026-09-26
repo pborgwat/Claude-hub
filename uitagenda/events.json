@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T19:12:37.123Z",
+ "generated": "2026-09-26T21:57:27.549Z",
  "days": [
   "2026-09-26",
   "2026-09-27",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 52
+   "count": 50
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 209
+   "count": 207
   }
  },
  "events": [
@@ -569,15 +569,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-26",
-   "time": "20:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228552672"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "F*ck de Familie",
    "info": "",
    "date": "2026-09-26",
@@ -634,15 +625,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228552628"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Akira",
-   "info": "anime · Katsuhiro Otomo",
-   "date": "2026-09-26",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/akira"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Avengers: Endgame",
@@ -690,24 +672,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/201723",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-26",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-26",
-   "time": "21:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228552483"
   },
   {
    "venue": "Pathé",
