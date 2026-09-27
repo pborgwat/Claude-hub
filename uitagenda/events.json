@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T09:59:26.738Z",
+ "generated": "2026-09-27T15:09:28.591Z",
  "days": [
   "2026-09-27",
   "2026-09-28",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 53
+   "count": 48
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 167
+   "count": 164
   }
  },
  "events": [
@@ -72,15 +72,6 @@
    "date": "2026-09-27",
    "time": "10:10",
    "url": "https://www.filmladder.nl/kaartjes/1228567492"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "10:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567520"
   },
   {
    "venue": "Pathé",
@@ -188,15 +179,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567407"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-09-27",
-   "time": "12:10",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "HalloWiebe: Overdrive",
@@ -222,15 +204,6 @@
    "date": "2026-09-27",
    "time": "12:45",
    "url": "https://www.filmladder.nl/kaartjes/1228567363"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-27",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Pathé",
@@ -321,38 +294,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-27",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567372"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Het Vergeten Eiland",
    "info": "2D",
    "date": "2026-09-27",
    "time": "14:30",
    "url": "https://www.filmladder.nl/kaartjes/1228567501"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Rally – van Parijs naar de Piramides",
-   "info": "familiefilm · Rasmus A. Sivertsen",
-   "date": "2026-09-27",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/rally-van-parijs-naar-de-piramides"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "14:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228567521"
   },
   {
    "venue": "Patronaat",
@@ -373,15 +319,6 @@
    "time": "15:00",
    "url": "https://philhaarlem.nl/agenda/omroep-max",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-27",
-   "time": "15:05",
-   "url": "https://www.schuur.nl/film/mother"
   },
   {
    "venue": "Filmkoepel",
@@ -458,15 +395,6 @@
    "time": "16:15",
    "url": "https://filmkoepel.nl/tickets/201838",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Histoires Parallèles",
-   "info": "film · Asghar Farhadi",
-   "date": "2026-09-27",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/histoires-parallèles"
   },
   {
    "venue": "Filmkoepel",
