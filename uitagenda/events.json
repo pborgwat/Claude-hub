@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T00:34:06.441Z",
+ "generated": "2026-09-27T09:59:26.738Z",
  "days": [
   "2026-09-27",
   "2026-09-28",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 55
+   "count": 53
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 168
+   "count": 167
   }
  },
  "events": [
@@ -67,15 +67,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228567448"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Avengers: Endgame",
    "info": "2D · Encore",
    "date": "2026-09-27",
@@ -90,15 +81,6 @@
    "date": "2026-09-27",
    "time": "10:20",
    "url": "https://www.filmladder.nl/kaartjes/1228567520"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-09-27",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
   },
   {
    "venue": "Pathé",
@@ -127,15 +109,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/201831",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sovereign Son",
-   "info": "documentaire · Cindy Jansen",
-   "date": "2026-09-27",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/sovereign-son"
   },
   {
    "venue": "Filmkoepel",
