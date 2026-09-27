@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T15:09:28.591Z",
+ "generated": "2026-09-27T19:45:47.552Z",
  "days": [
   "2026-09-27",
   "2026-09-28",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 48
+   "count": 43
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 164
+   "count": 160
   }
  },
  "events": [
@@ -435,15 +435,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567465"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Manager",
-   "info": "documentaire · Maartje Bakers",
-   "date": "2026-09-27",
-   "time": "17:10",
-   "url": "https://www.schuur.nl/film/de-manager"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
@@ -451,24 +442,6 @@
    "date": "2026-09-27",
    "time": "17:10",
    "url": "https://www.filmladder.nl/kaartjes/1228567420"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "17:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228567449"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-27",
-   "time": "18:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567373"
   },
   {
    "venue": "Filmkoepel",
@@ -510,15 +483,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-09-27",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Practical Magic 2",
@@ -548,15 +512,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men - English subs",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-27",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/no-good-men-en"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -565,15 +520,6 @@
    "time": "19:00",
    "url": "https://filmkoepel.nl/tickets/201731",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567552"
   },
   {
    "venue": "Pathé",
@@ -592,15 +538,6 @@
    "date": "2026-09-27",
    "time": "19:30",
    "url": "https://www.filmladder.nl/kaartjes/1228567493"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-27",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567522"
   },
   {
    "venue": "Pathé",
@@ -671,15 +608,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-27",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Invite",
@@ -688,15 +616,6 @@
    "time": "21:00",
    "url": "https://filmkoepel.nl/tickets/201998",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Akira",
-   "info": "anime · Katsuhiro Otomo",
-   "date": "2026-09-27",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/akira"
   },
   {
    "venue": "Filmkoepel",
