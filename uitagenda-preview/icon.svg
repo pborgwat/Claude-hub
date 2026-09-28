@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#f0f6ff"/>
+  <polygon points="300,-40 470,84 405,284 195,284 130,84" fill="#ffda00" transform="rotate(12 300 120)"/>
+  <path d="M-40 520 A190 190 0 0 1 340 520 Z" fill="#ff4141"/>
+  <polygon points="430,300 540,500 320,500" fill="#16ab59" transform="rotate(-10 430 400)"/>
+  <circle cx="70" cy="90" r="80" fill="#91d8ec"/>
+  <circle cx="256" cy="256" r="118" fill="#2727e6"/>
+  <text x="256" y="292" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="104" font-weight="400" letter-spacing="-4" fill="#ffffff">uit</text>
+</svg>
