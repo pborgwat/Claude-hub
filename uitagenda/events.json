@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T10:52:09.568Z",
+ "generated": "2026-09-28T20:07:01.005Z",
  "days": [
   "2026-09-28",
   "2026-09-29",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 76
+   "count": 67
   },
   "Phil": {
    "ok": true,
@@ -33,28 +33,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 127
+   "count": 266
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567545"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "HalloWiebe: Overdrive",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567481"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -64,15 +46,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/201832",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567473"
   },
   {
    "venue": "Filmkoepel",
@@ -115,33 +88,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "F*ck de Familie",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567443"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Practical Magic 2",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567410"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "By Any Means",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "11:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228567503"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Résistance",
@@ -150,60 +96,6 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/201971",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "2D",
-   "date": "2026-09-28",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567397"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Avengers: Endgame",
-   "info": "2D · Encore",
-   "date": "2026-09-28",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567494"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567524"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-09-28",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567422"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paradijs",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "13:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567541"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-28",
-   "time": "13:15",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Filmkoepel",
@@ -224,15 +116,6 @@
    "time": "13:30",
    "url": "https://filmkoepel.nl/tickets/202013",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Runner",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "13:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228567507"
   },
   {
    "venue": "Filmkoepel",
@@ -267,47 +150,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567462"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-28",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567486"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Spider-Man: Brand New Day",
    "info": "2D",
    "date": "2026-09-28",
    "time": "14:50",
    "url": "https://www.filmladder.nl/kaartjes/1228567398"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "15:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567525"
   },
   {
    "venue": "Filmkoepel",
@@ -327,15 +174,6 @@
    "date": "2026-09-28",
    "time": "15:15",
    "url": "https://www.filmladder.nl/kaartjes/1228567411"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Manager",
-   "info": "documentaire · Maartje Bakers",
-   "date": "2026-09-28",
-   "time": "15:20",
-   "url": "https://www.schuur.nl/film/de-manager"
   },
   {
    "venue": "Pathé",
@@ -376,15 +214,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567382"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-28",
-   "time": "16:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567374"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -405,15 +234,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The End of Oak Street",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567366"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Incomer",
@@ -424,15 +244,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Un Anno di Scuola",
-   "info": "film · Laura Samani",
-   "date": "2026-09-28",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/un-anno-di-scuola"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Forgotten Island",
@@ -440,24 +251,6 @@
    "date": "2026-09-28",
    "time": "16:35",
    "url": "https://www.filmladder.nl/kaartjes/1228567466"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Match",
-   "info": "documentaire · Juan Cabral",
-   "date": "2026-09-28",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/the-match"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "17:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567451"
   },
   {
    "venue": "Pathé",
@@ -476,15 +269,6 @@
    "date": "2026-09-28",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567364"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-28",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567375"
   },
   {
    "venue": "Pathé",
@@ -526,15 +310,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Paradies: Liebe",
-   "info": "film · Ulrich Seidl",
-   "date": "2026-09-28",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/liebe"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Practical Magic 2",
@@ -564,24 +339,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Les demoiselles de Rochefort",
-   "info": "klassieker · Jacques Demy",
-   "date": "2026-09-28",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/les-demoiselles-de-rochefort-2"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567566"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -599,15 +356,6 @@
    "date": "2026-09-28",
    "time": "19:30",
    "url": "https://www.filmladder.nl/kaartjes/1228567487"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "19:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228567526"
   },
   {
    "venue": "Pathé",
@@ -687,15 +435,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567369"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-28",
-   "time": "21:10",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -724,15 +463,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567383"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-28",
-   "time": "21:30",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Paradijs",
@@ -740,15 +470,6 @@
    "date": "2026-09-28",
    "time": "21:50",
    "url": "https://www.filmladder.nl/kaartjes/1228567542"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-28",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228567452"
   },
   {
    "venue": "Pathé",
@@ -2260,6 +1981,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567433"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "11:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587686"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Mother",
@@ -2267,6 +1997,24 @@
    "date": "2026-10-01",
    "time": "11:00",
    "url": "https://www.schuur.nl/film/mother"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Bumba: Het Circusorkest",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "11:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587672"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "11:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587555"
   },
   {
    "venue": "Filmkoepel",
@@ -2277,6 +2025,24 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/203544",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "11:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587693"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "11:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587633"
   },
   {
    "venue": "Filmkoepel",
@@ -2365,6 +2131,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "12:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587568"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "13:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587481"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Juste une illusion",
@@ -2372,6 +2156,24 @@
    "date": "2026-10-01",
    "time": "13:15",
    "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Runner",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "13:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587626"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "13:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587515"
   },
   {
    "venue": "Filmkoepel",
@@ -2382,6 +2184,24 @@
    "time": "13:45",
    "url": "https://filmkoepel.nl/tickets/203489",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "13:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587448"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "13:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587460"
   },
   {
    "venue": "Filmkoepel",
@@ -2402,6 +2222,15 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/203589",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "14:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587598"
   },
   {
    "venue": "Schuur",
@@ -2433,6 +2262,33 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paradijs",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "15:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587665"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "F*ck de Familie",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "15:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587504"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "15:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587482"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Naza",
@@ -2440,6 +2296,33 @@
    "date": "2026-10-01",
    "time": "15:40",
    "url": "https://www.schuur.nl/film/naza"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "15:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587569"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "2D · Encore",
+   "date": "2026-10-01",
+   "time": "16:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587609"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "16:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587556"
   },
   {
    "venue": "Filmkoepel",
@@ -2491,6 +2374,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "16:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587411"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -2501,6 +2393,33 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "16:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587461"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "HalloWiebe: Overdrive",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "17:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587590"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "17:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587517"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "De Manager",
@@ -2508,6 +2427,33 @@
    "date": "2026-10-01",
    "time": "17:30",
    "url": "https://www.schuur.nl/film/de-manager"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "18:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587402"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The End of Oak Street",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "18:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587399"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Forgotten Island",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "18:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587544"
   },
   {
    "venue": "Filmkoepel",
@@ -2550,6 +2496,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "18:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587599"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "19:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587634"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -2568,6 +2532,15 @@
    "url": "https://www.schuur.nl/film/downtown"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "19:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587449"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -2576,6 +2549,15 @@
    "time": "19:15",
    "url": "https://filmkoepel.nl/tickets/203475",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "19:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587570"
   },
   {
    "venue": "Pathé",
@@ -2617,6 +2599,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "20:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587428"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Odyssey",
@@ -2625,6 +2616,15 @@
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/203610",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "20:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587635"
   },
   {
    "venue": "Filmkoepel",
@@ -2644,6 +2644,15 @@
    "date": "2026-10-01",
    "time": "21:00",
    "url": "https://www.schuur.nl/film/digger"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "21:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587412"
   },
   {
    "venue": "Filmkoepel",
@@ -2695,6 +2704,42 @@
    "url": "https://www.schuur.nl/film/wild-style"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Runner",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "21:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587627"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-01",
+   "time": "21:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587462"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Crawlers",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "22:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587682"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-01",
+   "time": "22:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587518"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Making Vinyl 2026",
@@ -2705,6 +2750,42 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "2D · Encore",
+   "date": "2026-10-02",
+   "time": "11:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587610"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Bumba: Het Circusorkest",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "11:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587673"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "11:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587694"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "11:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587687"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Rivals of Amziah King",
@@ -2713,6 +2794,15 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/203545",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "11:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587557"
   },
   {
    "venue": "Filmkoepel",
@@ -2735,6 +2825,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "11:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587519"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Incomer",
@@ -2755,6 +2854,33 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paw Patrol: De Dinofilm",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "12:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587536"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "12:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587636"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "12:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587450"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Plague",
@@ -2763,6 +2889,42 @@
    "time": "12:30",
    "url": "https://filmkoepel.nl/tickets/203448",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "12:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587463"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "13:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587483"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "13:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587413"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "13:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587571"
   },
   {
    "venue": "Filmkoepel",
@@ -2795,6 +2957,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Minions & Monsters (NL)",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "14:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587424"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Toy Story 5 (NL)",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "14:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587509"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -2813,6 +2993,60 @@
    "time": "15:00",
    "url": "https://filmkoepel.nl/tickets/203527",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "15:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587637"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "15:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587403"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "HalloWiebe: Overdrive",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "15:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587591"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "15:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587558"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "15:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587619"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "16:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587484"
   },
   {
    "venue": "Filmkoepel",
@@ -2864,6 +3098,15 @@
    "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "16:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587429"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -2881,6 +3124,51 @@
    "date": "2026-10-02",
    "time": "16:45",
    "url": "https://www.schuur.nl/film/no-good-men"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "17:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587415"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "F*ck de Familie",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "17:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587505"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "17:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587572"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Forgotten Island",
+   "info": "3D",
+   "date": "2026-10-02",
+   "time": "17:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587545"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "18:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587464"
   },
   {
    "venue": "Filmkoepel",
@@ -2923,6 +3211,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "18:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587520"
+  },
+  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Bnnyhunna • Haarlem Vinyl Festival",
@@ -2931,6 +3228,15 @@
    "time": "19:00",
    "url": "https://patronaat.nl/event/bnnyhunna-haarlem-vinyl-festival-02-10-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "19:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587600"
   },
   {
    "venue": "Schuur",
@@ -2952,6 +3258,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "19:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587430"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Naza",
@@ -2959,6 +3274,24 @@
    "date": "2026-10-02",
    "time": "19:30",
    "url": "https://www.schuur.nl/film/naza"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "19:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587451"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "19:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587416"
   },
   {
    "venue": "Patronaat",
@@ -2990,6 +3323,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "20:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587639"
+  },
+  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "247GO + Marble Boy • Haarlem Vinyl Festival",
@@ -2998,6 +3340,15 @@
    "time": "20:15",
    "url": "https://patronaat.nl/event/247go-02-10-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "20:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587573"
   },
   {
    "venue": "Phil",
@@ -3037,6 +3388,15 @@
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/203611",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "3D · Encore",
+   "date": "2026-10-02",
+   "time": "20:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587611"
   },
   {
    "venue": "Filmkoepel",
@@ -3107,6 +3467,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "21:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587405"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-02",
+   "time": "22:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587465"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Afterparty Chef’Special ft. DJ Ed Rock",
@@ -3115,6 +3493,51 @@
    "time": "22:15",
    "url": "https://philhaarlem.nl/agenda/dj-ed-rock",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Runner",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "22:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587628"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "22:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587641"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paradijs",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "22:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587666"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "22:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587521"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Crawlers",
+   "info": "",
+   "date": "2026-10-02",
+   "time": "23:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587683"
   },
   {
    "venue": "Patronaat",
@@ -3135,6 +3558,69 @@
    "time": null,
    "url": "https://philhaarlem.nl/agenda/making-vinyl-2026",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paw Patrol: De Dinofilm",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "09:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587538"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "09:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587559"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "09:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587574"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Bumba: Het Circusorkest",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "09:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587674"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "10:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587643"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "10:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587406"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "10:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587452"
   },
   {
    "venue": "Schuur",
@@ -3163,6 +3649,24 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/203551",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "11:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587620"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "HalloWiebe: Overdrive",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "11:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587592"
   },
   {
    "venue": "Filmkoepel",
@@ -3195,6 +3699,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "11:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587485"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Résistance",
@@ -3203,6 +3716,24 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/203521",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "12:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587575"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "12:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587688"
   },
   {
    "venue": "Filmkoepel",
@@ -3224,6 +3755,15 @@
    "url": "https://www.schuur.nl/film/naza"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paw Patrol: De Dinofilm",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "13:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587540"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "De Manager",
@@ -3231,6 +3771,24 @@
    "date": "2026-10-03",
    "time": "13:20",
    "url": "https://www.schuur.nl/film/de-manager"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "13:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587695"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Ted & De Magische Lamp",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "13:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587445"
   },
   {
    "venue": "Filmkoepel",
@@ -3243,6 +3801,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "3D",
+   "date": "2026-10-03",
+   "time": "13:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587621"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Het Vergeten Eiland",
@@ -3251,6 +3818,15 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/203557",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "14:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587560"
   },
   {
    "venue": "Filmkoepel",
@@ -3263,6 +3839,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "2D · Encore",
+   "date": "2026-10-03",
+   "time": "14:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587612"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "14:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587646"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Shaun het Schaap: Het Beest van de Boerderij",
@@ -3271,6 +3865,15 @@
    "time": "14:30",
    "url": "https://filmkoepel.nl/tickets/203458",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "HalloWiebe: Overdrive",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "14:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587593"
   },
   {
    "venue": "Schuur",
@@ -3301,6 +3904,24 @@
    "url": "https://www.schuur.nl/film/rally-van-parijs-naar-de-piramides"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Minions & Monsters (NL)",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "15:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587425"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "15:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587486"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Ruud Jolie",
@@ -3309,6 +3930,15 @@
    "time": "16:00",
    "url": "https://philhaarlem.nl/agenda/ruud-jolie-van-within-temptation-spreekt-ongefilterd",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Toy Story 5 (NL)",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "16:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587510"
   },
   {
    "venue": "Filmkoepel",
@@ -3329,6 +3959,15 @@
    "time": "16:15",
    "url": "https://filmkoepel.nl/tickets/203498",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "16:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587417"
   },
   {
    "venue": "Filmkoepel",
@@ -3370,6 +4009,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "16:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587576"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "16:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587647"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Downtown",
@@ -3377,6 +4034,42 @@
    "date": "2026-10-03",
    "time": "17:00",
    "url": "https://www.schuur.nl/film/downtown"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Forgotten Island",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "17:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587546"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "17:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587466"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Practical Magic 2",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "18:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587454"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "F*ck de Familie",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "18:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587506"
   },
   {
    "venue": "Filmkoepel",
@@ -3397,6 +4090,15 @@
    "time": "18:30",
    "url": "https://filmkoepel.nl/tickets/203605",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "18:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587522"
   },
   {
    "venue": "Filmkoepel",
@@ -3446,6 +4148,15 @@
    "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "19:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587431"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -3454,6 +4165,15 @@
    "time": "19:15",
    "url": "https://filmkoepel.nl/tickets/203477",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "19:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587577"
   },
   {
    "venue": "Pathé",
@@ -3524,6 +4244,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "20:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587648"
+  },
+  {
    "venue": "Schuur",
    "kind": "podium",
    "title": "Pyrrha gooit een steen",
@@ -3531,6 +4260,15 @@
    "date": "2026-10-03",
    "time": "20:30",
    "url": "https://www.schuur.nl/theater/pyrrha-gooit-een-steen"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "20:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587601"
   },
   {
    "venue": "Filmkoepel",
@@ -3541,6 +4279,15 @@
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/203616",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "20:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587467"
   },
   {
    "venue": "Schuur",
@@ -3570,6 +4317,15 @@
    "time": "21:00",
    "url": "https://filmkoepel.nl/tickets/203577",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "21:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587407"
   },
   {
    "venue": "Filmkoepel",
@@ -3611,6 +4367,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-03",
+   "time": "22:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587468"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "22:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587418"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Aftershow met Lostboyshawty",
@@ -3621,6 +4395,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "22:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587649"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "22:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587523"
+  },
+  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "CLUB3 X The Flexican",
@@ -3629,6 +4421,96 @@
    "time": "23:00",
    "url": "https://patronaat.nl/event/club3-x-the-flexican-03-10-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Crawlers",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "23:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587684"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paradijs",
+   "info": "",
+   "date": "2026-10-03",
+   "time": "23:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587667"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paw Patrol: De Dinofilm",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "09:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587541"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Bumba: Het Circusorkest",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "09:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587675"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "09:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587432"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "2D · Encore",
+   "date": "2026-10-04",
+   "time": "10:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587613"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Ted & De Magische Lamp",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "10:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587446"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "10:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587578"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Forgotten Island",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "10:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587547"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "10:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587487"
   },
   {
    "venue": "Schuur",
@@ -3647,6 +4529,15 @@
    "date": "2026-10-04",
    "time": "11:00",
    "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "11:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587650"
   },
   {
    "venue": "Filmkoepel",
@@ -3689,6 +4580,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "11:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587622"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Résistance",
@@ -3708,6 +4608,15 @@
    "url": "https://www.schuur.nl/film/mother"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paw Patrol: De Dinofilm",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "12:15",
+   "url": "https://www.filmladder.nl/kaartjes/1228587542"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -3716,6 +4625,33 @@
    "time": "12:30",
    "url": "https://filmkoepel.nl/tickets/203452",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "12:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587689"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Yugly",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "12:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587679"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "13:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587696"
   },
   {
    "venue": "Schuur",
@@ -3727,6 +4663,24 @@
    "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "13:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587562"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "HalloWiebe: Overdrive",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "13:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587594"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Juste une illusion",
@@ -3735,6 +4689,15 @@
    "time": "13:45",
    "url": "https://filmkoepel.nl/tickets/203492",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "14:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587651"
   },
   {
    "venue": "Filmkoepel",
@@ -3757,6 +4720,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Vaiana (NL)",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "14:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587663"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Juste une illusion",
@@ -3764,6 +4736,15 @@
    "date": "2026-10-04",
    "time": "14:20",
    "url": "https://www.schuur.nl/film/juste-une-illusion"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Minions & Monsters (NL)",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "14:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587426"
   },
   {
    "venue": "Filmkoepel",
@@ -3776,6 +4757,24 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "14:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587435"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Toy Story 5 (NL)",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "14:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587511"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Liberté",
@@ -3784,6 +4783,15 @@
    "time": "15:00",
    "url": "https://filmkoepel.nl/tickets/203529",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "15:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587602"
   },
   {
    "venue": "Schuur",
@@ -3795,6 +4803,15 @@
    "url": "https://www.schuur.nl/theater/stuntelman"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Het Vergeten Eiland",
+   "info": "3D",
+   "date": "2026-10-04",
+   "time": "15:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587623"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Naza",
@@ -3802,6 +4819,15 @@
    "date": "2026-10-04",
    "time": "15:15",
    "url": "https://www.schuur.nl/film/naza"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Digger",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "15:35",
+   "url": "https://www.filmladder.nl/kaartjes/1228587488"
   },
   {
    "venue": "Filmkoepel",
@@ -3824,6 +4850,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "16:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587579"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Digger",
@@ -3842,6 +4877,15 @@
    "time": "16:30",
    "url": "https://filmkoepel.nl/tickets/203563",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "16:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587524"
   },
   {
    "venue": "Schuur",
@@ -3879,6 +4923,42 @@
    "date": "2026-10-04",
    "time": "17:00",
    "url": "https://www.schuur.nl/film/downtown"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Forgotten Island",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "17:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228587548"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "17:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587652"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "The Odyssey",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "18:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587408"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "18:20",
+   "url": "https://www.filmladder.nl/kaartjes/1228587469"
   },
   {
    "venue": "Filmkoepel",
@@ -3921,6 +5001,15 @@
    "soldOut": false
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Pressure",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "18:45",
+   "url": "https://www.filmladder.nl/kaartjes/1228587603"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Naza - English subs",
@@ -3937,6 +5026,15 @@
    "date": "2026-10-04",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567549"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "19:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587580"
   },
   {
    "venue": "Schuur",
@@ -3956,6 +5054,24 @@
    "time": "19:15",
    "url": "https://filmkoepel.nl/tickets/203478",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Avengers: Endgame",
+   "info": "2D · Encore",
+   "date": "2026-10-04",
+   "time": "19:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587614"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Fall 2: Deadpoint",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "19:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587419"
   },
   {
    "venue": "Patronaat",
@@ -4007,6 +5123,15 @@
    "soldOut": true
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Spider-Man: Brand New Day",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "20:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587437"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Odyssey",
@@ -4034,6 +5159,15 @@
    "time": "21:00",
    "url": "https://filmkoepel.nl/tickets/203541",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Heart of the Beast",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "21:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587653"
   },
   {
    "venue": "Filmkoepel",
@@ -4083,6 +5217,42 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/203471",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Runner",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "21:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228587629"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Sugar",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "21:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228587525"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Resident Evil",
+   "info": "2D",
+   "date": "2026-10-04",
+   "time": "21:50",
+   "url": "https://www.filmladder.nl/kaartjes/1228587470"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Paradijs",
+   "info": "",
+   "date": "2026-10-04",
+   "time": "22:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228587668"
   }
  ]
 }
