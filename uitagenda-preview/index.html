@@ -147,16 +147,19 @@
 
   .dark-card {
     display: block; margin-top: 16px; padding: 20px 24px 24px; border-radius: 16px;
-    background: var(--charcoal); color: var(--paper); text-decoration: none;
+    background: var(--charcoal); color: var(--paper);
   }
   @media (prefers-color-scheme: dark) { .dark-card { background: var(--surface); border: 1px solid var(--line); } }
   .dark-card .venue { color: rgba(255,255,255,.7); }
   .dark-card .t { font: 700 20px/1.33 var(--font-display); margin: 8px 0 4px; }
   .dark-card .m { font-size: 14px; color: rgba(255,255,255,.7); }
+  .links { display: grid; gap: 8px; margin-top: 16px; }
   .btn {
-    display: inline-block; margin-top: 16px; padding: 10px 20px; border-radius: 8px;
-    background: var(--paper); color: var(--ink); font: 600 14px/1.2 var(--font);
+    display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 8px;
+    background: var(--paper); color: var(--ink); font: 600 15px/1.2 var(--font); text-decoration: none;
   }
+  .btn i { width: 10px; height: 10px; border-radius: 3px; background: var(--vc); box-shadow: inset 0 0 0 1px rgba(21,22,25,.25); flex: none; }
+  .btn span { margin-left: auto; color: var(--smoke); font-weight: 500; }
   .empty { padding: 20px 24px; color: var(--muted); font-size: 15px; }
 
   footer { margin-top: 40px; padding: 24px; border-radius: 16px; background: var(--surface); font-size: 14px; line-height: 1.5; color: var(--muted); }
@@ -217,6 +220,8 @@ const VENUE_COLORS = {
   'De Liefde': 'var(--v-liefde)',
   Stadsschouwburg: 'var(--v-schouwburg)',
 };
+// Zalen waarvan de agenda niet automatisch op te halen is: alleen een directe link
+const LINK_ONLY = ['Stadsschouwburg', 'De Liefde'];
 const NUM_DAYS = 7;
 const DAYNAMES = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
 const DAYFULL = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
@@ -332,30 +337,30 @@ function render() {
   const day = days()[dayIndex];
   const onlyUpcoming = dayIndex === 0 && fromNow;
   const events = data.events.filter((e) => e.date === day.iso && !(onlyUpcoming && isPast(e)));
-  const podium = events.filter((e) => e.kind !== 'film');
+  const podium = events.filter((e) => e.kind !== 'film' && !LINK_ONLY.includes(e.venue));
   const films = events.filter((e) => e.kind === 'film' && (showPathe || e.venue !== 'Pathé'));
   document.getElementById('count').textContent = `${podium.length} podium · ${films.length} film`;
 
   const cinemas = showPathe ? 'Filmkoepel, Schuur of Pathé' : 'Filmkoepel of Schuur';
-  let html = section('Podium', 'Theater, concerten en clubs', podium, 'Niets gevonden bij Phil, Patronaat, De Liefde of Schuur.', isPast);
-  html += `<a class="dark-card" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener" style="${vc('Stadsschouwburg')}">
-    <div class="venue"><i></i>Stadsschouwburg</div>
-    <div class="t">Wat speelt er in de Stadsschouwburg?</div>
-    <div class="m">Hun site laat geen automatisch ophalen toe, daarom een directe link.</div>
-    <span class="btn">Bekijk de agenda →</span>
-  </a>`;
+  let html = section('Podium', 'Theater, concerten en clubs', podium, 'Niets gevonden bij Phil, Patronaat of Schuur.', isPast);
+  html += `<div class="dark-card">
+    <div class="t">Ook kijken bij</div>
+    <div class="m">Deze zalen laten geen automatisch ophalen toe, daarom een directe link naar hun agenda.</div>
+    <div class="links">${LINK_ONLY.map((v) =>
+      `<a class="btn" href="${VENUE_SITES[v]}" target="_blank" rel="noopener" style="${vc(v)}"><i></i>${v}<span>agenda →</span></a>`).join('')}</div>
+  </div>`;
   html += section('Film', showPathe ? 'Filmkoepel, Schuur en Pathé' : 'Filmkoepel en Schuur', films,
     `Geen voorstellingen gevonden bij ${cinemas}. Het nieuwe filmprogramma verschijnt meestal pas op maandag of dinsdag.`, isPast,
     ['Ochtend', 'Middag']);
 
   const updated = new Date(data.generated);
-  const failed = Object.entries(data.status || {}).filter(([, s]) => !s.ok).map(([n]) => n);
+  const failed = Object.entries(data.status || {}).filter(([n, s]) => !s.ok && !LINK_ONLY.includes(n)).map(([n]) => n);
   const covered = (data.days || []).includes(day.iso);
   html += `<footer>
     <b>Bijgewerkt ${updated.toLocaleString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</b>
     ${failed.length ? `<div class="warn">Laatste update mislukt voor: ${failed.join(', ')} (oude gegevens getoond)</div>` : ''}
     ${!covered ? `<div class="warn">Voor deze dag zijn nog geen gegevens opgehaald.</div>` : ''}
-    <br>Tijden onder voorbehoud, check altijd de site van de zaal. De Liefde via Podiuminfo, Pathé via Filmladder.
+    <br>Tijden onder voorbehoud, check altijd de site van de zaal. Pathé via Filmladder.
     <div class="legend">${Object.entries(VENUE_SITES).map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener" style="${vc(n)}"><i></i>${n}</a>`).join('')}</div>
   </footer>`;
   document.getElementById('app').innerHTML = html;
