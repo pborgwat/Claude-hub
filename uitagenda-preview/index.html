@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex">
 <meta name="description" content="Vandaag, vanavond en de komende week: film en podium in Haarlem.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111118" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#151619" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -16,207 +16,174 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400&family=Martian+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <style>
-  /* Stijl volgens DESIGN.md (SuperHi style reference). Haas Grotesk vervangen door Inter, zoals de sheet voorstelt. */
+  /* Stijl volgens de Hellotime style reference: monochroom, haarlijnen, geen schaduwen.
+     Kleur alleen op de balkjes per zaal (zoals de tijdlijnbalken in de sheet). */
   :root {
-    --iris: #2727e6;
-    --ink: #111118;
+    --ink: #151619;
+    --smoke: #7f8491;
+    --fog: #c8cad0;
+    --ash: #e1e2e5;
+    --mist: #f3f3f5;
     --paper: #ffffff;
-    --chalk: #f0f6ff;
-    --frost: #e1edff;
-    --red: #ff4141;
-    --yellow: #ffda00;
-    --sky: #91d8ec;
-    --pink: #ffbac4;
-    --green: #16ab59;
+    --charcoal: #25272d;
+    --graphite: #363940;
+    --pewter: #b0b3bb;
+    --green: #059669;
+    --gradient: linear-gradient(90deg, #0560fd 0%, #3a8dff 50%, #c3d9ff 100%);
 
-    --bg: var(--chalk);
+    /* Zaalkleuren: de vijf balkkleuren uit de sheet, aangevuld met violet en leisteen (eigen keuze) */
+    --v-pathe: #0560fd;
+    --v-filmkoepel: #059669;
+    --v-patronaat: #f59e0b;
+    --v-schuur: #e11d48;
+    --v-liefde: #14b8a6;
+    --v-phil: #7c3aed;
+    --v-schouwburg: #64748b;
+
+    --bg: var(--paper);
     --card: var(--paper);
+    --surface: var(--mist);
     --text: var(--ink);
-    --muted: rgba(17, 17, 24, .62);
-    --line: var(--frost);
-    --tag: var(--frost);
-    --pop: var(--ink);          /* kleur van de harde offset-schaduw */
-    --bar: var(--paper);
-    --shape-opacity: 1;
+    --muted: var(--smoke);
+    --line: var(--fog);
+    --divider: var(--ash);
+    --action: var(--charcoal);
+    --on-action: var(--paper);
+    --ghost: var(--pewter);
 
-    --font-display: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-text: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-mono: 'Martian Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    /* Op iPhone is dit het echte SF Pro uit de sheet; elders Inter */
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+    --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
   }
-  /* Donkere modus staat niet in de sheet: eigen afleiding met dezelfde tokens */
+  /* Donkere modus staat niet in de sheet: eigen afleiding met dezelfde grijzen */
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #111118;
-      --card: #1c1c27;
-      --text: #f0f6ff;
-      --muted: rgba(240, 246, 255, .62);
-      --line: #2b2b3c;
-      --tag: #262636;
-      --pop: #000000;
-      --bar: #16161f;
-      --shape-opacity: .8;
+      --bg: #151619;
+      --card: #1c1d21;
+      --surface: #25272d;
+      --text: #f3f3f5;
+      --muted: #9a9fab;
+      --line: #363940;
+      --divider: #2c2e34;
+      --action: #f3f3f5;
+      --on-action: #151619;
+      --ghost: #4a4d55;
     }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 400 16px/1.4 var(--font-text);
-    letter-spacing: -0.02em;
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 400 16px/1.5 var(--font);
     padding-bottom: env(safe-area-inset-bottom);
   }
-  button { font: inherit; letter-spacing: inherit; color: inherit; font-weight: 400; }
+  button { font: inherit; color: inherit; }
 
-  /* Papierknipsel-vormen achter de inhoud */
-  .shapes { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; opacity: var(--shape-opacity); }
-  .shapes svg { position: absolute; }
-
-  /* Ticker */
-  .ticker {
-    position: relative; z-index: 2;
-    background: var(--ink); color: #fff;
-    font: 400 12px/1.35 var(--font-mono); letter-spacing: -0.013em; text-transform: uppercase;
-    padding: calc(env(safe-area-inset-top) + 7px) 16px 7px;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .ticker span + span::before { content: "•"; margin: 0 8px; opacity: .6; }
-
-  .top { position: relative; z-index: 1; background: var(--bar); padding: 16px 16px 4px; }
-  h1 {
-    margin: 0; font: 400 34px/1.05 var(--font-display); letter-spacing: -0.02em;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .mark { width: 36px; height: 36px; border-radius: 50%; background: var(--iris); display: grid; place-items: center; flex: none; }
-  .mark svg { width: 18px; height: 18px; }
-
-  .bar {
+  header {
     position: sticky; top: 0; z-index: 3;
-    background: var(--bar); border-bottom: 1px solid var(--line);
-    padding: 10px 0 12px;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+    padding: calc(env(safe-area-inset-top) + 14px) 0 12px;
   }
+  h1 {
+    margin: 0 16px 12px; font: 700 30px/1 var(--font-display); letter-spacing: -0.6px;
+  }
+  h1 .hl { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .days {
     display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding: 0 16px;
-    padding: 2px 16px 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    padding: 0 16px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
   .days::-webkit-scrollbar { display: none; }
   .days button {
-    flex: 0 0 auto; min-width: 92px; scroll-snap-align: start;
-    border: 0; border-radius: 48px; padding: 8px 16px;
-    background: var(--tag); cursor: pointer; text-align: center;
-    font-size: 16px; line-height: 1.1;
+    flex: 0 0 auto; min-width: 84px; scroll-snap-align: start;
+    border: 1px solid var(--divider); border-radius: 8px; padding: 7px 12px;
+    background: transparent; cursor: pointer; text-align: left;
+    font: 600 15px/1.2 var(--font);
   }
-  .days button small { display: block; font: 400 11px/1.2 var(--font-mono); letter-spacing: -0.013em; opacity: .7; margin-top: 3px; }
-  .days button[aria-pressed="true"] { background: var(--iris); color: #fff; box-shadow: 0 3px 0 0 var(--pop); }
+  .days button small { display: block; font: 400 12px/1.3 var(--font); color: var(--muted); margin-top: 1px; }
+  .days button[aria-pressed="true"] { background: var(--action); border-color: var(--action); color: var(--on-action); }
+  .days button[aria-pressed="true"] small { color: inherit; opacity: .7; }
 
-  .toggles { display: flex; gap: 8px; padding: 4px 16px 0; flex-wrap: wrap; }
+  .toggles { display: flex; gap: 8px; align-items: center; padding: 10px 16px 0; flex-wrap: wrap; }
   .chip {
-    border: 0; border-radius: 5000px; padding: 6px 14px; background: var(--tag); cursor: pointer;
-    font-size: 15px; line-height: 1.25; display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--ghost); border-radius: 9999px; padding: 5px 12px; background: transparent; cursor: pointer;
+    font: 500 13px/1.3 var(--font); display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
   }
-  .chip::before { content: ""; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid currentColor; opacity: .55; }
-  .chip[aria-pressed="true"] { background: var(--iris); color: #fff; }
-  .chip[aria-pressed="true"]::before { opacity: 1; background: #fff; border-color: #fff; box-shadow: inset 0 0 0 3px var(--iris); }
+  .chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid currentColor; }
+  .chip[aria-pressed="true"] { background: var(--action); border-color: var(--action); color: var(--on-action); }
+  .chip[aria-pressed="true"]::before { background: currentColor; }
   .chip[hidden] { display: none; }
+  #count { margin-left: auto; font: 500 13px/1.3 var(--font); color: var(--muted); }
 
-  main { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; padding: 8px 16px 40px; }
-  h2 {
-    display: inline-block; margin: 28px 0 4px; padding: 6px 12px; border-radius: 5000px;
-    background: var(--ink); color: #fff;
-    font: 400 12px/1.35 var(--font-mono); letter-spacing: -0.013em; text-transform: uppercase;
-  }
-  @media (prefers-color-scheme: dark) { h2 { background: var(--paper); color: var(--ink); } }
-  h3.slot {
-    display: table; margin: 14px 0 8px; padding: 4px 12px; border-radius: 5000px;
-    background: var(--card); border: 1px solid var(--line);
-    font: 400 15px/1.3 var(--font-text); letter-spacing: -0.01em;
-  }
-  .card {
-    background: var(--card); border: 1px solid var(--line); border-radius: 24px;
-    box-shadow: 0 2px 0 0 var(--pop); overflow: hidden;
-  }
-  .row { display: flex; align-items: center; border-top: 1px solid var(--line); }
+  main { max-width: 640px; margin: 0 auto; padding: 8px 16px 48px; }
+  h2 { margin: 32px 0 4px; font: 700 24px/1.2 var(--font-display); letter-spacing: -0.3px; }
+  h2 small { display: block; font: 400 14px/1.5 var(--font); letter-spacing: 0; color: var(--muted); margin-top: 2px; }
+  h3.slot { margin: 20px 0 8px; font: 500 14px/1.5 var(--font); color: var(--muted); }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .row { display: flex; align-items: stretch; border-top: 1px solid var(--divider); }
   .row:first-child { border-top: 0; }
   .row > a {
-    flex: 1; min-width: 0; display: grid; grid-template-columns: 62px 1fr; gap: 10px;
-    padding: 16px 0 16px 20px; color: inherit; text-decoration: none;
+    flex: 1; min-width: 0; display: grid; grid-template-columns: 4px 50px 1fr; gap: 12px;
+    padding: 14px 0 14px 12px; color: inherit; text-decoration: none;
   }
-  .row > a:active { background: var(--tag); }
+  .row > a:active { background: var(--surface); }
   .row.past { opacity: .45; }
-  .time { font: 400 22px/1.15 var(--font-display); letter-spacing: -0.02em; font-feature-settings: "tnum" 1; padding-top: 1px; }
-  .title { font-size: 18px; line-height: 1.25; letter-spacing: -0.012em; margin-top: 6px; }
-  .info { color: var(--muted); font-size: 14px; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
-  .venue, .sold {
-    display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 8px; border-radius: 5000px;
-    font: 400 11px/1.35 var(--font-mono); letter-spacing: -0.013em; text-transform: uppercase;
-  }
-  .venue { background: var(--tag); }
-  .venue svg { width: 12px; height: 12px; flex: none; }
-  .sold { background: var(--ink); color: #fff; padding-left: 10px; }
-  @media (prefers-color-scheme: dark) { .sold { background: var(--paper); color: var(--ink); } }
+  /* Het zaalbalkje: 4px breed, 4px radius, zoals de tijdlijnbalken */
+  .bar { border-radius: 4px; background: var(--vc, var(--smoke)); }
+  .time { font: 600 18px/1.33 var(--font); font-feature-settings: "tnum" 1; }
+  .venue { font: 500 12px/1.33 var(--font); color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .venue i { width: 8px; height: 8px; border-radius: 2px; background: var(--vc, var(--smoke)); flex: none; }
+  .title { font: 600 16px/1.33 var(--font); margin-top: 2px; }
+  .info { color: var(--muted); font-size: 14px; line-height: 1.4; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .sold { border: 1px solid currentColor; border-radius: 9999px; padding: 0 7px; color: var(--text); font-size: 11px; }
   .share {
-    flex: 0 0 40px; height: 40px; margin: 0 12px 0 8px; border: 0; border-radius: 50%;
-    background: var(--tag); display: grid; place-items: center; cursor: pointer; padding: 0;
+    flex: 0 0 48px; border: 0; background: none; color: var(--muted); cursor: pointer; padding: 0;
+    display: flex; align-items: center; justify-content: center;
   }
-  .share:active { background: var(--iris); color: #fff; }
-  .share svg { width: 18px; height: 18px; }
+  .share:active { color: var(--text); }
+  .share svg { width: 20px; height: 20px; }
 
-  .feature {
-    display: block; margin-top: 16px; padding: 20px 24px 24px; border-radius: 24px;
-    background: var(--yellow); color: var(--ink); text-decoration: none;
-    box-shadow: 0 2px 0 0 var(--ink);
+  .dark-card {
+    display: block; margin-top: 16px; padding: 20px 24px 24px; border-radius: 16px;
+    background: var(--charcoal); color: var(--paper); text-decoration: none;
   }
-  .feature .t { font: 400 24px/1.25 var(--font-display); letter-spacing: -0.007em; margin: 10px 0 4px; }
-  .feature .m { font-size: 14px; opacity: .75; }
-  .feature .venue { background: rgba(255,255,255,.6); }
-  .pill {
-    display: inline-block; margin-top: 16px; padding: 10px 20px; border-radius: 48px;
-    background: var(--iris); color: #fff; font-size: 16px; box-shadow: 0 4px 0 0 var(--ink);
+  @media (prefers-color-scheme: dark) { .dark-card { background: var(--surface); border: 1px solid var(--line); } }
+  .dark-card .venue { color: rgba(255,255,255,.7); }
+  .dark-card .t { font: 700 20px/1.33 var(--font-display); margin: 8px 0 4px; }
+  .dark-card .m { font-size: 14px; color: rgba(255,255,255,.7); }
+  .btn {
+    display: inline-block; margin-top: 16px; padding: 10px 20px; border-radius: 8px;
+    background: var(--paper); color: var(--ink); font: 600 14px/1.2 var(--font);
   }
   .empty { padding: 20px 24px; color: var(--muted); font-size: 15px; }
 
-  footer {
-    margin-top: 32px; padding: 20px 24px; border-radius: 24px; background: var(--tag);
-    font-size: 13px; line-height: 1.6; color: var(--muted);
-  }
-  footer .meta { font: 400 12px/1.35 var(--font-mono); letter-spacing: -0.013em; text-transform: uppercase; color: var(--text); margin-bottom: 8px; }
-  footer a { color: var(--text); }
-  footer .warn { color: var(--text); background: var(--card); border-radius: 16px; padding: 8px 12px; margin: 8px 0; }
-  footer .links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 12px; }
-  .loading { margin-top: 24px; }
+  footer { margin-top: 40px; padding: 24px; border-radius: 16px; background: var(--surface); font-size: 14px; line-height: 1.5; color: var(--muted); }
+  footer b { font-weight: 600; color: var(--text); }
+  footer .warn { color: var(--text); border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 8px 12px; margin: 10px 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; }
+  .legend a { color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font: 500 13px/1.3 var(--font); }
+  .legend i { width: 10px; height: 10px; border-radius: 3px; background: var(--vc); }
   .toast {
     position: fixed; z-index: 10; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 24px); transform: translateX(-50%);
-    background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 48px; font-size: 15px;
-    box-shadow: 0 3px 0 0 var(--iris); opacity: 0; transition: opacity .2s; pointer-events: none;
+    background: var(--action); color: var(--on-action); padding: 10px 18px; border-radius: 8px; font: 500 14px/1.2 var(--font);
+    opacity: 0; transition: opacity .2s; pointer-events: none;
   }
   .toast.show { opacity: 1; }
 </style>
 </head>
 <body>
-<div class="shapes" aria-hidden="true">
-  <svg style="right:-90px; top:190px; width:230px; transform:rotate(12deg)" viewBox="0 0 100 95"><polygon points="50,0 100,36 81,95 19,95 0,36" fill="var(--yellow)"/></svg>
-  <svg style="left:-120px; top:48%; width:260px; transform:rotate(-10deg)" viewBox="0 0 100 50"><path d="M0 50 A50 50 0 0 1 100 50 Z" fill="var(--red)"/></svg>
-  <svg style="right:-70px; bottom:6%; width:220px; transform:rotate(-14deg)" viewBox="0 0 100 87"><polygon points="50,0 100,87 0,87" fill="var(--green)"/></svg>
-  <svg style="left:-80px; bottom:-60px; width:200px" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="var(--sky)"/></svg>
-  <svg style="right:-60px; top:58%; width:170px; transform:rotate(8deg)" viewBox="0 0 100 95"><polygon points="50,0 61,35 98,35 68,57 79,92 50,70 21,92 32,57 2,35 39,35" fill="var(--pink)"/></svg>
-</div>
-
-<div class="ticker" id="ticker"><span>Uit in Haarlem</span><span>Film en podium</span></div>
-<div class="top">
-  <h1><span class="mark" aria-hidden="true"><svg viewBox="0 0 100 95"><polygon points="50,0 61,35 98,35 68,57 79,92 50,70 21,92 32,57 2,35 39,35" fill="#fff"/></svg></span>Uit in Haarlem</h1>
-</div>
-<nav class="bar">
+<header>
+  <h1>Uit in <span class="hl">Haarlem</span></h1>
   <div class="days" id="days"></div>
   <div class="toggles">
     <button class="chip" id="fromNow" aria-pressed="true">Alleen wat nog komt</button>
-    <button class="chip" id="showPathe" aria-pressed="false">Pathé tonen</button>
+    <button class="chip" id="showPathe" aria-pressed="false">Pathé</button>
+    <span id="count"></span>
   </div>
-</nav>
-<main id="app"><div class="card loading"><div class="empty">Agenda laden...</div></div></main>
+</header>
+<main id="app"><div class="card"><div class="empty">Agenda laden...</div></div></main>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -229,22 +196,14 @@ const VENUE_SITES = {
   'De Liefde': 'https://theaterdeliefde.nl/agenda/',
   Stadsschouwburg: 'https://stadsschouwburghaarlem.nl/agenda',
 };
-// Elke zaal een eigen papierknipsel-vorm; accentkleuren alleen als vulling, nooit op tekst
-const SHAPES = {
-  circle: '<svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="COL"/></svg>',
-  triangle: '<svg viewBox="0 0 12 12"><polygon points="6,0.5 12,11.5 0,11.5" fill="COL"/></svg>',
-  semi: '<svg viewBox="0 0 12 12"><path d="M0 9 A6 6 0 0 1 12 9 Z" fill="COL"/></svg>',
-  star: '<svg viewBox="0 0 100 95"><polygon points="50,0 61,35 98,35 68,57 79,92 50,70 21,92 32,57 2,35 39,35" fill="COL"/></svg>',
-  pentagon: '<svg viewBox="0 0 100 95"><polygon points="50,0 100,36 81,95 19,95 0,36" fill="COL"/></svg>',
-};
-const VENUE_SHAPES = {
-  Filmkoepel: ['triangle', 'var(--green)'],
-  Schuur: ['semi', 'var(--red)'],
-  'Pathé': ['circle', 'var(--sky)'],
-  Phil: ['star', 'var(--pink)'],
-  Patronaat: ['pentagon', 'var(--yellow)'],
-  'De Liefde': ['star', 'var(--red)'],
-  Stadsschouwburg: ['pentagon', 'var(--sky)'],
+const VENUE_COLORS = {
+  Filmkoepel: 'var(--v-filmkoepel)',
+  Schuur: 'var(--v-schuur)',
+  'Pathé': 'var(--v-pathe)',
+  Phil: 'var(--v-phil)',
+  Patronaat: 'var(--v-patronaat)',
+  'De Liefde': 'var(--v-liefde)',
+  Stadsschouwburg: 'var(--v-schouwburg)',
 };
 const NUM_DAYS = 7;
 const DAYNAMES = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
@@ -255,11 +214,7 @@ const SHARE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 const pad = (n) => String(n).padStart(2, '0');
 const isoDate = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-function venueTag(v) {
-  const [shape, col] = VENUE_SHAPES[v] || ['circle', 'var(--sky)'];
-  return `<span class="venue">${SHAPES[shape].replace('COL', col)}${esc(v)}</span>`;
-}
+const vc = (v) => `--vc:${VENUE_COLORS[v] || 'var(--smoke)'}`;
 
 const store = {
   get(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch { return def; } },
@@ -313,11 +268,12 @@ function renderDays() {
 
 function row(ev, past) {
   const i = rendered.push(ev) - 1;
-  return `<div class="row${past ? ' past' : ''}">
+  return `<div class="row${past ? ' past' : ''}" style="${vc(ev.venue)}">
     <a href="${esc(ev.url)}" target="_blank" rel="noopener">
+      <span class="bar" aria-hidden="true"></span>
       <div class="time">${ev.time || '—'}</div>
       <div>
-        <div class="tags">${venueTag(ev.venue)}${ev.soldOut ? '<span class="sold">Uitverkocht</span>' : ''}</div>
+        <div class="venue"><i></i>${esc(ev.venue)}${ev.soldOut ? ' <span class="sold">uitverkocht</span>' : ''}</div>
         <div class="title">${esc(ev.title)}</div>
         ${ev.info ? `<div class="info">${esc(ev.info)}</div>` : ''}
       </div>
@@ -326,8 +282,8 @@ function row(ev, past) {
   </div>`;
 }
 
-function section(title, list, emptyText, pastFn = () => false) {
-  let html = `<h2>${title}</h2>`;
+function section(title, sub, list, emptyText, pastFn = () => false) {
+  let html = `<h2>${title}<small>${sub}</small></h2>`;
   if (!list.length) return html + `<div class="card" style="margin-top:12px"><div class="empty">${emptyText}</div></div>`;
   let last = '';
   for (const ev of list) {
@@ -351,31 +307,28 @@ function render() {
   const events = data.events.filter((e) => e.date === day.iso && !(onlyUpcoming && isPast(e)));
   const podium = events.filter((e) => e.kind !== 'film');
   const films = events.filter((e) => e.kind === 'film' && (showPathe || e.venue !== 'Pathé'));
-  const updated = new Date(data.generated);
-  const updatedTxt = updated.toLocaleString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-  const updatedShort = isoDate(updated) === isoDate(new Date())
-    ? updated.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }) : updatedTxt;
-  document.getElementById('ticker').innerHTML =
-    `<span>Preview</span><span>${esc(day.sub)}</span><span>${podium.length} podium</span><span>${films.length} film</span><span>update ${esc(updatedShort)}</span>`;
+  document.getElementById('count').textContent = `${podium.length} podium · ${films.length} film`;
 
   const cinemas = showPathe ? 'Filmkoepel, Schuur of Pathé' : 'Filmkoepel of Schuur';
-  let html = section('Podium · theater, concerten, clubs', podium, 'Niets gevonden bij Phil, Patronaat, De Liefde of Schuur.', isPast);
-  html += `<a class="feature" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener">
-    ${venueTag('Stadsschouwburg')}
+  let html = section('Podium', 'Theater, concerten en clubs', podium, 'Niets gevonden bij Phil, Patronaat, De Liefde of Schuur.', isPast);
+  html += `<a class="dark-card" href="${VENUE_SITES.Stadsschouwburg}" target="_blank" rel="noopener" style="${vc('Stadsschouwburg')}">
+    <div class="venue"><i></i>Stadsschouwburg</div>
     <div class="t">Wat speelt er in de Stadsschouwburg?</div>
     <div class="m">Hun site laat geen automatisch ophalen toe, daarom een directe link.</div>
-    <span class="pill">Bekijk de agenda →</span>
+    <span class="btn">Bekijk de agenda →</span>
   </a>`;
-  html += section('Film', films, `Geen voorstellingen gevonden bij ${cinemas}. Het nieuwe filmprogramma verschijnt meestal pas op maandag of dinsdag.`, isPast);
+  html += section('Film', showPathe ? 'Filmkoepel, Schuur en Pathé' : 'Filmkoepel en Schuur', films,
+    `Geen voorstellingen gevonden bij ${cinemas}. Het nieuwe filmprogramma verschijnt meestal pas op maandag of dinsdag.`, isPast);
 
+  const updated = new Date(data.generated);
   const failed = Object.entries(data.status || {}).filter(([, s]) => !s.ok).map(([n]) => n);
   const covered = (data.days || []).includes(day.iso);
   html += `<footer>
-    <div class="meta">Bijgewerkt ${esc(updatedTxt)}</div>
+    <b>Bijgewerkt ${updated.toLocaleString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</b>
     ${failed.length ? `<div class="warn">Laatste update mislukt voor: ${failed.join(', ')} (oude gegevens getoond)</div>` : ''}
     ${!covered ? `<div class="warn">Voor deze dag zijn nog geen gegevens opgehaald.</div>` : ''}
-    Tijden onder voorbehoud, check altijd de site van de zaal. De Liefde via Podiuminfo, Pathé via Filmladder.
-    <div class="links">${Object.entries(VENUE_SITES).map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join('')}</div>
+    <br>Tijden onder voorbehoud, check altijd de site van de zaal. De Liefde via Podiuminfo, Pathé via Filmladder.
+    <div class="legend">${Object.entries(VENUE_SITES).map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener" style="${vc(n)}"><i></i>${n}</a>`).join('')}</div>
   </footer>`;
   document.getElementById('app').innerHTML = html;
 }
@@ -411,7 +364,7 @@ async function load() {
     const res = await fetch('../uitagenda/events.json?t=' + Date.now(), { cache: 'no-store' });
     data = await res.json();
   } catch (e) {
-    if (!data) document.getElementById('app').innerHTML = '<div class="card loading"><div class="empty">Kon de agenda niet laden. Heb je internet?</div></div>';
+    if (!data) document.getElementById('app').innerHTML = '<div class="card"><div class="empty">Kon de agenda niet laden. Heb je internet?</div></div>';
     return;
   }
   render();
