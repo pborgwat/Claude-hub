@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T10:39:54.738Z",
+ "generated": "2026-09-29T18:37:54.050Z",
  "days": [
   "2026-09-29",
   "2026-09-30",
@@ -12,11 +12,11 @@
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 193
+   "count": 203
   },
   "Schuur": {
    "ok": true,
-   "count": 77
+   "count": 70
   },
   "Phil": {
    "ok": true,
@@ -33,28 +33,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 290
+   "count": 268
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567546"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "HalloWiebe: Overdrive",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567482"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -64,24 +46,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/201833",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "2D",
-   "date": "2026-09-29",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567400"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "By Any Means",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567504"
   },
   {
    "venue": "Filmkoepel",
@@ -104,15 +68,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567475"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Rivals of Amziah King",
@@ -133,24 +88,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "F*ck de Familie",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567444"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Dog Stars",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567417"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Résistance",
@@ -159,51 +96,6 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/201972",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "12:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567527"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-29",
-   "time": "12:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228567376"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-29",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-09-29",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567426"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Runner",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "13:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567509"
   },
   {
    "venue": "Filmkoepel",
@@ -216,15 +108,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Gaulle: Résistance",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567538"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -233,24 +116,6 @@
    "time": "13:30",
    "url": "https://filmkoepel.nl/tickets/202014",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Practical Magic 2",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "13:35",
-   "url": "https://www.filmladder.nl/kaartjes/1228567413"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Histoires Parallèles",
-   "info": "film · Asghar Farhadi",
-   "date": "2026-09-29",
-   "time": "13:45",
-   "url": "https://www.schuur.nl/film/histoires-parallèles"
   },
   {
    "venue": "Filmkoepel",
@@ -283,42 +148,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228567453"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Insidious: Out of the Further",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "14:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567370"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Fall 2: Deadpoint",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228567384"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-09-29",
-   "time": "15:10",
-   "url": "https://www.schuur.nl/film/mother"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Liberté",
@@ -327,15 +156,6 @@
    "time": "15:15",
    "url": "https://filmkoepel.nl/tickets/201966",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "15:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567528"
   },
   {
    "venue": "Filmkoepel",
@@ -367,15 +187,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The End of Oak Street",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "16:05",
-   "url": "https://www.filmladder.nl/kaartjes/1228567367"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -398,29 +209,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "16:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228567454"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Avengers: Endgame",
    "info": "3D · Encore",
    "date": "2026-09-29",
    "time": "16:20",
    "url": "https://www.filmladder.nl/kaartjes/1228567496"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-09-29",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
    "venue": "Filmkoepel",
@@ -451,15 +244,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567488"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Manager",
-   "info": "documentaire · Maartje Bakers",
-   "date": "2026-09-29",
-   "time": "17:15",
-   "url": "https://www.schuur.nl/film/de-manager"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Fall 2: Deadpoint",
@@ -476,24 +260,6 @@
    "date": "2026-09-29",
    "time": "17:40",
    "url": "https://www.filmladder.nl/kaartjes/1228567427"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567455"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-09-29",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228567377"
   },
   {
    "venue": "Filmkoepel",
@@ -526,15 +292,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-09-29",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Plague",
@@ -564,15 +321,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567414"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Paradies: Glaube",
-   "info": "film · Ulrich Seidl",
-   "date": "2026-09-29",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/glaube"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -599,15 +347,6 @@
    "date": "2026-09-29",
    "time": "19:20",
    "url": "https://www.filmladder.nl/kaartjes/1228567489"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-29",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567529"
   },
   {
    "venue": "Pathé",
@@ -1772,6 +1511,16 @@
    "soldOut": false
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-01",
+   "time": "14:30",
+   "url": "https://filmkoepel.nl/tickets/203421",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Pressure",
@@ -2069,6 +1818,16 @@
    "date": "2026-10-01",
    "time": "19:10",
    "url": "https://www.schuur.nl/film/downtown"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-01",
+   "time": "19:15",
+   "url": "https://filmkoepel.nl/tickets/203433",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -2505,6 +2264,16 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587424"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-02",
+   "time": "14:30",
+   "url": "https://filmkoepel.nl/tickets/203422",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Toy Story 5 (NL)",
@@ -2785,6 +2554,16 @@
    "date": "2026-10-02",
    "time": "19:00",
    "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-02",
+   "time": "19:15",
+   "url": "https://filmkoepel.nl/tickets/203434",
+   "soldOut": false
   },
   {
    "venue": "Filmkoepel",
@@ -3407,6 +3186,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-03",
+   "time": "14:30",
+   "url": "https://filmkoepel.nl/tickets/203423",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Shaun het Schaap: Het Beest van de Boerderij",
    "info": "Steve Cox, Matthew Walker · Zaal 2",
    "date": "2026-10-03",
@@ -3477,6 +3266,16 @@
    "date": "2026-10-03",
    "time": "15:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587486"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Nieuwe Datum: Ruud Jolie (Within Temptation) | Ongefilterd • PHIL",
+   "info": "loud · PHIL · Within Temptation-gitarist openhartig, boeiend en droogkomisch",
+   "date": "2026-10-03",
+   "time": "16:00",
+   "url": "https://patronaat.nl/event/ruud-jolie-within-temptation-ongefilterd-phil-07-12-25/",
+   "soldOut": false
   },
   {
    "venue": "Phil",
@@ -3716,6 +3515,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-03",
+   "time": "19:15",
+   "url": "https://filmkoepel.nl/tickets/203435",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Toutes Directions",
    "info": "Noël Loozen · Zaal 2",
    "date": "2026-10-03",
@@ -3779,16 +3588,6 @@
    "date": "2026-10-03",
    "time": "20:00",
    "url": "https://www.schuur.nl/producties/mystiek-lichaam"
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Nieuwe Datum: Ruud Jolie (Within Temptation) | Ongefilterd • PHIL",
-   "info": "loud · PHIL · Within Temptation-gitarist openhartig, boeiend en droogkomisch",
-   "date": "2026-10-03",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/ruud-jolie-within-temptation-ongefilterd-phil-07-12-25/",
-   "soldOut": false
   },
   {
    "venue": "Phil",
@@ -4306,6 +4105,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-04",
+   "time": "14:30",
+   "url": "https://filmkoepel.nl/tickets/203424",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Shaun het Schaap: Het Beest van de Boerderij",
    "info": "Steve Cox, Matthew Walker · Zaal 2",
    "date": "2026-10-04",
@@ -4592,6 +4401,16 @@
    "date": "2026-10-04",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587580"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-04",
+   "time": "19:15",
+   "url": "https://filmkoepel.nl/tickets/203436",
+   "soldOut": false
   },
   {
    "venue": "Schuur",
@@ -5064,6 +4883,16 @@
    "soldOut": false
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-05",
+   "time": "14:30",
+   "url": "https://filmkoepel.nl/tickets/203425",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Pressure",
@@ -5370,6 +5199,16 @@
    "date": "2026-10-05",
    "time": "19:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587655"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Naza",
+   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
+   "date": "2026-10-05",
+   "time": "19:15",
+   "url": "https://filmkoepel.nl/tickets/203437",
+   "soldOut": false
   },
   {
    "venue": "Filmkoepel",
