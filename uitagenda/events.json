@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T22:56:56.334Z",
+ "generated": "2026-09-30T10:28:22.158Z",
  "days": [
   "2026-09-30",
   "2026-10-01",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 80
+   "count": 78
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 291
+   "count": 290
   }
  },
  "events": [
@@ -55,15 +55,6 @@
    "date": "2026-09-30",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567547"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Manager",
-   "info": "documentaire · Maartje Bakers",
-   "date": "2026-09-30",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/de-manager"
   },
   {
    "venue": "Pathé",
@@ -102,15 +93,6 @@
    "time": "11:10",
    "url": "https://filmkoepel.nl/tickets/201763",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Below the Clouds",
-   "info": "documentaire · Gianfranco Rosi",
-   "date": "2026-09-30",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/below-the-clouds"
   },
   {
    "venue": "Filmkoepel",
@@ -178,15 +160,6 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/201973",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-09-30",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567530"
   },
   {
    "venue": "Pathé",
