@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T10:56:03.286Z",
+ "generated": "2026-10-01T18:52:16.086Z",
  "days": [
   "2026-10-01",
   "2026-10-02",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 76
+   "count": 69
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 286
+   "count": 277
   }
  },
  "events": [
@@ -163,47 +163,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228587568"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-01",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587481"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-01",
-   "time": "13:15",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Runner",
    "info": "",
    "date": "2026-10-01",
    "time": "13:20",
    "url": "https://www.filmladder.nl/kaartjes/1228587626"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "13:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587515"
   },
   {
    "venue": "Filmkoepel",
@@ -273,15 +237,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587598"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-01",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -309,33 +264,6 @@
    "date": "2026-10-01",
    "time": "15:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587665"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-01",
-   "time": "15:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587482"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-01",
-   "time": "15:40",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "15:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228587569"
   },
   {
    "venue": "Pathé",
@@ -386,15 +314,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-01",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Downtown",
@@ -440,33 +359,6 @@
    "date": "2026-10-01",
    "time": "17:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587590"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "17:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587517"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Manager",
-   "info": "documentaire · Maartje Bakers",
-   "date": "2026-10-01",
-   "time": "17:30",
-   "url": "https://www.schuur.nl/film/de-manager"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587402"
   },
   {
    "venue": "Pathé",
@@ -527,33 +419,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587599"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-01",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587634"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-01",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-01",
-   "time": "19:10",
-   "url": "https://www.schuur.nl/film/downtown"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -590,15 +455,6 @@
    "date": "2026-10-01",
    "time": "19:30",
    "url": "https://www.filmladder.nl/kaartjes/1228587570"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-01",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567435"
   },
   {
    "venue": "Patronaat",
@@ -2211,13 +2067,23 @@
    "soldOut": false
   },
   {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Mula + Lusho + Marou & Massin • PHIL • Haarlem Vinyl Festival",
+   "info": "hiphop · Extern · Trap, hiphop, jazz en rock worden versmolten met pop",
+   "date": "2026-10-03",
+   "time": "19:00",
+   "url": "https://patronaat.nl/event/mula-b-phil-haarlem-vinyl-festival-03-10-26/",
+   "soldOut": false
+  },
+  {
    "venue": "Schuur",
    "kind": "podium",
-   "title": "Het thuis dat in mij leeft",
+   "title": "Ons Mystieke Lichaam",
    "info": "caféprogramma · Toneelschuur Producties",
    "date": "2026-10-03",
    "time": "19:00",
-   "url": "https://www.schuur.nl/cafe/het-thuis-dat-in-mij-leeft"
+   "url": "https://www.schuur.nl/cafe/ons-mystieke-lichaam"
   },
   {
    "venue": "Schuur",
@@ -2302,16 +2168,6 @@
    "date": "2026-10-03",
    "time": "20:00",
    "url": "https://patronaat.nl/event/janne-schra-support-03-10-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Mula + Lusho + Marou & Massin • PHIL • Haarlem Vinyl Festival",
-   "info": "hiphop · PHIL · Trap, hiphop, jazz en rock worden versmolten met pop",
-   "date": "2026-10-03",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/mula-b-phil-haarlem-vinyl-festival-03-10-26/",
    "soldOut": false
   },
   {
