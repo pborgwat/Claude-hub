@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01T23:11:08.771Z",
+ "generated": "2026-10-02T10:29:41.921Z",
  "days": [
   "2026-10-02",
   "2026-10-03",
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 249
+   "count": 247
   }
  },
  "events": [
@@ -123,15 +123,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-02",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587519"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Incomer",
@@ -159,15 +150,6 @@
    "date": "2026-10-02",
    "time": "12:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587536"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-02",
-   "time": "12:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587636"
   },
   {
    "venue": "Pathé",
@@ -1467,16 +1449,6 @@
    "soldOut": false
   },
   {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Mula + Lusho + Marou & Massin • PHIL • Haarlem Vinyl Festival",
-   "info": "hiphop · Extern · Trap, hiphop, jazz en rock worden versmolten met pop",
-   "date": "2026-10-03",
-   "time": "19:00",
-   "url": "https://patronaat.nl/event/mula-b-phil-haarlem-vinyl-festival-03-10-26/",
-   "soldOut": false
-  },
-  {
    "venue": "Schuur",
    "kind": "podium",
    "title": "Ons Mystieke Lichaam",
@@ -1568,6 +1540,16 @@
    "date": "2026-10-03",
    "time": "20:00",
    "url": "https://patronaat.nl/event/janne-schra-support-03-10-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Mula + Lusho + Marou & Massin • PHIL • Haarlem Vinyl Festival",
+   "info": "hiphop · PHIL · Trap, hiphop, jazz en rock worden versmolten met pop",
+   "date": "2026-10-03",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/mula-b-phil-haarlem-vinyl-festival-03-10-26/",
    "soldOut": false
   },
   {
