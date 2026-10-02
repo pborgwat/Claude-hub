@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T10:29:41.921Z",
+ "generated": "2026-10-02T18:24:03.055Z",
  "days": [
   "2026-10-02",
   "2026-10-03",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 77
+   "count": 73
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 247
+   "count": 241
   }
  },
  "events": [
@@ -182,15 +182,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-02",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587483"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Fall 2: Deadpoint",
    "info": "",
    "date": "2026-10-02",
@@ -287,24 +278,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-02",
-   "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587637"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "",
-   "date": "2026-10-02",
-   "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587403"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "HalloWiebe: Overdrive",
    "info": "",
    "date": "2026-10-02",
@@ -328,15 +301,6 @@
    "date": "2026-10-02",
    "time": "15:45",
    "url": "https://www.filmladder.nl/kaartjes/1228587619"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-02",
-   "time": "16:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228587484"
   },
   {
    "venue": "Filmkoepel",
@@ -379,15 +343,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-02",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Spider-Man: Brand New Day",
@@ -405,15 +360,6 @@
    "time": "16:45",
    "url": "https://filmkoepel.nl/tickets/203462",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-02",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Pathé",
@@ -501,15 +447,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-02",
-   "time": "18:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228587520"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Bnnyhunna • Haarlem Vinyl Festival",
@@ -527,15 +464,6 @@
    "date": "2026-10-02",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587600"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-02",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
   },
   {
    "venue": "Filmkoepel",
@@ -567,15 +495,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587430"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-02",
-   "time": "19:30",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Practical Magic 2",
@@ -602,15 +521,6 @@
    "time": "20:00",
    "url": "https://patronaat.nl/event/chefspecial-phil-haarlem-vinyl-festival-02-10-26/",
    "soldOut": true
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-02",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567436"
   },
   {
    "venue": "Patronaat",
@@ -1446,7 +1356,7 @@
    "date": "2026-10-03",
    "time": "19:00",
    "url": "https://filmkoepel.nl/tickets/197226",
-   "soldOut": false
+   "soldOut": true
   },
   {
    "venue": "Schuur",
