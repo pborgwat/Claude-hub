@@ -186,30 +186,6 @@ async function patronaat() {
   return out;
 }
 
-// ---------- Theater De Liefde: eigen site blokkeert automatisch ophalen, agenda via Podiuminfo ----------
-async function deLiefde() {
-  const html = await get('https://www.podiuminfo.nl/podium/5370/concerten/Theater-de-Liefde/Haarlem/');
-  const out = [];
-  for (const raw of html.match(/<script[^>]*ld\+json[^>]*>[\s\S]*?<\/script>/g) || []) {
-    let ev;
-    try { ev = JSON.parse(raw.replace(/^<script[^>]*>|<\/script>$/g, '')); } catch { continue; }
-    if (!/Event$/.test(ev['@type'] || '') || !ev.startDate) continue;
-    const date = ev.startDate.slice(0, 10);
-    if (!inWindow(date)) continue;
-    out.push({
-      venue: 'De Liefde',
-      kind: 'podium',
-      title: decode(ev.name).replace(/\s*@ Theater de Liefde$/i, ''),
-      info: ev['@type'] === 'ComedyEvent' ? 'cabaret' : ev['@type'] === 'MusicEvent' ? 'muziek' : '',
-      date,
-      time: ev.startDate.slice(11, 16) || null,
-      url: 'https://theaterdeliefde.nl/agenda/',
-      soldOut: /SoldOut/i.test(JSON.stringify(ev.offers || '')),
-    });
-  }
-  return out;
-}
-
 // ---------- Pathé Haarlem: eigen site blokkeert automatisch ophalen, tijden via Filmladder ----------
 async function pathe() {
   const html = await get('https://www.filmladder.nl/haarlem/bioscopen');
@@ -239,7 +215,7 @@ async function pathe() {
   return out;
 }
 
-const sources = { Filmkoepel: filmkoepel, Schuur: schuur, Phil: phil, Patronaat: patronaat, 'De Liefde': deLiefde, 'Pathé': pathe };
+const sources = { Filmkoepel: filmkoepel, Schuur: schuur, Phil: phil, Patronaat: patronaat, 'Pathé': pathe };
 const previous = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : { events: [] };
 const events = [];
 const status = {};
