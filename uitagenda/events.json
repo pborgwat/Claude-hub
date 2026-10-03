@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T14:43:36.824Z",
+ "generated": "2026-10-03T19:12:43.820Z",
  "days": [
   "2026-10-03",
   "2026-10-04",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 76
+   "count": 69
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 201
+   "count": 197
   }
  },
  "events": [
@@ -402,15 +402,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-03",
-   "time": "16:40",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -432,38 +423,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-03",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228587647"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-03",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/downtown"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Forgotten Island",
    "info": "2D",
    "date": "2026-10-03",
    "time": "17:40",
    "url": "https://www.filmladder.nl/kaartjes/1228587546"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-03",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228587466"
   },
   {
    "venue": "Pathé",
@@ -504,15 +468,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-03",
-   "time": "18:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228587522"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Downtown",
@@ -530,34 +485,7 @@
    "date": "2026-10-03",
    "time": "19:00",
    "url": "https://filmkoepel.nl/tickets/197226",
-   "soldOut": true
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Ons Mystieke Lichaam",
-   "info": "caféprogramma · Toneelschuur Producties",
-   "date": "2026-10-03",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/cafe/ons-mystieke-lichaam"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-03",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-03",
-   "time": "19:10",
-   "url": "https://www.schuur.nl/film/no-good-men"
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -598,15 +526,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587577"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-03",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567437"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Hannah Mae + Coos • Haarlem Vinyl Festival",
@@ -637,15 +556,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Mystiek Lichaam",
-   "info": "theater · Koen Verheijden – Toneelschuur Producties",
-   "date": "2026-10-03",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/producties/mystiek-lichaam"
-  },
-  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Thomas Azier",
@@ -663,15 +573,6 @@
    "date": "2026-10-03",
    "time": "20:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587648"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Pyrrha gooit een steen",
-   "info": "theater · Olivier Diepenhorst / De Avondwinkel",
-   "date": "2026-10-03",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/pyrrha-gooit-een-steen"
   },
   {
    "venue": "Pathé",
