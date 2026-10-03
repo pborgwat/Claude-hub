@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T22:57:22.486Z",
+ "generated": "2026-10-03T09:51:05.060Z",
  "days": [
   "2026-10-03",
   "2026-10-04",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 82
+   "count": 80
   },
   "Phil": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 206
+   "count": 205
   }
  },
  "events": [
@@ -76,17 +76,8 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-03",
-   "time": "10:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587643"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "The Odyssey",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-03",
    "time": "10:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587406"
@@ -108,24 +99,6 @@
    "date": "2026-10-03",
    "time": "10:40",
    "url": "https://www.filmladder.nl/kaartjes/1228587452"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-03",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-10-03",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/mother"
   },
   {
    "venue": "Filmkoepel",
@@ -564,7 +537,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-03",
    "time": "17:45",
    "url": "https://www.filmladder.nl/kaartjes/1228587466"
@@ -800,7 +773,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-03",
    "time": "20:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587467"
@@ -838,7 +811,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-03",
    "time": "21:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587407"
@@ -886,7 +859,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-03",
    "time": "22:10",
    "url": "https://www.filmladder.nl/kaartjes/1228587468"
@@ -1472,7 +1445,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-04",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587408"
@@ -1481,7 +1454,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-04",
    "time": "18:20",
    "url": "https://www.filmladder.nl/kaartjes/1228587469"
@@ -1776,7 +1749,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-04",
    "time": "21:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587470"
@@ -2008,7 +1981,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-05",
    "time": "13:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587471"
@@ -2216,7 +2189,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-05",
    "time": "16:55",
    "url": "https://www.filmladder.nl/kaartjes/1228587472"
@@ -2252,7 +2225,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-05",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587409"
@@ -2535,7 +2508,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-05",
    "time": "21:40",
    "url": "https://www.filmladder.nl/kaartjes/1228587473"
@@ -2655,7 +2628,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-06",
    "time": "11:45",
    "url": "https://www.filmladder.nl/kaartjes/1228587474"
@@ -2956,7 +2929,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-06",
    "time": "16:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587475"
@@ -2983,7 +2956,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-06",
    "time": "17:20",
    "url": "https://www.filmladder.nl/kaartjes/1228587410"
@@ -3195,15 +3168,6 @@
    "url": "https://www.schuur.nl/film/digger"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Fall 2: Deadpoint",
-   "info": "",
-   "date": "2026-10-06",
-   "time": "21:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587423"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -3222,6 +3186,15 @@
    "time": "21:00",
    "url": "https://filmkoepel.nl/tickets/203580",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-06",
+   "time": "21:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228671605"
   },
   {
    "venue": "Pathé",
@@ -3274,7 +3247,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-06",
    "time": "21:50",
    "url": "https://www.filmladder.nl/kaartjes/1228587476"
@@ -3310,7 +3283,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-07",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587477"
@@ -3658,7 +3631,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-07",
    "time": "16:30",
    "url": "https://www.filmladder.nl/kaartjes/1228587479"
@@ -3987,7 +3960,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Resident Evil",
-   "info": "",
+   "info": "2D",
    "date": "2026-10-07",
    "time": "22:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587480"
