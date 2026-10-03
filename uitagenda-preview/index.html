@@ -125,17 +125,17 @@
   .row { display: flex; align-items: stretch; border-top: 1px solid var(--divider); }
   .row:first-child { border-top: 0; }
   .row > a {
-    flex: 1; min-width: 0; display: grid; grid-template-columns: 4px 50px 1fr; gap: 12px;
+    flex: 1; min-width: 0; display: grid; grid-template-columns: 4px 44px 1fr; gap: 12px;
     padding: 14px 0 14px 12px; color: inherit; text-decoration: none;
   }
   .row > a:active { background: var(--surface); }
   .row.past { opacity: .45; }
   /* Het zaalbalkje: 4px breed, 4px radius, zoals de tijdlijnbalken */
   .bar { border-radius: 4px; background: var(--vc, var(--smoke)); box-shadow: inset 0 0 0 1px rgba(21,22,25,.12); }
-  .time { font: 600 18px/1.33 var(--font); font-feature-settings: "tnum" 1; }
+  .time { font: 500 15px/24px var(--font); font-feature-settings: "tnum" 1; color: var(--muted); margin-top: 18px; }
   .venue { font: 500 12px/1.33 var(--font); color: var(--muted); display: flex; align-items: center; gap: 6px; }
   .venue i { width: 8px; height: 8px; border-radius: 2px; background: var(--vc, var(--smoke)); flex: none; box-shadow: inset 0 0 0 1px rgba(21,22,25,.18); }
-  .title { font: 600 16px/1.33 var(--font); margin-top: 2px; }
+  .title { font: 700 18px/24px var(--font); letter-spacing: -0.2px; margin-top: 2px; }
   .info { color: var(--muted); font-size: 14px; line-height: 1.4; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .sold { border: 1px solid currentColor; border-radius: 9999px; padding: 0 7px; color: var(--text); font-size: 11px; }
   .share {
