@@ -14,10 +14,11 @@ Pepijns Claude omgeving
 ## Uit in Haarlem
 
 Web app (op je telefoon te installeren via *Zet op beginscherm*) met het programma van vandaag en de 6 dagen daarna:
-podium (Schuur theater, Phil, Patronaat, Theater De Liefde) en film (Filmkoepel, Schuur, en Pathé Haarlem via een schakelaar).
-Elke regel heeft een deelknop. De Stadsschouwburg blokkeert automatisch ophalen, daarvoor staat er een directe link in de app.
+podium (Schuur theater, Phil, Patronaat) en film (Filmkoepel, Schuur, en Pathé Haarlem via een schakelaar).
+Films overdag zijn ingeklapt, elke zaal heeft een eigen kleur en elke regel een deelknop.
+De Stadsschouwburg en Theater De Liefde blokkeren automatisch ophalen, daarvoor staan directe links in de app.
 
 - `scripts/uitagenda-scrape.mjs` haalt de agenda's op en schrijft `uitagenda/events.json`.
-  De Liefde en Pathé blokkeren automatisch ophalen, hun programma komt via Podiuminfo en Filmladder.
+  Pathé blokkeert automatisch ophalen, dat programma komt via Filmladder.
 - `.github/workflows/uitagenda.yml` draait dat elke 3 uur (en handmatig via *Actions > Run workflow*).
 - Lokaal testen: `node scripts/uitagenda-scrape.mjs`
