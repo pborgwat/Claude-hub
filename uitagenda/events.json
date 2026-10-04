@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T22:07:37.743Z",
+ "generated": "2026-10-04T10:34:02.744Z",
  "days": [
   "2026-10-04",
   "2026-10-05",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 81
+   "count": 78
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 161
+   "count": 159
   }
  },
  "events": [
@@ -96,42 +96,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587547"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-04",
-   "time": "10:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587487"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-10-04",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-04",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-04",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228587650"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Palestine 36",
@@ -189,15 +153,6 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/203522",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Mother",
-   "info": "film · Teona Strugar Mitevska",
-   "date": "2026-10-04",
-   "time": "12:10",
-   "url": "https://www.schuur.nl/film/mother"
   },
   {
    "venue": "Pathé",
