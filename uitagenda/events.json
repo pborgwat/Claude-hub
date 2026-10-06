@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T02:17:25.565Z",
+ "generated": "2026-10-06T11:14:50.419Z",
  "days": [
   "2026-10-06",
   "2026-10-07",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 84
+   "count": 82
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 309
+   "count": 307
   }
  },
  "events": [
@@ -49,33 +49,6 @@
    "date": "2026-10-06",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587699"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Peau d’âne",
-   "info": "klassieker · Jacques Demy",
-   "date": "2026-10-06",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/peau-dane"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-06",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228587657"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-06",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
    "venue": "Filmkoepel",
@@ -133,15 +106,6 @@
    "date": "2026-10-06",
    "time": "11:40",
    "url": "https://www.filmladder.nl/kaartjes/1228587691"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-06",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228587474"
   },
   {
    "venue": "Filmkoepel",
@@ -4614,16 +4578,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718781"
   },
   {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Kitty, Daisy & Lewis + support",
-   "info": "indie, pop · Stage 2 · Een fifties sound in een eigentijds en vernieuwend jasje",
-   "date": "2026-10-11",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/kitty-daisy-lewis-support-11-10-26/",
-   "soldOut": false
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Social Reckoning",
@@ -4631,6 +4585,16 @@
    "date": "2026-10-11",
    "time": "20:15",
    "url": "https://www.filmladder.nl/kaartjes/1228718707"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Kitty, Daisy & Lewis",
+   "info": "indie, pop · Stage 2 · Een fifties sound in een eigentijds en vernieuwend jasje",
+   "date": "2026-10-11",
+   "time": "20:30",
+   "url": "https://patronaat.nl/event/kitty-daisy-lewis-support-11-10-26/",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
