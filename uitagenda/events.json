@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T23:03:01.475Z",
+ "generated": "2026-10-07T11:03:15.358Z",
  "days": [
   "2026-10-07",
   "2026-10-08",
@@ -12,7 +12,7 @@
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 185
+   "count": 202
   },
   "Schuur": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 318
+   "count": 315
   }
  },
  "events": [
@@ -40,24 +40,6 @@
    "date": "2026-10-07",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1228587678"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587660"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587477"
   },
   {
    "venue": "Filmkoepel",
@@ -106,15 +88,6 @@
    "time": "11:30",
    "url": "https://filmkoepel.nl/tickets/203488",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "11:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228587532"
   },
   {
    "venue": "Filmkoepel",
@@ -1009,6 +982,16 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718714"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-08",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204328",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Verity",
@@ -1156,6 +1139,16 @@
    "date": "2026-10-08",
    "time": "18:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718663"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-08",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204335",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -1803,6 +1796,16 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718923"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-09",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204329",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Minions & Monsters (NL)",
@@ -1954,6 +1957,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-09",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204336",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Yellow Letters",
    "info": "Ilker Çatak · Zaal 2",
    "date": "2026-10-09",
@@ -2068,7 +2081,7 @@
    "venue": "Phil",
    "kind": "podium",
    "title": "Eric Vloeimans takes on Licks & Brains",
-   "info": "soul/jazz · 18-koppige band beweegt tussen jazz, afrofunk & soul",
+   "info": "soul/jazz · Album release Airchair met 18-koppige band",
    "date": "2026-10-09",
    "time": "20:00",
    "url": "https://philhaarlem.nl/agenda/023-jazz-2026",
@@ -2204,6 +2217,16 @@
    "date": "2026-10-09",
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204404",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 2",
+   "date": "2026-10-09",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/204277",
    "soldOut": false
   },
   {
@@ -2727,6 +2750,16 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718704"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-10",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204330",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Tatta’s: Daan",
@@ -2863,6 +2896,16 @@
    "date": "2026-10-10",
    "time": "18:30",
    "url": "https://filmkoepel.nl/tickets/204363",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-10",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204337",
    "soldOut": false
   },
   {
@@ -3090,6 +3133,16 @@
    "date": "2026-10-10",
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204405",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 2",
+   "date": "2026-10-10",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/204278",
    "soldOut": false
   },
   {
@@ -3631,6 +3684,16 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718930"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-11",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204331",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Sense and Sensibility",
@@ -3759,6 +3822,16 @@
    "date": "2026-10-11",
    "time": "18:30",
    "url": "https://filmkoepel.nl/tickets/204364",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-11",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204338",
    "soldOut": false
   },
   {
@@ -3968,6 +4041,16 @@
    "date": "2026-10-11",
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204406",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 2",
+   "date": "2026-10-11",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/204279",
    "soldOut": false
   },
   {
@@ -4481,6 +4564,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-12",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204332",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Downtown",
    "info": "Michiel van Erp · Zaal 5",
    "date": "2026-10-12",
@@ -4608,6 +4701,16 @@
    "date": "2026-10-12",
    "time": "18:30",
    "url": "https://www.schuur.nl/film/shall-we-dance"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-12",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204339",
+   "soldOut": false
   },
   {
    "venue": "Filmkoepel",
@@ -4805,6 +4908,16 @@
    "date": "2026-10-12",
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204407",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 2",
+   "date": "2026-10-12",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/204280",
    "soldOut": false
   },
   {
@@ -5300,6 +5413,16 @@
   {
    "venue": "Filmkoepel",
    "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-13",
+   "time": "16:00",
+   "url": "https://filmkoepel.nl/tickets/204333",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
    "title": "Downtown",
    "info": "Michiel van Erp · Zaal 5",
    "date": "2026-10-13",
@@ -5435,6 +5558,16 @@
    "date": "2026-10-13",
    "time": "18:30",
    "url": "https://filmkoepel.nl/tickets/204366",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 4",
+   "date": "2026-10-13",
+   "time": "18:30",
+   "url": "https://filmkoepel.nl/tickets/204340",
    "soldOut": false
   },
   {
@@ -5615,6 +5748,16 @@
    "date": "2026-10-13",
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204408",
+   "soldOut": false
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Social Reckoning",
+   "info": "Aaron Sorkin · Zaal 2",
+   "date": "2026-10-13",
+   "time": "21:15",
+   "url": "https://filmkoepel.nl/tickets/204281",
    "soldOut": false
   },
   {
