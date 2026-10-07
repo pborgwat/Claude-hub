@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T11:03:15.358Z",
+ "generated": "2026-10-07T19:19:38.529Z",
  "days": [
   "2026-10-07",
   "2026-10-08",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 84
+   "count": 64
   },
   "Phil": {
    "ok": true,
@@ -28,19 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 315
+   "count": 298
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587678"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -50,24 +41,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/203550",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Vaiana (NL)",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228587664"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587543"
   },
   {
    "venue": "Filmkoepel",
@@ -100,33 +73,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587700"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Ted & De Magische Lamp",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "12:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228587447"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "12:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228587692"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -147,33 +93,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Toy Story 5 (NL)",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "13:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228587512"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587495"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587567"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Juste une illusion",
@@ -182,24 +101,6 @@
    "time": "13:45",
    "url": "https://filmkoepel.nl/tickets/203495",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Minions & Monsters (NL)",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "13:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228587427"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "13:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228587587"
   },
   {
    "venue": "Filmkoepel",
@@ -220,51 +121,6 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/203595",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-07",
-   "time": "14:00",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228587680"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-07",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/downtown"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228587624"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Avengers: Endgame",
-   "info": "2D · Encore",
-   "date": "2026-10-07",
-   "time": "14:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587618"
   },
   {
    "venue": "Filmkoepel",
@@ -353,15 +209,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228587701"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-07",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -370,15 +217,6 @@
    "time": "16:30",
    "url": "https://filmkoepel.nl/tickets/203567",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228587479"
   },
   {
    "venue": "Pathé",
@@ -398,24 +236,6 @@
    "time": "16:45",
    "url": "https://filmkoepel.nl/tickets/203467",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-07",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228587533"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-07",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228587497"
   },
   {
    "venue": "Pathé",
@@ -476,15 +296,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567562"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-07",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Wen Er Maar Aan",
@@ -492,15 +303,6 @@
    "date": "2026-10-07",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567554"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-07",
-   "time": "19:10",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Filmkoepel",
@@ -551,15 +353,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Mystiek Lichaam",
-   "info": "theater · Koen Verheijden – Toneelschuur Producties",
-   "date": "2026-10-07",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/producties/mystiek-lichaam"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Wen Er Maar Aan",
@@ -567,15 +360,6 @@
    "date": "2026-10-07",
    "time": "20:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567557"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Bijna een leven",
-   "info": "theater · Toneelgroep Maastricht in co-productie met Stichting NOX",
-   "date": "2026-10-07",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/bijna-een-leven"
   },
   {
    "venue": "Patronaat",
@@ -4189,24 +3973,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718807"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Maak een tijdcapsule!",
-   "info": "caféprogramma",
-   "date": "2026-10-12",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/cafe/maak-een-tijdcapsule"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "MediaLab",
-   "info": "medialab",
-   "date": "2026-10-12",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/cafe/medialab"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
@@ -4236,15 +4002,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Lotte op zoek naar de draken",
-   "info": "familiefilm · Heiki Ernits & Janno Põldma",
-   "date": "2026-10-12",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/lotte-op-zoek-naar-de-draken"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Palestine 36",
@@ -4262,15 +4019,6 @@
    "date": "2026-10-12",
    "time": "11:10",
    "url": "https://www.filmladder.nl/kaartjes/1228718912"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-12",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Filmkoepel",
@@ -4346,15 +4094,6 @@
    "date": "2026-10-12",
    "time": "12:40",
    "url": "https://www.filmladder.nl/kaartjes/1228718648"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-12",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
   },
   {
    "venue": "Pathé",
@@ -4451,15 +4190,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-12",
-   "time": "14:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -4468,15 +4198,6 @@
    "time": "14:15",
    "url": "https://filmkoepel.nl/tickets/204292",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Atlas van de ruimte",
-   "info": "familiefilm · Paul Negoescu",
-   "date": "2026-10-12",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/atlas-ruimte"
   },
   {
    "venue": "Filmkoepel",
@@ -4612,24 +4333,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-12",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-12",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Naza",
@@ -4694,15 +4397,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Shall We Dance?",
-   "info": "klassieker · Masayuki Suô",
-   "date": "2026-10-12",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/shall-we-dance"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Social Reckoning",
@@ -4740,15 +4434,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/204305",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-12",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/downtown"
   },
   {
    "venue": "Pathé",
@@ -4871,24 +4556,6 @@
    "time": "21:00",
    "url": "https://filmkoepel.nl/tickets/204379",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-12",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-12",
-   "time": "21:10",
-   "url": "https://www.schuur.nl/film/digger"
   },
   {
    "venue": "Filmkoepel",
