@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T01:54:39.467Z",
+ "generated": "2026-10-08T11:20:36.818Z",
  "days": [
   "2026-10-08",
   "2026-10-09",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 90
+   "count": 89
   },
   "Phil": {
    "ok": true,
@@ -50,15 +50,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/204382",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-08",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
    "venue": "Pathé",
@@ -3278,7 +3269,7 @@
    "date": "2026-10-11",
    "time": "20:30",
    "url": "https://patronaat.nl/event/kitty-daisy-lewis-support-11-10-26/",
-   "soldOut": false
+   "soldOut": true
   },
   {
    "venue": "Pathé",
