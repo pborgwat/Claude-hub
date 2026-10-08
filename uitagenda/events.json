@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T11:20:36.818Z",
+ "generated": "2026-10-08T19:16:21.762Z",
  "days": [
   "2026-10-08",
   "2026-10-09",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 89
+   "count": 70
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 329
+   "count": 317
   }
  },
  "events": [
@@ -130,15 +130,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "11:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718699"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Bumba: Het Circusorkest",
    "info": "",
    "date": "2026-10-08",
@@ -172,15 +163,6 @@
    "date": "2026-10-08",
    "time": "13:10",
    "url": "https://www.filmladder.nl/kaartjes/1228718629"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "13:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718859"
   },
   {
    "venue": "Filmkoepel",
@@ -222,15 +204,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-08",
-   "time": "13:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718689"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -239,24 +212,6 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/204389",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-08",
-   "time": "14:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228718920"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-08",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/no-good-men"
   },
   {
    "venue": "Pathé",
@@ -325,15 +280,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-08",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Downtown",
@@ -354,24 +300,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-08",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "16:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718700"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Spider-Man: Brand New Day",
@@ -379,33 +307,6 @@
    "date": "2026-10-08",
    "time": "16:50",
    "url": "https://www.filmladder.nl/kaartjes/1228718651"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718860"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "17:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718723"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-08",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228718921"
   },
   {
    "venue": "Pathé",
@@ -485,15 +386,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-08",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toroboro: El Nombre De Las Plantas",
@@ -504,51 +396,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-08",
-   "time": "19:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718690"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-08",
-   "time": "19:15",
-   "url": "https://www.schuur.nl/film/downtown"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "19:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228718701"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-08",
-   "time": "19:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718861"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-08",
-   "time": "19:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718922"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "IOS – ISOOKSCHITTEREND – CLUBTOUR 8",
@@ -557,15 +404,6 @@
    "time": "20:00",
    "url": "https://patronaat.nl/event/ios-isookschitterend-clubtour-8-08-10-26/",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Mystiek Lichaam",
-   "info": "theater · Koen Verheijden – Toneelschuur Producties",
-   "date": "2026-10-08",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/producties/mystiek-lichaam"
   },
   {
    "venue": "Patronaat",
@@ -614,15 +452,6 @@
    "date": "2026-10-08",
    "time": "20:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718773"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Wachten op Marsha",
-   "info": "theater · Raymi Sambo Maakt",
-   "date": "2026-10-08",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/wachten-op-marsha"
   },
   {
    "venue": "Filmkoepel",
@@ -4352,15 +4181,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718837"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "MediaLab",
-   "info": "medialab",
-   "date": "2026-10-13",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/cafe/medialab"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Het Vergeten Eiland",
@@ -4407,24 +4227,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/204256",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Shall We Dance?",
-   "info": "klassieker · Masayuki Suô",
-   "date": "2026-10-13",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/shall-we-dance"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Kabam! 2",
-   "info": "familiefilm · Elisabeth Hesemans",
-   "date": "2026-10-13",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/kabam-2"
   },
   {
    "venue": "Filmkoepel",
@@ -4509,15 +4311,6 @@
    "date": "2026-10-13",
    "time": "12:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718874"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-13",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
   },
   {
    "venue": "Pathé",
@@ -4622,24 +4415,6 @@
    "time": "14:15",
    "url": "https://filmkoepel.nl/tickets/204293",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-13",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Gugu’s World",
-   "info": "familiefilm · Allan Deberton",
-   "date": "2026-10-13",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/gugus-world"
   },
   {
    "venue": "Filmkoepel",
@@ -4784,24 +4559,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718875"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-13",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "film · Michiel van Erp",
-   "date": "2026-10-13",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/downtown"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Heart of the Beast",
@@ -4905,15 +4662,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718830"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-13",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -4932,15 +4680,6 @@
    "time": "19:15",
    "url": "https://filmkoepel.nl/tickets/204241",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-13",
-   "time": "19:15",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
   },
   {
    "venue": "Pathé",
@@ -4998,15 +4737,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-13",
-   "time": "20:45",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Liberté",
@@ -5035,15 +4765,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204249",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-13",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/digger"
   },
   {
    "venue": "Filmkoepel",
