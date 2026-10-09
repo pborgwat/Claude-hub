@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08T23:45:43.970Z",
+ "generated": "2026-10-09T11:18:27.435Z",
  "days": [
   "2026-10-09",
   "2026-10-10",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 87
+   "count": 85
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 293
+   "count": 292
   }
  },
  "events": [
@@ -71,15 +71,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-09",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Shaun het Schaap: Het Beest van de Boerderij",
@@ -87,15 +78,6 @@
    "date": "2026-10-09",
    "time": "11:10",
    "url": "https://www.filmladder.nl/kaartjes/1228718761"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-09",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
    "venue": "Pathé",
@@ -134,15 +116,6 @@
    "date": "2026-10-09",
    "time": "11:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718904"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-09",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718691"
   },
   {
    "venue": "Pathé",
