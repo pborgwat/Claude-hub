@@ -1,22 +1,22 @@
 {
- "generated": "2026-10-10T17:50:47.824Z",
+ "generated": "2026-10-10T22:29:35.582Z",
  "days": [
-  "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13",
   "2026-10-14",
   "2026-10-15",
-  "2026-10-16"
+  "2026-10-16",
+  "2026-10-17"
  ],
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 149
+   "count": 120
   },
   "Schuur": {
    "ok": true,
-   "count": 70
+   "count": 72
   },
   "Phil": {
    "ok": true,
@@ -28,754 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 238
+   "count": 196
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718889"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718764"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718735"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "09:55",
-   "url": "https://www.filmladder.nl/kaartjes/1228718840"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "10:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718906"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Forgotten Island",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "10:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718748"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "HalloWiebe: Overdrive",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "10:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718787"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "MediaLab",
-   "info": "medialab",
-   "date": "2026-10-10",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/cafe/medialab"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Liberté",
-   "info": "Antonin Baudry · Zaal 6",
-   "date": "2026-10-10",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/204384",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Human Nature",
-   "info": "Bart Schrijver · Zaal 2",
-   "date": "2026-10-10",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/204253",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Naza",
-   "info": "Yuval Abraham, Rachel Szor · Zaal 3",
-   "date": "2026-10-10",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/204285",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Incomer",
-   "info": "Louis Paxton · Zaal 4",
-   "date": "2026-10-10",
-   "time": "11:15",
-   "url": "https://filmkoepel.nl/tickets/204316",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718849"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "500 Miles",
-   "info": "Morgan Matthews · Zaal 5",
-   "date": "2026-10-10",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/204349",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718803"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718765"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Minions & Monsters (NL)",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718646"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "Anthony Maras · Zaal 1",
-   "date": "2026-10-10",
-   "time": "12:00",
-   "url": "https://filmkoepel.nl/tickets/204222",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Vaiana (NL)",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "12:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228718835"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "HalloWiebe: Overdrive",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718788"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Misanthrope",
-   "info": "Indhu Rubasingham · Zaal 3",
-   "date": "2026-10-10",
-   "time": "13:00",
-   "url": "https://filmkoepel.nl/tickets/202391",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "13:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718890"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "Joel Crawford, Januel Mercado · Zaal 4",
-   "date": "2026-10-10",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/204325",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718850"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "Olivier Nakache, Eric Toledano · Zaal 5",
-   "date": "2026-10-10",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/204356",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "Steve Cox, Matthew Walker · Zaal 2",
-   "date": "2026-10-10",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/204261",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "13:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718907"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 6",
-   "date": "2026-10-10",
-   "time": "14:00",
-   "url": "https://filmkoepel.nl/tickets/204391",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Naza",
-   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
-   "date": "2026-10-10",
-   "time": "14:30",
-   "url": "https://filmkoepel.nl/tickets/204224",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Queen Budapest",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "14:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228567563"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "3D",
-   "date": "2026-10-10",
-   "time": "14:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718804"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "14:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718736"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "15:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718766"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Toy Story 5 (NL)",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "15:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718718"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Résistance",
-   "info": "Antonin Baudry · Zaal 3",
-   "date": "2026-10-10",
-   "time": "15:30",
-   "url": "https://filmkoepel.nl/tickets/204301",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "Ilker Çatak · Zaal 2",
-   "date": "2026-10-10",
-   "time": "15:45",
-   "url": "https://filmkoepel.nl/tickets/204266",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "Aaron Sorkin · Zaal 4",
-   "date": "2026-10-10",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/204330",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Downtown",
-   "info": "Michiel van Erp · Zaal 5",
-   "date": "2026-10-10",
-   "time": "16:15",
-   "url": "https://filmkoepel.nl/tickets/204370",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Digger",
-   "info": "Alejandro G. Iñárritu · Zaal 1",
-   "date": "2026-10-10",
-   "time": "16:30",
-   "url": "https://filmkoepel.nl/tickets/204232",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "Albert-Jan van Rees · Zaal 6",
-   "date": "2026-10-10",
-   "time": "16:30",
-   "url": "https://filmkoepel.nl/tickets/204412",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "16:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718631"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "F*ck de Familie",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "17:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718716"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718822"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Fall 2: Deadpoint",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228718637"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Practical Magic 2",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718665"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Forgotten Island",
-   "info": "3D",
-   "date": "2026-10-10",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718749"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "Olivier Nakache, Eric Toledano · Zaal 5",
-   "date": "2026-10-10",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/204363",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "Aaron Sorkin · Zaal 4",
-   "date": "2026-10-10",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/204337",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "Ilker Çatak · Zaal 2",
-   "date": "2026-10-10",
-   "time": "18:35",
-   "url": "https://filmkoepel.nl/tickets/204272",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Toutes Directions",
-   "info": "Noël Loozen · Zaal 3",
-   "date": "2026-10-10",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/204303",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 6",
-   "date": "2026-10-10",
-   "time": "19:00",
-   "url": "https://filmkoepel.nl/tickets/204398",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "19:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718678"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Naza",
-   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
-   "date": "2026-10-10",
-   "time": "19:15",
-   "url": "https://filmkoepel.nl/tickets/204238",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718705"
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "40UP",
-   "info": "nachtleven, pop · Stage 1 · 40UP zet hun tour voort!",
-   "date": "2026-10-10",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/40up-10-10-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Mystiek Lichaam",
-   "info": "theater · Koen Verheijden – Toneelschuur Producties",
-   "date": "2026-10-10",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/producties/mystiek-lichaam"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718797"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718780"
-  },
-  {
-   "venue": "Phil",
-   "kind": "podium",
-   "title": "Vivaldi’s De Vier Jaargetijden door Noa Wildschut",
-   "info": "orkest · Concertgebouw Kamerorkest",
-   "date": "2026-10-10",
-   "time": "20:00",
-   "url": "https://philhaarlem.nl/agenda/noa-wildschut-concertgebouwkamerorkest",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "20:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718694"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "20:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718867"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Résistance",
-   "info": "Antonin Baudry · Zaal 3",
-   "date": "2026-10-10",
-   "time": "20:45",
-   "url": "https://filmkoepel.nl/tickets/204309",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-10",
-   "time": "20:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718927"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Liberté",
-   "info": "Antonin Baudry · Zaal 4",
-   "date": "2026-10-10",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/204343",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Invite",
-   "info": "Olivia Wilde · Zaal 5",
-   "date": "2026-10-10",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/204377",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "21:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718632"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-10",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Digger",
-   "info": "Alejandro G. Iñárritu · Zaal 1",
-   "date": "2026-10-10",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/204246",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Digger",
-   "info": "film · Alejandro G. Iñárritu",
-   "date": "2026-10-10",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/digger"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "David Ayer · Zaal 6",
-   "date": "2026-10-10",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/204405",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "Aaron Sorkin · Zaal 2",
-   "date": "2026-10-10",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/204278",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "21:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718654"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718823"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "22:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228718727"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Fall 2: Deadpoint",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "22:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718638"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-10",
-   "time": "22:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718928"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-10-10",
-   "time": "23:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718679"
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Spätkauf",
-   "info": "club3, nachtleven · Stage 3 · Techno zoals te horen op Awakenings en clubs als Berghain in Berlijn.",
-   "date": "2026-10-10",
-   "time": "23:00",
-   "url": "https://patronaat.nl/event/spatkauf-10-10-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Crawlers",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "23:05",
-   "url": "https://www.filmladder.nl/kaartjes/1228718881"
-  },
   {
    "venue": "Pathé",
    "kind": "film",
@@ -4473,6 +3729,100 @@
    "time": "23:00",
    "url": "https://patronaat.nl/event/yuna-10-10-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Geschiedenisfestival 2026",
+   "info": "evenementen",
+   "date": "2026-10-17",
+   "time": "10:00",
+   "url": "https://philhaarlem.nl/agenda/geschiedenisfestival-2026",
+   "soldOut": true
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "MediaLab",
+   "info": "medialab",
+   "date": "2026-10-17",
+   "time": "10:30",
+   "url": "https://www.schuur.nl/cafe/medialab"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Robokoppies",
+   "info": "caféprogramma",
+   "date": "2026-10-17",
+   "time": "10:30",
+   "url": "https://www.schuur.nl/cafe/robokoppies"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "De Grote Droom",
+   "info": "familiefilm · Valérie Magis & Rémi Durin",
+   "date": "2026-10-17",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/de-grote-droom"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Verhalen uit de Magische tuin",
+   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
+   "date": "2026-10-17",
+   "time": "12:45",
+   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "The Misanthrope",
+   "info": "Indhu Rubasingham · Zaal 3",
+   "date": "2026-10-17",
+   "time": "13:00",
+   "url": "https://filmkoepel.nl/tickets/202392",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Gugu’s World",
+   "info": "familiefilm · Allan Deberton",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "url": "https://www.schuur.nl/film/gugus-world"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Disco Del Mundo",
+   "info": "nachtleven, zoca flavor · Stage 2 · Dans de wereld rond met wereldse grooves en tropische sferen",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/disco-del-mundo-17-10-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Veya",
+   "info": "elektronisch, indie · Stage 3 · Een eigenzinnige mix van alternatieve pop, klassieke invloeden en moderne elektronica",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/veya-17-10-26-2/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Yes-Girl",
+   "info": "theater · Gavin-Viano / Frascati Producties in coproductie met DOX & Theater Utrecht",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/yes-girl"
   }
  ]
 }
