@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09T23:15:09.534Z",
+ "generated": "2026-10-10T10:35:16.099Z",
  "days": [
   "2026-10-10",
   "2026-10-11",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 80
+   "count": 78
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 247
+   "count": 246
   }
  },
  "events": [
@@ -144,24 +144,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "No Good Men",
-   "info": "film · Shahrbanoo Sadat",
-   "date": "2026-10-10",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/no-good-men"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Kabam! 2",
-   "info": "familiefilm · Elisabeth Hesemans",
-   "date": "2026-10-10",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/kabam-2"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Incomer",
@@ -207,15 +189,6 @@
    "date": "2026-10-10",
    "time": "11:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718765"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-10",
-   "time": "11:55",
-   "url": "https://www.filmladder.nl/kaartjes/1228718778"
   },
   {
    "venue": "Pathé",
@@ -1040,11 +1013,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "2D",
+   "title": "Verity",
+   "info": "",
    "date": "2026-10-11",
    "time": "10:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718805"
+   "url": "https://www.filmladder.nl/kaartjes/1228789078"
   },
   {
    "venue": "Filmkoepel",
@@ -2161,15 +2134,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718768"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Practical Magic 2",
-   "info": "",
-   "date": "2026-10-12",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228718667"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -2187,6 +2151,15 @@
    "date": "2026-10-12",
    "time": "14:00",
    "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-12",
+   "time": "14:10",
+   "url": "https://www.filmladder.nl/kaartjes/1228789079"
   },
   {
    "venue": "Filmkoepel",
@@ -2994,11 +2967,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Practical Magic 2",
+   "title": "Verity",
    "info": "",
    "date": "2026-10-13",
    "time": "13:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228718669"
+   "url": "https://www.filmladder.nl/kaartjes/1228789080"
   },
   {
    "venue": "Pathé",
@@ -3821,6 +3794,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1228718877"
   },
   {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Verity",
+   "info": "",
+   "date": "2026-10-14",
+   "time": "13:40",
+   "url": "https://www.filmladder.nl/kaartjes/1228789081"
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Yellow Letters",
@@ -3838,15 +3820,6 @@
    "time": "13:45",
    "url": "https://filmkoepel.nl/tickets/204360",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Practical Magic 2",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "13:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228718671"
   },
   {
    "venue": "Filmkoepel",
