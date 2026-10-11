@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-10T22:29:35.582Z",
+ "generated": "2026-10-11T10:47:59.616Z",
  "days": [
   "2026-10-11",
   "2026-10-12",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 72
+   "count": 70
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 196
+   "count": 195
   }
  },
  "events": [
@@ -114,24 +114,6 @@
    "url": "https://www.schuur.nl/cafe/medialab"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-10-11",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-11",
-   "time": "10:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228789078"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Liberté",
@@ -169,15 +151,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/204254",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-11",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
   },
   {
    "venue": "Filmkoepel",
@@ -2908,11 +2881,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Verity",
+   "title": "The Social Reckoning",
    "info": "",
    "date": "2026-10-14",
    "time": "13:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228789081"
+   "url": "https://www.filmladder.nl/kaartjes/1228718712"
   },
   {
    "venue": "Schuur",
@@ -3020,15 +2993,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718712"
-  },
-  {
    "venue": "Schuur",
    "kind": "podium",
    "title": "Houtje",
@@ -3036,6 +3000,15 @@
    "date": "2026-10-14",
    "time": "15:00",
    "url": "https://www.schuur.nl/theater/houtje"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Yugly",
+   "info": "",
+   "date": "2026-10-14",
+   "time": "15:00",
+   "url": "https://www.filmladder.nl/kaartjes/1228789081"
   },
   {
    "venue": "Pathé",
