@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T03:02:34.676Z",
+ "generated": "2026-10-13T11:44:38.428Z",
  "days": [
   "2026-10-13",
   "2026-10-14",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 91
+   "count": 88
   },
   "Phil": {
    "ok": true,
@@ -153,24 +153,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Shall We Dance?",
-   "info": "klassieker · Masayuki Suô",
-   "date": "2026-10-13",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/shall-we-dance"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Kabam! 2",
-   "info": "familiefilm · Elisabeth Hesemans",
-   "date": "2026-10-13",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/kabam-2"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Incomer",
@@ -253,15 +235,6 @@
    "date": "2026-10-13",
    "time": "12:30",
    "url": "https://www.filmladder.nl/kaartjes/1228718874"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-13",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
   },
   {
    "venue": "Pathé",
