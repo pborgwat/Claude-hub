@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T01:12:36.621Z",
+ "generated": "2026-10-14T09:29:47.233Z",
  "days": [
   "2026-10-14",
   "2026-10-15",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 89
+   "count": 87
   },
   "Phil": {
    "ok": true,
@@ -28,73 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 325
+   "count": 317
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718743"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228718857"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "09:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718845"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Forgotten Island",
-   "info": "2D",
-   "date": "2026-10-14",
-   "time": "09:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228718758"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718900"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228718917"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "",
-   "date": "2026-10-14",
-   "time": "10:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228718661"
-  },
   {
    "venue": "Schuur",
    "kind": "podium",
@@ -103,15 +40,6 @@
    "date": "2026-10-14",
    "time": "10:30",
    "url": "https://www.schuur.nl/cafe/medialab"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "2D",
-   "date": "2026-10-14",
-   "time": "10:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228718811"
   },
   {
    "venue": "Filmkoepel",
@@ -134,15 +62,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Grote Droom",
-   "info": "familiefilm · Valérie Magis & Rémi Durin",
-   "date": "2026-10-14",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/de-grote-droom"
-  },
-  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Op avontuur met Dikkie Dik (2+)",
@@ -161,15 +80,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/204257",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "film · Olivier Nakache",
-   "date": "2026-10-14",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/juste-une-illusion"
   },
   {
    "venue": "Pathé",
