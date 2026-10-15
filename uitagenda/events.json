@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T09:08:03.462Z",
+ "generated": "2026-10-15T14:59:33.279Z",
  "days": [
   "2026-10-15",
   "2026-10-16",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 86
+   "count": 80
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 315
+   "count": 288
   }
  },
  "events": [
@@ -40,51 +40,6 @@
    "date": "2026-10-15",
    "time": "09:30",
    "url": "https://www.filmladder.nl/kaartjes/1228840042"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840094"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839919"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228839888"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840114"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "10:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228839946"
   },
   {
    "venue": "Schuur",
@@ -104,15 +59,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/204977",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "De Magische Jungle",
-   "info": "film · Edmunds Jansons",
-   "date": "2026-10-15",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/de-magische-jungle"
   },
   {
    "venue": "Filmkoepel",
@@ -135,15 +81,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228840058"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Human Nature",
@@ -152,24 +89,6 @@
    "time": "11:10",
    "url": "https://filmkoepel.nl/tickets/204943",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-15",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840095"
   },
   {
    "venue": "Filmkoepel",
@@ -182,15 +101,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839920"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Invite",
@@ -201,60 +111,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840116"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840001"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Toy Story 5 (NL)",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "11:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228839837"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228840151"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-15",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Minions & Monsters (NL)",
-   "info": "2D",
-   "date": "2026-10-15",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228839720"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Yellow Letters",
@@ -263,15 +119,6 @@
    "time": "13:00",
    "url": "https://filmkoepel.nl/tickets/204915",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "13:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228840059"
   },
   {
    "venue": "Filmkoepel",
@@ -294,24 +141,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Paw Patrol: De Dinofilm",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839890"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839922"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -320,15 +149,6 @@
    "time": "13:40",
    "url": "https://filmkoepel.nl/tickets/204879",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "13:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840118"
   },
   {
    "venue": "Filmkoepel",
@@ -341,33 +161,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-15",
-   "time": "14:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228840152"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "14:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228840096"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -376,42 +169,6 @@
    "time": "14:15",
    "url": "https://filmkoepel.nl/tickets/204984",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Tegenwoordig heet iedereen sorry",
-   "info": "familiefilm · Frederike Migom",
-   "date": "2026-10-15",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/tegenwoordig-heet-iedereen-sorry"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228840080"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "15:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839924"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "15:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228840061"
   },
   {
    "venue": "Filmkoepel",
@@ -424,24 +181,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "3D",
-   "date": "2026-10-15",
-   "time": "15:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839981"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "15:35",
-   "url": "https://www.filmladder.nl/kaartjes/1228839858"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Sense and Sensibility",
@@ -450,15 +189,6 @@
    "time": "15:45",
    "url": "https://filmkoepel.nl/tickets/204922",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "15:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228839735"
   },
   {
    "venue": "Filmkoepel",
@@ -471,15 +201,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-15",
-   "time": "16:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Youri",
@@ -488,24 +209,6 @@
    "time": "16:00",
    "url": "https://filmkoepel.nl/tickets/205059",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "16:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839726"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Street Fighter",
-   "info": "2D",
-   "date": "2026-10-15",
-   "time": "16:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839776"
   },
   {
    "venue": "Filmkoepel",
