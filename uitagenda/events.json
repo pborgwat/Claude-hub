@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T00:31:04.137Z",
+ "generated": "2026-10-15T09:08:03.462Z",
  "days": [
   "2026-10-15",
   "2026-10-16",
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 317
+   "count": 315
   }
  },
  "events": [
@@ -62,15 +62,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:35",
-   "url": "https://www.filmladder.nl/kaartjes/1228839856"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Paw Patrol: De Dinofilm",
    "info": "",
    "date": "2026-10-15",
@@ -85,15 +76,6 @@
    "date": "2026-10-15",
    "time": "09:50",
    "url": "https://www.filmladder.nl/kaartjes/1228840114"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "09:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840149"
   },
   {
    "venue": "Pathé",
