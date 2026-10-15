@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T14:59:33.279Z",
+ "generated": "2026-10-15T19:52:44.407Z",
  "days": [
   "2026-10-15",
   "2026-10-16",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 80
+   "count": 73
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 288
+   "count": 276
   }
  },
  "events": [
@@ -231,51 +231,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-15",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "17:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228840203"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Forgotten Island",
-   "info": "2D",
-   "date": "2026-10-15",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839908"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "17:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840154"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228840003"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
@@ -305,15 +260,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "18:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228839972"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Youri",
@@ -322,15 +268,6 @@
    "time": "18:40",
    "url": "https://filmkoepel.nl/tickets/205066",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-15",
-   "time": "18:40",
-   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Filmkoepel",
@@ -365,74 +302,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "18:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228839823"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-15",
-   "time": "18:55",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Coco (OV)",
    "info": "",
    "date": "2026-10-15",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228567574"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "19:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228840156"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "De jongen die van de wereld hield",
-   "info": "jeugdtheater · Het Filiaal theatermakers",
-   "date": "2026-10-15",
-   "time": "19:30",
-   "url": "https://www.schuur.nl/theater/jongen-wereld-hield"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "19:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228840081"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "19:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228839736"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Helstone in Het Pand der Goden",
-   "info": "theater · Theater Rotterdam: Mathieu Wijdeven",
-   "date": "2026-10-15",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/helstone-pand-der-goden"
   },
   {
    "venue": "Patronaat",
@@ -453,15 +327,6 @@
    "time": "20:00",
    "url": "https://philhaarlem.nl/agenda/vision-kwartet",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "20:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228839948"
   },
   {
    "venue": "Patronaat",
@@ -504,15 +369,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "21:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228839859"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -543,24 +399,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-15",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "21:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228839805"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Fall 2: Deadpoint",
@@ -577,15 +415,6 @@
    "date": "2026-10-15",
    "time": "21:30",
    "url": "https://www.filmladder.nl/kaartjes/1228839778"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-15",
-   "time": "21:30",
-   "url": "https://www.schuur.nl/film/yellow-letters"
   },
   {
    "venue": "Pathé",
