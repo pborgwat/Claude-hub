@@ -1,457 +1,37 @@
 {
- "generated": "2026-10-15T19:52:44.407Z",
+ "generated": "2026-10-16T00:22:29.549Z",
  "days": [
-  "2026-10-15",
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19",
   "2026-10-20",
-  "2026-10-21"
+  "2026-10-21",
+  "2026-10-22"
  ],
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 209
+   "count": 179
   },
   "Schuur": {
    "ok": true,
-   "count": 73
+   "count": 76
   },
   "Phil": {
    "ok": true,
-   "count": 3
+   "count": 2
   },
   "Patronaat": {
    "ok": true,
-   "count": 11
+   "count": 10
   },
   "Pathé": {
    "ok": true,
-   "count": 276
+   "count": 268
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840042"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "MediaLab",
-   "info": "medialab",
-   "date": "2026-10-15",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/cafe/medialab"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Liberté",
-   "info": "Antonin Baudry · Zaal 4",
-   "date": "2026-10-15",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/204977",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Toutes Directions",
-   "info": "Noël Loozen · Zaal 2",
-   "date": "2026-10-15",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/204908",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Youri",
-   "info": "Sander Burger · Zaal 6",
-   "date": "2026-10-15",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/205045",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Human Nature",
-   "info": "Bart Schrijver · Zaal 3",
-   "date": "2026-10-15",
-   "time": "11:10",
-   "url": "https://filmkoepel.nl/tickets/204943",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "Anthony Maras · Zaal 1",
-   "date": "2026-10-15",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/204872",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Invite",
-   "info": "Olivia Wilde · Zaal 5",
-   "date": "2026-10-15",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/205010",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "Ilker Çatak · Zaal 2",
-   "date": "2026-10-15",
-   "time": "13:00",
-   "url": "https://filmkoepel.nl/tickets/204915",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Digger",
-   "info": "Alejandro G. Iñárritu · Zaal 3",
-   "date": "2026-10-15",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/204950",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "Joel Crawford, Januel Mercado · Zaal 6",
-   "date": "2026-10-15",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/205052",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Naza",
-   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
-   "date": "2026-10-15",
-   "time": "13:40",
-   "url": "https://filmkoepel.nl/tickets/204879",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Shaun het Schaap: Het Beest van de Boerderij",
-   "info": "Steve Cox, Matthew Walker · Zaal 5",
-   "date": "2026-10-15",
-   "time": "14:00",
-   "url": "https://filmkoepel.nl/tickets/205017",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 4",
-   "date": "2026-10-15",
-   "time": "14:15",
-   "url": "https://filmkoepel.nl/tickets/204984",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Résistance",
-   "info": "Antonin Baudry · Zaal 1",
-   "date": "2026-10-15",
-   "time": "15:30",
-   "url": "https://filmkoepel.nl/tickets/204886",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "Georgia Oakley · Zaal 2",
-   "date": "2026-10-15",
-   "time": "15:45",
-   "url": "https://filmkoepel.nl/tickets/204922",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "Rodrigo Sorogoyen · Zaal 5",
-   "date": "2026-10-15",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/205024",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Youri",
-   "info": "Sander Burger · Zaal 6",
-   "date": "2026-10-15",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/205059",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "Albert-Jan van Rees · Zaal 3",
-   "date": "2026-10-15",
-   "time": "16:15",
-   "url": "https://filmkoepel.nl/tickets/204956",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 4",
-   "date": "2026-10-15",
-   "time": "16:30",
-   "url": "https://filmkoepel.nl/tickets/204991",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-10-15",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839704"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Juste une illusion",
-   "info": "Olivier Nakache, Eric Toledano · Zaal 3",
-   "date": "2026-10-15",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/204963",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "Georgia Oakley · Zaal 2",
-   "date": "2026-10-15",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/204929",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Youri",
-   "info": "Sander Burger · Zaal 6",
-   "date": "2026-10-15",
-   "time": "18:40",
-   "url": "https://filmkoepel.nl/tickets/205066",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 4",
-   "date": "2026-10-15",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/204998",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Naza",
-   "info": "Yuval Abraham, Rachel Szor · Zaal 1",
-   "date": "2026-10-15",
-   "time": "18:50",
-   "url": "https://filmkoepel.nl/tickets/204893",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "Aaron Sorkin · Zaal 5",
-   "date": "2026-10-15",
-   "time": "18:50",
-   "url": "https://filmkoepel.nl/tickets/205031",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coco (OV)",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228567574"
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Spain – The Blue Moods Of Spain + NÆL",
-   "info": "indie, rock · Stage 3 · Jubileum show van een slowcore cultfavoriet",
-   "date": "2026-10-15",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/spain-15-10-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Phil",
-   "kind": "podium",
-   "title": "Vision String Quartet",
-   "info": "kamermuziek · Mozart, Sjostakovitsj, Grieg",
-   "date": "2026-10-15",
-   "time": "20:00",
-   "url": "https://philhaarlem.nl/agenda/vision-kwartet",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Beach Boys’ Best",
-   "info": "klassiekers / tributes, pop · Stage 1 · De winnaars van The Tribute Battle of the Bands 2025!",
-   "date": "2026-10-15",
-   "time": "20:30",
-   "url": "https://patronaat.nl/event/beach-boys-best-15-10-26/",
-   "soldOut": true
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "De Gaulle: Résistance",
-   "info": "Antonin Baudry · Zaal 1",
-   "date": "2026-10-15",
-   "time": "20:45",
-   "url": "https://filmkoepel.nl/tickets/204900",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "L’Inconnue",
-   "info": "Arthur Harari · Zaal 6",
-   "date": "2026-10-15",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/205073",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "Georgia Oakley · Zaal 4",
-   "date": "2026-10-15",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/205004",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "Rodrigo Sorogoyen · Zaal 3",
-   "date": "2026-10-15",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/204970",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Digger",
-   "info": "Alejandro G. Iñárritu · Zaal 5",
-   "date": "2026-10-15",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/205038",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "David Ayer · Zaal 2",
-   "date": "2026-10-15",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/204936",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Fall 2: Deadpoint",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "21:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839711"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Street Fighter",
-   "info": "2D",
-   "date": "2026-10-15",
-   "time": "21:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839778"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840004"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "22:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839764"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-15",
-   "time": "22:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839844"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-15",
-   "time": "22:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840158"
-  },
   {
    "venue": "Pathé",
    "kind": "film",
@@ -5402,6 +4982,61 @@
    "date": "2026-10-21",
    "time": "22:00",
    "url": "https://www.filmladder.nl/kaartjes/1228840202"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Baba Zula",
+   "info": "indie, zoca flavor · Stage 2 · Grensverleggende Turkse psychedelische klanken uit het hart van Istanbul",
+   "date": "2026-10-22",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/baba-zula-22-10-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Before the Story Starts",
+   "info": "theater · URLAND",
+   "date": "2026-10-22",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/before-the-story-starts"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Tyro Film Competition",
+   "info": "overig · Haarlem Horror Film Festival",
+   "date": "2026-10-22",
+   "time": "20:15",
+   "url": "https://www.schuur.nl/film/tyro-film-competition"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "DANSLOKAAL 14",
+   "info": "dans · Conny Janssen Danst",
+   "date": "2026-10-22",
+   "time": "20:30",
+   "url": "https://www.schuur.nl/theater/danslokaal-14"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Secret Scream",
+   "info": "film · Haarlem Horror Film Festival",
+   "date": "2026-10-22",
+   "time": "21:20",
+   "url": "https://www.schuur.nl/film/the-secret-scream"
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Clayface",
+   "info": "",
+   "date": "2026-10-22",
+   "time": "21:30",
+   "url": "https://www.filmladder.nl/kaartjes/1228885594"
   }
  ]
 }
