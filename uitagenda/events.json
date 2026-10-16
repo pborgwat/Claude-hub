@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T00:22:29.549Z",
+ "generated": "2026-10-16T09:00:01.793Z",
  "days": [
   "2026-10-16",
   "2026-10-17",
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 268
+   "count": 267
   }
  },
  "events": [
@@ -40,15 +40,6 @@
    "date": "2026-10-16",
    "time": "09:30",
    "url": "https://www.filmladder.nl/kaartjes/1228840043"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-10-16",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840097"
   },
   {
    "venue": "Pathé",
