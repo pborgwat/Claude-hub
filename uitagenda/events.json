@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T18:28:23.961Z",
+ "generated": "2026-10-17T21:26:17.162Z",
  "days": [
   "2026-10-17",
   "2026-10-18",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 56
+   "count": 53
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 198
+   "count": 194
   }
  },
  "events": [
@@ -501,24 +501,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Yes-Girl",
-   "info": "theater · Gavin-Viano / Frascati Producties in coproductie met DOX & Theater Utrecht",
-   "date": "2026-10-17",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/yes-girl"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-17",
-   "time": "20:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840085"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Gaulle: Résistance",
@@ -527,15 +509,6 @@
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/204902",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-17",
-   "time": "20:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228839866"
   },
   {
    "venue": "Filmkoepel",
@@ -568,24 +541,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-17",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-17",
-   "time": "21:05",
-   "url": "https://www.filmladder.nl/kaartjes/1228839848"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Digger",
@@ -606,15 +561,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-17",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Street Fighter",
@@ -622,15 +568,6 @@
    "date": "2026-10-17",
    "time": "21:50",
    "url": "https://www.filmladder.nl/kaartjes/1228839785"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-17",
-   "time": "22:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228839808"
   },
   {
    "venue": "Pathé",
