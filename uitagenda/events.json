@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T00:27:06.969Z",
+ "generated": "2026-10-17T08:32:15.273Z",
  "days": [
   "2026-10-17",
   "2026-10-18",
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 219
+   "count": 218
   }
  },
  "events": [
@@ -40,15 +40,6 @@
    "date": "2026-10-17",
    "time": "09:30",
    "url": "https://www.filmladder.nl/kaartjes/1228840045"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-17",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840169"
   },
   {
    "venue": "Pathé",
@@ -85,7 +76,7 @@
    "date": "2026-10-17",
    "time": "10:00",
    "url": "https://philhaarlem.nl/agenda/geschiedenisfestival-2026",
-   "soldOut": true
+   "soldOut": false
   },
   {
    "venue": "Pathé",
