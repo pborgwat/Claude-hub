@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T08:49:45.977Z",
+ "generated": "2026-10-18T13:59:50.989Z",
  "days": [
   "2026-10-18",
   "2026-10-19",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 51
+   "count": 46
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 168
+   "count": 167
   }
  },
  "events": [
@@ -115,15 +115,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Imago",
-   "info": "documentaire · Déni Oumar Pitsaev",
-   "date": "2026-10-18",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/imago"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -194,15 +185,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-18",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228840181"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Minions & Monsters (NL)",
    "info": "2D",
    "date": "2026-10-18",
@@ -226,15 +208,6 @@
    "date": "2026-10-18",
    "time": "12:40",
    "url": "https://www.filmladder.nl/kaartjes/1228839788"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-18",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
   },
   {
    "venue": "Pathé",
@@ -294,15 +267,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-18",
-   "time": "13:35",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
@@ -351,15 +315,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Atlas van de ruimte",
-   "info": "familiefilm · Paul Negoescu",
-   "date": "2026-10-18",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/atlas-ruimte"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Shaun het Schaap: Het Beest van de Boerderij",
@@ -385,15 +340,6 @@
    "date": "2026-10-18",
    "time": "14:50",
    "url": "https://www.filmladder.nl/kaartjes/1228840086"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Het huis dat stopte met staan",
-   "info": "jeugdtheater · De Horde",
-   "date": "2026-10-18",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/theater/huis-stopte-met-staan"
   },
   {
    "venue": "Pathé",
