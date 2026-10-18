@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T00:01:14.384Z",
+ "generated": "2026-10-18T08:49:45.977Z",
  "days": [
   "2026-10-18",
   "2026-10-19",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 52
+   "count": 51
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 169
+   "count": 168
   }
  },
  "events": [
@@ -49,15 +49,6 @@
    "date": "2026-10-18",
    "time": "09:30",
    "url": "https://www.filmladder.nl/kaartjes/1228840103"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-18",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228840179"
   },
   {
    "venue": "Pathé",
@@ -103,15 +94,6 @@
    "date": "2026-10-18",
    "time": "10:30",
    "url": "https://www.filmladder.nl/kaartjes/1228839898"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-10-18",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
   },
   {
    "venue": "Pathé",
