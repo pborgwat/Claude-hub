@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T15:02:47.882Z",
+ "generated": "2026-10-20T19:59:15.455Z",
  "days": [
   "2026-10-20",
   "2026-10-21",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 75
+   "count": 71
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 280
+   "count": 274
   }
  },
  "events": [
@@ -251,15 +251,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-20",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228840195"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "The Odyssey",
    "info": "2D",
    "date": "2026-10-20",
@@ -274,15 +265,6 @@
    "date": "2026-10-20",
    "time": "18:10",
    "url": "https://www.filmladder.nl/kaartjes/1228840027"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-20",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839832"
   },
   {
    "venue": "Filmkoepel",
@@ -305,24 +287,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-20",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-20",
-   "time": "18:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228839754"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Youri",
@@ -341,24 +305,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/205003",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-20",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-10-20",
-   "time": "18:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228840196"
   },
   {
    "venue": "Filmkoepel",
@@ -388,24 +334,6 @@
    "date": "2026-10-20",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228839964"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-20",
-   "time": "19:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228840091"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-20",
-   "time": "19:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228840207"
   },
   {
    "venue": "Pathé",
@@ -475,15 +403,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-20",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Digger",
@@ -502,15 +421,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/204941",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-20",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/yellow-letters"
   },
   {
    "venue": "Pathé",
