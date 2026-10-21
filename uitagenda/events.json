@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T15:12:47.720Z",
+ "generated": "2026-10-21T20:08:19.191Z",
  "days": [
   "2026-10-21",
   "2026-10-22",
@@ -11,9 +11,8 @@
  ],
  "status": {
   "Filmkoepel": {
-   "ok": false,
-   "error": "https://filmkoepel.nl/fk-feed/agenda -> HTTP 503",
-   "kept": 209
+   "ok": true,
+   "count": 209
   },
   "Schuur": {
    "ok": false,
@@ -25,13 +24,12 @@
    "count": 3
   },
   "Patronaat": {
-   "ok": false,
-   "error": "https://patronaat.nl/programma/ -> HTTP 404",
-   "kept": 6
+   "ok": true,
+   "count": 6
   },
   "Pathé": {
    "ok": true,
-   "count": 282
+   "count": 273
   }
  },
  "events": [
@@ -194,29 +192,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228840092"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Yugly",
    "info": "",
    "date": "2026-10-21",
    "time": "14:50",
    "url": "https://www.filmladder.nl/kaartjes/1228840079"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Het Vergeten Eiland",
-   "info": "2D",
-   "date": "2026-10-21",
-   "time": "15:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228839990"
   },
   {
    "venue": "Filmkoepel",
@@ -351,24 +331,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567577"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Odyssey",
-   "info": "2D",
-   "date": "2026-10-21",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228839710"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Social Reckoning",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228839834"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Sense and Sensibility",
@@ -446,15 +408,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228839758"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Kijk op Film: Geluid + Under The Skin (2013)",
@@ -472,15 +425,6 @@
    "date": "2026-10-21",
    "time": "19:15",
    "url": "https://www.filmladder.nl/kaartjes/1228840093"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "19:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228840208"
   },
   {
    "venue": "Pathé",
@@ -508,15 +452,6 @@
    "date": "2026-10-21",
    "time": "20:30",
    "url": "https://www.schuur.nl/theater/room-in-our-house"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "20:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228839883"
   },
   {
    "venue": "Filmkoepel",
@@ -607,15 +542,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "21:20",
-   "url": "https://www.filmladder.nl/kaartjes/1228839817"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Heart of the Beast",
    "info": "",
    "date": "2026-10-21",
@@ -630,15 +556,6 @@
    "date": "2026-10-21",
    "time": "21:40",
    "url": "https://www.filmladder.nl/kaartjes/1228839774"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-21",
-   "time": "21:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228839854"
   },
   {
    "venue": "Pathé",
