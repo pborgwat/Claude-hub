@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T00:36:38.654Z",
+ "generated": "2026-10-21T09:20:28.355Z",
  "days": [
   "2026-10-21",
   "2026-10-22",
@@ -3139,16 +3139,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976065"
   },
   {
-   "venue": "Phil",
-   "kind": "podium",
-   "title": "Uriah Heep + support",
-   "info": "pop · Hardrockband brengt The Magician’s Farewell Tour",
-   "date": "2026-10-24",
-   "time": "20:30",
-   "url": "https://philhaarlem.nl/agenda/uriah-heep",
-   "soldOut": false
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
@@ -3195,6 +3185,16 @@
    "date": "2026-10-24",
    "time": "21:00",
    "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "Uriah Heep + support",
+   "info": "pop · Hardrockband brengt The Magician’s Farewell Tour",
+   "date": "2026-10-24",
+   "time": "21:00",
+   "url": "https://philhaarlem.nl/agenda/uriah-heep",
+   "soldOut": false
   },
   {
    "venue": "Schuur",
