@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T09:23:24.865Z",
+ "generated": "2026-10-22T15:15:15.142Z",
  "days": [
   "2026-10-22",
   "2026-10-23",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 78
+   "count": 74
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 301
+   "count": 297
   }
  },
  "events": [
@@ -69,15 +69,6 @@
    "date": "2026-10-22",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976139"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228975965"
   },
   {
    "venue": "Pathé",
@@ -167,29 +158,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228976100"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Verity",
    "info": "",
    "date": "2026-10-22",
    "time": "13:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976058"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "13:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976035"
   },
   {
    "venue": "Filmkoepel",
@@ -238,33 +211,6 @@
    "time": "13:20",
    "url": "https://filmkoepel.nl/tickets/205673",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-22",
-   "time": "13:25",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "13:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228975976"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-22",
-   "time": "13:50",
-   "url": "https://www.schuur.nl/film/coward"
   },
   {
    "venue": "Filmkoepel",
@@ -400,15 +346,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-22",
-   "time": "16:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Primetime",
@@ -426,15 +363,6 @@
    "time": "16:15",
    "url": "https://filmkoepel.nl/tickets/205614",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-22",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Filmkoepel",
