@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T00:40:40.237Z",
+ "generated": "2026-10-22T09:23:24.865Z",
  "days": [
   "2026-10-22",
   "2026-10-23",
@@ -15,9 +15,8 @@
    "count": 209
   },
   "Schuur": {
-   "ok": false,
-   "error": "https://www.schuur.nl/agenda -> HTTP 503",
-   "kept": 68
+   "ok": true,
+   "count": 78
   },
   "Phil": {
    "ok": true,
@@ -51,15 +50,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/205565",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Shall We Dance?",
-   "info": "klassieker · Masayuki Suô",
-   "date": "2026-10-22",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/shall-we-dance"
   },
   {
    "venue": "Filmkoepel",
@@ -106,15 +96,6 @@
    "date": "2026-10-22",
    "time": "11:10",
    "url": "https://www.filmladder.nl/kaartjes/1228976117"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-22",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
   },
   {
    "venue": "Filmkoepel",
@@ -4886,6 +4867,15 @@
    "soldOut": false
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Sense and Sensibility",
+   "info": "film · Georgia Oakley",
+   "date": "2026-10-28",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/sense-and-sensibility"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -4932,6 +4922,15 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/205606",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Yellow Letters",
+   "info": "film · Ilker Çatak",
+   "date": "2026-10-28",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/yellow-letters"
   },
   {
    "venue": "Pathé",
@@ -5065,6 +5064,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976137"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-10-28",
+   "time": "13:40",
+   "url": "https://www.schuur.nl/film/coward"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coyote vs. Acme (OV)",
@@ -5101,6 +5109,15 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/205613",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coyote vs. Acme",
+   "info": "familiefilm · Dave Green",
+   "date": "2026-10-28",
+   "time": "14:30",
+   "url": "https://www.schuur.nl/film/coyote-vs-acme"
   },
   {
    "venue": "Pathé",
@@ -5225,6 +5242,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976107"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-28",
+   "time": "16:05",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -5252,6 +5278,15 @@
    "date": "2026-10-28",
    "time": "16:40",
    "url": "https://www.filmladder.nl/kaartjes/1228976154"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Naza",
+   "info": "documentaire · Yuval Abraham & Rachel Szor",
+   "date": "2026-10-28",
+   "time": "16:45",
+   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Pathé",
@@ -5288,6 +5323,15 @@
    "date": "2026-10-28",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976046"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Sense and Sensibility",
+   "info": "film · Georgia Oakley",
+   "date": "2026-10-28",
+   "time": "18:30",
+   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
@@ -5337,6 +5381,15 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/205599",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Youri",
+   "info": "film · Sander Burger",
+   "date": "2026-10-28",
+   "time": "18:45",
+   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Pathé",
@@ -5413,6 +5466,24 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976164"
   },
   {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Buikzwam",
+   "info": "theater · Kompagnie Kistemaker",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/buikzwam"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Vertical Blue",
+   "info": "theater · Body of Art / Schweigman&",
+   "date": "2026-10-28",
+   "time": "20:30",
+   "url": "https://www.schuur.nl/theater/vertical-blue"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coward",
@@ -5449,6 +5520,24 @@
    "date": "2026-10-28",
    "time": "21:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976008"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-28",
+   "time": "21:00",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-10-28",
+   "time": "21:10",
+   "url": "https://www.schuur.nl/film/coward"
   },
   {
    "venue": "Filmkoepel",
