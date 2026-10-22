@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T15:15:15.142Z",
+ "generated": "2026-10-22T20:05:24.513Z",
  "days": [
   "2026-10-22",
   "2026-10-23",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 74
+   "count": 67
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 297
+   "count": 288
   }
  },
  "events": [
@@ -346,15 +346,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "16:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228976156"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -386,24 +377,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Coyote vs. Acme (NL)",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "17:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228975935"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "17:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228976216"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "The Odyssey",
    "info": "2D",
    "date": "2026-10-22",
@@ -418,24 +391,6 @@
    "date": "2026-10-22",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976014"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976101"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-22",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Filmkoepel",
@@ -458,15 +413,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-22",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Juste une illusion",
@@ -485,15 +431,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/205593",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "18:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228976036"
   },
   {
    "venue": "Pathé",
@@ -527,24 +464,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "19:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228975966"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228975977"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Wen Er Maar Aan",
    "info": "",
    "date": "2026-10-22",
@@ -560,33 +479,6 @@
    "time": "20:00",
    "url": "https://patronaat.nl/event/baba-zula-22-10-26/",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Before the Story Starts",
-   "info": "theater · URLAND",
-   "date": "2026-10-22",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/before-the-story-starts"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Tyro Film Competition",
-   "info": "overig · Haarlem Horror Film Festival",
-   "date": "2026-10-22",
-   "time": "20:15",
-   "url": "https://www.schuur.nl/film/tyro-film-competition"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "DANSLOKAAL 14",
-   "info": "dans · Conny Janssen Danst",
-   "date": "2026-10-22",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/danslokaal-14"
   },
   {
    "venue": "Pathé",
@@ -637,24 +529,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228975995"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-22",
-   "time": "21:05",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "21:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976108"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Digger",
@@ -663,15 +537,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/205695",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Secret Scream",
-   "info": "film · Haarlem Horror Film Festival",
-   "date": "2026-10-22",
-   "time": "21:20",
-   "url": "https://www.schuur.nl/film/the-secret-scream"
   },
   {
    "venue": "Filmkoepel",
@@ -710,15 +575,6 @@
    "time": "21:30",
    "url": "https://filmkoepel.nl/tickets/205579",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-22",
-   "time": "21:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228976029"
   },
   {
    "venue": "Pathé",
