@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T15:02:43.142Z",
+ "generated": "2026-10-23T19:56:36.443Z",
  "days": [
   "2026-10-23",
   "2026-10-24",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 66
+   "count": 60
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 255
+   "count": 250
   }
  },
  "events": [
@@ -271,15 +271,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-23",
-   "time": "15:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228976158"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "L’Inconnue",
@@ -368,15 +359,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-23",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228976102"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Tatta’s: Daan",
    "info": "De Tatta's: Daan",
    "date": "2026-10-23",
@@ -386,47 +368,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Coyote vs. Acme (NL)",
-   "info": "",
-   "date": "2026-10-23",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1228975936"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Clayface",
    "info": "",
    "date": "2026-10-23",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976016"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-23",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976218"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-23",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976038"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-23",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
@@ -478,15 +424,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-23",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -534,15 +471,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976196"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "KENKI KRIN KRIN",
-   "info": "theater · Cherella Gessel / Well Made Productions",
-   "date": "2026-10-23",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/kenki-krin-krin"
-  },
-  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Paul Carrack + support",
@@ -580,15 +508,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228975968"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Carmen (must die)",
-   "info": "theater · No mad is me/Giovanni Brand & DOX",
-   "date": "2026-10-23",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/carmen-must-die"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -619,15 +538,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-23",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
@@ -635,15 +545,6 @@
    "date": "2026-10-23",
    "time": "21:00",
    "url": "https://www.filmladder.nl/kaartjes/1228975944"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-23",
-   "time": "21:10",
-   "url": "https://www.schuur.nl/film/coward"
   },
   {
    "venue": "Filmkoepel",
