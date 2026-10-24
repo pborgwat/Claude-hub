@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T18:46:35.878Z",
+ "generated": "2026-10-24T21:35:43.305Z",
  "days": [
   "2026-10-24",
   "2026-10-25",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 51
+   "count": 49
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 210
+   "count": 207
   }
  },
  "events": [
@@ -584,15 +584,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "20:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228975969"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Heart of the Beast",
    "info": "",
    "date": "2026-10-24",
@@ -648,15 +639,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-24",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Uriah Heep + support",
@@ -665,15 +647,6 @@
    "time": "21:00",
    "url": "https://philhaarlem.nl/agenda/uriah-heep",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-24",
-   "time": "21:10",
-   "url": "https://www.schuur.nl/film/coward"
   },
   {
    "venue": "Filmkoepel",
@@ -708,29 +681,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "21:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228976111"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Clayface",
    "info": "",
    "date": "2026-10-24",
    "time": "21:45",
    "url": "https://www.filmladder.nl/kaartjes/1228885598"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228975979"
   },
   {
    "venue": "Pathé",
