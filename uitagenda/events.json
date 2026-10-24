@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:59:34.113Z",
+ "generated": "2026-10-24T18:46:35.878Z",
  "days": [
   "2026-10-24",
   "2026-10-25",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 56
+   "count": 51
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 213
+   "count": 210
   }
  },
  "events": [
@@ -363,15 +363,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "15:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228976011"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coward",
@@ -389,15 +380,6 @@
    "date": "2026-10-24",
    "time": "16:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976145"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-24",
-   "time": "16:10",
-   "url": "https://www.schuur.nl/film/the-beloved"
   },
   {
    "venue": "Pathé",
@@ -438,15 +420,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-24",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Spider-Man: Brand New Day",
@@ -485,29 +458,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "18:15",
-   "url": "https://www.filmladder.nl/kaartjes/1228976219"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Pressure",
    "info": "",
    "date": "2026-10-24",
    "time": "18:20",
    "url": "https://www.filmladder.nl/kaartjes/1228976075"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-24",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
@@ -530,15 +485,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "18:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228976039"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Juste une illusion",
@@ -557,15 +503,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/205595",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-24",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Filmkoepel",
@@ -623,15 +560,6 @@
    "date": "2026-10-24",
    "time": "20:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976200"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Enfin, Barbin.",
-   "info": "theater · Marleen Hendrickx",
-   "date": "2026-10-24",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/enfin-barbin"
   },
   {
    "venue": "Patronaat",
