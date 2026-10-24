@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T00:39:24.170Z",
+ "generated": "2026-10-24T13:59:34.113Z",
  "days": [
   "2026-10-24",
   "2026-10-25",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 61
+   "count": 56
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 217
+   "count": 213
   }
  },
  "events": [
@@ -49,15 +49,6 @@
    "date": "2026-10-24",
    "time": "09:30",
    "url": "https://www.filmladder.nl/kaartjes/1228976053"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228976144"
   },
   {
    "venue": "Pathé",
@@ -105,15 +96,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976167"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Imago",
-   "info": "documentaire · Déni Oumar Pitsaev",
-   "date": "2026-10-24",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/imago"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -143,15 +125,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-24",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Toutes Directions",
@@ -172,15 +145,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229059313"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -198,15 +162,6 @@
    "date": "2026-10-24",
    "time": "11:50",
    "url": "https://www.filmladder.nl/kaartjes/1228976048"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (NL)",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228975937"
   },
   {
    "venue": "Filmkoepel",
@@ -253,15 +208,6 @@
    "date": "2026-10-24",
    "time": "12:50",
    "url": "https://www.filmladder.nl/kaartjes/1228976063"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-24",
-   "time": "13:15",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Filmkoepel",
@@ -313,15 +259,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-24",
-   "time": "13:50",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Tatta’s: Daan",
@@ -339,15 +276,6 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/205609",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-24",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228976103"
   },
   {
    "venue": "Pathé",
@@ -394,15 +322,6 @@
    "date": "2026-10-24",
    "time": "15:00",
    "url": "https://www.filmladder.nl/kaartjes/1228976081"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Verhalen uit de Magische tuin",
-   "info": "familiefilm · David Súkup, Patrik Pašš, Leon Vidmar, Jean-Claude Roze",
-   "date": "2026-10-24",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/film/verhalen-magische-tuin"
   },
   {
    "venue": "Pathé",
