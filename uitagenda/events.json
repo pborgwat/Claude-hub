@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T19:01:29.631Z",
+ "generated": "2026-10-25T21:45:04.651Z",
  "days": [
   "2026-10-25",
   "2026-10-26",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 42
+   "count": 40
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 167
+   "count": 163
   }
  },
  "events": [
@@ -623,33 +623,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "21:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228976041"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-25",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "21:10",
-   "url": "https://www.filmladder.nl/kaartjes/1228976112"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Clayface",
    "info": "",
    "date": "2026-10-25",
@@ -667,24 +640,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (NL)",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "21:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228975938"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-25",
-   "time": "21:30",
-   "url": "https://www.schuur.nl/film/naza"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Weight",
@@ -693,15 +648,6 @@
    "time": "21:30",
    "url": "https://filmkoepel.nl/tickets/205582",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sugar",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1228976032"
   },
   {
    "venue": "Pathé",
