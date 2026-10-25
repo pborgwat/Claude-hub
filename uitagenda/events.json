@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T14:21:03.772Z",
+ "generated": "2026-10-25T19:01:29.631Z",
  "days": [
   "2026-10-25",
   "2026-10-26",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 47
+   "count": 42
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 173
+   "count": 167
   }
  },
  "events": [
@@ -362,24 +362,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "LENNOX",
-   "info": "jeugdtheater · De Nationale Opera & RIGHTABOUTNOW INC.",
-   "date": "2026-10-25",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/theater/lennox"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228976040"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Yugly",
@@ -447,24 +429,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567440"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-25",
-   "time": "16:00",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-25",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -514,24 +478,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Naza",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "17:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228976220"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1228976104"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Franz",
    "info": "",
    "date": "2026-10-25",
@@ -569,24 +515,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "18:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228975970"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-25",
-   "time": "18:30",
-   "url": "https://www.schuur.nl/film/yellow-letters"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Sense and Sensibility",
@@ -604,15 +532,6 @@
    "date": "2026-10-25",
    "time": "18:50",
    "url": "https://www.filmladder.nl/kaartjes/1228976148"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward - English subs",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-25",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/coward-en"
   },
   {
    "venue": "Filmkoepel",
@@ -651,24 +570,6 @@
    "date": "2026-10-25",
    "time": "19:20",
    "url": "https://www.filmladder.nl/kaartjes/1228976067"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "19:25",
-   "url": "https://www.filmladder.nl/kaartjes/1228975980"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-25",
-   "time": "19:40",
-   "url": "https://www.filmladder.nl/kaartjes/1228976160"
   },
   {
    "venue": "Filmkoepel",
