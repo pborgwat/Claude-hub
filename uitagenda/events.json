@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T00:19:42.343Z",
+ "generated": "2026-10-25T14:21:03.772Z",
  "days": [
   "2026-10-25",
   "2026-10-26",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 52
+   "count": 47
   },
   "Phil": {
    "ok": true,
@@ -105,15 +105,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228976082"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-10-25",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Pressure",
@@ -122,15 +113,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/205568",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-25",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
@@ -219,15 +201,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-25",
-   "time": "12:10",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Ali G: Who Iz I?",
@@ -312,15 +285,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567578"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-25",
-   "time": "13:45",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coyote vs. Acme (OV)",
@@ -367,15 +331,6 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/205610",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-25",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Pathé",
