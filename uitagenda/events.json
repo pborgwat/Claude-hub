@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T00:19:55.419Z",
+ "generated": "2026-10-26T10:04:29.917Z",
  "days": [
   "2026-10-26",
   "2026-10-27",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 43
+   "count": 75
   },
   "Phil": {
    "ok": true,
@@ -2300,6 +2300,60 @@
    "url": "https://www.filmladder.nl/kaartjes/1228975993"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Cycle of Love",
+   "info": "documentaire · Orlando von Einsiedel",
+   "date": "2026-10-29",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Naza",
+   "info": "documentaire · Yuval Abraham & Rachel Szor",
+   "date": "2026-10-29",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/naza"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-10-29",
+   "time": "13:00",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Sense and Sensibility",
+   "info": "film · Georgia Oakley",
+   "date": "2026-10-29",
+   "time": "13:30",
+   "url": "https://www.schuur.nl/film/sense-and-sensibility"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-29",
+   "time": "16:10",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-10-29",
+   "time": "16:45",
+   "url": "https://www.schuur.nl/film/coward"
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Texas Chainsaw Massacre",
@@ -2394,6 +2448,78 @@
    "url": "https://www.schuur.nl/film/maspalomas"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Cycle of Love",
+   "info": "documentaire · Orlando von Einsiedel",
+   "date": "2026-10-30",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Sense and Sensibility",
+   "info": "film · Georgia Oakley",
+   "date": "2026-10-30",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/sense-and-sensibility"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-10-30",
+   "time": "13:10",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Youri",
+   "info": "film · Sander Burger",
+   "date": "2026-10-30",
+   "time": "14:00",
+   "url": "https://www.schuur.nl/film/youri"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Maspalomas",
+   "info": "film · Jose Mari Goenaga",
+   "date": "2026-10-30",
+   "time": "16:30",
+   "url": "https://www.schuur.nl/film/maspalomas"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-30",
+   "time": "16:50",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-10-30",
+   "time": "18:50",
+   "url": "https://www.schuur.nl/film/coward"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-10-30",
+   "time": "19:30",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Amsterdam Sinfonietta & Abel Selaocoe",
@@ -2455,6 +2581,42 @@
   {
    "venue": "Schuur",
    "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-30",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Cycle of Love",
+   "info": "documentaire · Orlando von Einsiedel",
+   "date": "2026-10-31",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coyote vs. Acme",
+   "info": "familiefilm · Dave Green",
+   "date": "2026-10-31",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/coyote-vs-acme"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-10-31",
+   "time": "13:10",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
    "title": "Maghreb filmfestival Familiedag",
    "info": "film",
    "date": "2026-10-31",
@@ -2471,6 +2633,33 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567580"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-10-31",
+   "time": "15:00",
+   "url": "https://www.schuur.nl/film/coward"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-10-31",
+   "time": "16:50",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Naza",
+   "info": "documentaire · Yuval Abraham & Rachel Szor",
+   "date": "2026-10-31",
+   "time": "17:20",
+   "url": "https://www.schuur.nl/film/naza"
+  },
+  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Despised Icon + Carnifex + Suffocation + Kanine",
@@ -2479,6 +2668,24 @@
    "time": "18:45",
    "url": "https://patronaat.nl/event/despised-icon-carnifex-31-10-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Youri",
+   "info": "film · Sander Burger",
+   "date": "2026-10-31",
+   "time": "19:00",
+   "url": "https://www.schuur.nl/film/youri"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-10-31",
+   "time": "19:30",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
   },
   {
    "venue": "Phil",
@@ -2547,6 +2754,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1228567439"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Maspalomas",
+   "info": "film · Jose Mari Goenaga",
+   "date": "2026-10-31",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/maspalomas"
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Clayface",
@@ -2584,6 +2800,33 @@
    "url": "https://www.schuur.nl/film/cinemini"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Cycle of Love",
+   "info": "documentaire · Orlando von Einsiedel",
+   "date": "2026-11-01",
+   "time": "11:00",
+   "url": "https://www.schuur.nl/film/the-cycle-of-love"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Youri",
+   "info": "film · Sander Burger",
+   "date": "2026-11-01",
+   "time": "12:15",
+   "url": "https://www.schuur.nl/film/youri"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "The Beloved",
+   "info": "film · Rodrigo Sorogoyen",
+   "date": "2026-11-01",
+   "time": "13:00",
+   "url": "https://www.schuur.nl/film/the-beloved"
+  },
+  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Haarlems Gemengd Koor",
@@ -2595,12 +2838,48 @@
   },
   {
    "venue": "Schuur",
+   "kind": "film",
+   "title": "Coyote vs. Acme",
+   "info": "familiefilm · Dave Green",
+   "date": "2026-11-01",
+   "time": "14:30",
+   "url": "https://www.schuur.nl/film/coyote-vs-acme"
+  },
+  {
+   "venue": "Schuur",
    "kind": "podium",
    "title": "Samar en de bange koning",
    "info": "jeugdtheater · TOBAL & Theater De Krakeling",
    "date": "2026-11-01",
    "time": "15:00",
    "url": "https://www.schuur.nl/theater/samar-bange-koning"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-11-01",
+   "time": "15:35",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Coward",
+   "info": "film · Lukas Dhont",
+   "date": "2026-11-01",
+   "time": "16:40",
+   "url": "https://www.schuur.nl/film/coward"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Maspalomas",
+   "info": "film · Jose Mari Goenaga",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "url": "https://www.schuur.nl/film/maspalomas"
   },
   {
    "venue": "Pathé",
@@ -2649,6 +2928,15 @@
    "time": "20:30",
    "url": "https://patronaat.nl/event/gruppo-sportivo-stop-motion-the-50th-anniversary-tour-01-11-26/",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Naza",
+   "info": "documentaire · Yuval Abraham & Rachel Szor",
+   "date": "2026-11-01",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/naza"
   }
  ]
 }
