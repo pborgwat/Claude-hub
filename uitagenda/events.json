@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T01:18:43.185Z",
+ "generated": "2026-10-28T10:33:06.427Z",
  "days": [
   "2026-10-28",
   "2026-10-29",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 74
+   "count": 72
   },
   "Phil": {
    "ok": true,
@@ -59,15 +59,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/205571",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-28",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
@@ -116,15 +107,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/205606",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Yellow Letters",
-   "info": "film · Ilker Çatak",
-   "date": "2026-10-28",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/yellow-letters"
   },
   {
    "venue": "Pathé",
