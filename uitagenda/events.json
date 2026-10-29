@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T23:12:20.032Z",
+ "generated": "2026-10-29T10:52:38.149Z",
  "days": [
   "2026-10-29",
   "2026-10-30",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 72
+   "count": 70
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 300
+   "count": 301
   }
  },
  "events": [
@@ -52,15 +52,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-29",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -69,15 +60,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/206256",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-29",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Pathé",
@@ -630,6 +612,15 @@
    "time": "20:00",
    "url": "https://filmkoepel.nl/tickets/206417",
    "soldOut": false
+  },
+  {
+   "venue": "Pathé",
+   "kind": "film",
+   "title": "Clayface",
+   "info": "",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "url": "https://www.filmladder.nl/kaartjes/1229161322"
   },
   {
    "venue": "Patronaat",
