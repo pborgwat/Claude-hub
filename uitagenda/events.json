@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T10:52:38.149Z",
+ "generated": "2026-10-29T18:56:37.080Z",
  "days": [
   "2026-10-29",
   "2026-10-30",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 70
+   "count": 63
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 301
+   "count": 290
   }
  },
  "events": [
@@ -62,15 +62,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229108890"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Yellow Letters",
@@ -100,24 +91,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "11:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229108942"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229108782"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Juste une illusion",
@@ -137,33 +110,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108962"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "12:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108725"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "12:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108815"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108865"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "L’Inconnue",
@@ -172,15 +118,6 @@
    "time": "12:30",
    "url": "https://filmkoepel.nl/tickets/206393",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-10-29",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
   },
   {
    "venue": "Filmkoepel",
@@ -200,15 +137,6 @@
    "date": "2026-10-29",
    "time": "13:20",
    "url": "https://www.filmladder.nl/kaartjes/1229108741"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-29",
-   "time": "13:30",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Pathé",
@@ -353,15 +281,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108839"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-29",
-   "time": "16:10",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Street Fighter",
@@ -391,15 +310,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108755"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -412,56 +322,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "16:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229108891"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-29",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229108943"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108726"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Other Mommy",
    "info": "",
    "date": "2026-10-29",
    "time": "17:15",
    "url": "https://www.filmladder.nl/kaartjes/1229108788"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-29",
-   "time": "17:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229108816"
   },
   {
    "venue": "Filmkoepel",
@@ -522,15 +387,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Erupcja",
-   "info": "film · Pete Ohs",
-   "date": "2026-10-29",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/erupcja"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -550,15 +406,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108747"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-10-29",
-   "time": "19:15",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Verity",
@@ -566,15 +413,6 @@
    "date": "2026-10-29",
    "time": "19:20",
    "url": "https://www.filmladder.nl/kaartjes/1229108840"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Fatilou M.",
-   "info": "theater · hetpaleis / Martha!tentatief",
-   "date": "2026-10-29",
-   "time": "19:30",
-   "url": "https://www.schuur.nl/theater/fatilou"
   },
   {
    "venue": "Pathé",
