@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T23:16:34.931Z",
+ "generated": "2026-10-30T10:50:56.001Z",
  "days": [
   "2026-10-30",
   "2026-10-31",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 63
+   "count": 61
   },
   "Phil": {
    "ok": true,
@@ -70,15 +70,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-30",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -96,15 +87,6 @@
    "date": "2026-10-30",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1229108748"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-10-30",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Pathé",
