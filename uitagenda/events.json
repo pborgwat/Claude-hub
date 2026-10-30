@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T18:35:47.492Z",
+ "generated": "2026-10-30T22:57:20.166Z",
  "days": [
   "2026-10-30",
   "2026-10-31",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 55
+   "count": 53
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 255
+   "count": 248
   }
  },
  "events": [
@@ -402,24 +402,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108791"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108727"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108749"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coward",
@@ -481,15 +463,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "19:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108868"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Street Fighter",
    "info": "2D",
    "date": "2026-10-30",
@@ -546,15 +519,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108883"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Het wakker liggen van Wanda",
-   "info": "theater · Femke Arnouts",
-   "date": "2026-10-30",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/wakker-liggen-van-wanda"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "TIMEZONE + Next Trip",
@@ -600,15 +564,6 @@
    "date": "2026-10-30",
    "time": "20:30",
    "url": "https://www.filmladder.nl/kaartjes/1229108931"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "20:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229108947"
   },
   {
    "venue": "Filmkoepel",
@@ -668,42 +623,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/206251",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-30",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "21:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229108783"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229108903"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-30",
-   "time": "22:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108756"
   },
   {
    "venue": "Pathé",
