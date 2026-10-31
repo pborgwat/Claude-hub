@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T10:22:07.011Z",
+ "generated": "2026-10-31T17:42:26.695Z",
  "days": [
   "2026-10-31",
   "2026-11-01",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 54
+   "count": 47
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 215
+   "count": 209
   }
  },
  "events": [
@@ -80,29 +80,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "10:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108948"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
    "info": "",
    "date": "2026-10-31",
    "time": "10:25",
    "url": "https://www.filmladder.nl/kaartjes/1229108966"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108819"
   },
   {
    "venue": "Filmkoepel",
@@ -115,15 +97,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-10-31",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -132,15 +105,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/206258",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coyote vs. Acme",
-   "info": "familiefilm · Dave Green",
-   "date": "2026-10-31",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/coyote-vs-acme"
   },
   {
    "venue": "Filmkoepel",
@@ -212,15 +176,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108893"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
    "info": "",
    "date": "2026-10-31",
@@ -246,15 +201,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108919"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-10-31",
-   "time": "13:10",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Youri",
@@ -263,15 +209,6 @@
    "time": "13:15",
    "url": "https://filmkoepel.nl/tickets/206265",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maghreb Film Festival Junior",
-   "info": "familiefilm",
-   "date": "2026-10-31",
-   "time": "13:30",
-   "url": "https://www.schuur.nl/film/maghreb-filmfestival"
   },
   {
    "venue": "Pathé",
@@ -362,47 +299,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "14:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108728"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Wen Er Maar Aan",
    "info": "",
    "date": "2026-10-31",
    "time": "14:50",
    "url": "https://www.filmladder.nl/kaartjes/1229108932"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-10-31",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108870"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "15:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229108949"
   },
   {
    "venue": "Filmkoepel",
@@ -501,15 +402,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108807"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-10-31",
-   "time": "16:50",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Other Mommy",
@@ -517,15 +409,6 @@
    "date": "2026-10-31",
    "time": "17:15",
    "url": "https://www.filmladder.nl/kaartjes/1229108793"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-10-31",
-   "time": "17:20",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Pathé",
@@ -1619,7 +1502,7 @@
   {
    "venue": "Patronaat",
    "kind": "podium",
-   "title": "Gruppo Sportivo – Stop Motion: 50th Anniversary Tour",
+   "title": "VERPLAATST: Gruppo Sportivo – Stop Motion: 50th Anniversary Tour",
    "info": "klassiekers / tributes, pop · Stage 1 · Gruppo Sportivo Bestaat 50 jaar!",
    "date": "2026-11-01",
    "time": "20:30",
