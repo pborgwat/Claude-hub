@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T17:42:26.695Z",
+ "generated": "2026-10-31T22:27:36.569Z",
  "days": [
   "2026-10-31",
   "2026-11-01",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 47
+   "count": 42
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 209
+   "count": 204
   }
  },
  "events": [
@@ -432,33 +432,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108750"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "18:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229108871"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108757"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Verity",
    "info": "",
    "date": "2026-10-31",
@@ -535,24 +508,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108933"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-10-31",
-   "time": "19:30",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Clayface",
@@ -569,15 +524,6 @@
    "date": "2026-10-31",
    "time": "19:30",
    "url": "https://www.filmladder.nl/kaartjes/1229124817"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "19:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229108820"
   },
   {
    "venue": "Filmkoepel",
@@ -610,15 +556,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Het wakker liggen van Wanda",
-   "info": "theater · Femke Arnouts",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/wakker-liggen-van-wanda"
-  },
-  {
    "venue": "Phil",
    "kind": "podium",
    "title": "Katia en Marielle Labèque",
@@ -636,15 +573,6 @@
    "date": "2026-10-31",
    "time": "20:30",
    "url": "https://www.filmladder.nl/kaartjes/1229108884"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Winged",
-   "info": "dans · KALPANARTS",
-   "date": "2026-10-31",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/winged"
   },
   {
    "venue": "Pathé",
@@ -714,15 +642,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maspalomas",
-   "info": "film · Jose Mari Goenaga",
-   "date": "2026-10-31",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/maspalomas"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Primetime",
@@ -731,15 +650,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/206252",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-10-31",
-   "time": "21:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108950"
   },
   {
    "venue": "Pathé",
