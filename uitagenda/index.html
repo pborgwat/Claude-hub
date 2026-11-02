@@ -90,6 +90,40 @@
     margin: 0 16px 12px; font: 700 30px/1 var(--font-display); letter-spacing: -0.6px;
   }
   h1 .hl { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  /* Zoekveld */
+  .search { position: relative; margin: 0 16px 12px; }
+  .search svg { position: absolute; left: 12px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .search input {
+    width: 100%; -webkit-appearance: none; appearance: none;
+    font: 400 16px/1.25 var(--font); color: var(--text);
+    padding: 10px 40px 10px 38px; border: 1px solid var(--divider); border-radius: 12px; background: var(--surface);
+  }
+  .search input::placeholder { color: var(--muted); }
+  .search input:focus { outline: none; border-color: var(--ghost); background: var(--card); }
+  .search input::-webkit-search-cancel-button { display: none; }
+  .search .clear {
+    position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    width: 36px; height: 36px; border: 0; background: none; color: var(--muted); font-size: 20px; line-height: 1; cursor: pointer;
+  }
+  .search .clear[hidden] { display: none; }
+  .searching .days, .searching #fromNow { display: none; }
+  .res { margin-top: 16px; }
+  .res-head { padding: 16px 20px 12px; }
+  .res-head .title { margin: 0; }
+  .res-head .info { margin-top: 2px; }
+  .res-day { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 10px 20px; border-top: 1px solid var(--divider); align-items: start; }
+  .res-day .d { font: 500 14px/32px var(--font); color: var(--muted); }
+  .res-day .d b { color: var(--text); font-weight: 600; }
+  .times { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tchip {
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 8px;
+    font: 500 15px/20px var(--font); font-feature-settings: "tnum" 1; color: var(--text); text-decoration: none;
+  }
+  .tchip i { width: 8px; height: 8px; border-radius: 2px; background: var(--vc); box-shadow: inset 0 0 0 1px rgba(21,22,25,.18); }
+  .tchip.sold { text-decoration: line-through; color: var(--muted); }
+  .tchip:active { background: var(--surface); }
+  .note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .note button { border: 0; background: none; padding: 0; color: var(--text); text-decoration: underline; cursor: pointer; font: inherit; }
   .days {
     display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding: 0 16px;
     padding: 0 16px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
@@ -191,6 +225,11 @@
 <body>
 <header>
   <h1>Uit in <span class="hl">Haarlem</span></h1>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Zoek een film of voorstelling" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search" aria-label="Zoeken">
+    <button class="clear" id="clearQ" aria-label="Zoekveld leegmaken" hidden>×</button>
+  </div>
   <div class="days" id="days"></div>
   <div class="toggles">
     <button class="chip" id="fromNow" aria-pressed="true">Alleen wat nog komt</button>
@@ -243,6 +282,10 @@ let dayIndex = 0;
 let fromNow = true;
 let showPathe = store.get('uitagenda.pathe', false);
 let rendered = []; // events op het scherm, voor de deelknoppen
+let query = '';
+
+// Zoeken zonder hoofdletters en accenten: "pathe" vindt ook "Pathé"
+const norm = (s = '') => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
 
 function days() {
   const base = new Date();
@@ -330,10 +373,66 @@ function section(title, sub, list, emptyText, pastFn = () => false, foldSlots = 
   return html;
 }
 
+function dayLabel(iso) {
+  const d = days().find((x) => x.iso === iso);
+  if (d) return d.label === 'Vandaag' || d.label === 'Morgen' ? `<b>${d.label}</b><br>${d.sub}` : `<b>${d.sub}</b>`;
+  const [y, m, dd] = iso.split('-').map(Number);
+  const dt = new Date(y, m - 1, dd);
+  return `<b>${DAYNAMES[dt.getDay()]} ${dd} ${MONTHNAMES[m - 1]}</b>`;
+}
+
+// Zoekresultaten: per titel alle dagen met aanvangstijden, ongeacht de gekozen dag
+function renderSearch() {
+  const q = norm(query);
+  const today = isoDate(new Date());
+  const all = data.events.filter((e) => e.date >= today && !LINK_ONLY.includes(e.venue) && !isPast(e) && norm(e.title).includes(q));
+  const visible = all.filter((e) => showPathe || e.venue !== 'Pathé');
+  const hiddenPathe = all.length - visible.length;
+
+  const groups = new Map();
+  for (const ev of visible) {
+    const key = norm(ev.title);
+    if (!groups.has(key)) groups.set(key, { title: ev.title, kind: ev.kind, items: [] });
+    groups.get(key).items.push(ev);
+  }
+  document.getElementById('count').textContent = `${groups.size} ${groups.size === 1 ? 'titel' : 'titels'}`;
+
+  let html = '';
+  if (!groups.size) {
+    html += `<div class="card res"><div class="empty">Niets gevonden voor “${esc(query)}” in de komende week.</div></div>`;
+  }
+  for (const g of groups.values()) {
+    const venues = [...new Set(g.items.map((e) => e.venue))];
+    const byDay = new Map();
+    for (const ev of g.items) {
+      if (!byDay.has(ev.date)) byDay.set(ev.date, []);
+      byDay.get(ev.date).push(ev);
+    }
+    const first = g.items[0];
+    const info = first.kind === 'film' ? filmInfo(first.info) : first.info;
+    html += `<div class="card res">
+      <div class="res-head">
+        <div class="title">${esc(g.title)}</div>
+        <div class="info">${esc([venues.join(', '), info].filter(Boolean).join(' · '))}</div>
+      </div>
+      ${[...byDay.entries()].map(([date, evs]) => `<div class="res-day">
+        <div class="d">${dayLabel(date)}</div>
+        <div class="times">${evs.map((e) => `<a class="tchip${e.soldOut ? ' sold' : ''}" href="${esc(e.url)}" target="_blank" rel="noopener" style="${vc(e.venue)}" title="${esc(e.venue)}"><i></i>${e.time || 'hele dag'}</a>`).join('')}</div>
+      </div>`).join('')}
+    </div>`;
+  }
+  if (hiddenPathe) {
+    html += `<div class="note">Nog ${hiddenPathe} ${hiddenPathe === 1 ? 'voorstelling' : 'voorstellingen'} in Pathé. <button id="patheOn">Pathé tonen</button></div>`;
+  }
+  document.getElementById('app').innerHTML = html;
+}
+
 function render() {
   renderDays();
+  document.body.classList.toggle('searching', query.length >= 2);
   if (!data) return;
   rendered = [];
+  if (query.length >= 2) return renderSearch();
   const day = days()[dayIndex];
   const onlyUpcoming = dayIndex === 0 && fromNow;
   const events = data.events.filter((e) => e.date === day.iso && !(onlyUpcoming && isPast(e)));
@@ -394,7 +493,19 @@ document.getElementById('app').addEventListener('click', (e) => {
   if (btn) share(rendered[Number(btn.dataset.share)]);
 });
 document.getElementById('fromNow').onclick = () => { fromNow = !fromNow; render(); };
-document.getElementById('showPathe').onclick = () => { showPathe = !showPathe; store.set('uitagenda.pathe', showPathe); render(); };
+const togglePathe = () => { showPathe = !showPathe; store.set('uitagenda.pathe', showPathe); render(); };
+document.getElementById('showPathe').onclick = togglePathe;
+document.getElementById('app').addEventListener('click', (e) => { if (e.target.id === 'patheOn') togglePathe(); });
+
+const qInput = document.getElementById('q');
+const clearBtn = document.getElementById('clearQ');
+qInput.addEventListener('input', () => {
+  query = qInput.value.trim();
+  clearBtn.hidden = !qInput.value;
+  render();
+});
+qInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') qInput.blur(); });
+clearBtn.onclick = () => { qInput.value = ''; query = ''; clearBtn.hidden = true; render(); qInput.focus(); };
 
 async function load() {
   try {
