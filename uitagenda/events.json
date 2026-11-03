@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T11:54:00.780Z",
+ "generated": "2026-11-03T20:05:44.790Z",
  "days": [
   "2026-11-03",
   "2026-11-04",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 61
+   "count": 55
   },
   "Phil": {
    "ok": true,
@@ -28,91 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 287
+   "count": 268
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108915"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108973"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229108987"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108924"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "12:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108732"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108877"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-03",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108907"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Spider-Man: Brand New Day",
-   "info": "2D",
-   "date": "2026-11-03",
-   "time": "13:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229108745"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -124,24 +43,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-11-03",
-   "time": "13:30",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Christophers",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228652196"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Primetime",
@@ -150,15 +51,6 @@
    "time": "14:00",
    "url": "https://filmkoepel.nl/tickets/206303",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "2D",
-   "date": "2026-11-03",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108768"
   },
   {
    "venue": "Filmkoepel",
@@ -179,33 +71,6 @@
    "time": "14:15",
    "url": "https://filmkoepel.nl/tickets/206337",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Tatta’s: Daan",
-   "info": "De Tatta's: Daan",
-   "date": "2026-11-03",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229109003"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108957"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Clayface",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "14:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229108812"
   },
   {
    "venue": "Pathé",
@@ -265,15 +130,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108778"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-11-03",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/coward"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Wen Er Maar Aan",
@@ -324,33 +180,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108899"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-11-03",
-   "time": "16:40",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "17:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229108733"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Other Mommy",
    "info": "",
    "date": "2026-11-03",
@@ -365,15 +194,6 @@
    "date": "2026-11-03",
    "time": "17:15",
    "url": "https://www.filmladder.nl/kaartjes/1229109004"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "17:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108824"
   },
   {
    "venue": "Filmkoepel",
@@ -425,15 +245,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "18:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229108878"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Primetime",
@@ -453,15 +264,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229108888"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maspalomas",
-   "info": "film · Jose Mari Goenaga",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/maspalomas"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -474,38 +276,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "19:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108753"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-03",
-   "time": "19:20",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Verity",
    "info": "",
    "date": "2026-11-03",
    "time": "19:20",
    "url": "https://www.filmladder.nl/kaartjes/1229108849"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-03",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108958"
   },
   {
    "venue": "Pathé",
@@ -4414,16 +4189,6 @@
   {
    "venue": "Patronaat",
    "kind": "podium",
-   "title": "Chali 2na & band + DJ Recip",
-   "info": "funk / soul / jazz, hiphop · Stage 2 · De iconische stem van Jurassic 5 live met band.",
-   "date": "2026-11-08",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/chali-2na-band-support-08-11-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
    "title": "Little Big",
    "info": "pop · Stage 1 · Punk-pop-raveband uit Sint Petersburg",
    "date": "2026-11-08",
@@ -4439,6 +4204,16 @@
    "date": "2026-11-08",
    "time": "20:20",
    "url": "https://www.filmladder.nl/kaartjes/1229234885"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Chali 2na & band + DJ Recip",
+   "info": "funk / soul / jazz, hiphop · Stage 2 · De iconische stem van Jurassic 5 live met band.",
+   "date": "2026-11-08",
+   "time": "20:30",
+   "url": "https://patronaat.nl/event/chali-2na-band-support-08-11-26/",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
