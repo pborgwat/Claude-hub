@@ -214,6 +214,22 @@
   details.slot-fold > summary::after { content: "›"; font-size: 18px; line-height: 1; transition: transform .15s; }
   details.slot-fold[open] > summary { border-color: transparent; padding: 0; margin-bottom: 8px; }
   details.slot-fold[open] > summary::after { transform: rotate(90deg); }
+  /* Actiemenu onder de deelknop */
+  .sheet-bg { position: fixed; inset: 0; z-index: 20; background: rgba(21,22,25,.4); display: flex; align-items: flex-end; justify-content: center; }
+  .sheet-menu {
+    width: 100%; max-width: 640px; background: var(--card); color: var(--text); border-radius: 16px 16px 0 0; border-top: 1px solid var(--line);
+    padding: 20px 16px calc(env(safe-area-inset-bottom) + 16px); display: grid; gap: 8px;
+  }
+  .sheet-menu .t { font: 700 18px/24px var(--font); letter-spacing: -0.2px; }
+  .sheet-menu .m { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+  .sheet-menu .act {
+    display: flex; align-items: center; gap: 10px; width: 100%; padding: 14px 16px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--card); color: var(--text); font: 600 16px/1.2 var(--font); text-decoration: none;
+  }
+  .sheet-menu .act.primary { background: var(--action); border-color: var(--action); color: var(--on-action); }
+  .sheet-menu .act svg { width: 20px; height: 20px; flex: none; }
+  .sheet-menu .act small { margin-left: auto; font: 500 13px/1.2 var(--font); opacity: .7; }
+  .sheet-menu .cancel { border: 0; background: none; padding: 12px; font: 500 16px/1.2 var(--font); color: var(--muted); cursor: pointer; }
   .toast {
     position: fixed; z-index: 10; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 24px); transform: translateX(-50%);
     background: var(--action); color: var(--on-action); padding: 10px 18px; border-radius: 8px; font: 500 14px/1.2 var(--font);
@@ -342,7 +358,7 @@ function row(ev, past) {
         ${info ? `<div class="info">${esc(info)}</div>` : ''}
       </div>
     </a>
-    <button class="share" data-share="${i}" aria-label="Deel ${esc(ev.title)}">${SHARE_ICON}</button>
+    <button class="share" data-share="${i}" aria-label="Delen of loggen: ${esc(ev.title)}">${SHARE_ICON}</button>
   </div>`;
 }
 
@@ -484,13 +500,54 @@ async function share(ev) {
   catch { prompt('Kopieer de link:', ev.url); }
 }
 
+// Doorsturen naar culturelogd: opent het formulier daar, al ingevuld
+const CULTURELOGD = 'https://culturelogd.nl/';
+const LOG_VENUE = { 'Pathé': 'Pathé Haarlem', 'Phil': 'Phil Haarlem' };
+function logKind(ev) {
+  if (ev.kind === 'film') return 'film';
+  if (ev.venue === 'Patronaat' || ev.venue === 'Phil') return 'concert';
+  return 'theater';
+}
+function logURL(ev) {
+  const kind = logKind(ev);
+  // "Artiest • Andere zaal": dan is die zaal de locatie
+  const [title, elsewhere] = ev.title.split(' • ');
+  const venue = elsewhere || LOG_VENUE[ev.venue] || ev.venue;
+  const q = new URLSearchParams({ nieuw: '', soort: kind, titel: title, locatie: venue, datum: ev.date });
+  if (ev.time) q.set('tijd', ev.time);
+  // Bij theater in de Schuur staat het gezelschap als tweede deel in de info
+  const maker = kind === 'theater' ? (ev.info || '').split(' · ')[1] : '';
+  if (maker) q.set('maker', maker);
+  return CULTURELOGD + '?' + q.toString().replace('nieuw=&', 'nieuw&');
+}
+const LOG_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.83 5.97 6.53.74-4.86 4.45 1.32 6.46L12 16.95l-5.82 3.27 1.32-6.46-4.86-4.45 6.53-.74z"/></svg>';
+function openActions(ev) {
+  const bg = document.createElement('div');
+  bg.className = 'sheet-bg';
+  bg.innerHTML = `<div class="sheet-menu" role="dialog" aria-modal="true" aria-label="${esc(ev.title)}">
+    <div class="t">${esc(ev.title)}</div>
+    <div class="m">${esc(ev.venue)}${ev.time ? ' · ' + esc(ev.time) : ''}</div>
+    <button class="act" data-act="share">${SHARE_ICON}Delen</button>
+    <a class="act primary" data-act="log" href="${esc(logURL(ev))}" target="_blank" rel="noopener">${LOG_ICON}Log in culturelogd<small>opent Safari</small></a>
+    <button class="cancel" data-act="cancel">Annuleer</button>
+  </div>`;
+  const close = () => bg.remove();
+  bg.addEventListener('click', (e) => {
+    const a = e.target.closest('[data-act]');
+    if (!a && e.target !== bg) return;
+    if (a?.dataset.act === 'share') { close(); share(ev); return; }
+    close();
+  });
+  document.body.appendChild(bg);
+}
+
 document.getElementById('app').addEventListener('toggle', (e) => {
   const d = e.target.closest?.('details[data-fold]');
   if (d) d.open ? openFolds.add(d.dataset.fold) : openFolds.delete(d.dataset.fold);
 }, true);
 document.getElementById('app').addEventListener('click', (e) => {
   const btn = e.target.closest('[data-share]');
-  if (btn) share(rendered[Number(btn.dataset.share)]);
+  if (btn) openActions(rendered[Number(btn.dataset.share)]);
 });
 document.getElementById('fromNow').onclick = () => { fromNow = !fromNow; render(); };
 const togglePathe = () => { showPathe = !showPathe; store.set('uitagenda.pathe', showPathe); render(); };
