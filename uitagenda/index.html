@@ -515,6 +515,8 @@ function logURL(ev) {
   const venue = elsewhere || LOG_VENUE[ev.venue] || ev.venue;
   const q = new URLSearchParams({ nieuw: '', soort: kind, titel: title, locatie: venue, datum: ev.date });
   if (ev.time) q.set('tijd', ev.time);
+  // Pagina van de voorstelling: daar haalt culturelogd de persfoto vandaan
+  if (ev.url) q.set('link', ev.url);
   // Bij theater in de Schuur staat het gezelschap als tweede deel in de info
   const maker = kind === 'theater' ? (ev.info || '').split(' · ')[1] : '';
   if (maker) q.set('maker', maker);
