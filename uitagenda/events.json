@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T02:18:16.495Z",
+ "generated": "2026-11-04T12:04:51.546Z",
  "days": [
   "2026-11-04",
   "2026-11-05",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 64
+   "count": 62
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 286
+   "count": 282
   }
  },
  "events": [
@@ -61,15 +61,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-11-04",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wicker",
@@ -89,15 +80,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229109006"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Whalefall",
-   "info": "",
-   "date": "2026-11-04",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229108760"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Yellow Letters",
@@ -108,24 +90,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-04",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229108959"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Digger",
-   "info": "",
-   "date": "2026-11-04",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108787"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -134,15 +98,6 @@
    "time": "11:30",
    "url": "https://filmkoepel.nl/tickets/206228",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-04",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229108900"
   },
   {
    "venue": "Filmkoepel",
@@ -172,15 +127,6 @@
    "date": "2026-11-04",
    "time": "12:00",
    "url": "https://www.filmladder.nl/kaartjes/1229108988"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-11-04",
-   "time": "12:00",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Pathé",
