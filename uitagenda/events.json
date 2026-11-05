@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T02:23:34.876Z",
+ "generated": "2026-11-05T12:17:00.938Z",
  "days": [
   "2026-11-05",
   "2026-11-06",
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 285
+   "count": 283
   }
  },
  "events": [
@@ -99,24 +99,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234702"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234598"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "11:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229234671"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Coward",
@@ -139,7 +121,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-05",
    "time": "12:00",
@@ -1201,7 +1183,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-06",
    "time": "17:30",
@@ -1996,7 +1978,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-07",
    "time": "17:40",
@@ -2710,7 +2692,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-08",
    "time": "15:30",
@@ -3518,7 +3500,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-09",
    "time": "16:30",
@@ -4145,7 +4127,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-10",
    "time": "15:00",
@@ -4861,7 +4843,7 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael - The Faith Tour",
+   "title": "George Michael: The Faith Tour",
    "info": "2D",
    "date": "2026-11-11",
    "time": "17:00",
