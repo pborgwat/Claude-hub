@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T12:17:00.938Z",
+ "generated": "2026-11-05T20:38:42.041Z",
  "days": [
   "2026-11-05",
   "2026-11-06",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 64
+   "count": 56
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 283
+   "count": 273
   }
  },
  "events": [
@@ -138,33 +138,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234959"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234742"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "13:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234825"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -261,15 +234,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234984"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-11-05",
-   "time": "14:30",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Other Mommy",
@@ -279,15 +243,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234624"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-11-05",
-   "time": "14:45",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Clayface",
@@ -295,15 +250,6 @@
    "date": "2026-11-05",
    "time": "15:00",
    "url": "https://www.filmladder.nl/kaartjes/1229234650"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "15:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229234672"
   },
   {
    "venue": "Pathé",
@@ -363,24 +309,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234618"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "16:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234744"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234781"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Primetime",
@@ -401,33 +329,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-05",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229234552"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-11-05",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Other Mommy",
@@ -444,15 +345,6 @@
    "date": "2026-11-05",
    "time": "17:40",
    "url": "https://www.filmladder.nl/kaartjes/1229234566"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234599"
   },
   {
    "venue": "Pathé",
@@ -494,15 +386,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "18:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229234827"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Amarga Navidad",
@@ -511,15 +394,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/207033",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maspalomas",
-   "info": "film · Jose Mari Goenaga",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/maspalomas"
   },
   {
    "venue": "Filmkoepel",
@@ -549,33 +423,6 @@
    "time": "19:00",
    "url": "https://filmkoepel.nl/tickets/206907",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-05",
-   "time": "19:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229234961"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Mata Hari Returns",
-   "info": "theater · Tafel van Vijf Muziektheater i.s.m. Museum Huis Doorn",
-   "date": "2026-11-05",
-   "time": "19:30",
-   "url": "https://www.schuur.nl/theater/mata-hari-returns"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-05",
-   "time": "19:40",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
   },
   {
    "venue": "Pathé",
@@ -712,15 +559,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/206913",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-05",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Pathé",
