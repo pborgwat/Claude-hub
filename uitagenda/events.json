@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T02:23:48.311Z",
+ "generated": "2026-11-06T12:04:17.718Z",
  "days": [
   "2026-11-06",
   "2026-11-07",
@@ -20,7 +20,7 @@
   },
   "Phil": {
    "ok": true,
-   "count": 6
+   "count": 5
   },
   "Patronaat": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 246
+   "count": 245
   }
  },
  "events": [
@@ -124,15 +124,6 @@
    "date": "2026-11-06",
    "time": "11:15",
    "url": "https://www.filmladder.nl/kaartjes/1229234628"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-06",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234673"
   },
   {
    "venue": "Filmkoepel",
@@ -613,16 +604,6 @@
    "date": "2026-11-06",
    "time": "20:00",
    "url": "https://patronaat.nl/event/frank-nick-reunie-06-11-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Phil",
-   "kind": "podium",
-   "title": "Maaike Ouboter & band",
-   "info": "pop · Liedjes vol liefde, verlangen en troost",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "url": "https://philhaarlem.nl/agenda/maaike-ouboter-band",
    "soldOut": false
   },
   {
