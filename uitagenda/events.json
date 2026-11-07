@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T11:01:42.331Z",
+ "generated": "2026-11-07T18:01:31.502Z",
  "days": [
   "2026-11-07",
   "2026-11-08",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 55
+   "count": 50
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 203
+   "count": 199
   }
  },
  "events": [
@@ -154,15 +154,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-11-07",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Yugly",
@@ -218,24 +209,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229235018"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-11-07",
-   "time": "14:00",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234833"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -273,15 +246,6 @@
    "time": "14:30",
    "url": "https://filmkoepel.nl/tickets/207029",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coyote vs. Acme",
-   "info": "familiefilm · Dave Green",
-   "date": "2026-11-07",
-   "time": "15:10",
-   "url": "https://www.schuur.nl/film/coyote-vs-acme"
   },
   {
    "venue": "Pathé",
@@ -350,15 +314,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "16:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234754"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Primetime",
@@ -377,42 +332,6 @@
    "time": "16:30",
    "url": "https://filmkoepel.nl/tickets/206901",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234836"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-07",
-   "time": "16:40",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "17:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234786"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coward",
-   "info": "film · Lukas Dhont",
-   "date": "2026-11-07",
-   "time": "17:15",
-   "url": "https://www.schuur.nl/film/coward"
   },
   {
    "venue": "Pathé",
