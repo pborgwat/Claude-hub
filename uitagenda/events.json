@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T18:01:31.502Z",
+ "generated": "2026-11-07T22:42:38.377Z",
  "days": [
   "2026-11-07",
   "2026-11-08",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 50
+   "count": 46
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 199
+   "count": 194
   }
  },
  "events": [
@@ -352,15 +352,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234633"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234678"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Amarga Navidad",
@@ -410,15 +401,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maspalomas",
-   "info": "film · Jose Mari Goenaga",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/maspalomas"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Cycle of Love",
@@ -439,42 +421,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "19:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229234602"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234756"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-07",
-   "time": "19:40",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "19:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229234966"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Sonische Reis – Een avond van Dans, Adem & Gong",
@@ -492,16 +438,7 @@
    "date": "2026-11-07",
    "time": "20:00",
    "url": "https://philhaarlem.nl/agenda/dire-straits-experience",
-   "soldOut": true
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Venus & Adonis",
-   "info": "theater · Agnes Laura Kumpina – Toneelschuur Producties",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/producties/venus-adonis"
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -629,15 +566,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-07",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Odyssey",
@@ -645,15 +573,6 @@
    "date": "2026-11-07",
    "time": "21:25",
    "url": "https://www.filmladder.nl/kaartjes/1229234568"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Godzilla Minus Zero",
-   "info": "2D",
-   "date": "2026-11-07",
-   "time": "22:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229235084"
   },
   {
    "venue": "Pathé",
