@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T01:53:57.493Z",
+ "generated": "2026-11-07T11:01:42.331Z",
  "days": [
   "2026-11-07",
   "2026-11-08",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 57
+   "count": 55
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 205
+   "count": 203
   }
  },
  "events": [
@@ -62,29 +62,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "10:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234676"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
    "info": "",
    "date": "2026-11-07",
    "time": "10:10",
    "url": "https://www.filmladder.nl/kaartjes/1229235015"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-07",
-   "time": "10:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234832"
   },
   {
    "venue": "Pathé",
@@ -96,15 +78,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229235038"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-11-07",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
@@ -112,15 +85,6 @@
    "date": "2026-11-07",
    "time": "11:15",
    "url": "https://www.filmladder.nl/kaartjes/1229234988"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "film · Georgia Oakley",
-   "date": "2026-11-07",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/sense-and-sensibility"
   },
   {
    "venue": "Filmkoepel",
