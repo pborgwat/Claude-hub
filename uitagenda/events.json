@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T18:20:43.028Z",
+ "generated": "2026-11-08T22:52:28.014Z",
  "days": [
   "2026-11-08",
   "2026-11-09",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 42
+   "count": 38
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 157
+   "count": 148
   }
  },
  "events": [
@@ -162,15 +162,6 @@
    "time": "12:00",
    "url": "https://filmkoepel.nl/tickets/206853",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "12:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234923"
   },
   {
    "venue": "Filmkoepel",
@@ -319,15 +310,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "George Michael: The Faith Tour",
-   "info": "2D",
-   "date": "2026-11-08",
-   "time": "15:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234946"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
    "info": "",
    "date": "2026-11-08",
@@ -421,15 +403,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229234710"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234603"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wen Er Maar Aan",
@@ -448,15 +421,6 @@
    "time": "18:30",
    "url": "https://filmkoepel.nl/tickets/206977",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "18:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234839"
   },
   {
    "venue": "Filmkoepel",
@@ -479,24 +443,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-11-08",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/youri"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "18:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229234925"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "500 Miles",
@@ -504,15 +450,6 @@
    "date": "2026-11-08",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228900013"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Maspalomas - English subs",
-   "info": "film · Jose Mari Goenaga & Aitor Arregi",
-   "date": "2026-11-08",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/maspalomas-en"
   },
   {
    "venue": "Filmkoepel",
@@ -537,24 +474,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "19:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234864"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234761"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Other Mommy",
    "info": "",
    "date": "2026-11-08",
@@ -570,15 +489,6 @@
    "time": "20:00",
    "url": "https://patronaat.nl/event/little-big-08-11-26/",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Godzilla Minus Zero (English subtitles)",
-   "info": "2D",
-   "date": "2026-11-08",
-   "time": "20:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234885"
   },
   {
    "venue": "Patronaat",
@@ -630,15 +540,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-08",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Godzilla Minus Zero",
@@ -647,24 +548,6 @@
    "time": "21:10",
    "url": "https://filmkoepel.nl/tickets/207044",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "21:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234969"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Naza",
-   "info": "documentaire · Yuval Abraham & Rachel Szor",
-   "date": "2026-11-08",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/naza"
   },
   {
    "venue": "Filmkoepel",
