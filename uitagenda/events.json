@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T11:15:08.334Z",
+ "generated": "2026-11-08T18:20:43.028Z",
  "days": [
   "2026-11-08",
   "2026-11-09",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 46
+   "count": 42
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 163
+   "count": 157
   }
  },
  "events": [
@@ -185,38 +185,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "12:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229234680"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234967"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
    "info": "",
    "date": "2026-11-08",
    "time": "13:10",
    "url": "https://www.filmladder.nl/kaartjes/1229235023"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coyote vs. Acme",
-   "info": "familiefilm · Dave Green",
-   "date": "2026-11-08",
-   "time": "13:15",
-   "url": "https://www.schuur.nl/film/coyote-vs-acme"
   },
   {
    "venue": "Filmkoepel",
@@ -239,15 +212,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-11-08",
-   "time": "13:30",
-   "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wild Horse Nine",
@@ -265,15 +229,6 @@
    "date": "2026-11-08",
    "time": "13:40",
    "url": "https://www.filmladder.nl/kaartjes/1229215533"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229215532"
   },
   {
    "venue": "Filmkoepel",
@@ -362,15 +317,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229235025"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-08",
-   "time": "15:20",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "George Michael: The Faith Tour",
@@ -399,15 +345,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "15:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229234837"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wild Horse Nine",
@@ -426,15 +363,6 @@
    "time": "16:00",
    "url": "https://filmkoepel.nl/tickets/206936",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-08",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Filmkoepel",
@@ -473,24 +401,6 @@
    "date": "2026-11-08",
    "time": "16:35",
    "url": "https://www.filmladder.nl/kaartjes/1229235061"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "16:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229234788"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-08",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229234760"
   },
   {
    "venue": "Pathé",
