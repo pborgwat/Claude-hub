@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Lichtpad</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: één scherm. De lampenwand vult alles, de HUD en kaarten zweven erboven. */
+:root{
+  --wall:#0c0a07;
+  --ink:#f3e6cf;
+  --muted:#a8977c;
+  --amber:#eaa540;
+  --cool:#e3e9f0;
+  --off:#2b2017;
+  --card:rgba(22,17,11,.88);
+  --line:rgba(243,230,207,.16);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+html{box-sizing:border-box;height:100%}
+[hidden]{display:none!important}
+*,*::before,*::after{box-sizing:inherit}
+body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:var(--display);overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+#app{position:relative;height:100%;overflow:hidden}
+#wall{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:pointer;outline:none}
+
+.hud{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));pointer-events:none}
+.brand{font-weight:800;font-size:1.05rem;letter-spacing:.01em;display:flex;align-items:center;gap:8px}
+.brand svg{width:18px;height:18px}
+.stats{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.stats b{color:var(--ink);font-weight:500}
+#lives{display:flex;gap:4px}
+#lives svg{width:14px;height:14px}
+#mute{pointer-events:auto;font:inherit;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+#mute:hover{color:var(--ink)}
+#mute:focus-visible,.btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+.hint{position:absolute;left:0;right:0;bottom:0;text-align:center;padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);pointer-events:none}
+.hint .touch{display:none}
+@media (pointer:coarse){.hint .touch{display:inline}.hint .keys{display:none}}
+
+#toast{position:absolute;left:50%;top:18%;transform:translate(-50%,6px);font-weight:800;font-size:clamp(1.4rem,4.5vw,2.4rem);letter-spacing:-.01em;color:var(--ink);text-shadow:0 0 24px rgba(234,165,64,.55);opacity:0;transition:opacity .35s,transform .35s;pointer-events:none;white-space:nowrap}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+
+.overlay{position:absolute;inset:0;display:grid;place-items:center;padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:radial-gradient(ellipse at center,rgba(12,10,7,.25),rgba(12,10,7,.7))}
+.card{width:100%;max-width:25rem;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 24px 22px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:14px;max-height:100%;overflow:auto}
+.card h1{margin:0;font-size:clamp(2.2rem,8vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:.95;text-wrap:balance}
+.card h1 span{color:var(--amber)}
+.card p{margin:0;line-height:1.5;color:var(--ink);font-size:.98rem}
+.card .small{font-size:.85rem;color:var(--muted)}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.legend li{display:flex;align-items:center;gap:10px;font-size:.92rem;line-height:1.35}
+.legend svg{flex:none;width:22px;height:22px}
+.mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.02em}
+.btn{font:inherit;font-weight:600;font-size:1rem;color:#1d1206;background:var(--amber);border:0;border-radius:999px;padding:12px 20px;cursor:pointer;box-shadow:0 0 28px rgba(234,165,64,.45);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 0 36px rgba(234,165,64,.6)}
+.score{font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){#toast,.btn{transition:none}}
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="wall" tabindex="0" aria-label="Lampenwand. Stap op een brandende lamp naast je."></canvas>
+
+  <div class="hud">
+    <div class="brand"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.2h10l5 7.8-5 7.8H5L0 10z" fill="#eaa540"/></svg>Lichtpad</div>
+    <div class="stats">
+      <span>Wand <b id="level">1</b></span>
+      <span id="lives" aria-label="Levens"></span>
+      <button id="mute" type="button" aria-pressed="false">Geluid aan</button>
+    </div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <div class="hint"><span class="keys">Klik op een lamp naast je, of Q W E / A S D en de pijltjes</span><span class="touch">Tik op een lamp naast je</span></div>
+
+  <div class="overlay" id="intro">
+    <div class="card">
+      <h1>Licht<span>pad</span></h1>
+      <p>Steek de lampenwand over van rechts naar links, tot aan de deur. Je kunt alleen op een lamp staan zolang hij brandt.</p>
+      <ul class="legend">
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#eaa540"/></svg>Amber: de lamp brandt, je staat veilig.</li>
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#e3e9f0"/></svg>Wit: de lamp gaat zo uit. Doorlopen.</li>
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#3a2b1f"/></svg>Donker: hier val je van de wand.</li>
+      </ul>
+      <p class="small">Het licht trekt als een golf over de wand. Loop met de golf mee. Elke wand is langer en sneller dan de vorige, en je hebt drie levens.</p>
+      <p class="small mono"><span class="keys-only">Klik of tik op een lamp naast je. Toetsen: Q W E / A S D of de pijltjes.</span></p>
+      <button class="btn" id="startBtn" type="button">Start</button>
+      <div class="score" id="bestIntro"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="over" hidden>
+    <div class="card">
+      <h1>Licht <span>uit</span></h1>
+      <p id="overText"></p>
+      <div class="score" id="bestOver"></div>
+      <button class="btn" id="againBtn" type="button">Opnieuw</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+const SQ3 = Math.sqrt(3);
+// flat-top axiale richtingen: rechtsonder, rechtsboven, boven, linksboven, linksonder, onder
+const DIRS = [[1,0],[1,-1],[0,-1],[-1,0],[-1,1],[0,1]];
+const KEYDIR = {q:3, w:2, e:1, a:4, s:5, d:0};
+const K = (q, r) => q + ',' + r;
+const app = document.getElementById('app');
+const cv = document.getElementById('wall');
+const ctx = cv.getContext('2d');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = id => document.getElementById(id);
+
+let W = 0, H = 0, DPR = 1;
+const game = { level: 1, lives: 3, state: 'intro', time: 0, clearT: null };
+let best = 0;
+try { best = +localStorage.getItem('lichtpad-best') || 0; } catch (e) {}
+let muted = false;
+try { muted = localStorage.getItem('lichtpad-muted') === '1'; } catch (e) {}
+
+let cells = [], map = new Map(), startCell = null, finishCell = null;
+let P = 4;
+const L = { s: 40 };
+let glowA = null, glowW = null, bg = null;
+const player = { cell: null, hop: null, fall: null };
+let hover = null, toastTimer = 0;
+
+function rng(seed) {
+  return function () {
+    seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+    let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+const rand = (a, b) => a + Math.random() * (b - a);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const smooth = (e0, e1, x) => { const t = clamp((x - e0) / (e1 - e0), 0, 1); return t * t * (3 - 2 * t); };
+
+/* ---------- Wand genereren ---------- */
+function mkCell(q, r) {
+  const c = { q, r, seed: (Math.random() * 1e9) | 0, grain: rand(-0.5, 0.5) + (Math.random() < .5 ? 0 : Math.PI / 3), frac: 0.5, phase: 0, always: false };
+  cells.push(c); map.set(K(q, r), c);
+  return c;
+}
+
+function genLevel(n) {
+  cells = []; map = new Map();
+  const portrait = H > W * 1.05;
+  const narrow = Math.min(W, H) < 560;
+  const S = Math.min(narrow ? 16 : 22, 7 + 2 * n);
+  const weights = portrait ? [[3, 3], [2, 2.6], [4, 1.2]] : [[3, 5], [4, 2], [2, 1.3], [5, .6]];
+  let q = 0, r = 0, last = -1, guard = 0;
+  const path = [[0, 0]], used = new Set([K(0, 0)]);
+  while (path.length < S + 1 && guard++ < 2000) {
+    const opts = weights.filter(([d]) => !((d === 5 && last === 2) || (d === 2 && last === 5)));
+    let x = Math.random() * opts.reduce((a, o) => a + o[1], 0), d = opts[0][0];
+    for (const [dd, w] of opts) { x -= w; if (x <= 0) { d = dd; break; } }
+    const nq = q + DIRS[d][0], nr = r + DIRS[d][1];
+    if (used.has(K(nq, nr))) continue;
+    q = nq; r = nr; last = d; path.push([q, r]); used.add(K(q, r));
+  }
+
+  // Timing: één gezamenlijke periode, het licht loopt als golf over het hoofdpad
+  P = Math.max(2.4, 4.2 - 0.14 * (n - 1));
+  const lit = Math.max(0.4, 0.62 - 0.02 * (n - 1));
+  const jit = Math.min(0.09, 0.018 * (n - 1));
+  let acc = Math.random();
+  path.forEach(([cq, cr], i) => {
+    const c = mkCell(cq, cr);
+    c.main = true;
+    c.frac = clamp(lit + rand(-jit, jit), 0.34, 0.72);
+    if (i > 0) {
+      const prev = cells[i - 1];
+      const k = clamp(0.17 + rand(-jit, jit) * 1.5, 0.08, Math.min(prev.frac, c.frac) - 0.12);
+      acc -= k;
+    }
+    c.phase = acc;
+  });
+  startCell = cells[0];
+  finishCell = cells[path.length - 1];
+  startCell.always = finishCell.always = true;
+
+  // Zijlampen: lokkertjes en doodlopende stukjes met een eigen ritme
+  for (let i = 1; i < path.length - 1; i++) {
+    if (Math.random() < 0.6) {
+      const d = DIRS[(Math.random() * 6) | 0];
+      const nq = path[i][0] + d[0], nr = path[i][1] + d[1];
+      if (!map.has(K(nq, nr))) {
+        const c = mkCell(nq, nr);
+        c.frac = rand(0.28, 0.6); c.phase = Math.random();
+        if (Math.random() < 0.3) {
+          const d2 = DIRS[(Math.random() * 6) | 0];
+          if (!map.has(K(nq + d2[0], nr + d2[1]))) {
+            const c2 = mkCell(nq + d2[0], nr + d2[1]);
+            c2.frac = rand(0.28, 0.6); c2.phase = Math.random();
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------- Opmaak & sprites ---------- */
+function layout() {
+  if (!cells.length) return;
+  let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+  for (const c of cells) {
+    c.ux = 1.5 * c.q; c.uy = SQ3 * (c.r + c.q / 2);
+    x0 = Math.min(x0, c.ux); x1 = Math.max(x1, c.ux); y0 = Math.min(y0, c.uy); y1 = Math.max(y1, c.uy);
+  }
+  const top = 62, bottom = 48, side = Math.max(16, W * 0.04);
+  const aw = W - side * 2, ah = H - top - bottom;
+  const s = Math.max(8, Math.min(aw / (x1 - x0 + 2), ah / (y1 - y0 + SQ3), 72));
+  L.s = s;
+  const ox = W / 2 - (x0 + x1) / 2 * s, oy = top + ah / 2 - (y0 + y1) / 2 * s;
+  for (const c of cells) {
+    c.x = ox + c.ux * s; c.y = oy + c.uy * s;
+    c.col = (c.ux - finishCell.ux) / 1.5;
+  }
+  buildSprites();
+  buildBg();
+}
+
+function hexPath(g, cx, cy, R, round) {
+  const pts = [];
+  for (let i = 0; i < 6; i++) { const a = Math.PI / 3 * i; pts.push([cx + R * Math.cos(a), cy + R * Math.sin(a)]); }
+  const rr = R * round;
+  g.beginPath();
+  g.moveTo((pts[5][0] + pts[0][0]) / 2, (pts[5][1] + pts[0][1]) / 2);
+  for (let i = 0; i < 6; i++) { const p = pts[i], nx = pts[(i + 1) % 6]; g.arcTo(p[0], p[1], nx[0], nx[1], rr); }
+  g.closePath();
+}
+
+const PAL = [
+  { a: '#3a2b1f', b: '#1e160e', grain: 'rgba(0,0,0,0.45)', edge: 'rgba(255,220,170,0.07)' },
+  { a: '#f6bb58', b: '#c67b1e', grain: 'rgba(125,62,8,0.32)', edge: 'rgba(255,238,196,0.95)' },
+  { a: '#f2f5f8', b: '#aab4c0', grain: 'rgba(70,82,98,0.25)', edge: 'rgba(255,255,255,0.98)' },
+];
+
+function faceSprite(c, kind) {
+  const R = L.s * 0.965, pad = 3, css = 2 * R + pad * 2;
+  const cnv = document.createElement('canvas');
+  cnv.width = cnv.height = Math.ceil(css * DPR);
+  const g = cnv.getContext('2d');
+  g.scale(DPR, DPR);
+  const cx = R + pad, cy = R + pad, pal = PAL[kind];
+  g.save();
+  hexPath(g, cx, cy, R, 0.07); g.clip();
+  const grd = g.createLinearGradient(cx - R, cy - R, cx + R, cy + R);
+  grd.addColorStop(0, pal.a); grd.addColorStop(1, pal.b);
+  g.fillStyle = grd; g.fillRect(0, 0, css, css);
+  if (kind) {
+    const rg = g.createRadialGradient(cx, cy, 0, cx, cy, R);
+    rg.addColorStop(0, 'rgba(255,255,255,0.2)'); rg.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = rg; g.fillRect(0, 0, css, css);
+  }
+  // houtnerf, voor alle drie de toestanden van deze lamp gelijk
+  const rnd = rng(c.seed);
+  g.translate(cx, cy); g.rotate(c.grain);
+  g.strokeStyle = pal.grain;
+  for (let y = -R * 1.2; y < R * 1.2; y += R * (0.045 + rnd() * 0.08)) {
+    g.lineWidth = 0.4 + rnd() * 1.2;
+    g.globalAlpha = 0.35 + rnd() * 0.65;
+    const amp = R * (0.015 + rnd() * 0.05), f = 1 + rnd() * 2.5, ph = rnd() * 6;
+    g.beginPath();
+    for (let x = -R * 1.2; x <= R * 1.21; x += R * 0.08) {
+      const yy = y + Math.sin(x / R * f + ph) * amp;
+      if (x === -R * 1.2) g.moveTo(x, yy); else g.lineTo(x, yy);
+    }
+    g.stroke();
+  }
+  g.restore();
+  if (!kind) { // binnenrand voor diepte
+    g.save(); hexPath(g, cx, cy, R, 0.07); g.clip();
+    g.lineWidth = R * 0.16; g.strokeStyle = 'rgba(0,0,0,0.35)'; hexPath(g, cx, cy, R, 0.07); g.stroke();
+    g.restore();
+  }
+  hexPath(g, cx, cy, R, 0.07);
+  g.lineWidth = kind ? 1.6 : 1; g.strokeStyle = pal.edge; g.stroke();
+  if (kind) {
+    g.fillStyle = 'rgba(255,255,255,0.92)';
+    for (let i = 0; i < 6; i++) {
+      const a = Math.PI / 3 * i;
+      g.beginPath(); g.arc(cx + R * 0.88 * Math.cos(a), cy + R * 0.88 * Math.sin(a), Math.max(0.9, R * 0.028), 0, 7); g.fill();
+    }
+  }
+  return { cnv, css, off: R + pad };
+}
+
+function glowSprite(color) {
+  const R = L.s * 0.965, blur = L.s * 0.8, pad = blur * 1.7, css = 2 * (R + pad);
+  const cnv = document.createElement('canvas');
+  cnv.width = cnv.height = Math.ceil(css * DPR);
+  const g = cnv.getContext('2d');
+  g.scale(DPR, DPR);
+  g.shadowColor = color; g.shadowBlur = blur * DPR;
+  g.fillStyle = color;
+  hexPath(g, R + pad, R + pad, R * 0.98, 0.07); g.fill(); g.fill();
+  return { cnv, css, off: R + pad };
+}
+
+function buildSprites() {
+  for (const c of cells) c.f = [faceSprite(c, 0), faceSprite(c, 1), faceSprite(c, 2)];
+  glowA = glowSprite('rgba(255,168,48,0.9)');
+  glowW = glowSprite('rgba(214,232,255,0.9)');
+}
+
+function buildBg() {
+  bg = document.createElement('canvas');
+  bg.width = Math.ceil(W * DPR); bg.height = Math.ceil(H * DPR);
+  const g = bg.getContext('2d');
+  g.scale(DPR, DPR);
+  const rg = g.createRadialGradient(W * 0.5, H * 0.45, 0, W * 0.5, H * 0.45, Math.max(W, H) * 0.75);
+  rg.addColorStop(0, '#1d170f'); rg.addColorStop(1, '#070504');
+  g.fillStyle = rg; g.fillRect(0, 0, W, H);
+  const R = rng(11);
+  const dots = Math.min(40000, (W * H) / 50);
+  for (let i = 0; i < dots; i++) {
+    g.fillStyle = 'rgba(255,236,210,' + (R() * 0.03).toFixed(3) + ')';
+    g.fillRect(R() * W, R() * H, 1, 1);
+  }
+  // kamerplant in silhouet, linksonder
+  const base = Math.min(W, H) * (W < 600 ? 0.38 : 0.55);
+  const ox = -base * 0.08, oy = H + base * 0.06;
+  g.strokeStyle = 'rgba(3,2,1,0.95)'; g.lineCap = 'round';
+  for (let f = 0; f < 7; f++) {
+    let a = -Math.PI / 2 + (f - 2.4) * 0.3 + R() * 0.15;
+    const len = base * (0.75 + R() * 0.45), steps = 22, bend = (0.6 + R() * 0.5) / steps;
+    let x = ox + R() * base * 0.1, y = oy;
+    for (let i = 0; i < steps; i++) {
+      const k = i / steps, nx = x + Math.cos(a) * len / steps, ny = y + Math.sin(a) * len / steps;
+      g.lineWidth = base * 0.012 * (1 - k * 0.7);
+      g.beginPath(); g.moveTo(x, y); g.lineTo(nx, ny); g.stroke();
+      if (i > 3) {
+        const ll = base * 0.2 * Math.sin(Math.PI * k);
+        g.lineWidth = base * 0.008 * (1 - k * 0.5);
+        for (const side of [-1, 1]) {
+          const la = a + side * 1.05 + 0.35;
+          g.beginPath(); g.moveTo(nx, ny);
+          g.quadraticCurveTo(nx + Math.cos(la) * ll * 0.6, ny + Math.sin(la) * ll * 0.6, nx + Math.cos(la + 0.35) * ll, ny + Math.sin(la + 0.35) * ll + ll * 0.25);
+          g.stroke();
+        }
+      }
+      x = nx; y = ny; a += bend;
+    }
+  }
+}
+
+/* ---------- Lamptoestand ---------- */
+function lampState(c, t) {
+  let lit, b, w;
+  if (c.always) { lit = true; b = 1; w = 0; }
+  else {
+    const u = ((t / P + c.phase) % 1 + 1) % 1;
+    lit = u < c.frac;
+    const fade = 0.12 / P, wd = Math.min(c.frac * 0.45, 0.7 / P);
+    if (lit) {
+      b = smooth(0, fade, u);
+      w = smooth(c.frac - wd, c.frac - wd + 0.1 / P, u);
+      if (!reduce && u > c.frac - 0.22 / P) b *= (Math.sin(t * 71 + c.seed % 13) * Math.sin(t * 29 + c.seed % 7)) > 0 ? 1 : 0.4;
+    } else { b = 1 - smooth(c.frac, c.frac + fade, u); w = 1; }
+  }
+  if (game.clearT !== null) { // feestgolf vanaf de deur
+    const k = smooth(0, 1, (t - game.clearT) * 9 - c.col);
+    b = Math.max(b, k); w = w * (1 - k);
+  }
+  return { lit, b, w };
+}
+
+function neighbors(c) {
+  const out = [];
+  for (const d of DIRS) { const n = map.get(K(c.q + d[0], c.r + d[1])); if (n) out.push(n); }
+  return out;
+}
+
+/* ---------- Tekenen ---------- */
+function drawPlayer(t) {
+  const c = player.cell; if (!c) return;
+  const s0 = L.s;
+  let x = c.x, y = c.y, lift = 0, sc = 1, al = 1;
+  if (player.hop) {
+    const k = clamp((t - player.hop.t0) / player.hop.d, 0, 1);
+    const e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+    const f = player.hop.from;
+    x = f.x + (c.x - f.x) * e; y = f.y + (c.y - f.y) * e;
+    lift = Math.sin(Math.PI * k) * s0 * 0.3;
+  }
+  if (player.fall) {
+    const k = clamp((t - player.fall.t0) / 0.8, 0, 1);
+    sc = 1 - k * 0.85; al = 1 - k; y += k * s0 * 0.25;
+  }
+  const s = s0 * 0.95 * sc;
+  ctx.globalAlpha = 0.4 * al;
+  ctx.fillStyle = '#000';
+  ctx.beginPath(); ctx.ellipse(x, y + s * 0.33, s * 0.2 * (1 - lift / s0), s * 0.06, 0, 0, 7); ctx.fill();
+  const by = y - lift;
+  ctx.globalAlpha = al;
+  ctx.fillStyle = '#140e09';
+  ctx.strokeStyle = 'rgba(255,238,210,0.8)';
+  ctx.lineWidth = Math.max(1, s0 * 0.03);
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(x - s * 0.15, by - s * 0.1, s * 0.3, s * 0.42, [s * 0.14, s * 0.14, s * 0.05, s * 0.05]);
+  else ctx.rect(x - s * 0.15, by - s * 0.1, s * 0.3, s * 0.42);
+  ctx.fill(); ctx.stroke();
+  ctx.beginPath(); ctx.arc(x, by - s * 0.23, s * 0.105, 0, 7); ctx.fill(); ctx.stroke();
+  ctx.globalAlpha = 1;
+}
+
+function drawDoor(c, t) {
+  const s = L.s;
+  ctx.strokeStyle = 'rgba(52,26,4,0.85)';
+  ctx.lineWidth = Math.max(1.5, s * 0.05);
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(c.x - s * 0.17, c.y - s * 0.3, s * 0.34, s * 0.58, [s * 0.17, s * 0.17, 0, 0]);
+  else ctx.rect(c.x - s * 0.17, c.y - s * 0.3, s * 0.34, s * 0.58);
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(52,26,4,0.85)';
+  ctx.beginPath(); ctx.arc(c.x + s * 0.08, c.y + s * 0.02, Math.max(1.2, s * 0.035), 0, 7); ctx.fill();
+  const pulse = reduce ? 0.4 : 0.3 + 0.25 * Math.sin(t * 3);
+  ctx.strokeStyle = 'rgba(255,214,150,' + pulse.toFixed(3) + ')';
+  ctx.lineWidth = 1.5;
+  hexPath(ctx, c.x, c.y, s * 1.18, 0.1); ctx.stroke();
+}
+
+function draw() {
+  const t = game.time;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+  if (bg) ctx.drawImage(bg, 0, 0, W, H);
+  if (!cells.length || !cells[0].f) return;
+  const st = cells.map(c => lampState(c, t));
+  ctx.globalCompositeOperation = 'lighter';
+  cells.forEach((c, i) => {
+    const { b, w } = st[i]; if (b <= 0.01) return;
+    if (w < 0.99) { ctx.globalAlpha = 0.55 * b * (1 - w); ctx.drawImage(glowA.cnv, c.x - glowA.off, c.y - glowA.off, glowA.css, glowA.css); }
+    if (w > 0.01) { ctx.globalAlpha = 0.5 * b * w; ctx.drawImage(glowW.cnv, c.x - glowW.off, c.y - glowW.off, glowW.css, glowW.css); }
+  });
+  ctx.globalCompositeOperation = 'source-over';
+  cells.forEach((c, i) => {
+    const { b, w } = st[i], [f0, f1, f2] = c.f;
+    ctx.globalAlpha = 1; ctx.drawImage(f0.cnv, c.x - f0.off, c.y - f0.off, f0.css, f0.css);
+    if (b > 0.01 && w < 0.99) { ctx.globalAlpha = b * (1 - w); ctx.drawImage(f1.cnv, c.x - f1.off, c.y - f1.off, f1.css, f1.css); }
+    if (b > 0.01 && w > 0.01) { ctx.globalAlpha = b * w; ctx.drawImage(f2.cnv, c.x - f2.off, c.y - f2.off, f2.css, f2.css); }
+  });
+  ctx.globalAlpha = 1;
+  drawDoor(finishCell, t);
+  if (game.state === 'play' && player.cell && !player.hop) {
+    for (const n of neighbors(player.cell)) {
+      const on = lampState(n, t).lit;
+      hexPath(ctx, n.x, n.y, L.s * 0.74, 0.15);
+      ctx.lineWidth = n === hover ? 2.2 : 1.3;
+      ctx.strokeStyle = n === hover ? 'rgba(255,246,230,0.95)' : (on ? 'rgba(255,246,230,0.45)' : 'rgba(255,246,230,0.22)');
+      ctx.setLineDash(on ? [] : [3, 4]);
+      ctx.stroke();
+    }
+    ctx.setLineDash([]);
+  }
+  drawPlayer(t);
+}
+
+/* ---------- Spelverloop ---------- */
+function update(dt) {
+  game.time += dt;
+  const t = game.time;
+  if (player.hop && t - player.hop.t0 >= player.hop.d) {
+    const c = player.hop.to; player.hop = null;
+    if (game.state === 'play') {
+      if (c === finishCell) clearLevel();
+      else if (!lampState(c, t).lit) fall();
+      else sfx('step');
+    }
+  } else if (game.state === 'play' && player.cell && !player.hop && !lampState(player.cell, t).lit) {
+    fall();
+  }
+  if (player.fall && t - player.fall.t0 > 0.95) { player.fall = null; afterFall(); }
+}
+
+function tryMove(c) {
+  if (game.state !== 'play' || player.hop || !c || !player.cell) return;
+  player.hop = { from: player.cell, to: c, t0: game.time, d: reduce ? 0.06 : 0.15 };
+  player.cell = c;
+}
+
+function fall() {
+  game.state = 'falling';
+  player.fall = { t0: game.time };
+  game.lives--;
+  renderHud();
+  sfx('fall');
+}
+
+function afterFall() {
+  if (game.lives <= 0) { gameOver(); return; }
+  player.cell = startCell;
+  game.state = 'play';
+  toast(game.lives === 1 ? 'Nog één leven' : 'Nog ' + game.lives + ' levens');
+}
+
+function clearLevel() {
+  game.state = 'cleared';
+  game.clearT = game.time;
+  sfx('clear');
+  if (game.level > best) { best = game.level; try { localStorage.setItem('lichtpad-best', String(best)); } catch (e) {} }
+  toast('Wand ' + game.level + ' gehaald');
+  setTimeout(() => { game.level++; newLevel(); }, 1500);
+}
+
+function newLevel() {
+  genLevel(game.level);
+  layout();
+  game.clearT = null;
+  player.cell = startCell; player.hop = null; player.fall = null;
+  game.state = 'play';
+  renderHud();
+  toast('Wand ' + game.level);
+  cv.focus({ preventScroll: true });
+}
+
+function startGame() {
+  if (game.state === 'play') return;
+  $('intro').hidden = true; $('over').hidden = true;
+  ensureAudio();
+  game.level = 1; game.lives = 3;
+  newLevel();
+}
+
+function gameOver() {
+  game.state = 'over';
+  player.cell = null;
+  const done = game.level - 1;
+  $('overText').textContent = done === 0 ? 'Je bent van de eerste wand gevallen. Kijk hoe de golf loopt en stap mee.' : 'Je haalde ' + done + (done === 1 ? ' wand.' : ' wanden.');
+  $('bestOver').textContent = 'Beste: ' + best + (best === 1 ? ' wand' : ' wanden');
+  $('over').hidden = false;
+  $('againBtn').focus();
+}
+
+function renderHud() {
+  $('level').textContent = game.level;
+  let h = '';
+  for (let i = 0; i < 3; i++) h += '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.2h10l5 7.8-5 7.8H5L0 10z" fill="' + (i < game.lives ? '#eaa540' : '#3a2b1f') + '"/></svg>';
+  $('lives').innerHTML = h;
+  $('lives').setAttribute('aria-label', game.lives + ' levens');
+}
+
+function toast(msg) {
+  const el = $('toast');
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 1100);
+}
+
+/* ---------- Geluid ---------- */
+let ac = null;
+function ensureAudio() {
+  if (!ac) { try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {} }
+  if (ac && ac.state === 'suspended') ac.resume();
+}
+function tone(f0, f1, dur, type, gain, delay) {
+  if (!ac || muted) return;
+  const o = ac.createOscillator(), g = ac.createGain(), t = ac.currentTime + (delay || 0);
+  o.type = type;
+  o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(f1, t + dur);
+  g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(gain, t + 0.01); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + dur + 0.03);
+}
+function sfx(k) {
+  if (k === 'step') tone(700, 540, 0.07, 'sine', 0.07);
+  else if (k === 'fall') tone(300, 55, 0.55, 'triangle', 0.12);
+  else if (k === 'clear') { tone(523, 523, 0.16, 'sine', 0.07); tone(659, 659, 0.16, 'sine', 0.07, 0.11); tone(784, 784, 0.3, 'sine', 0.07, 0.22); }
+}
+function renderMute() {
+  $('mute').textContent = muted ? 'Geluid uit' : 'Geluid aan';
+  $('mute').setAttribute('aria-pressed', String(muted));
+}
+
+/* ---------- Invoer ---------- */
+function pick(px, py) {
+  const c = player.cell; if (!c) return null;
+  if (Math.hypot(c.x - px, c.y - py) < L.s * 0.5) return null;
+  let bestN = null, bd = 1e9;
+  for (const n of neighbors(c)) { const d = Math.hypot(n.x - px, n.y - py); if (d < bd) { bd = d; bestN = n; } }
+  return bestN && bd < L.s * 1.9 ? bestN : null;
+}
+function local(e) { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+
+cv.addEventListener('pointerdown', e => {
+  ensureAudio();
+  if (game.state !== 'play') return;
+  const [x, y] = local(e);
+  tryMove(pick(x, y));
+});
+cv.addEventListener('pointermove', e => {
+  if (e.pointerType !== 'mouse') return;
+  const [x, y] = local(e);
+  hover = game.state === 'play' ? pick(x, y) : null;
+});
+cv.addEventListener('pointerleave', () => { hover = null; });
+
+addEventListener('keydown', e => {
+  if (game.state === 'intro' || game.state === 'over') {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.tagName !== 'BUTTON') { e.preventDefault(); startGame(); }
+    return;
+  }
+  if (game.state !== 'play' || !player.cell) return;
+  const k = e.key.toLowerCase();
+  let d = null;
+  if (k in KEYDIR) d = [KEYDIR[k]];
+  else if (k === 'arrowleft') d = [3, 4];
+  else if (k === 'arrowright') d = [1, 0];
+  else if (k === 'arrowup') d = [2];
+  else if (k === 'arrowdown') d = [5];
+  if (!d) return;
+  e.preventDefault();
+  const c = player.cell;
+  const opts = d.map(i => map.get(K(c.q + DIRS[i][0], c.r + DIRS[i][1]))).filter(Boolean);
+  if (!opts.length) return;
+  tryMove(opts.find(o => lampState(o, game.time).lit) || opts[0]);
+});
+
+$('startBtn').addEventListener('click', startGame);
+$('againBtn').addEventListener('click', startGame);
+$('mute').addEventListener('click', () => {
+  muted = !muted; renderMute();
+  try { localStorage.setItem('lichtpad-muted', muted ? '1' : '0'); } catch (e) {}
+  ensureAudio();
+});
+
+/* ---------- Start ---------- */
+function resize() {
+  W = app.clientWidth; H = app.clientHeight;
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+  layout();
+}
+let rt = 0;
+addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 80); });
+
+W = app.clientWidth; H = app.clientHeight;
+resize();
+genLevel(1);
+layout();
+renderHud(); renderMute();
+if (best > 0) $('bestIntro').textContent = 'Beste: ' + best + (best === 1 ? ' wand' : ' wanden');
+
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min(0.1, (now - last) / 1000); last = now;
+  update(dt); draw();
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
