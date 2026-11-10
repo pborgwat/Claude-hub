@@ -4,8 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>Lichtpad</title>
+<link rel="apple-touch-icon" href="lichtpad-icon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="lichtpad-icon-512.png">
+<link rel="manifest" href="lichtpad.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Lichtpad">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0c0a07">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +46,10 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
 .stats b{color:var(--ink);font-weight:500}
 #lives{display:flex;gap:4px}
 #lives svg{width:14px;height:14px}
+#hearts{display:flex;gap:2px}
+#hearts svg{width:13px;height:13px}
+#hearts.pop{animation:pop .5s ease}
+@keyframes pop{40%{transform:scale(1.35)}}
 .tog{pointer-events:auto;font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
 .tog[aria-pressed="false"]{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(243,230,207,.45)}
 .tog:hover{border-color:var(--muted)}
@@ -90,7 +101,7 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
 .board tr.me td{color:var(--amber)}
 .board tr.gap td{color:var(--muted);text-align:center;padding:2px}
 .board .note{margin:0;font-size:.75rem;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){#toast,.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){#toast,.btn{transition:none}#hearts.pop{animation:none}}
 </style>
 </head>
 <body>
@@ -103,6 +114,7 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
       <span>Wand <b id="level">1</b></span>
       <span class="clock" id="clock" aria-label="Tijd op deze wand">0,0 s</span>
       <span id="lives" aria-label="Levens"></span>
+      <span id="hearts" aria-label="Hartjes"></span>
       <button id="music" class="tog" type="button" aria-pressed="true">Muziek</button>
       <button id="mute" class="tog" type="button" aria-pressed="true">Geluid</button>
     </div>
@@ -120,8 +132,9 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
         <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#eaa540"/></svg>Amber: de lamp brandt, je staat veilig.</li>
         <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#e3e9f0"/></svg>Wit: de lamp gaat zo uit. Doorlopen.</li>
         <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#3a2b1f"/></svg>Donker: hier val je van de wand.</li>
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h10l5 9-5 9H6l-5-9z" fill="#d8443a"/><path d="M11 15.2 7.3 11.6a2.2 2.2 0 0 1 3.1-3.1l.6.6.6-.6a2.2 2.2 0 0 1 3.1 3.1z" fill="#fff4e8"/></svg>Rood met hartje: pak er drie en je krijgt een leven terug.</li>
       </ul>
-      <p class="small">Het licht trekt als een golf over de wand. Loop met de golf mee. Elke wand is langer en sneller dan de vorige, en je hebt drie levens.</p>
+      <p class="small">Het licht trekt als een golf over de wand. Loop met de golf mee. Elke wand is langer en sneller dan de vorige. Je begint met drie levens en kunt er maximaal vijf hebben.</p>
       <p class="small mono"><span class="keys-only">Klik of tik op een lamp naast je. Toetsen: Q W E / A S D of de pijltjes.</span></p>
       <button class="btn" id="startBtn" type="button">Start</button>
       <div class="board" id="boardIntro"></div>
@@ -166,7 +179,9 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = id => document.getElementById(id);
 
 let W = 0, H = 0, DPR = 1;
-const game = { level: 1, lives: 3, state: 'intro', time: 0, clearT: null, levelStart: 0, total: 0, last: 0 };
+const game = { level: 1, lives: 3, hearts: 0, state: 'intro', time: 0, clearT: null, levelStart: 0, total: 0, last: 0 };
+const MAX_LIVES = 5;
+let heartCell = null, nextHeart = 0;
 let best = 0;
 try { best = +localStorage.getItem('lichtpad-best') || 0; } catch (e) {}
 let muted = false;
@@ -175,7 +190,7 @@ try { muted = localStorage.getItem('lichtpad-muted') === '1'; } catch (e) {}
 let cells = [], map = new Map(), startCell = null, finishCell = null;
 let P = 4;
 const L = { s: 40 };
-let glowA = null, glowW = null, bg = null;
+let glowA = null, glowW = null, glowR = null, bg = null;
 const player = { cell: null, hop: null, fall: null, dir: -1, warned: false };
 let hover = null, toastTimer = 0;
 
@@ -290,6 +305,7 @@ const PAL = [
   { a: '#3a2b1f', b: '#1e160e', grain: 'rgba(0,0,0,0.45)', edge: 'rgba(255,220,170,0.07)' },
   { a: '#f6bb58', b: '#c67b1e', grain: 'rgba(125,62,8,0.32)', edge: 'rgba(255,238,196,0.95)' },
   { a: '#f2f5f8', b: '#aab4c0', grain: 'rgba(70,82,98,0.25)', edge: 'rgba(255,255,255,0.98)' },
+  { a: '#ef5a49', b: '#a8231b', grain: 'rgba(90,10,6,0.32)', edge: 'rgba(255,214,200,0.95)' },
 ];
 
 function faceSprite(c, kind) {
@@ -355,8 +371,9 @@ function glowSprite(color) {
 }
 
 function buildSprites() {
-  for (const c of cells) c.f = [faceSprite(c, 0), faceSprite(c, 1), faceSprite(c, 2)];
+  for (const c of cells) c.f = [faceSprite(c, 0), faceSprite(c, 1), faceSprite(c, 2), faceSprite(c, 3)];
   glowA = glowSprite('rgba(255,168,48,0.9)');
+  glowR = glowSprite('rgba(255,62,48,0.95)');
   glowW = glowSprite('rgba(214,232,255,0.9)');
 }
 
@@ -405,6 +422,11 @@ function buildBg() {
 function lampState(c, t) {
   let lit, b, w;
   if (c.always) { lit = true; b = 1; w = 0; }
+  else if (c.forceUntil > t) { // harttegel en nagloei: brandt, wordt wit vlak voor het einde
+    lit = true; b = 1;
+    w = smooth(c.forceUntil - 0.9, c.forceUntil - 0.8, t);
+    if (!reduce && t > c.forceUntil - 0.25) b *= Math.sin(t * 71) > 0 ? 1 : 0.45;
+  }
   else {
     const u = ((t / P + c.phase) % 1 + 1) % 1;
     lit = u < c.frac;
@@ -426,6 +448,19 @@ function neighbors(c) {
   const out = [];
   for (const d of DIRS) { const n = map.get(K(c.q + d[0], c.r + d[1])); if (n) out.push(n); }
   return out;
+}
+
+
+function redness(c, t) {
+  if (!c.heartUntil) return 0;
+  return Math.min(smooth(c.heartFrom, c.heartFrom + 0.25, t), 1 - smooth(c.heartUntil, c.heartUntil + 0.3, t));
+}
+function heartShape(g, x, y, r) {
+  g.beginPath();
+  g.moveTo(x, y + r * 0.95);
+  g.bezierCurveTo(x - r * 1.3, y + r * 0.1, x - r * 1.05, y - r * 1.05, x, y - r * 0.4);
+  g.bezierCurveTo(x + r * 1.05, y - r * 1.05, x + r * 1.3, y + r * 0.1, x, y + r * 0.95);
+  g.closePath();
 }
 
 /* ---------- Tekenen ---------- */
@@ -550,6 +585,8 @@ function draw() {
     const { b, w } = st[i]; if (b <= 0.01) return;
     if (w < 0.99) { ctx.globalAlpha = 0.55 * b * (1 - w); ctx.drawImage(glowA.cnv, c.x - glowA.off, c.y - glowA.off, glowA.css, glowA.css); }
     if (w > 0.01) { ctx.globalAlpha = 0.5 * b * w; ctx.drawImage(glowW.cnv, c.x - glowW.off, c.y - glowW.off, glowW.css, glowW.css); }
+    const rd = redness(c, t);
+    if (rd > 0.01) { ctx.globalAlpha = 0.6 * rd; ctx.drawImage(glowR.cnv, c.x - glowR.off, c.y - glowR.off, glowR.css, glowR.css); }
   });
   ctx.globalCompositeOperation = 'source-over';
   cells.forEach((c, i) => {
@@ -557,6 +594,17 @@ function draw() {
     ctx.globalAlpha = 1; ctx.drawImage(f0.cnv, c.x - f0.off, c.y - f0.off, f0.css, f0.css);
     if (b > 0.01 && w < 0.99) { ctx.globalAlpha = b * (1 - w); ctx.drawImage(f1.cnv, c.x - f1.off, c.y - f1.off, f1.css, f1.css); }
     if (b > 0.01 && w > 0.01) { ctx.globalAlpha = b * w; ctx.drawImage(f2.cnv, c.x - f2.off, c.y - f2.off, f2.css, f2.css); }
+    const rd = redness(c, t);
+    if (rd > 0.01) {
+      const f3 = c.f[3];
+      ctx.globalAlpha = rd; ctx.drawImage(f3.cnv, c.x - f3.off, c.y - f3.off, f3.css, f3.css);
+      const beat = reduce ? 1 : 1 + 0.12 * Math.max(0, Math.sin(t * 7.5));
+      ctx.fillStyle = '#fff4e8';
+      ctx.shadowColor = 'rgba(120,0,0,0.6)'; ctx.shadowBlur = 6;
+      heartShape(ctx, c.x, c.y - L.s * 0.02, L.s * 0.3 * beat * (0.6 + 0.4 * rd));
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
   });
   ctx.globalAlpha = 1;
   drawDoor(finishCell, t);
@@ -581,6 +629,7 @@ function update(dt) {
   if (player.hop && t - player.hop.t0 >= player.hop.d) {
     const c = player.hop.to; player.hop = null;
     if (game.state === 'play') {
+      if (c === heartCell && c.heartUntil > t) collectHeart(c, t);
       if (c === finishCell) clearLevel();
       else if (!lampState(c, t).lit) fall();
       else sfx('step');
@@ -594,6 +643,40 @@ function update(dt) {
     else player.warned = false;
   }
   if (player.fall && t - player.fall.t0 > 0.95) { player.fall = null; afterFall(); }
+  // harttegels
+  if (heartCell && t > heartCell.heartUntil + 0.3) heartCell = null;
+  if (game.state === 'play' && !heartCell && t >= nextHeart && player.cell) spawnHeart(t);
+}
+
+function hexDist(a, b) {
+  const dq = a.q - b.q, dr = a.r - b.r;
+  return (Math.abs(dq) + Math.abs(dr) + Math.abs(dq + dr)) / 2;
+}
+function spawnHeart(t) {
+  const here = player.cell;
+  const opts = cells.filter(c => !c.always && c !== here && !(c.forceUntil > t) && hexDist(c, here) >= 1 && hexDist(c, here) <= 3);
+  if (!opts.length) { nextHeart = t + 1.5; return; }
+  const c = opts[(Math.random() * opts.length) | 0];
+  const dur = Math.max(3.4, 5.2 - 0.12 * (game.level - 1));
+  c.heartFrom = t; c.heartUntil = t + dur; c.forceUntil = c.heartUntil + 0.9;
+  heartCell = c;
+  nextHeart = c.heartUntil + rand(5, 10);
+  sfx('spawn');
+}
+function collectHeart(c, t) {
+  c.heartUntil = t; c.forceUntil = t + 1.3;
+  game.hearts++;
+  if (game.hearts >= 3) {
+    game.hearts = 0;
+    if (game.lives < MAX_LIVES) { game.lives++; toast('Extra leven!'); }
+    else toast('Levens vol');
+    sfx('life');
+  } else {
+    toast('Hartje ' + game.hearts + ' van 3');
+    sfx('heart');
+  }
+  renderHud();
+  const h = $('hearts'); h.classList.remove('pop'); void h.offsetWidth; h.classList.add('pop');
 }
 
 function tryMove(c) {
@@ -636,6 +719,7 @@ function newLevel() {
   player.cell = startCell; player.hop = null; player.fall = null; player.dir = -1;
   game.state = 'play';
   game.levelStart = game.time;
+  heartCell = null; nextHeart = game.time + rand(4, 8);
   renderHud();
   sfx('start');
   toast('Wand ' + game.level);
@@ -646,7 +730,7 @@ function startGame() {
   if (game.state === 'play') return;
   $('intro').hidden = true; $('over').hidden = true;
   ensureAudio();
-  game.level = 1; game.lives = 3; game.total = 0;
+  game.level = 1; game.lives = 3; game.hearts = 0; game.total = 0;
   newLevel();
   startMusic();
 }
@@ -680,9 +764,14 @@ function gameOver() {
 function renderHud() {
   $('level').textContent = game.level;
   let h = '';
-  for (let i = 0; i < 3; i++) h += '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.2h10l5 7.8-5 7.8H5L0 10z" fill="' + (i < game.lives ? '#eaa540' : '#3a2b1f') + '"/></svg>';
+  const slots = Math.max(3, game.lives);
+  for (let i = 0; i < slots; i++) h += '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.2h10l5 7.8-5 7.8H5L0 10z" fill="' + (i < game.lives ? '#eaa540' : '#3a2b1f') + '"/></svg>';
   $('lives').innerHTML = h;
-  $('lives').setAttribute('aria-label', game.lives + ' levens');
+  $('lives').setAttribute('aria-label', game.lives + (game.lives === 1 ? ' leven' : ' levens'));
+  let hh = '';
+  for (let i = 0; i < 3; i++) hh += '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 17.5 3.3 11a4 4 0 0 1 5.6-5.7L10 6.4l1.1-1.1a4 4 0 0 1 5.6 5.7z" fill="' + (i < game.hearts ? '#e8483d' : 'none') + '" stroke="' + (i < game.hearts ? '#e8483d' : '#6b5644') + '" stroke-width="1.6"/></svg>';
+  $('hearts').innerHTML = hh;
+  $('hearts').setAttribute('aria-label', game.hearts + ' van 3 hartjes');
 }
 
 function toast(msg) {
@@ -774,6 +863,15 @@ function sfx(k) {
     [48, 55, 60].forEach((m, i) => voice(sfxBus, 'triangle', mtof(m), t + i * 0.15, 0.14, 0.22));
     voice(sfxBus, 'triangle', mtof(60), t + 0.45, 0.45, 0.22);
     noise(sfxBus, t + 0.45, 0.25, 0.08, 4000);
+  } else if (k === 'spawn') {
+    voice(sfxBus, pulse12, mtof(88), t, 0.05, 0.05); voice(sfxBus, pulse12, mtof(93), t + 0.06, 0.08, 0.05, { decay: 1 });
+  } else if (k === 'heart') {
+    [79, 83, 86, 91].forEach((m, i) => voice(sfxBus, pulse25, mtof(m), t + i * 0.045, 0.05, 0.08));
+    voice(sfxBus, pulse25, mtof(95), t + 0.18, 0.18, 0.07, { decay: 1, vib: 0.02 });
+  } else if (k === 'life') {
+    [72, 76, 79, 84, 88, 91, 96].forEach((m, i) => voice(sfxBus, pulse25, mtof(m), t + i * 0.06, 0.06, 0.08));
+    voice(sfxBus, pulse25, mtof(96), t + 0.42, 0.4, 0.07, { vib: 0.015 });
+    [48, 52, 55, 60].forEach((m, i) => voice(sfxBus, 'triangle', mtof(m), t + i * 0.12, 0.11, 0.2));
   } else if (k === 'start') {
     [69, 72, 76, 81, 84].forEach((m, i) => voice(sfxBus, pulse25, mtof(m + 12), t + i * 0.045, 0.045, 0.06));
   } else if (k === 'over') {

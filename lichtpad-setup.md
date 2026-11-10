@@ -1,6 +1,14 @@
-# Lichtpad, gedeelde highscores
+# Lichtpad
 
 Lichtpad: https://pborgwat.github.io/Claude-hub/lichtpad.html
+
+## Op je iPhone zetten
+
+1. Open de link hierboven in Safari.
+2. Deelknop → **Zet op beginscherm**. Het icoon en de naam Lichtpad staan al klaar.
+3. Open hem vanaf het beginscherm, dan speelt hij schermvullend zonder adresbalk.
+
+## Gedeelde highscores
 
 Na een game over vul je je naam in. Je ziet dan hoeveel wanden je haalde, hoe lang je op
 de laatste wand stond en hoe lang de hele poging duurde. De lijst staat op volgorde van
