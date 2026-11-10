@@ -64,7 +64,32 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
 .mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.02em}
 .btn{font:inherit;font-weight:600;font-size:1rem;color:#1d1206;background:var(--amber);border:0;border-radius:999px;padding:12px 20px;cursor:pointer;box-shadow:0 0 28px rgba(234,165,64,.45);transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-1px);box-shadow:0 0 36px rgba(234,165,64,.6)}
-.score{font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.clock{min-width:4.5em;text-align:right}
+.result{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0}
+.result div{background:rgba(243,230,207,.06);border-radius:12px;padding:8px 10px;min-width:0}
+.result dt{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.result dd{margin:3px 0 0;font-family:var(--mono);font-size:1.05rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+.result div.hl dd{color:var(--amber)}
+.nameform{display:grid;gap:6px}
+.nameform label{font-size:.85rem;color:var(--muted)}
+.nameform .row{display:flex;gap:8px}
+.nameform input{flex:1;min-width:0;font:inherit;font-size:1rem;color:var(--ink);background:rgba(243,230,207,.06);border:1px solid var(--line);border-radius:999px;padding:10px 14px}
+.nameform input:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
+.formmsg{margin:0;font-size:.82rem;color:var(--muted);min-height:1.2em}
+.btn.compact{padding:10px 16px;font-size:.92rem;box-shadow:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn:disabled{opacity:.5;cursor:default;transform:none}
+.board{display:grid;gap:6px}
+.board h2{margin:0;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.board .scroll{overflow-x:auto}
+.board table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:.78rem;font-variant-numeric:tabular-nums}
+.board th{text-align:left;font-weight:400;color:var(--muted);padding:4px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+.board td{padding:6px;border-bottom:1px solid rgba(243,230,207,.06);white-space:nowrap}
+.board .num{text-align:right}
+.board td.name{font-family:var(--display);font-size:.92rem;max-width:9rem;overflow:hidden;text-overflow:ellipsis}
+.board tr.me td{color:var(--amber)}
+.board tr.gap td{color:var(--muted);text-align:center;padding:2px}
+.board .note{margin:0;font-size:.75rem;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){#toast,.btn{transition:none}}
 </style>
 </head>
@@ -76,6 +101,7 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
     <div class="brand"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.2h10l5 7.8-5 7.8H5L0 10z" fill="#eaa540"/></svg><span>Lichtpad</span></div>
     <div class="stats">
       <span>Wand <b id="level">1</b></span>
+      <span class="clock" id="clock" aria-label="Tijd op deze wand">0,0 s</span>
       <span id="lives" aria-label="Levens"></span>
       <button id="music" class="tog" type="button" aria-pressed="true">Muziek</button>
       <button id="mute" class="tog" type="button" aria-pressed="true">Geluid</button>
@@ -98,7 +124,7 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
       <p class="small">Het licht trekt als een golf over de wand. Loop met de golf mee. Elke wand is langer en sneller dan de vorige, en je hebt drie levens.</p>
       <p class="small mono"><span class="keys-only">Klik of tik op een lamp naast je. Toetsen: Q W E / A S D of de pijltjes.</span></p>
       <button class="btn" id="startBtn" type="button">Start</button>
-      <div class="score" id="bestIntro"></div>
+      <div class="board" id="boardIntro"></div>
     </div>
   </div>
 
@@ -106,8 +132,21 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
     <div class="card">
       <h1>Licht <span>uit</span></h1>
       <p id="overText"></p>
-      <div class="score" id="bestOver"></div>
-      <button class="btn" id="againBtn" type="button">Opnieuw</button>
+      <dl class="result">
+        <div><dt>Wanden</dt><dd id="rWalls">0</dd></div>
+        <div class="hl"><dt id="rLastLabel">Laatste wand</dt><dd id="rLast">0,0 s</dd></div>
+        <div><dt>Totaal</dt><dd id="rTotal">0,0 s</dd></div>
+      </dl>
+      <form class="nameform" id="scoreForm" autocomplete="off">
+        <label for="nameInput">Zet je naam op de lijst</label>
+        <div class="row">
+          <input id="nameInput" name="name" maxlength="16" placeholder="Je naam" required>
+          <button class="btn compact" id="saveBtn" type="submit">Opslaan</button>
+        </div>
+        <p class="formmsg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+      <button class="btn ghost" id="againBtn" type="button">Opnieuw spelen</button>
+      <div class="board" id="boardOver"></div>
     </div>
   </div>
 </div>
@@ -127,7 +166,7 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = id => document.getElementById(id);
 
 let W = 0, H = 0, DPR = 1;
-const game = { level: 1, lives: 3, state: 'intro', time: 0, clearT: null };
+const game = { level: 1, lives: 3, state: 'intro', time: 0, clearT: null, levelStart: 0, total: 0, last: 0 };
 let best = 0;
 try { best = +localStorage.getItem('lichtpad-best') || 0; } catch (e) {}
 let muted = false;
@@ -584,6 +623,7 @@ function clearLevel() {
   game.state = 'cleared';
   game.clearT = game.time;
   sfx('clear'); duckMusic(1.6);
+  game.total += game.time - game.levelStart;
   if (game.level > best) { best = game.level; try { localStorage.setItem('lichtpad-best', String(best)); } catch (e) {} }
   toast('Wand ' + game.level + ' gehaald');
   setTimeout(() => { game.level++; newLevel(); }, 1500);
@@ -595,6 +635,7 @@ function newLevel() {
   game.clearT = null;
   player.cell = startCell; player.hop = null; player.fall = null; player.dir = -1;
   game.state = 'play';
+  game.levelStart = game.time;
   renderHud();
   sfx('start');
   toast('Wand ' + game.level);
@@ -605,7 +646,7 @@ function startGame() {
   if (game.state === 'play') return;
   $('intro').hidden = true; $('over').hidden = true;
   ensureAudio();
-  game.level = 1; game.lives = 3;
+  game.level = 1; game.lives = 3; game.total = 0;
   newLevel();
   startMusic();
 }
@@ -614,11 +655,26 @@ function gameOver() {
   game.state = 'over';
   player.cell = null;
   stopMusic(); sfx('over');
+  game.last = game.time - game.levelStart;
+  game.total += game.last;
   const done = game.level - 1;
-  $('overText').textContent = done === 0 ? 'Je bent van de eerste wand gevallen. Kijk hoe de golf loopt en stap mee.' : 'Je haalde ' + done + (done === 1 ? ' wand.' : ' wanden.');
-  $('bestOver').textContent = 'Beste: ' + best + (best === 1 ? ' wand' : ' wanden');
+  $('overText').textContent = done === 0
+    ? 'Je bent van de eerste wand gevallen. Kijk hoe de golf loopt en stap mee.'
+    : 'Je haalde ' + done + (done === 1 ? ' wand' : ' wanden') + ' en strandde op wand ' + game.level + '.';
+  $('rWalls').textContent = done;
+  $('rLastLabel').textContent = 'Wand ' + game.level;
+  $('rLast').textContent = fmt(game.last);
+  $('rTotal').textContent = fmt(game.total);
+  $('scoreForm').hidden = false;
+  $('saveBtn').disabled = false;
+  $('formMsg').textContent = '';
+  let nm = '';
+  try { nm = localStorage.getItem('lichtpad-name') || ''; } catch (e) {}
+  $('nameInput').value = nm;
+  pending = { id: Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8), walls: done, total: game.total, last: game.last };
   $('over').hidden = false;
-  $('againBtn').focus();
+  showBoard($('boardOver'), null);
+  $('nameInput').focus({ preventScroll: true });
 }
 
 function renderHud() {
@@ -804,6 +860,123 @@ function renderMute() {
   $('music').setAttribute('aria-label', musicOn ? 'Muziek staat aan' : 'Muziek staat uit');
 }
 
+/* ---------- Tijd ---------- */
+function fmt(sec) {
+  sec = Math.max(0, sec);
+  if (sec < 60) return (Math.floor(sec * 10) / 10).toFixed(1).replace('.', ',') + ' s';
+  const m = Math.floor(sec / 60), r = Math.floor((sec - m * 60) * 10) / 10;
+  return m + ':' + (r < 10 ? '0' : '') + r.toFixed(1).replace('.', ',');
+}
+let clockShown = '';
+function renderClock() {
+  const sec = (game.state === 'play' || game.state === 'falling') ? game.time - game.levelStart
+    : game.state === 'cleared' ? game.clearT - game.levelStart
+    : game.state === 'over' ? game.last : 0;
+  const txt = fmt(sec);
+  if (txt !== clockShown) { clockShown = txt; $('clock').textContent = txt; }
+}
+
+/* ---------- Highscores ---------- */
+// Plak hier de /exec-link van de Apps Script (zie lichtpad-setup.md). Leeg = alleen dit apparaat.
+const SCORES_URL = '';
+const LOCAL_KEY = 'lichtpad-scores';
+let pending = null, myId = null;
+
+const sortScores = a => a.sort((x, y) => (y.walls - x.walls) || (x.total - y.total) || (x.at < y.at ? -1 : 1));
+function localList() {
+  try { const v = JSON.parse(localStorage.getItem(LOCAL_KEY)); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+}
+function localBoard(id, failed) {
+  const all = sortScores(localList());
+  const rank = id ? all.findIndex(x => x.id === id) + 1 : 0;
+  return { list: all.slice(0, 10), rank, count: all.length, mine: rank > 10 ? all[rank - 1] : null, shared: false, failed: !!failed };
+}
+async function remote(params) {
+  const ctl = new AbortController();
+  const tm = setTimeout(() => ctl.abort(), 12000);
+  try {
+    const r = await fetch(SCORES_URL + '?' + new URLSearchParams(params).toString(), { redirect: 'follow', signal: ctl.signal });
+    const j = await r.json();
+    if (j.error) throw new Error(j.error);
+    return j;
+  } finally { clearTimeout(tm); }
+}
+async function loadScores() {
+  if (!SCORES_URL) return localBoard(null);
+  try { const j = await remote({ action: 'list' }); return { list: j.top || [], count: j.count, shared: true }; }
+  catch (e) { return localBoard(null, true); }
+}
+async function saveScore(entry) {
+  const loc = localList(); loc.push(entry); sortScores(loc);
+  try { localStorage.setItem(LOCAL_KEY, JSON.stringify(loc.slice(0, 100))); } catch (e) {}
+  if (!SCORES_URL) return localBoard(entry.id);
+  try {
+    const j = await remote({ action: 'add', id: entry.id, name: entry.name, walls: entry.walls, total: entry.total.toFixed(2), last: entry.last.toFixed(2) });
+    return { list: j.top || [], rank: j.rank, count: j.count, mine: j.mine, shared: true };
+  } catch (e) { return localBoard(entry.id, true); }
+}
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
+function scoreRow(rank, x, me) {
+  const tr = el('tr', me ? 'me' : null);
+  tr.append(el('td', 'num', String(rank)), el('td', 'name', x.name), el('td', 'num', String(x.walls)), el('td', 'num', fmt(x.total)), el('td', 'num', fmt(x.last)));
+  return tr;
+}
+function renderBoard(box, res) {
+  box.replaceChildren(el('h2', null, 'Highscores'));
+  if (!res) { box.append(el('p', 'note', 'Highscores laden...')); return; }
+  if (!res.list.length) box.append(el('p', 'note', 'Nog geen scores. Zet jij de eerste neer?'));
+  else {
+    const tb = el('table'), head = el('tr');
+    [['#', 'num'], ['Naam', ''], ['Wanden', 'num'], ['Totaal', 'num'], ['Laatste', 'num']].forEach(([t, c]) => head.append(el('th', c || null, t)));
+    const thead = el('thead'); thead.append(head);
+    const body = el('tbody');
+    res.list.forEach((x, i) => body.append(scoreRow(i + 1, x, x.id === myId)));
+    if (res.mine && res.rank > res.list.length) {
+      const gap = el('tr', 'gap'); const td = el('td', null, '...'); td.colSpan = 5; gap.append(td);
+      body.append(gap, scoreRow(res.rank, res.mine, true));
+    }
+    tb.append(thead, body);
+    const sc = el('div', 'scroll'); sc.append(tb);
+    box.append(sc);
+  }
+  if (!res.shared) box.append(el('p', 'note', res.failed
+    ? 'De gedeelde lijst is nu niet bereikbaar. Dit is de lijst op dit apparaat.'
+    : 'Deze lijst staat alleen op dit apparaat.'));
+}
+let boardReq = 0;
+async function showBoard(box, res) {
+  const n = ++boardReq;
+  if (res) { renderBoard(box, res); return; }
+  renderBoard(box, null);
+  const r = await loadScores();
+  if (n === boardReq) renderBoard(box, r);
+}
+
+$('scoreForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!pending) return;
+  const name = $('nameInput').value.replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, 16);
+  if (!name) { $('formMsg').textContent = 'Vul eerst je naam in.'; $('nameInput').focus(); return; }
+  try { localStorage.setItem('lichtpad-name', name); } catch (err) {}
+  const entry = Object.assign({ name, at: new Date().toISOString() }, pending);
+  pending = null; myId = entry.id;
+  $('saveBtn').disabled = true;
+  $('formMsg').textContent = 'Opslaan...';
+  boardReq++;
+  const res = await saveScore(entry);
+  $('scoreForm').hidden = true;
+  renderBoard($('boardOver'), res);
+  const msg = el('p', 'formmsg', res.rank ? 'Opgeslagen. ' + name + ' staat op plek ' + res.rank + ' van ' + res.count + '.' : 'Opgeslagen.');
+  $('boardOver').prepend(msg);
+  $('againBtn').focus({ preventScroll: true });
+});
+
 /* ---------- Invoer ---------- */
 function pick(px, py) {
   const c = player.cell; if (!c) return null;
@@ -828,8 +1001,10 @@ cv.addEventListener('pointermove', e => {
 cv.addEventListener('pointerleave', () => { hover = null; });
 
 addEventListener('keydown', e => {
+  const tag = e.target && e.target.tagName;
+  if (tag === 'INPUT' || tag === 'BUTTON') return;
   if (game.state === 'intro' || game.state === 'over') {
-    if ((e.key === 'Enter' || e.key === ' ') && e.target.tagName !== 'BUTTON') { e.preventDefault(); startGame(); }
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); startGame(); }
     return;
   }
   if (game.state !== 'play' || !player.cell) return;
@@ -877,12 +1052,12 @@ resize();
 genLevel(1);
 layout();
 renderHud(); renderMute();
-if (best > 0) $('bestIntro').textContent = 'Beste: ' + best + (best === 1 ? ' wand' : ' wanden');
+showBoard($('boardIntro'), null);
 
 let last = performance.now();
 function frame(now) {
   const dt = Math.min(0.1, (now - last) / 1000); last = now;
-  update(dt); draw();
+  update(dt); draw(); renderClock();
   requestAnimationFrame(frame);
 }
 requestAnimationFrame(frame);

@@ -9,7 +9,7 @@ Pepijns Claude omgeving
 | Floorijn, tegoedmeter voor Floor | `floorijn.html` ([setup](floorijn-setup.md)) | [openen](https://pborgwat.github.io/Claude-hub/floorijn.html) |
 | AI conversation tracker | `ai-tracker.html` | [openen](https://pborgwat.github.io/Claude-hub/ai-tracker.html) |
 | The Office US quiz | `office-us-quiz.html` | [openen](https://pborgwat.github.io/Claude-hub/office-us-quiz.html) |
-| Lichtpad, spel op een lampenwand | `lichtpad.html` | [openen](https://pborgwat.github.io/Claude-hub/lichtpad.html) |
+| Lichtpad, spel op een lampenwand | `lichtpad.html` ([highscores](lichtpad-setup.md)) | [openen](https://pborgwat.github.io/Claude-hub/lichtpad.html) |
 | Teckel vs Appels | `index.html` | [openen](https://pborgwat.github.io/Claude-hub/) |
 
 ## Uit in Haarlem
