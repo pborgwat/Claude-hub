@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T12:35:40.263Z",
+ "generated": "2026-11-10T20:27:49.639Z",
  "days": [
   "2026-11-10",
   "2026-11-11",
@@ -12,11 +12,11 @@
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 185
+   "count": 195
   },
   "Schuur": {
    "ok": true,
-   "count": 78
+   "count": 66
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 290
+   "count": 268
   }
  },
  "events": [
@@ -41,24 +41,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/207026",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Bumba: Het Circusorkest",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234880"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Gaulle: Liberté",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229235040"
   },
   {
    "venue": "Filmkoepel",
@@ -99,24 +81,6 @@
    "url": "https://www.schuur.nl/film/maspalomas"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229234718"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Resident Evil",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234616"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Weight",
@@ -147,24 +111,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Clayface",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234664"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "12:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234767"
-  },
-  {
    "venue": "Schuur",
    "kind": "film",
    "title": "All of a Sudden",
@@ -184,15 +130,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Calle Malaga",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228652193"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Godzilla Minus Zero",
@@ -203,15 +140,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234931"
-  },
-  {
    "venue": "Schuur",
    "kind": "film",
    "title": "The Beloved",
@@ -219,24 +147,6 @@
    "date": "2026-11-10",
    "time": "13:40",
    "url": "https://www.schuur.nl/film/the-beloved"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229235029"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Are We Alone?",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229335148"
   },
   {
    "venue": "Filmkoepel",
@@ -249,40 +159,34 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
+   "venue": "Filmkoepel",
    "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
+   "title": "Youri",
+   "info": "Sander Burger · Zaal 2",
    "date": "2026-11-10",
    "time": "14:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229235001"
+   "url": "https://filmkoepel.nl/tickets/207988",
+   "soldOut": false
   },
   {
-   "venue": "Pathé",
+   "venue": "Filmkoepel",
    "kind": "film",
-   "title": "Other Mommy",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229234643"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "George Michael: The Faith Tour",
-   "info": "2D",
+   "title": "500 Miles",
+   "info": "Morgan Matthews · Zaal 5",
    "date": "2026-11-10",
    "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234949"
+   "url": "https://filmkoepel.nl/tickets/207989",
+   "soldOut": false
   },
   {
-   "venue": "Pathé",
+   "venue": "Filmkoepel",
    "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
+   "title": "Shaun het Schaap: Het Beest van de Boerderij",
+   "info": "Steve Cox, Matthew Walker · Zaal 3",
    "date": "2026-11-10",
-   "time": "15:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229234687"
+   "time": "15:15",
+   "url": "https://filmkoepel.nl/tickets/207991",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -292,15 +196,6 @@
    "date": "2026-11-10",
    "time": "15:50",
    "url": "https://www.filmladder.nl/kaartjes/1229234904"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "16:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234769"
   },
   {
    "venue": "Pathé",
@@ -319,15 +214,6 @@
    "date": "2026-11-10",
    "time": "16:20",
    "url": "https://www.filmladder.nl/kaartjes/1229234622"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "16:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234792"
   },
   {
    "venue": "Filmkoepel",
@@ -378,15 +264,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Coyote vs. Acme (OV)",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "16:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229234558"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "George Michael – The Faith Tour",
@@ -428,38 +305,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "18:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234866"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229234606"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Tatta’s: Daan",
    "info": "De Tatta's: Daan",
    "date": "2026-11-10",
    "time": "18:20",
    "url": "https://www.filmladder.nl/kaartjes/1229235066"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "18:55",
-   "url": "https://www.filmladder.nl/kaartjes/1229234844"
   },
   {
    "venue": "Schuur",
@@ -469,15 +319,6 @@
    "date": "2026-11-10",
    "time": "19:00",
    "url": "https://www.schuur.nl/film/the-tale-of-silyan"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-10",
-   "time": "19:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229234935"
   },
   {
    "venue": "Pathé",
@@ -498,13 +339,14 @@
    "url": "https://www.schuur.nl/film/all-of-a-sudden"
   },
   {
-   "venue": "Pathé",
+   "venue": "Filmkoepel",
    "kind": "film",
-   "title": "Primetime",
-   "info": "",
+   "title": "Sense and Sensibility",
+   "info": "Georgia Oakley · Zaal 1",
    "date": "2026-11-10",
-   "time": "19:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229234976"
+   "time": "19:30",
+   "url": "https://filmkoepel.nl/tickets/207992",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -525,6 +367,16 @@
    "url": "https://www.schuur.nl/producties/venus-adonis"
   },
   {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Wild Horse Nine",
+   "info": "Martin McDonagh · Zaal 2",
+   "date": "2026-11-10",
+   "time": "20:00",
+   "url": "https://filmkoepel.nl/tickets/207994",
+   "soldOut": false
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Verity",
@@ -532,6 +384,16 @@
    "date": "2026-11-10",
    "time": "20:20",
    "url": "https://www.filmladder.nl/kaartjes/1229234719"
+  },
+  {
+   "venue": "Filmkoepel",
+   "kind": "film",
+   "title": "Wicker",
+   "info": "Alex Huston Fischer, Eleanor Wilson · Zaal 5",
+   "date": "2026-11-10",
+   "time": "20:30",
+   "url": "https://filmkoepel.nl/tickets/207996",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
@@ -3928,15 +3790,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353553"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Taartrovers Cinemini",
-   "info": "film",
-   "date": "2026-11-15",
-   "time": "10:30",
-   "url": "https://www.schuur.nl/film/cinemini"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Carnaval",
@@ -3964,15 +3817,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/207476",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-15",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
@@ -4060,15 +3904,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353399"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-15",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Tatta’s: Daan",
@@ -4133,15 +3968,6 @@
    "date": "2026-11-15",
    "time": "13:50",
    "url": "https://www.filmladder.nl/kaartjes/1229353369"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-15",
-   "time": "13:50",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Filmkoepel",
@@ -4210,15 +4036,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353575"
   },
   {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Woest",
-   "info": "jeugddans · SALLY Dansgezelschap Maastricht",
-   "date": "2026-11-15",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/theater/woest"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Yugly",
@@ -4235,15 +4052,6 @@
    "date": "2026-11-15",
    "time": "15:30",
    "url": "https://www.filmladder.nl/kaartjes/1229353539"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Latin Sunday Salon",
-   "info": "dans",
-   "date": "2026-11-15",
-   "time": "15:30",
-   "url": "https://www.schuur.nl/cafe/latin-sunday-salon"
   },
   {
    "venue": "Filmkoepel",
@@ -4282,15 +4090,6 @@
    "time": "16:00",
    "url": "https://filmkoepel.nl/tickets/207557",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "film · Jordan Firstman",
-   "date": "2026-11-15",
-   "time": "16:15",
-   "url": "https://www.schuur.nl/film/club-kid"
   },
   {
    "venue": "Filmkoepel",
@@ -4339,15 +4138,6 @@
    "date": "2026-11-15",
    "time": "16:40",
    "url": "https://www.filmladder.nl/kaartjes/1229353355"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Youri",
-   "info": "film · Sander Burger",
-   "date": "2026-11-15",
-   "time": "16:45",
-   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Pathé",
@@ -4434,15 +4224,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353374"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-15",
-   "time": "18:45",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wild Horse Nine",
@@ -4478,15 +4259,6 @@
    "date": "2026-11-15",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228900048"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Hen - English subs",
-   "info": "film · György Pálfi",
-   "date": "2026-11-15",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/hen-en"
   },
   {
    "venue": "Filmkoepel",
@@ -4575,15 +4347,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "film · Jordan Firstman",
-   "date": "2026-11-15",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/club-kid"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "George Michael – The Faith Tour",
@@ -4650,15 +4413,6 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/207602",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film",
-   "date": "2026-11-15",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Pathé",
