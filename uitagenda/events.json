@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T01:54:59.775Z",
+ "generated": "2026-11-11T11:50:49.802Z",
  "days": [
   "2026-11-11",
   "2026-11-12",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 65
+   "count": 77
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 295
+   "count": 292
   }
  },
  "events": [
@@ -79,33 +79,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/206925",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Weight",
-   "info": "",
-   "date": "2026-11-11",
-   "time": "11:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229234867"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-11",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229234688"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Klara and the Sun",
-   "info": "",
-   "date": "2026-11-11",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229234794"
   },
   {
    "venue": "Pathé",
@@ -3373,6 +3346,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353553"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Taartrovers Cinemini",
+   "info": "film",
+   "date": "2026-11-15",
+   "time": "10:30",
+   "url": "https://www.schuur.nl/film/cinemini"
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Carnaval",
@@ -3400,6 +3382,15 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/207476",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Queen at Sea",
+   "info": "film · Lance Hammer",
+   "date": "2026-11-15",
+   "time": "11:15",
+   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
@@ -3487,6 +3478,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353399"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "All of a Sudden",
+   "info": "film · Ryusuke Hamaguchi",
+   "date": "2026-11-15",
+   "time": "13:00",
+   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Tatta’s: Daan",
@@ -3551,6 +3551,15 @@
    "date": "2026-11-15",
    "time": "13:50",
    "url": "https://www.filmladder.nl/kaartjes/1229353369"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Wild Horse Nine",
+   "info": "film",
+   "date": "2026-11-15",
+   "time": "13:50",
+   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Filmkoepel",
@@ -3619,6 +3628,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353575"
   },
   {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Woest",
+   "info": "jeugddans · SALLY Dansgezelschap Maastricht",
+   "date": "2026-11-15",
+   "time": "15:00",
+   "url": "https://www.schuur.nl/theater/woest"
+  },
+  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Yugly",
@@ -3635,6 +3653,15 @@
    "date": "2026-11-15",
    "time": "15:30",
    "url": "https://www.filmladder.nl/kaartjes/1229353539"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Latin Sunday Salon",
+   "info": "dans",
+   "date": "2026-11-15",
+   "time": "15:30",
+   "url": "https://www.schuur.nl/cafe/latin-sunday-salon"
   },
   {
    "venue": "Filmkoepel",
@@ -3673,6 +3700,15 @@
    "time": "16:00",
    "url": "https://filmkoepel.nl/tickets/207557",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Club Kid",
+   "info": "film · Jordan Firstman",
+   "date": "2026-11-15",
+   "time": "16:15",
+   "url": "https://www.schuur.nl/film/club-kid"
   },
   {
    "venue": "Filmkoepel",
@@ -3721,6 +3757,15 @@
    "date": "2026-11-15",
    "time": "16:40",
    "url": "https://www.filmladder.nl/kaartjes/1229353355"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Youri",
+   "info": "film · Sander Burger",
+   "date": "2026-11-15",
+   "time": "16:45",
+   "url": "https://www.schuur.nl/film/youri"
   },
   {
    "venue": "Pathé",
@@ -3807,6 +3852,15 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353374"
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Queen at Sea",
+   "info": "film · Lance Hammer",
+   "date": "2026-11-15",
+   "time": "18:45",
+   "url": "https://www.schuur.nl/film/queen-at-sea"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wild Horse Nine",
@@ -3842,6 +3896,15 @@
    "date": "2026-11-15",
    "time": "19:00",
    "url": "https://www.filmladder.nl/kaartjes/1228900048"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Hen - English subs",
+   "info": "film · György Pálfi",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "url": "https://www.schuur.nl/film/hen-en"
   },
   {
    "venue": "Filmkoepel",
@@ -3930,6 +3993,15 @@
    "soldOut": false
   },
   {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Club Kid",
+   "info": "film · Jordan Firstman",
+   "date": "2026-11-15",
+   "time": "21:00",
+   "url": "https://www.schuur.nl/film/club-kid"
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "George Michael – The Faith Tour",
@@ -3996,6 +4068,15 @@
    "time": "21:15",
    "url": "https://filmkoepel.nl/tickets/207602",
    "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "film",
+   "title": "Wild Horse Nine",
+   "info": "film",
+   "date": "2026-11-15",
+   "time": "21:15",
+   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Pathé",
