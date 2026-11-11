@@ -39,7 +39,7 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
 #app{position:relative;height:100%;overflow:hidden}
 #wall{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:pointer;outline:none}
 
-.hud{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));pointer-events:none}
+.hud{position:absolute;left:0;right:0;top:0;background:linear-gradient(rgba(10,8,5,.62),rgba(10,8,5,0));display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));pointer-events:none}
 .brand{font-weight:800;font-size:1.05rem;letter-spacing:.01em;display:flex;align-items:center;gap:8px}
 .brand svg{width:18px;height:18px}
 .stats{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -56,11 +56,11 @@ body{height:100%;margin:0;background:var(--wall);color:var(--ink);font-family:va
 .tog:focus-visible,.btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 @media (max-width:460px){.brand span{display:none}.stats{gap:8px}.tog{padding:4px 8px}}
 
-.hint{position:absolute;left:0;right:0;bottom:0;text-align:center;padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);pointer-events:none}
+.hint{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(rgba(10,8,5,0),rgba(10,8,5,.55));text-align:center;padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);pointer-events:none}
 .hint .touch{display:none}
 @media (pointer:coarse){.hint .touch{display:inline}.hint .keys{display:none}}
 
-#toast{position:absolute;left:50%;top:18%;transform:translate(-50%,6px);font-weight:800;font-size:clamp(1.4rem,4.5vw,2.4rem);letter-spacing:-.01em;color:var(--ink);text-shadow:0 0 24px rgba(234,165,64,.55);opacity:0;transition:opacity .35s,transform .35s;pointer-events:none;white-space:nowrap}
+#toast{position:absolute;left:50%;top:18%;transform:translate(-50%,6px);font-weight:800;font-size:clamp(1.4rem,4.5vw,2.4rem);letter-spacing:-.01em;color:var(--ink);text-shadow:0 0 24px rgba(234,165,64,.55),0 2px 14px rgba(0,0,0,.6);opacity:0;transition:opacity .35s,transform .35s;pointer-events:none;white-space:nowrap}
 #toast.show{opacity:1;transform:translate(-50%,0)}
 
 .overlay{position:absolute;inset:0;display:grid;place-items:center;padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:radial-gradient(ellipse at center,rgba(12,10,7,.25),rgba(12,10,7,.7))}
@@ -306,6 +306,7 @@ const PAL = [
   { a: '#f6bb58', b: '#c67b1e', grain: 'rgba(125,62,8,0.32)', edge: 'rgba(255,238,196,0.95)' },
   { a: '#f2f5f8', b: '#aab4c0', grain: 'rgba(70,82,98,0.25)', edge: 'rgba(255,255,255,0.98)' },
   { a: '#ef5a49', b: '#a8231b', grain: 'rgba(90,10,6,0.32)', edge: 'rgba(255,214,200,0.95)' },
+  { a: '#7d5f43', b: '#4a3524', grain: 'rgba(40,22,10,0.4)', edge: 'rgba(255,230,190,0.12)' },
 ];
 
 function faceSprite(c, kind) {
@@ -320,7 +321,7 @@ function faceSprite(c, kind) {
   const grd = g.createLinearGradient(cx - R, cy - R, cx + R, cy + R);
   grd.addColorStop(0, pal.a); grd.addColorStop(1, pal.b);
   g.fillStyle = grd; g.fillRect(0, 0, css, css);
-  if (kind) {
+  if (kind && kind !== 4) {
     const rg = g.createRadialGradient(cx, cy, 0, cx, cy, R);
     rg.addColorStop(0, 'rgba(255,255,255,0.2)'); rg.addColorStop(1, 'rgba(255,255,255,0)');
     g.fillStyle = rg; g.fillRect(0, 0, css, css);
@@ -341,14 +342,15 @@ function faceSprite(c, kind) {
     g.stroke();
   }
   g.restore();
-  if (!kind) { // binnenrand voor diepte
+  if (kind === 0 || kind === 4) { // binnenrand voor diepte
     g.save(); hexPath(g, cx, cy, R, 0.07); g.clip();
     g.lineWidth = R * 0.16; g.strokeStyle = 'rgba(0,0,0,0.35)'; hexPath(g, cx, cy, R, 0.07); g.stroke();
     g.restore();
   }
   hexPath(g, cx, cy, R, 0.07);
-  g.lineWidth = kind ? 1.6 : 1; g.strokeStyle = pal.edge; g.stroke();
-  if (kind) {
+  const dark = kind === 0 || kind === 4;
+  g.lineWidth = dark ? 1 : 1.6; g.strokeStyle = pal.edge; g.stroke();
+  if (!dark) {
     g.fillStyle = 'rgba(255,255,255,0.92)';
     for (let i = 0; i < 6; i++) {
       const a = Math.PI / 3 * i;
@@ -371,10 +373,87 @@ function glowSprite(color) {
 }
 
 function buildSprites() {
-  for (const c of cells) c.f = [faceSprite(c, 0), faceSprite(c, 1), faceSprite(c, 2), faceSprite(c, 3)];
+  for (const c of cells) c.f = [faceSprite(c, 0), faceSprite(c, 1), faceSprite(c, 2), faceSprite(c, 3), faceSprite(c, 4)];
   glowA = glowSprite('rgba(255,168,48,0.9)');
   glowR = glowSprite('rgba(255,62,48,0.95)');
   glowW = glowSprite('rgba(214,232,255,0.9)');
+}
+
+/* ---------- Licht in de kamer, volgens de zon boven Haarlem ---------- */
+function sunElevation(date) {
+  const lat = 52.38 * Math.PI / 180, lon = 4.64;
+  const doy = (date - Date.UTC(date.getUTCFullYear(), 0, 0)) / 864e5;
+  const decl = -23.44 * Math.PI / 180 * Math.cos(2 * Math.PI / 365 * (doy + 10));
+  const B = 2 * Math.PI * (doy - 81) / 364; // tijdvereffening, in uren
+  const eot = (9.87 * Math.sin(2 * B) - 7.53 * Math.cos(B) - 1.5 * Math.sin(B)) / 60;
+  const utcH = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600;
+  const ha = (utcH + lon / 15 + eot - 12) * 15 * Math.PI / 180;
+  const sinEl = Math.sin(lat) * Math.sin(decl) + Math.cos(lat) * Math.cos(decl) * Math.cos(ha);
+  return Math.asin(clamp(sinEl, -1, 1)) * 180 / Math.PI;
+}
+let hourOverride = null;
+try { // ?uur=14.5 om een ander moment van de dag te bekijken
+  const h = parseFloat(new URLSearchParams(location.search).get('uur'));
+  if (h >= 0 && h < 24) hourOverride = h;
+} catch (e) {}
+function computeSky() {
+  const d = new Date();
+  if (hourOverride !== null) d.setHours(Math.floor(hourOverride), Math.round((hourOverride % 1) * 60), 0, 0);
+  const el = sunElevation(d);
+  return {
+    el,
+    day: smooth(-6, 8, el),          // schemer tot volle dag
+    sun: smooth(-0.5, 6, el),        // directe zon op de muur
+    warm: 1 - smooth(4, 28, el),     // lage zon is oranje
+  };
+}
+let sky = computeSky();
+
+const hex2 = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+function mix(a, b, k, alpha) {
+  const A = hex2(a), B = hex2(b), c = A.map((v, i) => Math.round(v + (B[i] - v) * k));
+  return alpha == null ? 'rgb(' + c.join(',') + ')' : 'rgba(' + c.join(',') + ',' + alpha.toFixed(3) + ')';
+}
+
+// De plant als losse laag, zodat hij ook als schaduw op de muur kan vallen.
+function plantLayer(base, ox, oy, mode) {
+  const cnv = document.createElement('canvas');
+  cnv.width = Math.ceil(W * DPR); cnv.height = Math.ceil(H * DPR);
+  const g = cnv.getContext('2d');
+  g.scale(DPR, DPR); g.lineCap = 'round';
+  const R = rng(23);
+  const d = sky.day, sun = sky.sun;
+  const stem = mode === 'shadow' ? '#000000' : mix('#030201', '#2c4420', d);
+  const leafDay = sky.warm > 0.5 ? '#5a6a2a' : '#43702f'; // bij lage zon wat geler groen
+  const leaf = mode === 'shadow' ? '#000000' : mix('#030201', leafDay, d);
+  const shine = mix('#a8d070', '#e0b060', sky.warm, 0.75 * d * sun);
+  for (let f = 0; f < 7; f++) {
+    let a = -Math.PI / 2 + (f - 2.4) * 0.3 + R() * 0.15;
+    const len = base * (0.75 + R() * 0.45), steps = 22, bend = (0.6 + R() * 0.5) / steps;
+    let x = ox + R() * base * 0.1, y = oy;
+    for (let i = 0; i < steps; i++) {
+      const k = i / steps, nx = x + Math.cos(a) * len / steps, ny = y + Math.sin(a) * len / steps;
+      g.strokeStyle = stem; g.lineWidth = base * 0.012 * (1 - k * 0.7);
+      g.beginPath(); g.moveTo(x, y); g.lineTo(nx, ny); g.stroke();
+      if (i > 3) {
+        const ll = base * 0.2 * Math.sin(Math.PI * k), lw = base * 0.008 * (1 - k * 0.5);
+        for (const side of [-1, 1]) {
+          const la = a + side * 1.05 + 0.35;
+          const ex = nx + Math.cos(la + 0.35) * ll, ey = ny + Math.sin(la + 0.35) * ll + ll * 0.25;
+          const cx1 = nx + Math.cos(la) * ll * 0.6, cy1 = ny + Math.sin(la) * ll * 0.6;
+          g.strokeStyle = leaf; g.lineWidth = lw;
+          g.beginPath(); g.moveTo(nx, ny); g.quadraticCurveTo(cx1, cy1, ex, ey); g.stroke();
+          if (mode === 'plant' && d * sun > 0.02) { // zonkant van het blad, licht van rechts
+            g.strokeStyle = shine; g.lineWidth = lw * 0.4;
+            const sx = lw * 0.35, sy = -lw * 0.25;
+            g.beginPath(); g.moveTo(nx + sx, ny + sy); g.quadraticCurveTo(cx1 + sx, cy1 + sy, ex + sx, ey + sy); g.stroke();
+          }
+        }
+      }
+      x = nx; y = ny; a += bend;
+    }
+  }
+  return cnv;
 }
 
 function buildBg() {
@@ -382,41 +461,75 @@ function buildBg() {
   bg.width = Math.ceil(W * DPR); bg.height = Math.ceil(H * DPR);
   const g = bg.getContext('2d');
   g.scale(DPR, DPR);
+  const { day, sun, warm } = sky;
+  // nachtmuur
   const rg = g.createRadialGradient(W * 0.5, H * 0.45, 0, W * 0.5, H * 0.45, Math.max(W, H) * 0.75);
   rg.addColorStop(0, '#1d170f'); rg.addColorStop(1, '#070504');
   g.fillStyle = rg; g.fillRect(0, 0, W, H);
+  if (day > 0.01) {
+    // dagmuur: links in de schaduw, rechts bij het raam het lichtst
+    const lg = g.createLinearGradient(0, 0, W, 0);
+    lg.addColorStop(0, mix('#4b4237', '#47372a', warm));
+    lg.addColorStop(0.55, mix('#7a6d5c', '#7d6248', warm));
+    lg.addColorStop(1, mix('#a6977f', '#b0825a', warm));
+    g.globalAlpha = day; g.fillStyle = lg; g.fillRect(0, 0, W, H);
+    const vg = g.createRadialGradient(W * 0.6, H * 0.45, Math.min(W, H) * 0.2, W * 0.5, H * 0.5, Math.max(W, H) * 0.85);
+    vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,0.35)');
+    g.fillStyle = vg; g.fillRect(0, 0, W, H);
+    g.globalAlpha = 1;
+  }
+  // stucwerk
   const R = rng(11);
   const dots = Math.min(40000, (W * H) / 50);
   for (let i = 0; i < dots; i++) {
-    g.fillStyle = 'rgba(255,236,210,' + (R() * 0.03).toFixed(3) + ')';
+    const light = R() < 0.5;
+    g.fillStyle = light ? 'rgba(255,236,210,' + (R() * (0.03 + 0.03 * day)).toFixed(3) + ')' : 'rgba(30,20,10,' + (R() * 0.06 * day).toFixed(3) + ')';
     g.fillRect(R() * W, R() * H, 1, 1);
   }
-  // kamerplant in silhouet, linksonder
+  // zonlicht door een raam rechts: vier ruiten als scheve vlakken op de muur
+  if (sun > 0.01) {
+    const el = Math.max(0, sky.el);
+    const top = H * (0.08 + clamp(el / 60, 0, 1) * 0.3);        // hoe hoger de zon, hoe lager de vlek
+    const h = H * (0.62 - clamp(el / 60, 0, 1) * 0.22);
+    const shear = 0.55 - clamp(el / 60, 0, 1) * 0.3;              // lage zon geeft langere, schuinere banen
+    const x0 = W * 0.52, x1 = W * 1.05, gapX = W * 0.012, gapY = H * 0.014;
+    const col = (k) => mix('#fff4dc', '#ffae5c', warm, k);
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    for (let row = 0; row < 2; row++) {
+      for (let colI = 0; colI < 2; colI++) {
+        const ya = top + row * (h / 2) + (row ? gapY / 2 : 0), yb = top + (row + 1) * (h / 2) - (row ? 0 : gapY / 2);
+        const xa = x0 + colI * ((x1 - x0) / 2) + (colI ? gapX / 2 : 0), xb = x0 + (colI + 1) * ((x1 - x0) / 2) - (colI ? 0 : gapX / 2);
+        const sk = (y) => (y - top) * shear;
+        const gr = g.createLinearGradient(x0, 0, x1, 0);
+        gr.addColorStop(0, col(0)); gr.addColorStop(0.35, col(0.16 * sun)); gr.addColorStop(1, col(0.32 * sun));
+        g.fillStyle = gr;
+        g.beginPath();
+        g.moveTo(xa - sk(ya), ya); g.lineTo(xb - sk(ya), ya); g.lineTo(xb - sk(yb), yb); g.lineTo(xa - sk(yb), yb);
+        g.closePath(); g.fill();
+      }
+    }
+    // zachte lichtval vanaf de rechterrand
+    const sg = g.createRadialGradient(W * 1.05, H * 0.35, 0, W * 1.05, H * 0.35, Math.max(W, H) * 0.7);
+    sg.addColorStop(0, col(0.22 * sun)); sg.addColorStop(1, col(0));
+    g.fillStyle = sg; g.fillRect(0, 0, W, H);
+    g.restore();
+  }
+  // kamerplant linksonder; overdag groen met een schaduw naar links
   const base = Math.min(W, H) * (W < 600 ? 0.38 : 0.55);
   const ox = -base * 0.08, oy = H + base * 0.06;
-  g.strokeStyle = 'rgba(3,2,1,0.95)'; g.lineCap = 'round';
-  for (let f = 0; f < 7; f++) {
-    let a = -Math.PI / 2 + (f - 2.4) * 0.3 + R() * 0.15;
-    const len = base * (0.75 + R() * 0.45), steps = 22, bend = (0.6 + R() * 0.5) / steps;
-    let x = ox + R() * base * 0.1, y = oy;
-    for (let i = 0; i < steps; i++) {
-      const k = i / steps, nx = x + Math.cos(a) * len / steps, ny = y + Math.sin(a) * len / steps;
-      g.lineWidth = base * 0.012 * (1 - k * 0.7);
-      g.beginPath(); g.moveTo(x, y); g.lineTo(nx, ny); g.stroke();
-      if (i > 3) {
-        const ll = base * 0.2 * Math.sin(Math.PI * k);
-        g.lineWidth = base * 0.008 * (1 - k * 0.5);
-        for (const side of [-1, 1]) {
-          const la = a + side * 1.05 + 0.35;
-          g.beginPath(); g.moveTo(nx, ny);
-          g.quadraticCurveTo(nx + Math.cos(la) * ll * 0.6, ny + Math.sin(la) * ll * 0.6, nx + Math.cos(la + 0.35) * ll, ny + Math.sin(la + 0.35) * ll + ll * 0.25);
-          g.stroke();
-        }
-      }
-      x = nx; y = ny; a += bend;
-    }
+  if (day * sun > 0.02) {
+    const sh = plantLayer(base, ox, oy, 'shadow');
+    g.globalAlpha = 0.28 * day * sun;
+    g.drawImage(sh, -base * (0.1 + 0.25 * sky.warm), base * 0.04, W, H);
+    g.globalAlpha = 1;
   }
+  g.drawImage(plantLayer(base, ox, oy, 'plant'), 0, 0, W, H);
 }
+setInterval(() => {
+  const s2 = computeSky();
+  if (Math.abs(s2.el - sky.el) > 0.4) { sky = s2; if (cells.length) buildBg(); }
+}, 60000);
 
 /* ---------- Lamptoestand ---------- */
 function lampState(c, t) {
@@ -583,8 +696,9 @@ function draw() {
   ctx.globalCompositeOperation = 'lighter';
   cells.forEach((c, i) => {
     const { b, w } = st[i]; if (b <= 0.01) return;
-    if (w < 0.99) { ctx.globalAlpha = 0.55 * b * (1 - w); ctx.drawImage(glowA.cnv, c.x - glowA.off, c.y - glowA.off, glowA.css, glowA.css); }
-    if (w > 0.01) { ctx.globalAlpha = 0.5 * b * w; ctx.drawImage(glowW.cnv, c.x - glowW.off, c.y - glowW.off, glowW.css, glowW.css); }
+    const gm = 1 - 0.5 * sky.day;
+    if (w < 0.99) { ctx.globalAlpha = 0.55 * gm * b * (1 - w); ctx.drawImage(glowA.cnv, c.x - glowA.off, c.y - glowA.off, glowA.css, glowA.css); }
+    if (w > 0.01) { ctx.globalAlpha = 0.5 * gm * b * w; ctx.drawImage(glowW.cnv, c.x - glowW.off, c.y - glowW.off, glowW.css, glowW.css); }
     const rd = redness(c, t);
     if (rd > 0.01) { ctx.globalAlpha = 0.6 * rd; ctx.drawImage(glowR.cnv, c.x - glowR.off, c.y - glowR.off, glowR.css, glowR.css); }
   });
@@ -592,6 +706,7 @@ function draw() {
   cells.forEach((c, i) => {
     const { b, w } = st[i], [f0, f1, f2] = c.f;
     ctx.globalAlpha = 1; ctx.drawImage(f0.cnv, c.x - f0.off, c.y - f0.off, f0.css, f0.css);
+    if (sky.day > 0.02) { const f4 = c.f[4]; ctx.globalAlpha = sky.day * 0.9; ctx.drawImage(f4.cnv, c.x - f4.off, c.y - f4.off, f4.css, f4.css); }
     if (b > 0.01 && w < 0.99) { ctx.globalAlpha = b * (1 - w); ctx.drawImage(f1.cnv, c.x - f1.off, c.y - f1.off, f1.css, f1.css); }
     if (b > 0.01 && w > 0.01) { ctx.globalAlpha = b * w; ctx.drawImage(f2.cnv, c.x - f2.off, c.y - f2.off, f2.css, f2.css); }
     const rd = redness(c, t);

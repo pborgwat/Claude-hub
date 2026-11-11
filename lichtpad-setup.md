@@ -8,6 +8,13 @@ Lichtpad: https://pborgwat.github.io/Claude-hub/lichtpad.html
 2. Deelknop → **Zet op beginscherm**. Het icoon en de naam Lichtpad staan al klaar.
 3. Open hem vanaf het beginscherm, dan speelt hij schermvullend zonder adresbalk.
 
+## Licht in de kamer
+
+Het licht in de kamer volgt de echte stand van de zon boven Haarlem, dus ook de seizoenen.
+Overdag valt zonlicht van rechts door een raam op de muur en is de plant groen, bij lage
+zon wordt het licht oranje en 's nachts is alleen de lampenwand aan. Een ander moment
+bekijken kan met `?uur=`, bijvoorbeeld `lichtpad.html?uur=16.5` voor half vijf.
+
 ## Gedeelde highscores
 
 Na een game over vul je je naam in. Je ziet dan hoeveel wanden je haalde, hoe lang je op
