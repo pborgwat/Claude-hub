@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T02:56:48.167Z",
+ "generated": "2026-11-12T12:40:08.618Z",
  "days": [
   "2026-11-12",
   "2026-11-13",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 79
+   "count": 77
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 295
+   "count": 292
   }
  },
  "events": [
@@ -40,15 +40,6 @@
    "date": "2026-11-12",
    "time": "11:00",
    "url": "https://www.filmladder.nl/kaartjes/1229353572"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "",
-   "date": "2026-11-12",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353520"
   },
   {
    "venue": "Filmkoepel",
@@ -70,15 +61,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353476"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "",
-   "date": "2026-11-12",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229353313"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Andiamo a bere l’ultima",
@@ -87,15 +69,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/207473",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-12",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
@@ -136,15 +109,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353458"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Godzilla Minus Zero",
-   "info": "2D",
-   "date": "2026-11-12",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353587"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Klara and the Sun",
@@ -162,15 +126,6 @@
    "date": "2026-11-12",
    "time": "12:10",
    "url": "https://www.filmladder.nl/kaartjes/1229353323"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "film · Rodrigo Sorogoyen",
-   "date": "2026-11-12",
-   "time": "12:30",
-   "url": "https://www.schuur.nl/film/the-beloved"
   },
   {
    "venue": "Pathé",
