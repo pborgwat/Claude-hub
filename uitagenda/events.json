@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T02:36:52.319Z",
+ "generated": "2026-11-13T12:09:57.424Z",
  "days": [
   "2026-11-13",
   "2026-11-14",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 69
+   "count": 67
   },
   "Phil": {
    "ok": true,
@@ -28,19 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 256
+   "count": 250
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353546"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -50,33 +41,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/207541",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "documentaire · Orlando von Einsiedel",
-   "date": "2026-11-13",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-cycle-of-love"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353438"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "11:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229353413"
   },
   {
    "venue": "Filmkoepel",
@@ -89,15 +53,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-13",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Vier minus drei",
@@ -106,15 +61,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/207606",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229353529"
   },
   {
    "venue": "Pathé",
@@ -145,15 +91,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229353467"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -172,15 +109,6 @@
    "time": "11:45",
    "url": "https://filmkoepel.nl/tickets/207982",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-13",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353342"
   },
   {
    "venue": "Schuur",
