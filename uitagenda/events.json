@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T02:24:47.711Z",
+ "generated": "2026-11-14T11:26:00.083Z",
  "days": [
   "2026-11-14",
   "2026-11-15",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 59
+   "count": 57
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 215
+   "count": 213
   }
  },
  "events": [
@@ -49,24 +49,6 @@
    "date": "2026-11-14",
    "time": "09:40",
    "url": "https://www.filmladder.nl/kaartjes/1229353478"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wildwood",
-   "info": "",
-   "date": "2026-11-14",
-   "time": "09:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229353469"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229353441"
   },
   {
    "venue": "Pathé",
@@ -96,15 +78,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229353574"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Stand Up",
-   "info": "film · Mari Sanders",
-   "date": "2026-11-14",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/stand-up"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -132,15 +105,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/207475",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-14",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
