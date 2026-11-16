@@ -182,8 +182,15 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
   <!-- REIS -->
   <section class="view" id="v-reis" hidden>
     <h2>Reisschema</h2>
-    <div class="card"><div class="days" id="days"></div></div>
-    <p class="small">Lokale tijden. Rood: tweede set tijden uit de sheet, check het ticket.</p>
+    <form class="card stack" id="lock" autocomplete="off">
+      <div class="field"><label class="label" for="pw">Wachtwoord</label><input class="inp" id="pw" type="password" autocapitalize="off" autocorrect="off" spellcheck="false"></div>
+      <button class="btn pri" type="submit" id="pwGo">Open reisschema</button>
+      <p class="small" id="pwMsg" hidden></p>
+    </form>
+    <div class="stack" id="reisBody" hidden>
+      <div class="card"><div class="days" id="days"></div></div>
+      <p class="small">Lokale tijden. Rood: tweede set tijden uit de sheet, check het ticket.</p>
+    </div>
   </section>
 
   <!-- OMREKENEN -->
@@ -320,7 +327,7 @@ var TZ={nl:'Europe/Amsterdam',bali:'Asia/Makassar',papua:'Asia/Jayapura'};
 function parts(tz,d){var o={};new Intl.DateTimeFormat('en-GB',{timeZone:tz,hourCycle:'h23',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).formatToParts(d).forEach(function(x){o[x.type]=x.value});return o}
 function offMin(tz,d){var p=parts(tz,d);var m=Math.floor(d.getTime()/60000)*60000;return Math.round((Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute)-m)/60000)}
 var T=function(s){return new Date(s).getTime()};
-var STAY=[['bali',T('2026-11-17T17:20:00+08:00'),T('2026-11-20T12:10:00+09:00')],['papua',T('2026-11-20T12:10:00+09:00'),T('2026-11-29T15:35:00+08:00')],['bali',T('2026-11-29T15:35:00+08:00'),T('2026-12-05T18:50:00+08:00')]];
+var STAY=[];
 function tick(){
   var now=new Date(),t=now.getTime(),here='nl',i;
   for(i=0;i<STAY.length;i++)if(t>=STAY[i][1]&&t<STAY[i][2])here=STAY[i][0];
@@ -334,33 +341,35 @@ function tick(){
 }
 
 /* ---------- reisschema ---------- */
-var BOOK='https://www.booking.com/Share-SjiV7c',RESORT='https://www.tulambendiveresort.net/dive-packages.html';
-var DAYS=[
- ['2026-11-16',[{k:'vlucht',t:'15:05 > 23:25',x:'Amsterdam > Doha'}]],
- ['2026-11-17',[{k:'vlucht',t:'02:50 > 17:20',x:'Doha > Denpasar',todo:'Overnachting Bali boeken'}]],
- ['2026-11-18',[{k:'verblijf',x:'Bali',todo:'Overnachting Bali boeken'}]],
- ['2026-11-19',[{k:'verblijf',x:'Bali',link:[BOOK,'Overnachting op Booking.com']}]],
- ['2026-11-20',[{k:'vlucht',t:'08:00 > 12:10',x:'Denpasar > Sorong',todo:'Overnachting Sorong of Waisai boeken'},{k:'ferry',x:'Ferry naar Waisai',n:'Niet vooraf boeken. Staat in de sheet tussen 20 en 21 nov, de dag is niet eenduidig.'}]],
- ['2026-11-21',[{k:'verblijf',t:'> 11:00',x:'Raja Ampat',n:'Aankomst'}]],
- ['2026-11-22',[{k:'verblijf',x:'Raja Ampat'}]],
- ['2026-11-23',[{k:'verblijf',x:'Raja Ampat'}]],
- ['2026-11-24',[{k:'verblijf',x:'Raja Ampat'}]],
- ['2026-11-25',[{k:'verblijf',x:'Raja Ampat'}]],
- ['2026-11-26',[{k:'verblijf',x:'Raja Ampat'}]],
- ['2026-11-27',[{k:'ferry',t:'< 12:00',x:'Raja Ampat > Sorong',n:'Ferry naar Sorong, niet vooraf boeken'}]],
- ['2026-11-28',[{k:'verblijf',x:'Geen programma in de sheet',n:'Vermoedelijk Sorong',todo:'Overnachting boeken'}]],
- ['2026-11-29',[{k:'vlucht',t:'13:30 > 15:35',x:'Sorong > Denpasar',alt:'Ook in de sheet: 15:25 > 20:15',n:'€ 540 totaal retour'},{k:'weg',x:'Denpasar > Tulamben',n:'Bus of taxi',alt:'Ook in de sheet: ca. 22:00 > 00:00, private taxi'}]],
- ['2026-11-30',[{k:'duiken',x:'Tulamben',link:[RESORT,'Duikpakketten Tulamben Dive Resort']}]],
- ['2026-12-01',[{k:'duiken',x:'Tulamben'}]],
- ['2026-12-02',[{k:'duiken',x:'Tulamben'}]],
- ['2026-12-03',[{k:'duiken',x:'Tulamben'}]],
- ['2026-12-04',[{k:'duiken',x:'Tulamben'}]],
- ['2026-12-05',[{k:'weg',x:'Tulamben > Denpasar',n:'Bus of taxi'},{k:'vlucht',t:'18:50 >',x:'Denpasar > Doha',alt:'Ook in de sheet: 00:35 > 05:20'}]],
- ['2026-12-06',[{k:'vlucht',t:'> 13:20',x:'Doha > Amsterdam',alt:'Ook in de sheet: 08:25 > 13:20'}]]
-];
+var DAYS=[];
 var KL={vlucht:'Vlucht',ferry:'Ferry',weg:'Over land',duiken:'Duiken',verblijf:'Verblijf'};
 function ymd(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
 function wd(s,long){var d=new Date(s+'T12:00:00Z'),f=function(o){o.timeZone='UTC';return d.toLocaleDateString('nl-NL',o).replace(/\./g,'')};return long?f({weekday:'short',day:'numeric',month:'short'}):f({weekday:'short'})+' '+f({month:'short'})}
+/* Het schema staat alleen versleuteld in dit bestand (AES-GCM, sleutel via PBKDF2 uit het wachtwoord). */
+var BLOB='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';
+var RKEY='selamat-jalan-reis';
+function setReis(o){DAYS=o.days;STAY=o.stay.map(function(x){return [x[0],T(x[1]),T(x[2])]});$('lock').hidden=true;$('reisBody').hidden=false;renderDays();tick()}
+function decrypt(pw){
+  var raw=atob(BLOB),d=new Uint8Array(raw.length),i;for(i=0;i<raw.length;i++)d[i]=raw.charCodeAt(i);
+  pw=String(pw).toLowerCase().replace(/[^a-z0-9]/g,'');
+  return crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']).then(function(k){
+    return crypto.subtle.deriveKey({name:'PBKDF2',salt:d.slice(0,16),iterations:600000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt'])}).then(function(k){
+    return crypto.subtle.decrypt({name:'AES-GCM',iv:d.slice(16,28)},k,d.slice(28))}).then(function(buf){return JSON.parse(new TextDecoder().decode(buf))});
+}
+function openReis(pw,quiet){
+  var msg=$('pwMsg');
+  if(!(window.crypto&&crypto.subtle)){msg.hidden=false;msg.textContent='Openen lukt alleen via de https-link van de app.';return}
+  $('pwGo').disabled=true;
+  decrypt(pw).then(function(o){
+    try{localStorage.setItem(RKEY,JSON.stringify({id:BLOB.slice(0,32),pw:pw,data:o}))}catch(e){}
+    $('pwGo').disabled=false;$('pw').value='';msg.hidden=true;setReis(o);
+  },function(){$('pwGo').disabled=false;if(!quiet){msg.hidden=false;msg.textContent='Dit wachtwoord klopt niet. Probeer het opnieuw.'}});
+}
+function loadReis(){
+  var c=null;try{c=JSON.parse(localStorage.getItem(RKEY)||'null')}catch(e){}
+  if(c&&c.id===BLOB.slice(0,32)&&c.data&&Array.isArray(c.data.days)){setReis(c.data);return}
+  if(c&&c.pw)openReis(c.pw,true);
+}
 function renderDays(){
   var today=ymd(new Date());
   $('days').innerHTML=DAYS.map(function(D){
@@ -520,7 +529,7 @@ var CULT=[
   ['Pinang','De rode vlekken op straat zijn betelnoot, geen bloed. Kauwen is hier een sociale gewoonte.'],
   ['Ferry Sorong - Waisai','Vaart doorgaans een paar keer per dag en doet er ongeveer twee uur over. Kaartjes koop je bij de haven. Tijden wisselen, vraag ze na bij je verblijf.']]],
  ['Duiken',[
-  ['Niet vliegen na duiken','Houd na meerdere duikdagen minstens 18 tot 24 uur aan tussen je laatste duik en je vlucht. Tel terug vanaf de vluchten op 29 november en 5 december.'],
+  ['Niet vliegen na duiken','Houd na meerdere duikdagen minstens 18 tot 24 uur aan tussen je laatste duik en je vlucht.'],
   ['Stroming','Raja Ampat staat bekend om stevige stroming. Volg de briefing van de gids en blijf bij je buddy.'],
   ['Niets aanraken','Geen koraal, geen dieren, niets meenemen. Gebruik rifvriendelijke zonnebrand en trek liever een shirt aan.']]],
  ['Geld en afdingen',[
@@ -550,7 +559,8 @@ function route(){
 
 /* ---------- start ---------- */
 function start(){
-  renderDays();renderWords();renderCulture();
+  loadReis();renderWords();renderCulture();
+  $('lock').addEventListener('submit',function(ev){ev.preventDefault();if($('pw').value)openReis($('pw').value)});
   $('rate').value=dots(S.rate);
   $('lDate').value=ymd(new Date());
   $(S.who==='Joost'?'whoJ':'whoP').checked=true;$(S.cur==='EUR'?'curEUR':'curIDR').checked=true;

@@ -1,6 +1,6 @@
 # Selamat Jalan
 
-Reisgids voor Indonesië, 16 november tot 6 december 2026: https://pborgwat.github.io/Claude-hub/indonesie/
+Reisgids voor Indonesië: https://pborgwat.github.io/Claude-hub/indonesie/
 
 Omrekenen, uitgaven loggen, reisschema, woordjes en culturele achtergrond. Bovenin de tijd in Nederland,
 Bali en Raja Ampat en de eerstvolgende vlucht.
@@ -32,3 +32,12 @@ Wie de web-app URL kent kan uitgaven lezen en toevoegen, dus stuur hem alleen aa
 
 Zonder internet log je gewoon door. De app bewaart de wijzigingen en stuurt ze na zodra er bereik is.
 In de sheet kun je meekijken, sorteren en optellen. Rijen verwijderen kan daar ook, de app neemt dat over.
+
+## Reisschema achter een wachtwoord
+
+Het reisschema staat alleen versleuteld in `index.html`. Op het tabblad Reis vul je een keer het wachtwoord in,
+daarna onthoudt de telefoon het en werkt het ook zonder internet. De rest van de app bevat geen persoonlijke gegevens.
+
+Schema aanpassen: `node versleutel.mjs ontsleutel "<wachtwoord>" > reis.json`, het bestand bewerken en dan
+`node versleutel.mjs versleutel reis.json "<wachtwoord>"`. Zet `reis.json` niet in de repo (staat in `.gitignore`).
+Hoog daarna de cacheversie in `sw.js` op.
