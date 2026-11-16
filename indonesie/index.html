@@ -53,7 +53,7 @@ button,input,select,textarea{font:inherit;color:inherit;letter-spacing:inherit}
 .clock.here .cl{color:var(--bronze)}
 
 /* schermen */
-main{position:relative;z-index:1;max-width:640px;margin:0 auto;padding-block:24px 112px}
+main{position:relative;z-index:1;max-width:640px;margin:0 auto;padding-block:24px 112px;min-height:calc(100vh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));min-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
 .view{display:grid;gap:24px}
 .lead{font:400 18px/1.55 var(--serif);letter-spacing:0;color:var(--ash);max-width:60ch}
 .card{background:var(--layer);border:1px solid var(--hair);border-radius:16px;padding:16px}
@@ -270,6 +270,8 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
       <h2>Woordjes</h2>
       <input class="inp" id="wSearch" type="search" placeholder="Zoek in Nederlands of Indonesisch" aria-label="Zoek woordjes">
     </div>
+    <div id="wordList" class="stack" style="gap:18px"></div>
+    <p class="empty" id="wNone" hidden>Niets gevonden. Probeer een ander woord.</p>
     <div class="card stack">
       <h3>Uitspraak in het kort</h3>
       <ul class="tips">
@@ -279,8 +281,6 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
         <li>Je kent al meer dan je denkt: kantor, handuk, wortel, gratis, kulkas, knalpot en asbak komen uit het Nederlands.</li>
       </ul>
     </div>
-    <div id="wordList" class="stack" style="gap:18px"></div>
-    <p class="empty" id="wNone" hidden>Niets gevonden. Probeer een ander woord.</p>
   </section>
 
   <!-- CULTUUR -->
