@@ -33,9 +33,10 @@ Wie de web-app URL kent kan uitgaven lezen en toevoegen, dus stuur hem alleen aa
 Zonder internet log je gewoon door. De app bewaart de wijzigingen en stuurt ze na zodra er bereik is.
 In de sheet kun je meekijken, sorteren en optellen. Rijen verwijderen kan daar ook, de app neemt dat over.
 
-## Reisschema achter een wachtwoord
+## Reisschema en uitgaven achter een wachtwoord
 
-Het reisschema staat alleen versleuteld in `index.html`. Op het tabblad Reis vul je een keer het wachtwoord in,
+Het reisschema staat alleen versleuteld in `index.html`. Het tabblad Uitgaven opent met hetzelfde wachtwoord.
+Je vult het een keer in,
 daarna onthoudt de telefoon het en werkt het ook zonder internet. De rest van de app bevat geen persoonlijke gegevens.
 
 Schema aanpassen: `node versleutel.mjs ontsleutel "<wachtwoord>" > reis.json`, het bestand bewerken en dan
