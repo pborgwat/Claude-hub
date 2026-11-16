@@ -11,6 +11,7 @@ Pepijns Claude omgeving
 | The Office US quiz | `office-us-quiz.html` | [openen](https://pborgwat.github.io/Claude-hub/office-us-quiz.html) |
 | Lichtpad, spel op een lampenwand | `lichtpad.html` ([highscores](lichtpad-setup.md)) | [openen](https://pborgwat.github.io/Claude-hub/lichtpad.html) |
 | Teckel vs Appels | `index.html` | [openen](https://pborgwat.github.io/Claude-hub/) |
+| Selamat Jalan, offline reisgids Indonesië (schema, omrekenen, uitgaven, woordjes) | `indonesie/` | [openen](https://pborgwat.github.io/Claude-hub/indonesie/) |
 
 ## Uit in Haarlem
 
