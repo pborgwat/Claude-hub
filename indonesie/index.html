@@ -51,9 +51,6 @@ button,input,select,textarea{font:inherit;color:inherit;letter-spacing:inherit}
 .clock .cd{font-size:11px;color:var(--steel)}
 .clock.here{border-color:var(--bronze)}
 .clock.here .cl{color:var(--bronze)}
-.next{margin-top:8px;font-size:13px;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
-.next b{font-weight:600}
-.next .cnt{color:var(--ash)}
 
 /* schermen */
 main{position:relative;z-index:1;max-width:640px;margin:0 auto;padding-block:24px 112px}
@@ -124,11 +121,6 @@ input[type="date"]::-webkit-date-and-time-value{text-align:left}
 .check input{width:20px;height:20px;accent-color:var(--bronze)}
 
 /* omrekenen */
-.ladder{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.ladder button{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 8px;text-align:left;border:1px solid var(--hair);background:var(--layer);border-radius:6px;padding:10px 12px;cursor:pointer;font-size:14px}
-.ladder button span{white-space:nowrap}
-.ladder button span:first-child{font-weight:600}
-.ladder button span:last-child{color:var(--ash)}
 
 /* uitgaven */
 .totals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -178,24 +170,20 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
 </head>
 <body>
 <!--APP-->
-<header class="top gut">
+<header class="top gut" id="top" hidden>
   <div class="clocks" id="clocks">
     <div class="clock" data-z="nl"><span class="cl">Nederland</span><b class="ct">--:--</b><span class="cd">thuis</span></div>
     <div class="clock" data-z="bali"><span class="cl">Bali</span><b class="ct">--:--</b><span class="cd">+7 u</span></div>
     <div class="clock" data-z="papua"><span class="cl">Raja Ampat</span><b class="ct">--:--</b><span class="cd">+8 u</span></div>
   </div>
-  <p class="next" id="next"></p>
 </header>
 
 <main class="gut">
   <!-- REIS -->
   <section class="view" id="v-reis" hidden>
-    <div class="stack">
-      <h2>Reisschema</h2>
-      <p class="lead">16 november tot 6 december 2026. Alle tijden zijn lokale tijd van de plek zelf.</p>
-    </div>
+    <h2>Reisschema</h2>
     <div class="card"><div class="days" id="days"></div></div>
-    <p class="small">Overgenomen uit jullie spreadsheet, stand 16 nov 2026. Vluchtnummers staan daar niet in. Bij drie stappen staat in de sheet een tweede set tijden, die is in rood vermeld: check het ticket.</p>
+    <p class="small">Lokale tijden. Rood: tweede set tijden uit de sheet, check het ticket.</p>
   </section>
 
   <!-- OMREKENEN -->
@@ -207,24 +195,10 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
       <div class="row"><button class="btn sm" type="button" id="cK">+ 000</button><button class="btn sm" type="button" id="cClr">Leeg</button></div>
       <div class="field"><label class="label" for="cEur">Euro</label>
         <div class="money"><span class="cur">€</span><input class="inp big" id="cEur" inputmode="decimal" autocomplete="off" placeholder="0"></div></div>
-      <p class="small" id="thumb"></p>
-    </div>
-    <div class="stack">
-      <h3>Snel aflezen</h3>
-      <div class="ladder" id="ladder"></div>
     </div>
     <div class="card stack">
-      <div class="field"><label class="label" for="rate">Rekenkoers: 1 euro is zoveel rupiah</label>
+      <div class="field"><label class="label" for="rate">Koers: rupiah per euro</label>
         <input class="inp" id="rate" inputmode="numeric" autocomplete="off"></div>
-      <p class="small">Op 16 nov 2026 stond de koers rond Rp 20.080. Pas hem aan als je bij een wisselkantoor of pinautomaat een andere koers ziet. Eerder gelogde uitgaven houden de koers van toen.</p>
-    </div>
-    <div class="card stack">
-      <h3>Rupiah lezen</h3>
-      <ul class="tips">
-        <li><b>ribu</b> is duizend, <b>juta</b> is miljoen. Op menukaarten staat vaak 35k of 35rb: dat is Rp 35.000.</li>
-        <li>Biljetten: 1.000, 2.000, 5.000, 10.000, 20.000, 50.000 en 100.000. Het blauwe van 50.000 en het rode van 100.000 komen uit de pinautomaat.</li>
-        <li>Warungs en bootjes hebben zelden wisselgeld voor 100.000. Spaar kleine biljetten op.</li>
-      </ul>
     </div>
   </section>
 
@@ -253,7 +227,7 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
         <div class="field"><label class="label" for="lNote">Notitie</label><input class="inp" id="lNote" placeholder="bv. nasi goreng" maxlength="80"></div>
         <div class="field"><label class="label" for="lDate">Datum</label><input class="inp" id="lDate" type="date"></div>
       </div>
-      <label class="check" for="lShared"><input type="checkbox" id="lShared" checked>Voor ons samen (telt mee in de verrekening)</label>
+      <label class="check" for="lShared"><input type="checkbox" id="lShared" checked>Voor ons samen</label>
       <button class="btn pri" type="submit">Log uitgave</button>
     </form>
 
@@ -273,10 +247,9 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
 
     <div class="card stack">
       <h3>Delen en bewaren</h3>
-      <div class="field"><label class="label" for="sUrl">Gedeeld logboek: web-app adres van jullie Google Sheet</label>
+      <div class="field"><label class="label" for="sUrl">Gedeelde sheet</label>
         <input class="inp" id="sUrl" type="url" inputmode="url" autocomplete="off" placeholder="https://script.google.com/macros/s/.../exec"></div>
       <div class="row"><button class="btn sm" type="button" id="bLink">Koppel</button><button class="btn sm" type="button" id="bInvite" hidden>Kopieer link voor de ander</button><button class="btn sm warn" type="button" id="bUnlink" hidden>Ontkoppel</button></div>
-      <p class="small">Gekoppeld komt elke uitgave van jullie allebei in dezelfde sheet. Zonder internet log je gewoon door, de app stuurt het na zodra er weer bereik is. Niet gekoppeld? Dan staat het logboek alleen op deze telefoon en kun je hieronder een back-up kopieren of plakken.</p>
       <div class="row">
         <button class="btn sm" type="button" id="bCsv">Kopieer als tabel (CSV)</button>
         <button class="btn sm" type="button" id="bBackup">Kopieer back-up</button>
@@ -312,10 +285,7 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
 
   <!-- CULTUUR -->
   <section class="view" id="v-cultuur" hidden>
-    <div class="stack">
-      <h2>Cultuur en praktisch</h2>
-      <p class="lead">Algemene achtergrond, geschreven in november 2026. Bedragen en regels veranderen: check ze ter plekke.</p>
-    </div>
+    <h2>Cultuur</h2>
     <div id="culture" class="stack" style="gap:14px"></div>
   </section>
 </main>
@@ -351,14 +321,6 @@ function parts(tz,d){var o={};new Intl.DateTimeFormat('en-GB',{timeZone:tz,hourC
 function offMin(tz,d){var p=parts(tz,d);var m=Math.floor(d.getTime()/60000)*60000;return Math.round((Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute)-m)/60000)}
 var T=function(s){return new Date(s).getTime()};
 var STAY=[['bali',T('2026-11-17T17:20:00+08:00'),T('2026-11-20T12:10:00+09:00')],['papua',T('2026-11-20T12:10:00+09:00'),T('2026-11-29T15:35:00+08:00')],['bali',T('2026-11-29T15:35:00+08:00'),T('2026-12-05T18:50:00+08:00')]];
-var LEGS=[
- {txt:'Amsterdam > Doha',when:'ma 16 nov 15:05',s:T('2026-11-16T15:05:00+01:00'),e:T('2026-11-16T23:25:00+03:00'),land:'23:25'},
- {txt:'Doha > Denpasar',when:'di 17 nov 02:50',s:T('2026-11-17T02:50:00+03:00'),e:T('2026-11-17T17:20:00+08:00'),land:'17:20'},
- {txt:'Denpasar > Sorong',when:'vr 20 nov 08:00',s:T('2026-11-20T08:00:00+08:00'),e:T('2026-11-20T12:10:00+09:00'),land:'12:10'},
- {txt:'Sorong > Denpasar',when:'zo 29 nov 13:30',s:T('2026-11-29T13:30:00+09:00'),e:T('2026-11-29T15:35:00+08:00'),land:'15:35',chk:1},
- {txt:'Denpasar > Doha > Amsterdam',when:'za 5 dec 18:50',s:T('2026-12-05T18:50:00+08:00'),e:T('2026-12-06T13:20:00+01:00'),land:'13:20 op zo 6 dec',chk:1}
-];
-function dur(ms){var m=Math.max(0,Math.round(ms/60000)),d=Math.floor(m/1440),h=Math.floor(m%1440/60),mi=m%60;return d?d+' d '+h+' u':h?h+' u '+mi+' min':mi+' min'}
 function tick(){
   var now=new Date(),t=now.getTime(),here='nl',i;
   for(i=0;i<STAY.length;i++)if(t>=STAY[i][1]&&t<STAY[i][2])here=STAY[i][0];
@@ -369,12 +331,6 @@ function tick(){
     if(z!=='nl'){var h=(offMin(TZ[z],now)-nlOff)/60;el.querySelector('.cd').textContent=(h>=0?'+':'')+String(h).replace('.',',')+' u t.o.v. NL'}
     el.classList.toggle('here',z===here);
   });
-  var n=$('next'),html='';
-  for(i=0;i<LEGS.length;i++){var L=LEGS[i];
-    if(t>=L.s&&t<L.e){html='<b>Nu onderweg: '+esc(L.txt)+'</b><span class="cnt">landt '+L.land+' lokale tijd'+(L.chk?', tijd checken':'')+'</span>';break}
-    if(t<L.s){html='<b>Volgende vlucht: '+esc(L.txt)+'</b><span class="cnt">'+L.when+', over '+dur(L.s-t)+(L.chk?' (tijd checken)':'')+'</span>';break}
-  }
-  n.innerHTML=html||'<b>Weer thuis.</b><span class="cnt">Selamat datang kembali.</span>';
 }
 
 /* ---------- reisschema ---------- */
@@ -420,12 +376,6 @@ function renderDays(){
 function setIdrInput(el,n){el.value=n?dots(n):''}
 function convFromIdr(){var n=pIdr($('cIdr').value);setIdrInput($('cIdr'),n);$('cEur').value=n?(n/S.rate).toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2}):''}
 function convFromEur(){var n=pEur($('cEur').value);setIdrInput($('cIdr'),n*S.rate)}
-function renderLadder(){
-  var idr=[10000,25000,50000,100000,250000,500000,1000000,5000000],eur=[1,5,10,20,50,100];
-  $('ladder').innerHTML=idr.map(function(v){return '<button type="button" data-idr="'+v+'"><span>'+fIdr(v)+'</span><span>'+fEur(v/S.rate)+'</span></button>'}).join('')+
-    eur.map(function(v){return '<button type="button" data-eur="'+v+'"><span>'+fEur(v,0)+'</span><span>'+fIdr(v*S.rate)+'</span></button>'}).join('');
-  $('thumb').textContent='Vuistregel: Rp 100.000 is ongeveer '+fEur(100000/S.rate)+'. Haal drie nullen weg en deel door '+String(Math.round(S.rate/100)/10).replace('.',',')+'.';
-}
 
 /* ---------- uitgaven ---------- */
 var CATS={eten:'Eten',slapen:'Slapen',vervoer:'Vervoer',leuk:'Leuke dingen',overig:'Overig'};
@@ -445,7 +395,7 @@ function renderLog(){
   $('settle').textContent=!es.length?'':Math.abs(diff)<0.5?'Jullie staan quitte.':diff>0?'Joost betaalt Pepijn nog '+fEur(diff)+'.':'Pepijn betaalt Joost nog '+fEur(-diff)+'.';
   var max=0;for(k in CATS)max=Math.max(max,cat[k]||0);
   $('bars').innerHTML=es.length?Object.keys(CATS).map(function(k){var v=cat[k]||0;return '<div class="bar cat-'+k+'"><span>'+CATS[k]+'</span><span class="tr"><i style="width:'+(max?v/max*100:0)+'%"></i></span><span>'+fEur(v,0)+'</span></div>'}).join(''):'';
-  if(!es.length){$('entries').innerHTML='<p class="empty">Nog niets gelogd. Vul hierboven een bedrag in, kies wie betaalde en tik op Log uitgave. Hier komt de lijst per dag, met de verrekening tussen jullie twee erboven.</p>';return}
+  if(!es.length){$('entries').innerHTML='<p class="empty">Nog niets gelogd.</p>';return}
   var html='',last='',dayTot={};
   es.forEach(function(e){dayTot[e.d]=(dayTot[e.d]||0)+eurOf(e)});
   es.forEach(function(e){
@@ -473,7 +423,7 @@ function norm(e){if(!e||!e.id||!(+e.amt>0)||!e.d||!(+e.rate>0))return null;
 var syncing=false,syncErr='';
 function setSync(){
   var n=S.q.up.length+S.q.del.length,t;
-  if(!S.url)t='Dit logboek staat alleen op deze telefoon. Koppelen met een gedeelde sheet kan onderaan.';
+  if(!S.url)t='';
   else if(syncing)t='Bezig met synchroniseren.';
   else if(n)t=n+(n===1?' wijziging wacht':' wijzigingen wachten')+' op internet.'+(syncErr?' '+syncErr:'');
   else if(syncErr)t=syncErr;
@@ -593,14 +543,14 @@ function renderCulture(){
 var VIEWS=['geld','uitgaven','reis','woordjes','cultuur'];
 function route(){
   var h=(location.hash||'').slice(1);if(VIEWS.indexOf(h)<0)h='geld';
-  VIEWS.forEach(function(v){$('v-'+v).hidden=v!==h});
+  VIEWS.forEach(function(v){$('v-'+v).hidden=v!==h});$('top').hidden=h!=='reis';
   [].forEach.call(document.querySelectorAll('.tabs a'),function(a){if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   window.scrollTo(0,0);
 }
 
 /* ---------- start ---------- */
 function start(){
-  renderDays();renderLadder();renderWords();renderCulture();
+  renderDays();renderWords();renderCulture();
   $('rate').value=dots(S.rate);
   $('lDate').value=ymd(new Date());
   $(S.who==='Joost'?'whoJ':'whoP').checked=true;$(S.cur==='EUR'?'curEUR':'curIDR').checked=true;
@@ -613,10 +563,7 @@ function start(){
   $('cEur').addEventListener('input',convFromEur);
   $('cK').addEventListener('click',function(){var n=pIdr($('cIdr').value);if(n){setIdrInput($('cIdr'),n*1000);convFromIdr()}});
   $('cClr').addEventListener('click',function(){$('cIdr').value='';$('cEur').value='';$('cIdr').focus()});
-  $('ladder').addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;
-    if(b.dataset.idr){setIdrInput($('cIdr'),+b.dataset.idr);convFromIdr()}else{$('cEur').value=b.dataset.eur;convFromEur()}
-    window.scrollTo(0,0)});
-  $('rate').addEventListener('input',function(){var n=pIdr(this.value);this.value=n?dots(n):'';if(n>=1000){S.rate=n;save();renderLadder();convFromIdr();logHint()}});
+  $('rate').addEventListener('input',function(){var n=pIdr(this.value);this.value=n?dots(n):'';if(n>=1000){S.rate=n;save();convFromIdr();logHint()}});
   $('rate').addEventListener('blur',function(){this.value=dots(S.rate)});
 
   $('lAmt').addEventListener('input',logHint);
