@@ -182,11 +182,6 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
   <!-- REIS -->
   <section class="view" id="v-reis" hidden>
     <h2>Reisschema</h2>
-    <form class="card stack" id="lock" autocomplete="off">
-      <div class="field"><label class="label" for="pw">Wachtwoord</label><input class="inp" id="pw" type="password" autocapitalize="off" autocorrect="off" spellcheck="false"></div>
-      <button class="btn pri" type="submit" id="pwGo">Open reisschema</button>
-      <p class="small" id="pwMsg" hidden></p>
-    </form>
     <div class="stack" id="reisBody" hidden>
       <div class="card"><div class="days" id="days"></div></div>
       <p class="small">Lokale tijden. Rood: tweede set tijden uit de sheet, check het ticket.</p>
@@ -212,6 +207,7 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
   <!-- UITGAVEN -->
   <section class="view" id="v-uitgaven" hidden>
     <h2>Uitgaven</h2>
+    <div class="view" id="logBody" hidden>
     <div class="sync"><p class="small" id="syncState"></p><button class="btn sm" type="button" id="bSync" hidden>Ververs</button></div>
     <form class="card stack" id="logForm" autocomplete="off">
       <div class="two amt">
@@ -269,6 +265,7 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
       </div>
       <div class="row"><button class="btn sm warn" type="button" id="bWipe">Logboek leegmaken</button></div>
     </div>
+    </div>
   </section>
 
   <!-- WOORDJES -->
@@ -295,6 +292,11 @@ textarea.inp{min-height:90px;font:12px/1.4 ui-monospace,Menlo,Consolas,monospace
     <h2>Cultuur</h2>
     <div id="culture" class="stack" style="gap:14px"></div>
   </section>
+  <form class="card stack" id="lock" hidden style="margin-top:24px" autocomplete="off">
+      <div class="field"><label class="label" for="pw">Wachtwoord</label><input class="inp" id="pw" type="password" autocapitalize="off" autocorrect="off" spellcheck="false"></div>
+      <button class="btn pri" type="submit" id="pwGo">Open</button>
+      <p class="small" id="pwMsg" hidden></p>
+    </form>
 </main>
 
 <nav class="tabs" aria-label="Onderdelen">
@@ -347,8 +349,8 @@ function ymd(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+
 function wd(s,long){var d=new Date(s+'T12:00:00Z'),f=function(o){o.timeZone='UTC';return d.toLocaleDateString('nl-NL',o).replace(/\./g,'')};return long?f({weekday:'short',day:'numeric',month:'short'}):f({weekday:'short'})+' '+f({month:'short'})}
 /* Het schema staat alleen versleuteld in dit bestand (AES-GCM, sleutel via PBKDF2 uit het wachtwoord). */
 var BLOB='MzF9DD+ZkpmcYcCADepvexs3oPsCNyh+OaiPvUWJmiXRssulNE+mJr45qBKcvPMqqucCONLc3xHXWNuMOy9a55YDVeURGT4eNS8NNNZvhvztz524Lxouj53nGvMv12e+/Dhe2oMgrRjfiI12z4ThpNnYES9uc6W1eo6RbrDWRKGujNFeil33asbCqIGLZ2gJ1ZbRfFvywGBWBgDPnCeHS4gvzJMtzkMoxsy2BSCZ4U8S7JCr3S+6LreJKqac8D13N9RF3odN/wmxPm4Rhp//l5xcainFAMiKHTBXuQmeCM8iq1Y08crVrFWTfbGJZxLPkIc4QO0vyGEoAg53UE/+mdAzO9kCO2dJ9m+FN2ppcK8hblAcOQIRby/cQakLR92KyKATj6AFBgXq541xycxjS4C7FjFwGfHxEGoj1kVjokCupaPTO8NEiVctU/dKhZ4H0SOJQqu1SRiLDhQXx3UW8h3WDunKTbbq79A/paAI+lRz044MBc4/lzZkdXCu/OGA6d2qKJ96u3XATh55BzoK+sdT3iNnJ6RsXkM15Q7yKj8+Ffb8o2M6NyMIPnQUCQddit0qWdyc9oh+9ObUEKdNOiF+7KAUeIUnD71wsczx/sDy7+0xsQKFKTcM6735DT+pNglqesmRoDCIjBBdMzxBVvQWhob+/GF7NJaWTrIs44NiAebV+FNxF5arMea+0x0Xen2wEZ44hZbLCQeneywQUF8f0zl6o4y1lKIB0WrHYKNo93BvA9x7xZULHjeg4L4H0WevEVP5xvkuP5XPHytZGF72SIlGzPupuNtb2hz7L2xhNNP3JT3VNIpcvmeek8otM0SHrAMVCE7C7WaNA5cHO0SJXpQugtnhaceGv3xCXbHhP1XKOQ5BeR1oDTBHDBu4xhOlsnaVruaOqg5i68imJviI57y6HiFyoHnaN/Bc12kLVyAEDD/tM+2hAux2pX3+JVYokO+XasK6WSrClE5HHd2I+jLPHR7+qeVrc2bkXA4+JAjPx9JV42f2zb83K/vG49xQthbaoBmP4DR14F2yaq8ReL0i8ZVfyQJHPF/GZ7XMpIhYZ4CONCMXWUfu0ey6eaLa5/f+iT4Rxl7XHg0QKpH1HMJluA2TvnaMh0ey6kH2g8KBuSoxcmhZGzjqhviheRkvxUP9VZU0ReW+KK66kr/D+ha00DnE6Guej8cSCycYhZIcg08XIwtoyvKKd/x+lKOV0g6rJ+LzmXm5I9ZhrdiJoMPU2pRz+dhmPkpFVA4I8Q4dUIMUMXyCtmaBx/dNswH3/qf7TAOS11+yKurwf2vnqBUXrBiA6ao9RtUdHbXvQG2Y/Uq/ae0wLSKWs1Fn88+KvyQy8JBGgMAW0TekFZQHXvubQepNK96+xi1aBMvzcUCbAuIxS0RBlGqNCcZo4bHJQHJcicrIZ/L2XdN+t0/0UQoHYs35v2HLw7aSiaDQk0yyWC9dzZbMS4LQFh05kBqKK29hzGPJWMah+cTtFEhbweGbQHE/aTb8PxpXRDDTmmdc4H2FbXGOVuIXS+zIBHKNmd8hUKXv9fBpUw4CP9EQrS6A4GFID4P8s8ywQfHSDtXbeaJiXZ7CVhtUynWUXRMcQLUx3cmkiziMa1KOEXAdoGyIRdxjvKp6nT/tq6LRz0paNJT7ffzTcAb1uRx3iLV2nqg7AM/5qejCYPcK/JyJ+idTBhyjThaHK8qXBLx8GGut3OGF+mXNu+pbLRMTiKIHFMPupbx2uWxfSKAWrl6ZDHkMAK5hPJFFTZGRlde32PILvl00LkusYXUJFL9OmEhJcPFutTCEDzZvhTJX+JHUYkZDJ7r6qE4dUK0VDopD9Gr/upVw+NRg9X+dlTv840lgPLd4pbKhmYXgsEccy2+bCaU/PPE4CJPRySy3YnzgZRHXlWXiFwgLXAyEWxli4Fe4ndGlZHIyuZfFRpvmc9DiPCPEH1s3FcCFX9gata8wOLjDfbkl4eTsXreAvAj3rJpdFcTYmqsxxuBmi3y2nWk0P+C+IKRF3BT4ZdR1ulMlfsYshLNb/X+CrFn4fKliNIyrTOQMpPEq3gXD0VIB30mABRE6lbGG3Ti7N3DNNjJrJsURmfIdBl3awV58BFcFEZXfMMeCMvkCd+sbcksluTFViyMYVxqGbRmP329SwoIliMrrnMZ00E5+PIQfJfFPIjFc8vh0x3oqPgXJxqZiVVzI9+08Vs3dToZGlvwsdyeptWojZWZLhPLltMmFbaj1ZEPxhE8A+eU55s7yuX8wOye+fPTLXC0wGK+ecEDNUJHw3e9hqvXXStx7h7NwTxjbtD+QpBLebRhhnOehZoEvpSdAJgO1o5dIhHHa3HwQp270BequtKmTxdjgEwBnUm9RjZZ4qEg6/SicSLDUF1QvjPtVtBKaGMGGnHr80yZaXD30jpsnEzzELZNRebvVkJGw4lo/5RDtzlPb2AgTYByNfnxSxralZkghIjLvXB2qRH/sAuVWarKdu0ZXDUn7S9bYLnWRHWxMOPLMB5oBYwNbetbdwA8XvUoHQcDAo4mEQj2LS95i7wnDUZf9XCEvvE9rTh/zL7jOqPmwRgim2uc59Rd/UqgWZf6wIuKIq3m4zvnC5kQO1XRyXGSuFc74Z55st4iVh0Epku2Oc3rZ2l8EVulgtt5VNNt17U+C30aJDKly1TUYdypydvjHVHkXsyUyl8+LO4NdcI7UAltHyqx5Me74VrEdGeZOKQYKWBeE+Q7yQJB4dFo+wEC1enKHjLCqhmnFTmbmBkH5KHrZHY3bIr7DHQuo3uGKLYvC8nah7hQGv5zCBUjwEZsasS1v9BVnf2KyQO/4I4nst8VmmUS/5mtCGxbRfsw95tjkziYA7b3G7r8NgoF/PgwxWiJiAtrhhVtTA+lVaW0C3ODtAa0lJtRa5GC4eFEL8tT6Bh4EWEXF0VajV/8xNNzT9lC+IJG6mU27Da7R1E9HU9ixWehzmkkBnXmVEMtSFDWeXP6lUxwIYe+wd7ZrGetWqUWmNv+Oqyb4OIvqoPhj0VQyqNKDgopFUAFoDfbwg5xkLZFkjWcELQ8JE9/BmPN8/hq1pdwomQ+OzGtrcGPxomnCJhqxu3FHI0vBKGlFaIHA';
-var RKEY='selamat-jalan-reis';
-function setReis(o){DAYS=o.days;STAY=o.stay.map(function(x){return [x[0],T(x[1]),T(x[2])]});$('lock').hidden=true;$('reisBody').hidden=false;renderDays();tick()}
+var RKEY='selamat-jalan-reis',unlocked=false;
+function setReis(o){DAYS=o.days;STAY=o.stay.map(function(x){return [x[0],T(x[1]),T(x[2])]});unlocked=true;$('lock').hidden=true;$('reisBody').hidden=false;$('logBody').hidden=false;renderDays();tick()}
 function decrypt(pw){
   var raw=atob(BLOB),d=new Uint8Array(raw.length),i;for(i=0;i<raw.length;i++)d[i]=raw.charCodeAt(i);
   pw=String(pw).toLowerCase().replace(/[^a-z0-9]/g,'');
@@ -552,7 +554,7 @@ function renderCulture(){
 var VIEWS=['geld','uitgaven','reis','woordjes','cultuur'];
 function route(){
   var h=(location.hash||'').slice(1);if(VIEWS.indexOf(h)<0)h='geld';
-  VIEWS.forEach(function(v){$('v-'+v).hidden=v!==h});$('top').hidden=h!=='reis';
+  VIEWS.forEach(function(v){$('v-'+v).hidden=v!==h});$('top').hidden=h!=='reis';$('lock').hidden=unlocked||(h!=='reis'&&h!=='uitgaven');
   [].forEach.call(document.querySelectorAll('.tabs a'),function(a){if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   window.scrollTo(0,0);
 }
