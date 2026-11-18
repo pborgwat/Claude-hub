@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T23:30:05.557Z",
+ "generated": "2026-11-18T13:00:02.300Z",
  "days": [
   "2026-11-18",
   "2026-11-19",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 83
+   "count": 81
   },
   "Phil": {
    "ok": true,
@@ -28,19 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 276
+   "count": 275
   }
  },
  "events": [
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-18",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -100,15 +91,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-18",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229353431"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
    "info": "",
    "date": "2026-11-18",
@@ -123,15 +105,6 @@
    "date": "2026-11-18",
    "time": "11:10",
    "url": "https://www.filmladder.nl/kaartjes/1229353312"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-18",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
@@ -1105,7 +1078,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Godzilla Minus Zero",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-19",
    "time": "15:15",
    "url": "https://www.filmladder.nl/kaartjes/1229471633"
@@ -2018,7 +1991,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Hope",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-20",
    "time": "17:40",
    "url": "https://www.filmladder.nl/kaartjes/1229471544"
@@ -2970,16 +2943,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471429"
   },
   {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "WIES + JEN",
-   "info": "indie, pop · Stage 1 · Na eerder uitverkochte shows is WIES terug in Haarlem!",
-   "date": "2026-11-21",
-   "time": "19:30",
-   "url": "https://patronaat.nl/event/wies-21-11-26/",
-   "soldOut": true
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -3006,6 +2969,16 @@
    "time": "20:00",
    "url": "https://philhaarlem.nl/agenda/nkk-vesper-rachmaninov",
    "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "WIES + JEN",
+   "info": "indie, pop · Stage 1 · Na eerder uitverkochte shows is WIES terug in Haarlem!",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/wies-21-11-26/",
+   "soldOut": true
   },
   {
    "venue": "Pathé",
@@ -3048,7 +3021,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Godzilla Minus Zero (English subtitles)",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-21",
    "time": "20:50",
    "url": "https://www.filmladder.nl/kaartjes/1229471546"
@@ -3170,7 +3143,7 @@
    "venue": "Patronaat",
    "kind": "podium",
    "title": "House of Eden",
-   "info": "club3 · Stage 3 · HOUSE OF EDEN IS BACK AGAIN",
+   "info": "club3, nachtleven · Stage 3 · HOUSE OF EDEN IS BACK AGAIN",
    "date": "2026-11-21",
    "time": "23:00",
    "url": "https://patronaat.nl/event/house-of-eden-21-11-26/",
@@ -3180,7 +3153,7 @@
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Zer00s Heroes",
-   "info": "hiphop, pop · Stage 1 · Het allerbeste, -slechtste, -hardste, en -vetste uit de jaren ’00!",
+   "info": "hiphop, pop · Stage 2 · Het allerbeste, -slechtste, -hardste, en -vetste uit de jaren ’00!",
    "date": "2026-11-21",
    "time": "23:00",
    "url": "https://patronaat.nl/event/zer00s-heroes-21-11-26/",
@@ -3685,7 +3658,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Godzilla Minus Zero",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-22",
    "time": "16:20",
    "url": "https://www.filmladder.nl/kaartjes/1229471634"
@@ -5075,7 +5048,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Godzilla Minus Zero",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-24",
    "time": "15:10",
    "url": "https://www.filmladder.nl/kaartjes/1229471635"
@@ -5084,7 +5057,7 @@
    "venue": "Pathé",
    "kind": "film",
    "title": "Hope",
-   "info": "2D",
+   "info": "",
    "date": "2026-11-24",
    "time": "15:40",
    "url": "https://www.filmladder.nl/kaartjes/1229471545"
