@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T03:22:23.983Z",
+ "generated": "2026-11-19T12:59:10.874Z",
  "days": [
   "2026-11-19",
   "2026-11-20",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 83
+   "count": 80
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 273
+   "count": 270
   }
  },
  "events": [
@@ -62,15 +62,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471593"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-19",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -92,15 +83,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Club Kid",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471572"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
    "info": "",
    "date": "2026-11-19",
@@ -116,15 +98,6 @@
    "time": "11:10",
    "url": "https://filmkoepel.nl/tickets/208291",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-19",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
   },
   {
    "venue": "Pathé",
@@ -158,38 +131,11 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471510"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471375"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "Ebenezer",
    "info": "",
    "date": "2026-11-19",
    "time": "12:40",
    "url": "https://www.filmladder.nl/kaartjes/1229471423"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-19",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Pathé",
@@ -5346,16 +5292,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471406"
   },
   {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "WesGhost",
-   "info": "hiphop · Stage 2 · Wat schuilt er achter de gemaskerde man met de kwetsbare lyrics?",
-   "date": "2026-11-25",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/wesghost-25-11-26/",
-   "soldOut": false
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "Wild Horse Nine",
@@ -5372,6 +5308,16 @@
    "date": "2026-11-25",
    "time": "20:20",
    "url": "https://www.filmladder.nl/kaartjes/1229471629"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "WesGhost",
+   "info": "hiphop · Stage 2 · Wat schuilt er achter de gemaskerde man met de kwetsbare lyrics?",
+   "date": "2026-11-25",
+   "time": "20:30",
+   "url": "https://patronaat.nl/event/wesghost-25-11-26/",
+   "soldOut": false
   },
   {
    "venue": "Pathé",
