@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T12:59:10.874Z",
+ "generated": "2026-11-19T21:29:02.312Z",
  "days": [
   "2026-11-19",
   "2026-11-20",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 80
+   "count": 73
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 270
+   "count": 252
   }
  },
  "events": [
@@ -131,24 +131,6 @@
   {
    "venue": "Pathé",
    "kind": "film",
-   "title": "Ebenezer",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471423"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "12:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229471573"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
    "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
    "info": "",
    "date": "2026-11-19",
@@ -215,33 +197,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471463"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471565"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471376"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Only Living Pickpocket in New York",
@@ -250,15 +205,6 @@
    "time": "14:30",
    "url": "https://filmkoepel.nl/tickets/208339",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-19",
-   "time": "15:15",
-   "url": "https://www.schuur.nl/film/fatherland"
   },
   {
    "venue": "Pathé",
@@ -288,15 +234,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471580"
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "15:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471511"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Queen At Sea",
@@ -305,15 +242,6 @@
    "time": "16:00",
    "url": "https://filmkoepel.nl/tickets/208236",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "16:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471419"
   },
   {
    "venue": "Filmkoepel",
@@ -336,15 +264,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "16:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471377"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Fatherland",
@@ -365,15 +284,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "16:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471487"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Forêt ivre",
@@ -382,15 +292,6 @@
    "time": "16:45",
    "url": "https://filmkoepel.nl/tickets/208332",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film · Martin McDonagh",
-   "date": "2026-11-19",
-   "time": "17:00",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Pathé",
@@ -409,24 +310,6 @@
    "date": "2026-11-19",
    "time": "18:00",
    "url": "https://www.filmladder.nl/kaartjes/1229471442"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "18:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471488"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "18:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471378"
   },
   {
    "venue": "Filmkoepel",
@@ -449,15 +332,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "18:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471512"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Fatherland",
@@ -476,24 +350,6 @@
    "time": "18:45",
    "url": "https://filmkoepel.nl/tickets/208378",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Ebenezer",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "18:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229471424"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-19",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/fatherland"
   },
   {
    "venue": "Filmkoepel",
@@ -525,24 +381,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471553"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "documentaire · Sara Dosa",
-   "date": "2026-11-19",
-   "time": "19:20",
-   "url": "https://www.schuur.nl/film/time-and-water"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "19:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471464"
-  },
-  {
    "venue": "Patronaat",
    "kind": "podium",
    "title": "Bettie Serveert + Vera & The Sleepover Club",
@@ -561,15 +399,6 @@
    "time": "20:00",
    "url": "https://patronaat.nl/event/dave-mccredie-support-19-11-26/",
    "soldOut": true
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Is dit nu liefde",
-   "info": "muziektheater · Theater RAST",
-   "date": "2026-11-19",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/is-dit-nu-liefde"
   },
   {
    "venue": "Phil",
@@ -592,33 +421,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "20:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229149441"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "I Play Rocky",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "20:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471618"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-19",
-   "time": "20:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471379"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Club Kid",
@@ -627,15 +429,6 @@
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/208211",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film · Martin McDonagh",
-   "date": "2026-11-19",
-   "time": "20:45",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
   },
   {
    "venue": "Filmkoepel",
@@ -678,15 +471,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "film · Jordan Firstman",
-   "date": "2026-11-19",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/club-kid"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Donnie Darko",
@@ -704,15 +488,6 @@
    "date": "2026-11-19",
    "time": "21:15",
    "url": "https://www.filmladder.nl/kaartjes/1229471447"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-19",
-   "time": "21:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471489"
   },
   {
    "venue": "Pathé",
