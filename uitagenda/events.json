@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T03:09:34.552Z",
+ "generated": "2026-11-20T12:50:48.586Z",
  "days": [
   "2026-11-20",
   "2026-11-21",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 76
+   "count": 73
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 236
+   "count": 235
   }
  },
  "events": [
@@ -53,15 +53,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-20",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -70,15 +61,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/208219",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "11:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229471465"
   },
   {
    "venue": "Filmkoepel",
@@ -172,24 +154,6 @@
    "date": "2026-11-20",
    "time": "12:20",
    "url": "https://www.filmladder.nl/kaartjes/1229471554"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-20",
-   "time": "12:35",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "documentaire · Sara Dosa",
-   "date": "2026-11-20",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/time-and-water"
   },
   {
    "venue": "Filmkoepel",
