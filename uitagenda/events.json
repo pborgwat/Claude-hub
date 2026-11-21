@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T03:11:58.855Z",
+ "generated": "2026-11-21T12:36:01.674Z",
  "days": [
   "2026-11-21",
   "2026-11-22",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 66
+   "count": 63
   },
   "Phil": {
    "ok": true,
@@ -28,64 +28,10 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 196
+   "count": 187
   }
  },
  "events": [
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Feestelijk Plezier met Peppa: De Bioscoopbelevenis",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471614"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Yugly",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "09:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471547"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "10:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229295414"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "10:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229295408"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Feestelijk Plezier met Peppa: De Bioscoopbelevenis",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "10:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229059319"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-21",
-   "time": "10:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471385"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -107,33 +53,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "documentaire · Sara Dosa",
-   "date": "2026-11-21",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/time-and-water"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "I Play Rocky",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471621"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Meet the Parents: Focker-In-Law",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471371"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Youri",
@@ -142,15 +61,6 @@
    "time": "11:10",
    "url": "https://filmkoepel.nl/tickets/208293",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-21",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471468"
   },
   {
    "venue": "Filmkoepel",
@@ -191,15 +101,6 @@
    "url": "https://www.filmladder.nl/kaartjes/1229471386"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-21",
-   "time": "12:30",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
    "venue": "Pathé",
    "kind": "film",
    "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
@@ -207,15 +108,6 @@
    "date": "2026-11-21",
    "time": "12:30",
    "url": "https://www.filmladder.nl/kaartjes/1229295415"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-21",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/fatherland"
   },
   {
    "venue": "Filmkoepel",
