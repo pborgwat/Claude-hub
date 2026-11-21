@@ -1,448 +1,37 @@
 {
- "generated": "2026-11-20T21:03:20.502Z",
+ "generated": "2026-11-21T03:11:58.855Z",
  "days": [
-  "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24",
   "2026-11-25",
-  "2026-11-26"
+  "2026-11-26",
+  "2026-11-27"
  ],
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 179
+   "count": 149
   },
   "Schuur": {
    "ok": true,
-   "count": 64
+   "count": 66
   },
   "Phil": {
    "ok": true,
-   "count": 5
+   "count": 6
   },
   "Patronaat": {
    "ok": true,
-   "count": 13
+   "count": 14
   },
   "Pathé": {
    "ok": true,
-   "count": 205
+   "count": 196
   }
  },
  "events": [
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Amarga Navidad",
-   "info": "Pedro Almodóvar · Zaal 3",
-   "date": "2026-11-20",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/208258",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Andiamo a bere l’ultima",
-   "info": "Francesco Sossai · Zaal 6",
-   "date": "2026-11-20",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/208358",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Beloved",
-   "info": "Rodrigo Sorogoyen · Zaal 2",
-   "date": "2026-11-20",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/208219",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Youri",
-   "info": "Sander Burger · Zaal 4",
-   "date": "2026-11-20",
-   "time": "11:10",
-   "url": "https://filmkoepel.nl/tickets/208292",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "Albert-Jan van Rees · Zaal 1",
-   "date": "2026-11-20",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/208185",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Are We Alone?",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471630"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Vier minus drei",
-   "info": "Adrian Goiginger · Zaal 5",
-   "date": "2026-11-20",
-   "time": "11:45",
-   "url": "https://filmkoepel.nl/tickets/208325",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "Francis Lawrence · Zaal 6",
-   "date": "2026-11-20",
-   "time": "13:15",
-   "url": "https://filmkoepel.nl/tickets/208365",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "Georgia Oakley · Zaal 3",
-   "date": "2026-11-20",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/208265",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-20",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/208299",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "Jordan Firstman · Zaal 1",
-   "date": "2026-11-20",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/208192",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 2",
-   "date": "2026-11-20",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/208228",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Only Living Pickpocket in New York",
-   "info": "Noah Segan · Zaal 5",
-   "date": "2026-11-20",
-   "time": "14:30",
-   "url": "https://filmkoepel.nl/tickets/208340",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Queen At Sea",
-   "info": "Lance Hammer · Zaal 2",
-   "date": "2026-11-20",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/208237",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-20",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/208306",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "Sara Dosa · Zaal 3",
-   "date": "2026-11-20",
-   "time": "16:15",
-   "url": "https://filmkoepel.nl/tickets/208272",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "Pawel Pawlikowski · Zaal 1",
-   "date": "2026-11-20",
-   "time": "16:30",
-   "url": "https://filmkoepel.nl/tickets/208199",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "Jelle de Jonge · Zaal 6",
-   "date": "2026-11-20",
-   "time": "16:30",
-   "url": "https://filmkoepel.nl/tickets/208372",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Forêt ivre",
-   "info": "Manon Coubia · Zaal 5",
-   "date": "2026-11-20",
-   "time": "16:45",
-   "url": "https://filmkoepel.nl/tickets/208333",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "George Michael – The Faith Tour",
-   "info": "David Austin, Andrew Morahan · Zaal 3",
-   "date": "2026-11-20",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/208279",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-20",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/208318",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "Pawel Pawlikowski · Zaal 1",
-   "date": "2026-11-20",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/208206",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "Alex Huston Fischer, Eleanor Wilson · Zaal 6",
-   "date": "2026-11-20",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/208379",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 2",
-   "date": "2026-11-20",
-   "time": "19:00",
-   "url": "https://filmkoepel.nl/tickets/208244",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Only Living Pickpocket in New York",
-   "info": "Noah Segan · Zaal 5",
-   "date": "2026-11-20",
-   "time": "19:15",
-   "url": "https://filmkoepel.nl/tickets/208345",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Qmusic The Party: FOUT!",
-   "info": "nachtleven, pop · Stage 1 · 𝗤𝗺𝘂𝘀𝗶𝗰 𝗧𝗵𝗲 𝗣𝗮𝗿𝘁𝘆 𝗙𝗢𝗨𝗧 𝗶𝗻 𝗛𝗮𝗮𝗿𝗹𝗲𝗺!",
-   "date": "2026-11-20",
-   "time": "20:00",
-   "url": "https://patronaat.nl/event/qmusic-the-party-fout-20-11-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Emmy d’Arc",
-   "info": "pop, singer-songwriter · Stage 3 · Een filmische sound van intieme singer-songwriterpop en krachtige alternatieve poprock",
-   "date": "2026-11-20",
-   "time": "20:15",
-   "url": "https://patronaat.nl/event/emmy-darc-20-11-26/",
-   "soldOut": true
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "20:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471555"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "Jordan Firstman · Zaal 1",
-   "date": "2026-11-20",
-   "time": "20:45",
-   "url": "https://filmkoepel.nl/tickets/208212",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "I Play Rocky",
-   "info": "Peter Farrelly · Zaal 3",
-   "date": "2026-11-20",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/208385",
-   "soldOut": false
-  },
-  {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "NO BARRIER",
-   "info": "loud, nachtleven · Stage 2 · Punk, Emo, Rock & Metalcore Party",
-   "date": "2026-11-20",
-   "time": "21:00",
-   "url": "https://patronaat.nl/event/no-barrier-20-11-26/",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "Francis Lawrence · Zaal 6",
-   "date": "2026-11-20",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/208006",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-20",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/208313",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Verity",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "21:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471443"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Donnie Darko",
-   "info": "Richard Kelly · Zaal 2",
-   "date": "2026-11-20",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/208285",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Primetime",
-   "info": "Lance Oppenheim · Zaal 5",
-   "date": "2026-11-20",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/208351",
-   "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "How to Rob a Bank",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "21:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229471450"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Clayface",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "22:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471414"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "22:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471516"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Other Mommy",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "22:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229471408"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Heart of the Beast",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "23:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471532"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-20",
-   "time": "23:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471492"
-  },
   {
    "venue": "Pathé",
    "kind": "film",
@@ -4411,6 +4000,74 @@
    "date": "2026-11-26",
    "time": "20:30",
    "url": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Nathan Ball",
+   "info": "pop, singer-songwriter · Stage 3 · Singer-songwriter uit Cornwall brengt surfy songs",
+   "date": "2026-11-27",
+   "time": "19:30",
+   "url": "https://patronaat.nl/event/nathan-ball-support-27-11-26/",
+   "soldOut": true
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "ooes",
+   "info": "pop · Stage 2 · Ooes maakt muziek die je voelt, niet alleen hoort",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/ooes-27-11-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "SHY",
+   "info": "theater · Collectief Blauwdruk / TAR",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/shy"
+  },
+  {
+   "venue": "Phil",
+   "kind": "podium",
+   "title": "The DOMNIQ Group",
+   "info": "kamermuziek · Een nieuwe interpretatie van Philip Glass",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "url": "https://philhaarlem.nl/agenda/dominiq-aguas-da-amazonia",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "The Scene + Jan Douwe Kroeske",
+   "info": "klassiekers / tributes, pop · Stage 1 · De tijd is nu",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/the-scene-support-27-11-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Biotopia",
+   "info": "dans · SHIFFT",
+   "date": "2026-11-27",
+   "time": "20:30",
+   "url": "https://www.schuur.nl/theater/biotopia"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "FUCK THE CISTEM",
+   "info": "Stage 3 · Boundary-breaking queer punk clubnight",
+   "date": "2026-11-27",
+   "time": "23:00",
+   "url": "https://patronaat.nl/event/fuck-the-cistem-27-11-26/",
    "soldOut": false
   }
  ]
