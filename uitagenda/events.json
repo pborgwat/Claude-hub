@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T02:53:32.704Z",
+ "generated": "2026-11-24T14:50:27.994Z",
  "days": [
   "2026-11-24",
   "2026-11-25",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 86
+   "count": 81
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 79
+   "count": 65
   }
  },
  "events": [
@@ -43,24 +43,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471589"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Ebenezer",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471436"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -69,33 +51,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/208223",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "The Year of the Ghost",
-   "info": "documentaire · Louis HotHotHot",
-   "date": "2026-11-24",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/the-year-of-the-ghost"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Carnaval",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471504"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Sense and Sensibility",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471422"
   },
   {
    "venue": "Filmkoepel",
@@ -118,15 +73,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "How to Rob a Bank",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "11:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471458"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Wen Er Maar Aan",
@@ -147,51 +93,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-24",
-   "time": "12:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "12:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471561"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-24",
-   "time": "12:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471398"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471600"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "documentaire · Sara Dosa",
-   "date": "2026-11-24",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/time-and-water"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -200,24 +101,6 @@
    "time": "13:15",
    "url": "https://filmkoepel.nl/tickets/208369",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "13:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471526"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Pressure",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1228652191"
   },
   {
    "venue": "Filmkoepel",
@@ -269,42 +152,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-24",
-   "time": "13:50",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "14:05",
-   "url": "https://www.filmladder.nl/kaartjes/1229471480"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-24",
-   "time": "14:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471399"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Ebenezer",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "14:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229471437"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Only Living Pickpocket in New York",
@@ -313,24 +160,6 @@
    "time": "14:30",
    "url": "https://filmkoepel.nl/tickets/208342",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-24",
-   "time": "15:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Godzilla Minus Zero",
-   "info": "",
-   "date": "2026-11-24",
-   "time": "15:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471635"
   },
   {
    "venue": "Pathé",
