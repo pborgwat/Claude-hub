@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T00:40:46.179Z",
+ "generated": "2026-11-25T14:16:44.195Z",
  "days": [
   "2026-11-25",
   "2026-11-26",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 86
+   "count": 82
   },
   "Phil": {
    "ok": true,
@@ -28,7 +28,7 @@
   },
   "Pathé": {
    "ok": true,
-   "count": 44
+   "count": 27
   }
  },
  "events": [
@@ -43,24 +43,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471601"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-25",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Beloved",
@@ -69,24 +51,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/208224",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-25",
-   "time": "11:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471402"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Feestelijk Plezier met Peppa: De Bioscoopbelevenis",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "11:10",
-   "url": "https://www.filmladder.nl/kaartjes/1229471617"
   },
   {
    "venue": "Filmkoepel",
@@ -99,15 +63,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-25",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "Naza",
@@ -116,24 +71,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/208363",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471591"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Disney’s Hexed (OV)",
-   "info": "Disney's Hexed (OV) 2D",
-   "date": "2026-11-25",
-   "time": "11:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471603"
   },
   {
    "venue": "Filmkoepel",
@@ -156,60 +93,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "11:45",
-   "url": "https://www.filmladder.nl/kaartjes/1229471528"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Grote Sinterklaasfilm en de Vliegende Pieten",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "12:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229471602"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "How to Rob a Bank",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "12:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229471460"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "I Play Rocky",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "12:50",
-   "url": "https://www.filmladder.nl/kaartjes/1229471628"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-25",
-   "time": "13:00",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Feestelijk Plezier met Peppa: De Bioscoopbelevenis",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "13:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229059321"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -218,15 +101,6 @@
    "time": "13:15",
    "url": "https://filmkoepel.nl/tickets/208370",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Wen Er Maar Aan",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "13:30",
-   "url": "https://www.filmladder.nl/kaartjes/1229471563"
   },
   {
    "venue": "Filmkoepel",
@@ -269,42 +143,6 @@
    "soldOut": false
   },
   {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "14:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471485"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Coyote vs. Acme",
-   "info": "familiefilm · Dave Green",
-   "date": "2026-11-25",
-   "time": "14:15",
-   "url": "https://www.schuur.nl/film/coyote-vs-acme"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "De Club van Sinterklaas film: Paniek in het Pietendorp",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "14:15",
-   "url": "https://www.filmladder.nl/kaartjes/1229471592"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "14:20",
-   "url": "https://www.filmladder.nl/kaartjes/1229471578"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Only Living Pickpocket in New York",
@@ -313,33 +151,6 @@
    "time": "14:30",
    "url": "https://filmkoepel.nl/tickets/208343",
    "soldOut": false
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Disney’s Hexed (NL)",
-   "info": "Disney's Hexed (NL) 2D",
-   "date": "2026-11-25",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471542"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "2D",
-   "date": "2026-11-25",
-   "time": "14:40",
-   "url": "https://www.filmladder.nl/kaartjes/1229471403"
-  },
-  {
-   "venue": "Pathé",
-   "kind": "film",
-   "title": "Ebenezer",
-   "info": "",
-   "date": "2026-11-25",
-   "time": "15:00",
-   "url": "https://www.filmladder.nl/kaartjes/1229471439"
   },
   {
    "venue": "Pathé",
