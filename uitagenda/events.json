@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T00:18:24.031Z",
+ "generated": "2026-11-26T13:51:16.464Z",
  "days": [
   "2026-11-26",
   "2026-11-27",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 86
+   "count": 82
   },
   "Phil": {
    "ok": true,
@@ -43,15 +43,6 @@
    "soldOut": false
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-26",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "I Play Rocky",
@@ -70,15 +61,6 @@
    "time": "11:00",
    "url": "https://filmkoepel.nl/tickets/208850",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Queen at Sea",
-   "info": "film · Lance Hammer",
-   "date": "2026-11-26",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/queen-at-sea"
   },
   {
    "venue": "Filmkoepel",
@@ -109,15 +91,6 @@
    "time": "11:45",
    "url": "https://filmkoepel.nl/tickets/208921",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Nagi Notes",
-   "info": "film · Koji Fukada",
-   "date": "2026-11-26",
-   "time": "12:45",
-   "url": "https://www.schuur.nl/film/nagi-notes"
   },
   {
    "venue": "Filmkoepel",
@@ -168,15 +141,6 @@
    "time": "13:45",
    "url": "https://filmkoepel.nl/tickets/208927",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-26",
-   "time": "14:00",
-   "url": "https://www.schuur.nl/film/fatherland"
   },
   {
    "venue": "Filmkoepel",
@@ -342,7 +306,7 @@
    "date": "2026-11-26",
    "time": "19:00",
    "url": "https://filmkoepel.nl/tickets/206087",
-   "soldOut": false
+   "soldOut": true
   },
   {
    "venue": "Schuur",
@@ -392,16 +356,6 @@
    "url": "https://www.schuur.nl/theater/de-belangelozen"
   },
   {
-   "venue": "Patronaat",
-   "kind": "podium",
-   "title": "Minor Operations Bookings presents: The Protos, Snackbar & Apeshit",
-   "info": "loud · Stage 3 · Deze maand serveert MOB een vlugge hap aan rockende garage, punk en hardcore!",
-   "date": "2026-11-26",
-   "time": "20:30",
-   "url": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
-   "soldOut": false
-  },
-  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -419,6 +373,16 @@
    "date": "2026-11-26",
    "time": "20:45",
    "url": "https://filmkoepel.nl/tickets/209012",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Minor Operations Bookings presents: The Protos & Snackbar",
+   "info": "loud · Stage 3 · Deze maand serveert MOB een vlugge hap aan rockende garage, punk en hardcore!",
+   "date": "2026-11-26",
+   "time": "21:00",
+   "url": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
    "soldOut": false
   },
   {
