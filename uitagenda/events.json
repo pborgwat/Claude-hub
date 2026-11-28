@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-27T13:48:58.408Z",
+ "generated": "2026-11-28T00:01:41.792Z",
  "days": [
-  "2026-11-27",
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01",
   "2026-12-02",
-  "2026-12-03"
+  "2026-12-03",
+  "2026-12-04"
  ],
  "status": {
   "Filmkoepel": {
    "ok": true,
-   "count": 174
+   "count": 144
   },
   "Schuur": {
    "ok": true,
-   "count": 73
+   "count": 66
   },
   "Phil": {
    "ok": true,
-   "count": 2
+   "count": 1
   },
   "Patronaat": {
    "ok": true,
@@ -32,397 +32,6 @@
   }
  },
  "events": [
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Amarga Navidad",
-   "info": "Pedro Almodóvar · Zaal 6",
-   "date": "2026-11-27",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/208987",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "I Play Rocky",
-   "info": "Peter Farrelly · Zaal 4",
-   "date": "2026-11-27",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/209050",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Youri",
-   "info": "Sander Burger · Zaal 2",
-   "date": "2026-11-27",
-   "time": "11:00",
-   "url": "https://filmkoepel.nl/tickets/208851",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "Pawel Pawlikowski · Zaal 1",
-   "date": "2026-11-27",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/208818",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "Sara Dosa · Zaal 3",
-   "date": "2026-11-27",
-   "time": "11:30",
-   "url": "https://filmkoepel.nl/tickets/209339",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Minotaur",
-   "info": "Andrey Zvyagintsev · Zaal 5",
-   "date": "2026-11-27",
-   "time": "11:45",
-   "url": "https://filmkoepel.nl/tickets/209045",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Queen At Sea",
-   "info": "Lance Hammer · Zaal 2",
-   "date": "2026-11-27",
-   "time": "13:20",
-   "url": "https://filmkoepel.nl/tickets/208858",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "Jordan Firstman · Zaal 6",
-   "date": "2026-11-27",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/208992",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "Francis Lawrence · Zaal 1",
-   "date": "2026-11-27",
-   "time": "13:30",
-   "url": "https://filmkoepel.nl/tickets/208825",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Forêt ivre",
-   "info": "Manon Coubia · Zaal 3",
-   "date": "2026-11-27",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/208894",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-27",
-   "time": "13:45",
-   "url": "https://filmkoepel.nl/tickets/208928",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-27",
-   "time": "14:45",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Only Living Pickpocket in New York",
-   "info": "Noah Segan · Zaal 5",
-   "date": "2026-11-27",
-   "time": "15:00",
-   "url": "https://filmkoepel.nl/tickets/208958",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Laatbloeier",
-   "info": "Jelle de Jonge · Zaal 2",
-   "date": "2026-11-27",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/208865",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Paper Tiger",
-   "info": "James Gray · Zaal 3",
-   "date": "2026-11-27",
-   "time": "16:00",
-   "url": "https://filmkoepel.nl/tickets/208901",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "film · Jordan Firstman",
-   "date": "2026-11-27",
-   "time": "16:10",
-   "url": "https://www.schuur.nl/film/club-kid"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 6",
-   "date": "2026-11-27",
-   "time": "16:15",
-   "url": "https://filmkoepel.nl/tickets/208999",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-27",
-   "time": "16:15",
-   "url": "https://filmkoepel.nl/tickets/208935",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Minotaur",
-   "info": "film",
-   "date": "2026-11-27",
-   "time": "16:30",
-   "url": "https://www.schuur.nl/film/minotaur"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "Pawel Pawlikowski · Zaal 1",
-   "date": "2026-11-27",
-   "time": "16:45",
-   "url": "https://filmkoepel.nl/tickets/208832",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wicker",
-   "info": "Alex Huston Fischer, Eleanor Wilson · Zaal 5",
-   "date": "2026-11-27",
-   "time": "17:00",
-   "url": "https://filmkoepel.nl/tickets/209334",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "George Michael – The Faith Tour",
-   "info": "David Austin, Andrew Morahan · Zaal 2",
-   "date": "2026-11-27",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/208871",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Cycle of Love",
-   "info": "Orlando von Einsiedel · Zaal 6",
-   "date": "2026-11-27",
-   "time": "18:30",
-   "url": "https://filmkoepel.nl/tickets/209006",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Heysel 85",
-   "info": "Teodora Anna Mihai · Zaal 3",
-   "date": "2026-11-27",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/209328",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-27",
-   "time": "18:45",
-   "url": "https://filmkoepel.nl/tickets/208942",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "Pawel Pawlikowski · Zaal 1",
-   "date": "2026-11-27",
-   "time": "18:50",
-   "url": "https://filmkoepel.nl/tickets/208844",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Nagi Notes",
-   "info": "film · Koji Fukada",
-   "date": "2026-11-27",
-   "time": "19:00",
-   "url": "https://www.schuur.nl/film/nagi-notes"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
-   "date": "2026-11-27",
-   "time": "19:15",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Only Living Pickpocket in New York",
-   "info": "Noah Segan · Zaal 5",
-   "date": "2026-11-27",
-   "time": "19:15",
-   "url": "https://filmkoepel.nl/tickets/208972",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "SHY",
-   "info": "theater · Collectief Blauwdruk / TAR",
-   "date": "2026-11-27",
-   "time": "20:00",
-   "url": "https://www.schuur.nl/theater/shy"
-  },
-  {
-   "venue": "Phil",
-   "kind": "podium",
-   "title": "The DOMNIQ Group",
-   "info": "kamermuziek · Een nieuwe interpretatie van Philip Glass",
-   "date": "2026-11-27",
-   "time": "20:00",
-   "url": "https://philhaarlem.nl/agenda/dominiq-aguas-da-amazonia",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "podium",
-   "title": "Biotopia",
-   "info": "dans · SHIFFT",
-   "date": "2026-11-27",
-   "time": "20:30",
-   "url": "https://www.schuur.nl/theater/biotopia"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Club Kid",
-   "info": "Jordan Firstman · Zaal 6",
-   "date": "2026-11-27",
-   "time": "20:45",
-   "url": "https://filmkoepel.nl/tickets/209013",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "info": "Francis Lawrence · Zaal 1",
-   "date": "2026-11-27",
-   "time": "20:50",
-   "url": "https://filmkoepel.nl/tickets/208838",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Minotaur",
-   "info": "Andrey Zvyagintsev · Zaal 2",
-   "date": "2026-11-27",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/208879",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Minotaur",
-   "info": "film",
-   "date": "2026-11-27",
-   "time": "21:00",
-   "url": "https://www.schuur.nl/film/minotaur"
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Paper Tiger",
-   "info": "James Gray · Zaal 3",
-   "date": "2026-11-27",
-   "time": "21:00",
-   "url": "https://filmkoepel.nl/tickets/208908",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Donnie Darko",
-   "info": "Richard Kelly · Zaal 5",
-   "date": "2026-11-27",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/208979",
-   "soldOut": false
-  },
-  {
-   "venue": "Filmkoepel",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "Martin McDonagh · Zaal 4",
-   "date": "2026-11-27",
-   "time": "21:15",
-   "url": "https://filmkoepel.nl/tickets/208947",
-   "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Wild Horse Nine",
-   "info": "film · Martin McDonagh",
-   "date": "2026-11-27",
-   "time": "21:15",
-   "url": "https://www.schuur.nl/film/wild-horse-nine"
-  },
   {
    "venue": "Schuur",
    "kind": "film",
@@ -2511,6 +2120,24 @@
    "date": "2026-12-03",
    "time": "20:45",
    "url": "https://www.schuur.nl/film/fjord"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "Silence of the dogs",
+   "info": "theater · Het Zuidelijk Toneel / Ada Ozdogan",
+   "date": "2026-12-04",
+   "time": "20:00",
+   "url": "https://www.schuur.nl/theater/silence-of-the-dogs"
+  },
+  {
+   "venue": "Schuur",
+   "kind": "podium",
+   "title": "The Drama",
+   "info": "theater · Theater Oostpool",
+   "date": "2026-12-04",
+   "time": "20:30",
+   "url": "https://www.schuur.nl/theater/the-drama"
   }
  ]
 }
