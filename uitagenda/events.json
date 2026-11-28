@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T00:01:41.792Z",
+ "generated": "2026-11-28T12:56:39.474Z",
  "days": [
   "2026-11-28",
   "2026-11-29",
@@ -16,7 +16,7 @@
   },
   "Schuur": {
    "ok": true,
-   "count": 66
+   "count": 62
   },
   "Phil": {
    "ok": true,
@@ -24,7 +24,7 @@
   },
   "Patronaat": {
    "ok": true,
-   "count": 0
+   "count": 13
   },
   "Pathé": {
    "ok": true,
@@ -32,15 +32,6 @@
   }
  },
  "events": [
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Whispers in May",
-   "info": "documentaire · Dongnan Chen",
-   "date": "2026-11-28",
-   "time": "11:00",
-   "url": "https://www.schuur.nl/film/whispers-in-may"
-  },
   {
    "venue": "Filmkoepel",
    "kind": "film",
@@ -70,15 +61,6 @@
    "time": "11:15",
    "url": "https://filmkoepel.nl/tickets/209051",
    "soldOut": false
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Time and Water",
-   "info": "documentaire · Sara Dosa",
-   "date": "2026-11-28",
-   "time": "11:15",
-   "url": "https://www.schuur.nl/film/time-and-water"
   },
   {
    "venue": "Filmkoepel",
@@ -120,22 +102,14 @@
    "url": "https://www.filmladder.nl/kaartjes/1229059322"
   },
   {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "Fatherland",
-   "info": "film · Pawel Pawlikowski",
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "NOODUITGANG DAY RAVE",
+   "info": "nachtleven · Stage 1 · Een day rave vol energie en pure beleving",
    "date": "2026-11-28",
    "time": "13:00",
-   "url": "https://www.schuur.nl/film/fatherland"
-  },
-  {
-   "venue": "Schuur",
-   "kind": "film",
-   "title": "All of a Sudden",
-   "info": "film · Ryusuke Hamaguchi",
-   "date": "2026-11-28",
-   "time": "13:15",
-   "url": "https://www.schuur.nl/film/all-of-a-sudden"
+   "url": "https://patronaat.nl/event/nooduitgang-day-rave-28-11-26-2/",
+   "soldOut": false
   },
   {
    "venue": "Filmkoepel",
@@ -805,6 +779,36 @@
    "date": "2026-11-29",
    "time": "19:30",
    "url": "https://www.schuur.nl/theater/de-vrolijkheid-presenteert-theatergroep-nieuwe-grond"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "SBP4",
+   "info": "pop · Stage 2 · \"Samoe Bolshoe Prostoe Chislo\" keert terug naar Haarlem!",
+   "date": "2026-11-29",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/sbp4-29-11-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "She Past Away + Haunt Me",
+   "info": "indie, rock · Stage 1 · Een van de meest toonaangevende dark wave- en post-punkacts van dit moment",
+   "date": "2026-11-29",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/she-past-away-29-11-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Sugar Spine + Braces",
+   "info": "loud · Stage 3 · Metallic hardcore van eigen bodem",
+   "date": "2026-11-29",
+   "time": "20:15",
+   "url": "https://patronaat.nl/event/sugar-spine-29-11-26/",
+   "soldOut": false
   },
   {
    "venue": "Filmkoepel",
@@ -1611,6 +1615,16 @@
    "soldOut": false
   },
   {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Sina Bathaie – White Lotus World Tour | Back Together",
+   "info": "indie, pop · Stage 1 · Een hedendaagse blik op traditionele Iraanse muziek",
+   "date": "2026-12-01",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/sina-bathaie-01-12-26/",
+   "soldOut": false
+  },
+  {
    "venue": "Filmkoepel",
    "kind": "film",
    "title": "De Notenkraker",
@@ -1970,6 +1984,16 @@
    "url": "https://www.schuur.nl/film/nagi-notes"
   },
   {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Terror + Bane + Start Today + Peace of Mind",
+   "info": "loud · Stage 1 · OG vs. New Hardcore",
+   "date": "2026-12-02",
+   "time": "19:00",
+   "url": "https://patronaat.nl/event/terror-02-12-26/",
+   "soldOut": false
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Fatherland",
@@ -2104,6 +2128,26 @@
    "soldOut": false
   },
   {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Jimmy Carr • PHIL",
+   "info": "comedy / spoken word · PHIL · Laughs Funny",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "url": "https://patronaat.nl/event/jimmy-car-phil-03-12-26/",
+   "soldOut": true
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Ghostface Killah + YaH Sin",
+   "info": "hiphop · Stage 1 · Van Shaolin naar Patronaat, Wu-Tang legende live op het podium",
+   "date": "2026-12-03",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/ghostface-killah-support-03-12-26/",
+   "soldOut": false
+  },
+  {
    "venue": "Schuur",
    "kind": "podium",
    "title": "Silence of the dogs",
@@ -2113,6 +2157,16 @@
    "url": "https://www.schuur.nl/theater/silence-of-the-dogs"
   },
   {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Waterfront + Bonno Getz",
+   "info": "indie, rock · Stage 3 · Voorlopig laatste show van Haarlemse talenten!",
+   "date": "2026-12-03",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/waterfront-bonno-getz-03-12-26/",
+   "soldOut": false
+  },
+  {
    "venue": "Schuur",
    "kind": "film",
    "title": "Fjord",
@@ -2120,6 +2174,46 @@
    "date": "2026-12-03",
    "time": "20:45",
    "url": "https://www.schuur.nl/film/fjord"
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Jimmy Carr • PHIL (21:30)",
+   "info": "comedy / spoken word · PHIL · Laughs Funny",
+   "date": "2026-12-03",
+   "time": "21:30",
+   "url": "https://patronaat.nl/event/jimmy-carr-phil-2100-03-12-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "De Baron + Spoet",
+   "info": "indie, rock · Stage 2 · Een explosieve muzikale trip vol energie, zelfspot en hoop",
+   "date": "2026-12-04",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/de-baron-support-04-12-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Jack and the Weatherman + Neon Dreams",
+   "info": "pop, singer-songwriter · Stage 1 · Een internationale folk-popband uit Nederland",
+   "date": "2026-12-04",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/jack-and-the-weatherman-support-04-12-26/",
+   "soldOut": false
+  },
+  {
+   "venue": "Patronaat",
+   "kind": "podium",
+   "title": "Nieuwe Oogst: ILA + RubinCarter",
+   "info": "indie, nieuwe oogst, pop · Stage 3 · Ontdek dé popmuzikanten van de toekomst live!",
+   "date": "2026-12-04",
+   "time": "20:00",
+   "url": "https://patronaat.nl/event/nieuwe-oogst-ila-rubincarter-04-12-26/",
+   "soldOut": false
   },
   {
    "venue": "Schuur",
